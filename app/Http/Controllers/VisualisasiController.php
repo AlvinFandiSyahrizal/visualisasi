@@ -38,6 +38,87 @@ class VisualisasiController extends Controller
 
         return response()->json($data);
     }
+    public function getData2()
+    {
+        $data = dbflange::join('datapn2s', 'dbflanges.PartNumber', '=', 'datapn2s.PartNumber')
+            ->select('datapn2s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData3()
+    {
+        $data = dbflange::join('datapn3s', 'dbflanges.PartNumber', '=', 'datapn3s.PartNumber')
+            ->select('datapn3s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData4()
+    {
+        $data = dbflange::join('datapn4s', 'dbflanges.PartNumber', '=', 'datapn4s.PartNumber')
+            ->select('datapn4s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData5()
+    {
+        $data = dbflange::join('datapn5s', 'dbflanges.PartNumber', '=', 'datapn5s.PartNumber')
+            ->select('datapn5s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData6()
+    {
+        $data = dbflange::join('datapn6s', 'dbflanges.PartNumber', '=', 'datapn6s.PartNumber')
+            ->select('datapn6s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData7()
+    {
+        $data = dbflange::join('datapn7s', 'dbflanges.PartNumber', '=', 'datapn7s.PartNumber')
+            ->select('datapn7s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData8()
+    {
+        $data = dbflange::join('datapn8s', 'dbflanges.PartNumber', '=', 'datapn8s.PartNumber')
+            ->select('datapn8s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData9()
+    {
+        $data = dbflange::join('datapn9s', 'dbflanges.PartNumber', '=', 'datapn9s.PartNumber')
+            ->select('datapn9s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData10()
+    {
+        $data = dbflange::join('datapn10s', 'dbflanges.PartNumber', '=', 'datapn10s.PartNumber')
+            ->select('datapn10s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
 
     public function getLine2Data()
     {
@@ -88,6 +169,18 @@ class VisualisasiController extends Controller
         // Tampilkan view riwayat.blade.php dengan data
         return view('riwayat.visualisasi', compact('ongoing', 'riwayatData'));
     }
+
+    // public function riwayat2()
+    // {
+    //     // Ambil top 1 data visualisasi dari model
+    //     $ongoing = dbflange::join('datapn2s', 'dbflanges.PartNumber', '=', 'datapn2s.PartNumber')
+    //         ->select('datapn2s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+    //         ->latest('dbflanges.id')
+    //         ->first();
+
+    //     // Tampilkan view riwayat.blade.php dengan data
+    //     return view('riwayat.visualisasi', compact('ongoing'));
+    // }
 
     public function riwayatline2()
     {

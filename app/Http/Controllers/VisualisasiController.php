@@ -70,5 +70,60 @@ class VisualisasiController extends Controller
         return response()->json($dataline4);
     }
 
+    public function riwayat()
+    {
+        // Ambil top 1 data visualisasi dari model
+        $ongoing = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
+            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        // Ambil semua data visualisasi selain top 1 dari model
+        $riwayatData = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
+            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->where('dbflanges.id', '!=', $ongoing->id) // Sesuaikan dengan kolom yang merupakan identitas unik
+            ->latest('dbflanges.id')
+            ->get();
+
+        // Tampilkan view riwayat.blade.php dengan data
+        return view('riwayat.visualisasi', compact('ongoing', 'riwayatData'));
+    }
+
+    public function riwayatline2()
+    {
+        // Ambil semua data visualisasi dari model
+        $data = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
+            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->where('dbflanges.Line', 'Line2') // Filter by Line2
+            ->latest('dbflanges.id')
+            ->first(); // Use get() to retrieve all records
+
+        // Tampilkan view riwayat.line2.blade.php
+        return view('riwayat.line2', compact('data'));
+    }
+    public function riwayatline3()
+    {
+        // Ambil semua data visualisasi dari model
+        $data = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
+            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->where('dbflanges.Line', 'Line3') // Filter by Line2
+            ->latest('dbflanges.id')
+            ->first(); // Use get() to retrieve all records
+
+        // Tampilkan view riwayat.line2.blade.php
+        return view('riwayat.line3', compact('data'));
+    }
+    public function riwayatline4()
+    {
+        // Ambil semua data visualisasi dari model
+        $data = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
+            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->where('dbflanges.Line', 'Line4') // Filter by Line2
+            ->latest('dbflanges.id')
+            ->first(); // Use get() to retrieve all records
+
+        // Tampilkan view riwayat.line2.blade.php
+        return view('riwayat.line4', compact('data'));
+    }
 }
 

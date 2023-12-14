@@ -170,18 +170,6 @@ class VisualisasiController extends Controller
         return view('riwayat.visualisasi', compact('ongoing', 'riwayatData'));
     }
 
-    // public function riwayat2()
-    // {
-    //     // Ambil top 1 data visualisasi dari model
-    //     $ongoing = dbflange::join('datapn2s', 'dbflanges.PartNumber', '=', 'datapn2s.PartNumber')
-    //         ->select('datapn2s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
-    //         ->latest('dbflanges.id')
-    //         ->first();
-
-    //     // Tampilkan view riwayat.blade.php dengan data
-    //     return view('riwayat.visualisasi', compact('ongoing'));
-    // }
-
     public function riwayatline2()
     {
         // Ambil semua data visualisasi dari model

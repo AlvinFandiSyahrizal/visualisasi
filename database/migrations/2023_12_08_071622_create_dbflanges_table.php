@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('dbflanges', function (Blueprint $table) {
             $table->id();
             $table->string('PartNumber');
+            $table->string('Model');
             $table->integer('FlangeNon');
             $table->string('Line');
             $table->timestamps();

@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('datapn8s', function (Blueprint $table) {
             $table->id();
-            $table->string('PartNumber');
+            $table->string('DcCode');
+            $table->string('Quantity');
             $table->timestamps();
         });
     }

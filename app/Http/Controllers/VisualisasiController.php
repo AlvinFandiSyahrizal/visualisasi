@@ -119,6 +119,276 @@ class VisualisasiController extends Controller
 
         return response()->json($data);
     }
+    public function getData11()
+    {
+        $data = dbflange::join('datapn11s', 'dbflanges.PartNumber', '=', 'datapn11s.PartNumber')
+            ->select('datapn11s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData12()
+    {
+        $data = dbflange::join('datapn12s', 'dbflanges.PartNumber', '=', 'datapn12s.PartNumber')
+            ->select('datapn12s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData13()
+    {
+        $data = dbflange::join('datapn13s', 'dbflanges.PartNumber', '=', 'datapn13s.PartNumber')
+            ->select('datapn13s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData14()
+    {
+        $data = dbflange::join('datapn14s', 'dbflanges.PartNumber', '=', 'datapn14s.PartNumber')
+            ->select('datapn14s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData15()
+    {
+        $data = dbflange::join('datapn15s', 'dbflanges.PartNumber', '=', 'datapn15s.PartNumber')
+            ->select('datapn15s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData16()
+    {
+        $data = dbflange::join('datapn16s', 'dbflanges.PartNumber', '=', 'datapn16s.PartNumber')
+            ->select('datapn16s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData17()
+    {
+        $data = dbflange::join('datapn17s', 'dbflanges.PartNumber', '=', 'datapn17s.PartNumber')
+            ->select('datapn17s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData18()
+    {
+        $data = dbflange::join('datapn18s', 'dbflanges.PartNumber', '=', 'datapn18s.PartNumber')
+            ->select('datapn18s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData19()
+    {
+        $data = dbflange::join('datapn19s', 'dbflanges.PartNumber', '=', 'datapn19s.PartNumber')
+            ->select('datapn19s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData20()
+    {
+        $data = dbflange::join('datapn20s', 'dbflanges.PartNumber', '=', 'datapn20s.PartNumber')
+            ->select('datapn20s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData21()
+    {
+        $data = dbflange::join('datapn21s', 'dbflanges.PartNumber', '=', 'datapn21s.PartNumber')
+            ->select('datapn21s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData22()
+    {
+        $data = dbflange::join('datapn22s', 'dbflanges.PartNumber', '=', 'datapn22s.PartNumber')
+            ->select('datapn22s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData23()
+    {
+        $data = dbflange::join('datapn23s', 'dbflanges.PartNumber', '=', 'datapn23s.PartNumber')
+            ->select('datapn23s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData24()
+    {
+        $data = dbflange::join('datapn24s', 'dbflanges.PartNumber', '=', 'datapn24s.PartNumber')
+            ->select('datapn24s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData25()
+    {
+        $data = dbflange::join('datapn25s', 'dbflanges.PartNumber', '=', 'datapn25s.PartNumber')
+            ->select('datapn25s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData26()
+    {
+        $data = dbflange::join('datapn26s', 'dbflanges.PartNumber', '=', 'datapn26s.PartNumber')
+            ->select('datapn26s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData27()
+    {
+        $data = dbflange::join('datapn27s', 'dbflanges.PartNumber', '=', 'datapn27s.PartNumber')
+            ->select('datapn27s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData28()
+    {
+        $data = dbflange::join('datapn28s', 'dbflanges.PartNumber', '=', 'datapn28s.PartNumber')
+            ->select('datapn28s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData29()
+    {
+        $data = dbflange::join('datapn29s', 'dbflanges.PartNumber', '=', 'datapn29s.PartNumber')
+            ->select('datapn29s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData30()
+    {
+        $data = dbflange::join('datapn30s', 'dbflanges.PartNumber', '=', 'datapn30s.PartNumber')
+            ->select('datapn30s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData31()
+    {
+        $data = dbflange::join('datapn31s', 'dbflanges.PartNumber', '=', 'datapn31s.PartNumber')
+            ->select('datapn31s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData32()
+    {
+        $data = dbflange::join('datapn32s', 'dbflanges.PartNumber', '=', 'datapn32s.PartNumber')
+            ->select('datapn32s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData33()
+    {
+        $data = dbflange::join('datapn33s', 'dbflanges.PartNumber', '=', 'datapn33s.PartNumber')
+            ->select('datapn33s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData34()
+    {
+        $data = dbflange::join('datapn34s', 'dbflanges.PartNumber', '=', 'datapn34s.PartNumber')
+            ->select('datapn34s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData35()
+    {
+        $data = dbflange::join('datapn35s', 'dbflanges.PartNumber', '=', 'datapn35s.PartNumber')
+            ->select('datapn35s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData36()
+    {
+        $data = dbflange::join('datapn36s', 'dbflanges.PartNumber', '=', 'datapn36s.PartNumber')
+            ->select('datapn36s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData37()
+    {
+        $data = dbflange::join('datapn37s', 'dbflanges.PartNumber', '=', 'datapn37s.PartNumber')
+            ->select('datapn37s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData38()
+    {
+        $data = dbflange::join('datapn38s', 'dbflanges.PartNumber', '=', 'datapn38s.PartNumber')
+            ->select('datapn38s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData39()
+    {
+        $data = dbflange::join('datapn39s', 'dbflanges.PartNumber', '=', 'datapn39s.PartNumber')
+            ->select('datapn39s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData40()
+    {
+        $data = dbflange::join('datapn40s', 'dbflanges.PartNumber', '=', 'datapn40s.PartNumber')
+            ->select('datapn40s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+            ->latest('dbflanges.id')
+            ->first();
+
+        return response()->json($data);
+    }
 
     public function getLine2Data()
     {

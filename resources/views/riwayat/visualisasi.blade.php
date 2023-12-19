@@ -16,7 +16,7 @@
 
 <div class="container text-center">
     <div class="container mt-5">
-        <h2>apa namanya</h2>
+        <h2>PART NUMBER SEQUENCES</h2>
     </div>
 
     <div class="row">
@@ -34,645 +34,634 @@
             </thead>
             <tbody>
 
-                    <tr>
-                        <td><div id="partNumber-container">
-                            <span id="partNumber"></span>
-                        </div></td>
-                        <td><div id="partNumber-container">
-                            <span id="flangeStatus"></span>
-                        </div></td>
-                        <td><div id="partNumber-container">
-                            <span id="line"></span>
-                        </div></td>
-                        <td><div id="partNumber-container">
-                            <span id="qty"></span>
-                        </div></td>
-                        <tr>
-                            <td><div id="partNumber-container">
-                                <span  id="partNumber2"></span>
-                            </div></td>
-                            <td><div id="partNumber-container">
-                                <span id="flangeStatus2"></span>
-                            </div></td>
-                            <td><div id="partNumber-container">
-                                <span id="line2"></span>
-                            </div></td>
-                            <td><div id="partNumber-container">
-                                <span id="qty2"></span>
-                            <td></td>
+                    <tr id="row1">
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty"></span>
+                        </td>
+                        </td>
+                    </tr>
+
+                        <tr id="row2">
+                            <td>
+                                <div id="partNumber-container">
+                                    <span  id="partNumber2"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus2"></span>
+                                 </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line2"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty2"></span>
+                            <td>
+                            </td>
                         </tr>
-                        <tr>
-                            <td><div id="partNumber-container3">
-                                <span  id="partNumber3"></span>
-                            </div></td>
-                            <td><div id="partNumber-container3">
-                                <span id="flangeStatus3"></span>
-                            </div></td>
-                            <td><div id="partNumber-container3">
-                                <span id="line3"></span>
-                            </div></td>
-                            <td><div id="partNumber-container3">
-                                <span id="qty3"></span>
-                            <td></td>
+
+                        <tr id="row3">
+                            <td>
+                                <div id="partNumber-container3">
+                                    <span  id="partNumber3"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container3">
+                                    <span id="flangeStatus3"></span>
+                                </div></td>
+                            <td>
+                                <div id="partNumber-container3">
+                                    <span id="line3"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container3">
+                                    <span id="qty3"></span>
+                            <td>
+                            </td>
                         </tr>
-                        <tr>
+
+                        <tr id="row4">
                             <td><div id="partNumber-container4">
                                 <span  id="partNumber4"></span>
                             </div></td>
                             <td><div id="partNumber-container4">
-                                <span  id="flangestatusline4">
                                 <span id="flangeStatus4"></span>
                             </div></td>
                             <td><div id="partNumber-container4">
-                                <span  id="flangestatusline4">
                                 <span id="line4"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty4"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row5">
                             <td><div id="partNumber-container5">
                                 <span  id="partNumber5"></span>
                             </div></td>
                             <td><div id="partNumber-container5">
-                                <span  id="flangestatusline5">
                                 <span id="flangeStatus5"></span>
                             </div></td>
                             <td><div id="partNumber-container5">
-                                <span  id="flangestatusline5">
                                 <span id="line5"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty5"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row6">
                             <td><div id="partNumber-container6">
                                 <span  id="partNumber6"></span>
                             </div></td>
                             <td><div id="partNumber-container6">
-                                <span  id="flangestatusline6">
                                 <span id="flangeStatus6"></span>
                             </div></td>
                             <td><div id="partNumber-container6">
-                                <span  id="flangestatusline6">
                                 <span id="line6"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty6"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row7">
                             <td><div id="partNumber-container7">
                                 <span  id="partNumber7"></span>
                             </div></td>
                             <td><div id="partNumber-container7">
-                                <span  id="flangestatusline7">
                                 <span id="flangeStatus7"></span>
                             </div></td>
                             <td><div id="partNumber-container7">
-                                <span  id="flangestatusline7">
                                 <span id="line7"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty7"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row8">
                             <td><div id="partNumber-container8">
                                 <span  id="partNumber8"></span>
                             </div></td>
                             <td><div id="partNumber-container8">
-                                <span  id="flangestatusline8">
                                 <span id="flangeStatus8"></span>
                             </div></td>
                             <td><div id="partNumber-container8">
-                                <span  id="flangestatusline8">
                                 <span id="line8"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty8"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row9">
                             <td><div id="partNumber-container9">
                                 <span  id="partNumber9"></span>
                             </div></td>
                             <td><div id="partNumber-container9">
-                                <span  id="flangestatusline9">
                                 <span id="flangeStatus9"></span>
                             </div></td>
                             <td><div id="partNumber-container9">
-                                <span  id="flangestatusline9">
                                 <span id="line9"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty9"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row10">
                             <td><div id="partNumber-container10">
                                 <span  id="partNumber10"></span>
                             </div></td>
                             <td><div id="partNumber-container10">
-                                <span  id="flangestatusline10">
                                 <span id="flangeStatus10"></span>
                             </div></td>
                             <td><div id="partNumber-container10">
-                                <span  id="flangestatusline10">
                                 <span id="line10"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty10"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row11">
                             <td><div id="partNumber-container11">
                                 <span  id="partNumber11"></span>
                             </div></td>
                             <td><div id="partNumber-container11">
-                                <span  id="flangestatusline11">
                                 <span id="flangeStatus11"></span>
                             </div></td>
                             <td><div id="partNumber-container11">
-                                <span  id="flangestatusline11">
                                 <span id="line11"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty11"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row12">
                             <td><div id="partNumber-container12">
                                 <span  id="partNumber12"></span>
                             </div></td>
                             <td><div id="partNumber-container12">
-                                <span  id="flangestatusline12">
                                 <span id="flangeStatus12"></span>
                             </div></td>
                             <td><div id="partNumber-container12">
-                                <span  id="flangestatusline12">
                                 <span id="line12"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty12"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row13">
                             <td><div id="partNumber-container13">
                                 <span  id="partNumber13"></span>
                             </div></td>
                             <td><div id="partNumber-container13">
-                                <span  id="flangestatusline13">
                                 <span id="flangeStatus13"></span>
                             </div></td>
                             <td><div id="partNumber-container13">
-                                <span  id="flangestatusline13">
                                 <span id="line13"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty13"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row14">
                             <td><div id="partNumber-container14">
                                 <span  id="partNumber14"></span>
                             </div></td>
                             <td><div id="partNumber-container14">
-                                <span  id="flangestatusline14">
                                 <span id="flangeStatus14"></span>
                             </div></td>
                             <td><div id="partNumber-container14">
-                                <span  id="flangestatusline14">
                                 <span id="line14"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty14"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row15">
                             <td><div id="partNumber-container15">
                                 <span  id="partNumber15"></span>
                             </div></td>
                             <td><div id="partNumber-container15">
-                                <span  id="flangestatusline15">
                                 <span id="flangeStatus15"></span>
                             </div></td>
                             <td><div id="partNumber-container15">
-                                <span  id="flangestatusline15">
                                 <span id="line15"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty15"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row16">
                             <td><div id="partNumber-container16">
                                 <span  id="partNumber16"></span>
                             </div></td>
                             <td><div id="partNumber-container16">
-                                <span  id="flangestatusline16">
                                 <span id="flangeStatus16"></span>
                             </div></td>
                             <td><div id="partNumber-container16">
-                                <span  id="flangestatusline16">
                                 <span id="line16"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty16"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row17">
                             <td><div id="partNumber-container17">
                                 <span  id="partNumber17"></span>
                             </div></td>
                             <td><div id="partNumber-container17">
-                                <span  id="flangestatusline17">
                                 <span id="flangeStatus17"></span>
                             </div></td>
                             <td><div id="partNumber-container17">
-                                <span  id="flangestatusline17">
                                 <span id="line17"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty17"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row18">
                             <td><div id="partNumber-container18">
                                 <span  id="partNumber18"></span>
                             </div></td>
                             <td><div id="partNumber-container18">
-                                <span  id="flangestatusline18">
                                 <span id="flangeStatus18"></span>
                             </div></td>
                             <td><div id="partNumber-container18">
-                                <span  id="flangestatusline18">
                                 <span id="line18"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty18"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row19">
                             <td><div id="partNumber-container19">
                                 <span  id="partNumber19"></span>
                             </div></td>
                             <td><div id="partNumber-container19">
-                                <span  id="flangestatusline19">
                                 <span id="flangeStatus19"></span>
                             </div></td>
                             <td><div id="partNumber-container19">
-                                <span  id="flangestatusline19">
                                 <span id="line19"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty19"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row20">
                             <td><div id="partNumber-container20">
                                 <span  id="partNumber20"></span>
                             </div></td>
                             <td><div id="partNumber-container20">
-                                <span  id="flangestatusline20">
                                 <span id="flangeStatus20"></span>
                             </div></td>
                             <td><div id="partNumber-container20">
-                                <span  id="flangestatusline20">
                                 <span id="line20"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty20"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row21">
                             <td><div id="partNumber-container21">
                                 <span  id="partNumber21"></span>
                             </div></td>
                             <td><div id="partNumber-container21">
-                                <span  id="flangestatusline21">
                                 <span id="flangeStatus21"></span>
                             </div></td>
                             <td><div id="partNumber-container21">
-                                <span  id="flangestatusline21">
                                 <span id="line21"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty21"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row22">
                             <td><div id="partNumber-container22">
                                 <span  id="partNumber22"></span>
                             </div></td>
                             <td><div id="partNumber-container22">
-                                <span  id="flangestatusline22">
                                 <span id="flangeStatus22"></span>
                             </div></td>
                             <td><div id="partNumber-container22">
-                                <span  id="flangestatusline22">
                                 <span id="line22"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty22"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row23">
                             <td><div id="partNumber-container23">
                                 <span  id="partNumber23"></span>
                             </div></td>
                             <td><div id="partNumber-container23">
-                                <span  id="flangestatusline23">
                                 <span id="flangeStatus23"></span>
                             </div></td>
                             <td><div id="partNumber-container23">
-                                <span  id="flangestatusline23">
                                 <span id="line23"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty23"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row24">
                             <td><div id="partNumber-container24">
                                 <span  id="partNumber24"></span>
                             </div></td>
                             <td><div id="partNumber-container24">
-                                <span  id="flangestatusline24">
                                 <span id="flangeStatus24"></span>
                             </div></td>
                             <td><div id="partNumber-container24">
-                                <span  id="flangestatusline24">
                                 <span id="line24"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty24"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row25">
                             <td><div id="partNumber-container25">
                                 <span  id="partNumber25"></span>
                             </div></td>
                             <td><div id="partNumber-container25">
-                                <span  id="flangestatusline25">
                                 <span id="flangeStatus25"></span>
                             </div></td>
                             <td><div id="partNumber-container25">
-                                <span  id="flangestatusline25">
                                 <span id="line25"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty25"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row26">
                             <td><div id="partNumber-container26">
                                 <span  id="partNumber26"></span>
                             </div></td>
                             <td><div id="partNumber-container26">
-                                <span  id="flangestatusline26">
                                 <span id="flangeStatus26"></span>
                             </div></td>
                             <td><div id="partNumber-container26">
-                                <span  id="flangestatusline26">
                                 <span id="line26"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty26"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row27">
                             <td><div id="partNumber-container27">
                                 <span  id="partNumber27"></span>
                             </div></td>
                             <td><div id="partNumber-container27">
-                                <span  id="flangestatusline27">
                                 <span id="flangeStatus27"></span>
                             </div></td>
                             <td><div id="partNumber-container27">
-                                <span  id="flangestatusline27">
                                 <span id="line27"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty27"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row28">
                             <td><div id="partNumber-container28">
                                 <span  id="partNumber28"></span>
                             </div></td>
                             <td><div id="partNumber-container28">
-                                <span  id="flangestatusline28">
                                 <span id="flangeStatus28"></span>
                             </div></td>
                             <td><div id="partNumber-container28">
-                                <span  id="flangestatusline28">
                                 <span id="line28"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty28"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row29">
                             <td><div id="partNumber-container29">
                                 <span  id="partNumber29"></span>
                             </div></td>
                             <td><div id="partNumber-container29">
-                                <span  id="flangestatusline29">
                                 <span id="flangeStatus29"></span>
                             </div></td>
                             <td><div id="partNumber-container29">
-                                <span  id="flangestatusline29">
                                 <span id="line29"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty29"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row30">
                             <td><div id="partNumber-container30">
                                 <span  id="partNumber30"></span>
                             </div></td>
                             <td><div id="partNumber-container30">
-                                <span  id="flangestatusline30">
                                 <span id="flangeStatus30"></span>
                             </div></td>
                             <td><div id="partNumber-container30">
-                                <span  id="flangestatusline30">
                                 <span id="line30"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty30"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row31">
                             <td><div id="partNumber-container31">
                                 <span  id="partNumber31"></span>
                             </div></td>
                             <td><div id="partNumber-container31">
-                                <span  id="flangestatusline31">
                                 <span id="flangeStatus31"></span>
                             </div></td>
                             <td><div id="partNumber-container31">
-                                <span  id="flangestatusline31">
                                 <span id="line31"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty31"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row32">
                             <td><div id="partNumber-container32">
                                 <span  id="partNumber32"></span>
                             </div></td>
                             <td><div id="partNumber-container32">
-                                <span  id="flangestatusline32">
                                 <span id="flangeStatus32"></span>
                             </div></td>
                             <td><div id="partNumber-container32">
-                                <span  id="flangestatusline32">
                                 <span id="line32"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty32"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row33">
                             <td><div id="partNumber-container33">
                                 <span  id="partNumber33"></span>
                             </div></td>
                             <td><div id="partNumber-container33">
-                                <span  id="flangestatusline33">
                                 <span id="flangeStatus33"></span>
                             </div></td>
                             <td><div id="partNumber-container33">
-                                <span  id="flangestatusline33">
                                 <span id="line33"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty33"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row34">
                             <td><div id="partNumber-container34">
                                 <span  id="partNumber34"></span>
                             </div></td>
                             <td><div id="partNumber-container34">
-                                <span  id="flangestatusline34">
                                 <span id="flangeStatus34"></span>
                             </div></td>
                             <td><div id="partNumber-container34">
-                                <span  id="flangestatusline34">
                                 <span id="line34"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty34"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row35">
                             <td><div id="partNumber-container35">
                                 <span  id="partNumber35"></span>
                             </div></td>
                             <td><div id="partNumber-container35">
-                                <span  id="flangestatusline35">
                                 <span id="flangeStatus35"></span>
                             </div></td>
                             <td><div id="partNumber-container35">
-                                <span  id="flangestatusline35">
                                 <span id="line35"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty35"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row36">
                             <td><div id="partNumber-container36">
                                 <span  id="partNumber36"></span>
                             </div></td>
                             <td><div id="partNumber-container36">
-                                <span  id="flangestatusline36">
                                 <span id="flangeStatus36"></span>
                             </div></td>
                             <td><div id="partNumber-container36">
-                                <span  id="flangestatusline36">
                                 <span id="line36"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty36"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row37">
                             <td><div id="partNumber-container37">
                                 <span  id="partNumber37"></span>
                             </div></td>
                             <td><div id="partNumber-container37">
-                                <span  id="flangestatusline37">
                                 <span id="flangeStatus37"></span>
                             </div></td>
                             <td><div id="partNumber-container37">
-                                <span  id="flangestatusline37">
                                 <span id="line37"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty37"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row38">
                             <td><div id="partNumber-container38">
                                 <span  id="partNumber38"></span>
                             </div></td>
                             <td><div id="partNumber-container38">
-                                <span  id="flangestatusline38">
                                 <span id="flangeStatus38"></span>
                             </div></td>
                             <td><div id="partNumber-container38">
-                                <span  id="flangestatusline38">
                                 <span id="line38"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty38"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row39">
                             <td><div id="partNumber-container39">
                                 <span  id="partNumber39"></span>
                             </div></td>
                             <td><div id="partNumber-container39">
-                                <span  id="flangestatusline39">
                                 <span id="flangeStatus39"></span>
                             </div></td>
                             <td><div id="partNumber-container39">
-                                <span  id="flangestatusline39">
                                 <span id="line39"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty39"></span>
                             <td></td>
                         </tr>
-                        <tr>
+
+                        <tr id="row40">
                             <td><div id="partNumber-container40">
                                 <span  id="partNumber40"></span>
                             </div></td>
                             <td><div id="partNumber-container40">
-                                <span  id="flangestatusline40">
                                 <span id="flangeStatus40"></span>
                             </div></td>
                             <td><div id="partNumber-container40">
-                                <span  id="flangestatusline40">
                                 <span id="line40"></span>
                             </div></td>
                             <td><div id="partNumber-container">
                                 <span id="qty40"></span>
                             <td></td>
                         </tr>
-
                     </div>
-
+                </tr>
             </tbody>
         </table>
-        </div>
+    </div>
+
         <div class="col">
             <tbody>
                 <table class="table table-bordered border-primary">
@@ -700,16 +689,16 @@
                         <span id="qty"></span>
                     </div></td>
                     <tr>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container2">
                             <span  id="partNumber2"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container2">
                             <span id="flangeStatus2"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container2">
                             <span id="line2"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container2">
                             <span id="qty2"></span>
                         <td></td>
                     </tr>
@@ -732,14 +721,12 @@
                             <span  id="partNumber4"></span>
                         </div></td>
                         <td><div id="partNumber-container4">
-                            <span  id="flangestatusline4">
                             <span id="flangeStatus4"></span>
                         </div></td>
                         <td><div id="partNumber-container4">
-                            <span  id="flangestatusline4">
                             <span id="line4"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container4">
                             <span id="qty4"></span>
                         <td></td>
                     </tr>
@@ -748,14 +735,12 @@
                             <span  id="partNumber5"></span>
                         </div></td>
                         <td><div id="partNumber-container5">
-                            <span  id="flangestatusline5">
                             <span id="flangeStatus5"></span>
                         </div></td>
                         <td><div id="partNumber-container5">
-                            <span  id="flangestatusline5">
                             <span id="line5"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container5">
                             <span id="qty5"></span>
                         <td></td>
                     </tr>
@@ -764,14 +749,12 @@
                             <span  id="partNumber6"></span>
                         </div></td>
                         <td><div id="partNumber-container6">
-                            <span  id="flangestatusline6">
                             <span id="flangeStatus6"></span>
                         </div></td>
                         <td><div id="partNumber-container6">
-                            <span  id="flangestatusline6">
                             <span id="line6"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container6">
                             <span id="qty6"></span>
                         <td></td>
                     </tr>
@@ -780,14 +763,12 @@
                             <span  id="partNumber7"></span>
                         </div></td>
                         <td><div id="partNumber-container7">
-                            <span  id="flangestatusline7">
                             <span id="flangeStatus7"></span>
                         </div></td>
                         <td><div id="partNumber-container7">
-                            <span  id="flangestatusline7">
                             <span id="line7"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container7">
                             <span id="qty7"></span>
                         <td></td>
                     </tr>
@@ -796,14 +777,12 @@
                             <span  id="partNumber8"></span>
                         </div></td>
                         <td><div id="partNumber-container8">
-                            <span  id="flangestatusline8">
                             <span id="flangeStatus8"></span>
                         </div></td>
                         <td><div id="partNumber-container8">
-                            <span  id="flangestatusline8">
                             <span id="line8"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container8">
                             <span id="qty8"></span>
                         <td></td>
                     </tr>
@@ -812,14 +791,12 @@
                             <span  id="partNumber9"></span>
                         </div></td>
                         <td><div id="partNumber-container9">
-                            <span  id="flangestatusline9">
                             <span id="flangeStatus9"></span>
                         </div></td>
                         <td><div id="partNumber-container9">
-                            <span  id="flangestatusline9">
                             <span id="line9"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container9">
                             <span id="qty9"></span>
                         <td></td>
                     </tr>
@@ -828,14 +805,12 @@
                             <span  id="partNumber10"></span>
                         </div></td>
                         <td><div id="partNumber-container10">
-                            <span  id="flangestatusline10">
                             <span id="flangeStatus10"></span>
                         </div></td>
                         <td><div id="partNumber-container10">
-                            <span  id="flangestatusline10">
                             <span id="line10"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container10">
                             <span id="qty10"></span>
                         <td></td>
                     </tr>
@@ -844,382 +819,362 @@
                             <span  id="partNumber11"></span>
                         </div></td>
                         <td><div id="partNumber-container11">
-                            <span  id="flangestatusline11">
                             <span id="flangeStatus11"></span>
                         </div></td>
                         <td><div id="partNumber-container11">
-                            <span  id="flangestatusline11">
                             <span id="line11"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container11">
                             <span id="qty11"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container12">
                             <span  id="partNumber12"></span>
                         </div></td>
                         <td><div id="partNumber-container12">
-                            <span  id="flangestatusline12">
                             <span id="flangeStatus12"></span>
                         </div></td>
                         <td><div id="partNumber-container12">
-                            <span  id="flangestatusline12">
                             <span id="line12"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container12">
                             <span id="qty12"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container13">
                             <span  id="partNumber13"></span>
                         </div></td>
                         <td><div id="partNumber-container13">
-                            <span  id="flangestatusline13">
                             <span id="flangeStatus13"></span>
                         </div></td>
                         <td><div id="partNumber-container13">
-                            <span  id="flangestatusline13">
                             <span id="line13"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container13">
                             <span id="qty13"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container14">
                             <span  id="partNumber14"></span>
                         </div></td>
                         <td><div id="partNumber-container14">
-                            <span  id="flangestatusline14">
                             <span id="flangeStatus14"></span>
                         </div></td>
                         <td><div id="partNumber-container14">
-                            <span  id="flangestatusline14">
                             <span id="line14"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container14">
                             <span id="qty14"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container15">
                             <span  id="partNumber15"></span>
                         </div></td>
                         <td><div id="partNumber-container15">
-                            <span  id="flangestatusline15">
                             <span id="flangeStatus15"></span>
                         </div></td>
                         <td><div id="partNumber-container15">
-                            <span  id="flangestatusline15">
                             <span id="line15"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container15">
                             <span id="qty15"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container16">
                             <span  id="partNumber16"></span>
                         </div></td>
                         <td><div id="partNumber-container16">
-                            <span  id="flangestatusline16">
+
                             <span id="flangeStatus16"></span>
                         </div></td>
                         <td><div id="partNumber-container16">
-                            <span  id="flangestatusline16">
+
                             <span id="line16"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container16">
                             <span id="qty16"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container17">
                             <span  id="partNumber17"></span>
                         </div></td>
                         <td><div id="partNumber-container17">
-                            <span  id="flangestatusline17">
+
                             <span id="flangeStatus17"></span>
                         </div></td>
                         <td><div id="partNumber-container17">
-                            <span  id="flangestatusline17">
+
                             <span id="line17"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container17">
                             <span id="qty17"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container18">
                             <span  id="partNumber18"></span>
                         </div></td>
                         <td><div id="partNumber-container18">
-                            <span  id="flangestatusline18">
+
                             <span id="flangeStatus18"></span>
                         </div></td>
                         <td><div id="partNumber-container18">
-                            <span  id="flangestatusline18">
                             <span id="line18"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container18">
                             <span id="qty18"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container19">
                             <span  id="partNumber19"></span>
                         </div></td>
                         <td><div id="partNumber-container19">
-                            <span  id="flangestatusline19">
                             <span id="flangeStatus19"></span>
                         </div></td>
                         <td><div id="partNumber-container19">
-                            <span  id="flangestatusline19">
                             <span id="line19"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container19">
                             <span id="qty19"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container20">
                             <span  id="partNumber20"></span>
                         </div></td>
                         <td><div id="partNumber-container20">
-                            <span  id="flangestatusline20">
                             <span id="flangeStatus20"></span>
                         </div></td>
                         <td><div id="partNumber-container20">
-                            <span  id="flangestatusline20">
                             <span id="line20"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container20">
                             <span id="qty20"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container21">
                             <span  id="partNumber21"></span>
                         </div></td>
                         <td><div id="partNumber-container21">
-                            <span  id="flangestatusline21">
                             <span id="flangeStatus21"></span>
                         </div></td>
                         <td><div id="partNumber-container21">
-                            <span  id="flangestatusline21">
                             <span id="line21"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container21">
                             <span id="qty21"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container22">
                             <span  id="partNumber22"></span>
                         </div></td>
                         <td><div id="partNumber-container22">
-                            <span  id="flangestatusline22">
                             <span id="flangeStatus22"></span>
                         </div></td>
                         <td><div id="partNumber-container22">
-                            <span  id="flangestatusline22">
                             <span id="line22"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container22">
                             <span id="qty22"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container23">
                             <span  id="partNumber23"></span>
                         </div></td>
                         <td><div id="partNumber-container23">
-                            <span  id="flangestatusline23">
                             <span id="flangeStatus23"></span>
                         </div></td>
                         <td><div id="partNumber-container23">
-                            <span  id="flangestatusline23">
                             <span id="line23"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container23">
                             <span id="qty23"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container24">
                             <span  id="partNumber24"></span>
                         </div></td>
                         <td><div id="partNumber-container24">
-                            <span  id="flangestatusline24">
                             <span id="flangeStatus24"></span>
                         </div></td>
                         <td><div id="partNumber-container24">
-                            <span  id="flangestatusline24">
                             <span id="line24"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container24">
                             <span id="qty24"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container25">
                             <span  id="partNumber25"></span>
                         </div></td>
                         <td><div id="partNumber-container25">
-                            <span  id="flangestatusline25">
                             <span id="flangeStatus25"></span>
                         </div></td>
                         <td><div id="partNumber-container25">
-                            <span  id="flangestatusline25">
                             <span id="line25"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container25">
                             <span id="qty25"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container26">
                             <span  id="partNumber26"></span>
                         </div></td>
                         <td><div id="partNumber-container26">
-                            <span  id="flangestatusline26">
                             <span id="flangeStatus26"></span>
                         </div></td>
                         <td><div id="partNumber-container26">
-                            <span  id="flangestatusline26">
                             <span id="line26"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container26">
                             <span id="qty26"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container27">
                             <span  id="partNumber27"></span>
                         </div></td>
                         <td><div id="partNumber-container27">
-                            <span  id="flangestatusline27">
                             <span id="flangeStatus27"></span>
                         </div></td>
                         <td><div id="partNumber-container27">
-                            <span  id="flangestatusline27">
                             <span id="line27"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container27">
                             <span id="qty27"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container28">
                             <span  id="partNumber28"></span>
                         </div></td>
                         <td><div id="partNumber-container28">
-                            <span  id="flangestatusline28">
                             <span id="flangeStatus28"></span>
                         </div></td>
                         <td><div id="partNumber-container28">
-                            <span  id="flangestatusline28">
                             <span id="line28"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container28">
                             <span id="qty28"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container29">
                             <span  id="partNumber29"></span>
                         </div></td>
                         <td><div id="partNumber-container29">
-                            <span  id="flangestatusline29">
                             <span id="flangeStatus29"></span>
                         </div></td>
                         <td><div id="partNumber-container29">
-                            <span  id="flangestatusline29">
                             <span id="line29"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container29">
                             <span id="qty29"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container30">
                             <span  id="partNumber30"></span>
                         </div></td>
                         <td><div id="partNumber-container30">
-                            <span  id="flangestatusline30">
                             <span id="flangeStatus30"></span>
                         </div></td>
                         <td><div id="partNumber-container30">
-                            <span  id="flangestatusline30">
                             <span id="line30"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container30">
                             <span id="qty30"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container31">
                             <span  id="partNumber31"></span>
                         </div></td>
                         <td><div id="partNumber-container31">
-                            <span  id="flangestatusline31">
                             <span id="flangeStatus31"></span>
                         </div></td>
                         <td><div id="partNumber-container31">
-                            <span  id="flangestatusline31">
                             <span id="line31"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container31">
                             <span id="qty31"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container32">
                             <span  id="partNumber32"></span>
                         </div></td>
                         <td><div id="partNumber-container32">
-                            <span  id="flangestatusline32">
                             <span id="flangeStatus32"></span>
                         </div></td>
                         <td><div id="partNumber-container32">
-                            <span  id="flangestatusline32">
                             <span id="line32"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container32">
                             <span id="qty32"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container33">
                             <span  id="partNumber33"></span>
                         </div></td>
                         <td><div id="partNumber-container33">
-                            <span  id="flangestatusline33">
                             <span id="flangeStatus33"></span>
                         </div></td>
                         <td><div id="partNumber-container33">
-                            <span  id="flangestatusline33">
                             <span id="line33"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container33">
                             <span id="qty33"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container34">
                             <span  id="partNumber34"></span>
                         </div></td>
                         <td><div id="partNumber-container34">
-                            <span  id="flangestatusline34">
                             <span id="flangeStatus34"></span>
                         </div></td>
                         <td><div id="partNumber-container34">
-                            <span  id="flangestatusline34">
                             <span id="line34"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container34">
                             <span id="qty34"></span>
                         <td></td>
                     </tr>
@@ -1228,94 +1183,87 @@
                             <span  id="partNumber35"></span>
                         </div></td>
                         <td><div id="partNumber-container35">
-                            <span  id="flangestatusline35">
                             <span id="flangeStatus35"></span>
                         </div></td>
                         <td><div id="partNumber-container35">
-                            <span  id="flangestatusline35">
                             <span id="line35"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container35">
                             <span id="qty35"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container36">
                             <span  id="partNumber36"></span>
                         </div></td>
                         <td><div id="partNumber-container36">
-                            <span  id="flangestatusline36">
                             <span id="flangeStatus36"></span>
                         </div></td>
                         <td><div id="partNumber-container36">
-                            <span  id="flangestatusline36">
                             <span id="line36"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container36">
                             <span id="qty36"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container37">
                             <span  id="partNumber37"></span>
                         </div></td>
                         <td><div id="partNumber-container37">
-                            <span  id="flangestatusline37">
                             <span id="flangeStatus37"></span>
                         </div></td>
                         <td><div id="partNumber-container37">
-                            <span  id="flangestatusline37">
                             <span id="line37"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container37">
                             <span id="qty37"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container38">
                             <span  id="partNumber38"></span>
                         </div></td>
                         <td><div id="partNumber-container38">
-                            <span  id="flangestatusline38">
                             <span id="flangeStatus38"></span>
                         </div></td>
                         <td><div id="partNumber-container38">
-                            <span  id="flangestatusline38">
                             <span id="line38"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container38">
                             <span id="qty38"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container39">
                             <span  id="partNumber39"></span>
                         </div></td>
                         <td><div id="partNumber-container39">
-                            <span  id="flangestatusline39">
                             <span id="flangeStatus39"></span>
                         </div></td>
                         <td><div id="partNumber-container39">
-                            <span  id="flangestatusline39">
                             <span id="line39"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container39">
                             <span id="qty39"></span>
                         <td></td>
                     </tr>
+
                     <tr>
                         <td><div id="partNumber-container40">
                             <span  id="partNumber40"></span>
                         </div></td>
                         <td><div id="partNumber-container40">
-                            <span  id="flangestatusline40">
                             <span id="flangeStatus40"></span>
                         </div></td>
                         <td><div id="partNumber-container40">
-                            <span  id="flangestatusline40">
                             <span id="line40"></span>
                         </div></td>
-                        <td><div id="partNumber-container">
+                        <td><div id="partNumber-container40">
                             <span id="qty40"></span>
                         <td></td>
                     </tr>
@@ -1334,6 +1282,7 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
+
     function updateDateTime() {
         var currentDate = new Date();
         var optionsDate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -1345,67 +1294,91 @@
         $('#time').text(formattedTime);
     }
 
+
+
     function fetchData() {
-        $.ajax({
-            url: "{{ route('data.visual') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data) {
-                if (data) {
-                    var flangeStatus = (data.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+            $.ajax({
+                url: "{{ route('data.visual') }}",
+                method: 'GET',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function (data) {
+                    if (data) {
+                        var flangeStatus = (data.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
 
-                    // Format PartNumber for better display
-                    var partNumberArray = data.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+                        // Format PartNumber for better display
+                        var partNumberArray = data.PartNumber.split('-');
+                        var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
 
-                    // Check if the third part exists before appending it
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
+                        // Check if the third part exists before appending it
+                        if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+                            formattedPartNumber += '-' + partNumberArray[2];
+                        }
+
+                        // Set text on HTML elements
+                        $('#partNumber').text(formattedPartNumber);
+                        $('#flangeStatus').text(flangeStatus);
+                        $('#line').text(data.Line);
+                        $('#qty').text(data.qty);
+
+                        // Select the row element using ID
+                        var row = $('#row1');
+
+                        // Remove current class
+                        row.removeClass("table-danger table-primary");
+
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                     }
-
-                    $('#partNumber').text(formattedPartNumber);
-
-                    // Menetapkan teks pada elemen HTML dengan ID 'flangeStatus' dan 'line'
-                    $('#flangeStatus').text(flangeStatus);
-                    $('#line').text(data.Line);
-                    $('#qty').text(data.qty);
                 }
-            }
-        });
-    }
+            });
+        }
+
 
         function fetchData2() {
-        $.ajax({
-            url: "{{ route('data.visual2') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data2) {
-                if (data2) {
-                    var flangeStatus = (data2.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+            $.ajax({
+                url: "{{ route('data.visual2') }}",
+                method: 'GET',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function (data2) {
+                    if (data2) {
+                        var flangeStatus = (data2.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
 
-                    // Format PartNumber for better display
-                    var partNumberArray = data2.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+                        // Format PartNumber for better display
+                        var partNumberArray = data2.PartNumber.split('-');
+                        var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
 
-                    // Check if the third part exists before appending it
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
+                        // Check if the third part exists before appending it
+                        if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+                            formattedPartNumber += '-' + partNumberArray[2];
+                        }
+
+                        // Set text on HTML elements
+                        $('#partNumber2').text(formattedPartNumber);
+                        $('#flangeStatus2').text(flangeStatus);
+                        $('#line2').text(data2.Line);
+                        $('#qty2').text(data2.qty);
+
+                        // Select the row element using ID
+                        var row = $('#row2');
+                        // Remove current class
+                        row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                     }
-
-                    $('#partNumber2').text(formattedPartNumber);
-
-                    // Menetapkan teks pada elemen HTML dengan ID 'flangeStatus' dan 'line'
-                    $('#flangeStatus2').text(flangeStatus);
-                    $('#line2').text(data2.Line);
-                    $('#qty2').text(data2.qty);
                 }
-            }
-        });
-    }
+            });
+        }
+
         function fetchData3() {
         $.ajax({
             url: "{{ route('data.visual3') }}",
@@ -1432,6 +1405,15 @@
                     $('#flangeStatus3').text(flangeStatus);
                     $('#line3').text(data3.Line);
                     $('#qty3').text(data3.qty);
+                    // Select the row element using ID
+                    var row = $('#row3');
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1462,6 +1444,16 @@
                     $('#flangeStatus4').text(flangeStatus);
                     $('#line4').text(data4.Line);
                     $('#qty4').text(data4.qty);
+                    // Select the row element using ID
+                    var row = $('#row4');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1487,6 +1479,16 @@
                     $('#flangeStatus5').text(flangeStatus);
                     $('#line5').text(data5.Line);
                     $('#qty5').text(data5.qty);
+                    // Select the row element using ID
+                    var row = $('#row5');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1512,6 +1514,16 @@
                     $('#flangeStatus6').text(flangeStatus);
                     $('#line6').text(data6.Line);
                     $('#qty6').text(data6.qty);
+                    // Select the row element using ID
+                    var row = $('#row6');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1537,6 +1549,16 @@
                     $('#flangeStatus7').text(flangeStatus);
                     $('#line7').text(data7.Line);
                     $('#qty7').text(data7.qty);
+                    // Select the row element using ID
+                    var row = $('#row7');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1562,6 +1584,16 @@
                     $('#flangeStatus8').text(flangeStatus);
                     $('#line8').text(data8.Line);
                     $('#qty8').text(data8.qty);
+                    // Select the row element using ID
+                    var row = $('#row8');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1587,6 +1619,17 @@
                     $('#flangeStatus9').text(flangeStatus);
                     $('#line9').text(data9.Line);
                     $('#qty9').text(data9.qty);
+                    // Select the row element using ID
+                    var row = $('#row9');
+
+                    // Remove current class
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1612,6 +1655,17 @@
                     $('#flangeStatus10').text(flangeStatus);
                     $('#line10').text(data10.Line);
                     $('#qty10').text(data10.qty);
+                    // Select the row element using ID
+                    var row = $('#row10');
+
+                    // Remove current class
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1637,6 +1691,16 @@
                     $('#flangeStatus11').text(flangeStatus);
                     $('#line11').text(data11.Line);
                     $('#qty11').text(data11.qty);
+                    // Select the row element using ID
+                    var row = $('#row11');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1662,6 +1726,16 @@
                     $('#flangeStatus12').text(flangeStatus);
                     $('#line12').text(data12.Line);
                     $('#qty12').text(data12.qty);
+                     // Select the row element using ID
+                    var row = $('#row12');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1687,6 +1761,16 @@
                     $('#flangeStatus13').text(flangeStatus);
                     $('#line13').text(data13.Line);
                     $('#qty13').text(data13.qty);
+                    // Select the row element using ID
+                    var row = $('#row13');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1712,6 +1796,16 @@
                     $('#flangeStatus14').text(flangeStatus);
                     $('#line14').text(data14.Line);
                     $('#qty14').text(data14.qty);
+                     // Select the row element using ID
+                    var row = $('#row14');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1738,6 +1832,16 @@
                     $('#flangeStatus15').text(flangeStatus);
                     $('#line15').text(data15.Line);
                     $('#qty15').text(data15.qty);
+                    // Select the row element using ID
+                    var row = $('#row15');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1764,6 +1868,16 @@
                     $('#flangeStatus16').text(flangeStatus);
                     $('#line16').text(data16.Line);
                     $('#qty16').text(data16.qty);
+                     // Select the row element using ID
+                    var row = $('#row16');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1789,6 +1903,16 @@
                     $('#flangeStatus17').text(flangeStatus);
                     $('#line17').text(data17.Line);
                     $('#qty17').text(data17.qty);
+                    // Select the row element using ID
+                    var row = $('#row17');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1814,6 +1938,16 @@
                     $('#flangeStatus18').text(flangeStatus);
                     $('#line18').text(data18.Line);
                     $('#qty18').text(data18.qty);
+                    // Select the row element using ID
+                    var row = $('#row18');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1840,6 +1974,16 @@
                     $('#flangeStatus19').text(flangeStatus);
                     $('#line19').text(data19.Line);
                     $('#qty19').text(data19.qty);
+                    // Select the row element using ID
+                    var row = $('#row19');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1865,6 +2009,16 @@
                     $('#flangeStatus20').text(flangeStatus);
                     $('#line20').text(data20.Line);
                     $('#qty20').text(data20.qty);
+                    // Select the row element using ID
+                    var row = $('#row20');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1892,6 +2046,16 @@
                     $('#flangeStatus21').text(flangeStatus);
                     $('#line21').text(data21.Line);
                     $('#qty21').text(data21.qty);
+                    // Select the row element using ID
+                    var row = $('#row21');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1918,6 +2082,16 @@
                     $('#flangeStatus22').text(flangeStatus);
                     $('#line22').text(data22.Line);
                     $('#qty22').text(data22.qty);
+                    // Select the row element using ID
+                    var row = $('#row22');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1944,6 +2118,16 @@
                     $('#flangeStatus23').text(flangeStatus);
                     $('#line23').text(data23.Line);
                     $('#qty23').text(data23.qty);
+                    // Select the row element using ID
+                    var row = $('#row23');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1970,6 +2154,16 @@
                     $('#flangeStatus24').text(flangeStatus);
                     $('#line24').text(data24.Line);
                     $('#qty24').text(data24.qty);
+                    // Select the row element using ID
+                    var row = $('#row24');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -1996,6 +2190,16 @@
                     $('#flangeStatus25').text(flangeStatus);
                     $('#line25').text(data25.Line);
                     $('#qty25').text(data25.qty);
+                    // Select the row element using ID
+                    var row = $('#row25');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2022,6 +2226,16 @@
                     $('#flangeStatus26').text(flangeStatus);
                     $('#line26').text(data26.Line);
                     $('#qty26').text(data26.qty);
+                    // Select the row element using ID
+                    var row = $('#row26');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2048,6 +2262,16 @@
                     $('#flangeStatus27').text(flangeStatus);
                     $('#line27').text(data27.Line);
                     $('#qty27').text(data27.qty);
+                    // Select the row element using ID
+                    var row = $('#row27');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2074,6 +2298,16 @@
                     $('#flangeStatus28').text(flangeStatus);
                     $('#line28').text(data28.Line);
                     $('#qty28').text(data28.qty);
+                    // Select the row element using ID
+                    var row = $('#row28');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2100,6 +2334,16 @@
                     $('#flangeStatus29').text(flangeStatus);
                     $('#line29').text(data29.Line);
                     $('#qty29').text(data29.qty);
+                    // Select the row element using ID
+                    var row = $('#row29');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2126,6 +2370,16 @@
                     $('#flangeStatus30').text(flangeStatus);
                     $('#line30').text(data30.Line);
                     $('#qty30').text(data30.qty);
+                    // Select the row element using ID
+                    var row = $('#row30');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2152,6 +2406,16 @@
                     $('#flangeStatus31').text(flangeStatus);
                     $('#line31').text(data31.Line);
                     $('#qty31').text(data31.qty);
+                    // Select the row element using ID
+                    var row = $('#row31');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2178,6 +2442,16 @@
                     $('#flangeStatus32').text(flangeStatus);
                     $('#line32').text(data32.Line);
                     $('#qty32').text(data32.qty);
+                    // Select the row element using ID
+                    var row = $('#row32');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2204,6 +2478,16 @@
                     $('#flangeStatus33').text(flangeStatus);
                     $('#line33').text(data33.Line);
                     $('#qty33').text(data33.qty);
+                    // Select the row element using ID
+                    var row = $('#row33');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2230,6 +2514,16 @@
                     $('#flangeStatus34').text(flangeStatus);
                     $('#line34').text(data34.Line);
                     $('#qty34').text(data34.qty);
+                    // Select the row element using ID
+                    var row = $('#row34');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2256,6 +2550,16 @@
                     $('#flangeStatus35').text(flangeStatus);
                     $('#line35').text(data35.Line);
                     $('#qty35').text(data35.qty);
+                    // Select the row element using ID
+                    var row = $('#row35');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2282,6 +2586,16 @@
                     $('#flangeStatus36').text(flangeStatus);
                     $('#line36').text(data36.Line);
                     $('#qty36').text(data36.qty);
+                    // Select the row element using ID
+                    var row = $('#row36');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2308,6 +2622,16 @@
                     $('#flangeStatus37').text(flangeStatus);
                     $('#line37').text(data37.Line);
                     $('#qty37').text(data37.qty);
+                    // Select the row element using ID
+                    var row = $('#row37');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2334,6 +2658,16 @@
                     $('#flangeStatus38').text(flangeStatus);
                     $('#line38').text(data38.Line);
                     $('#qty38').text(data38.qty);
+                    // Select the row element using ID
+                    var row = $('#row38');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2360,6 +2694,16 @@
                     $('#flangeStatus39').text(flangeStatus);
                     $('#line39').text(data39.Line);
                     $('#qty39').text(data39.qty);
+                    // Select the row element using ID
+                    var row = $('#row39');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });
@@ -2386,6 +2730,16 @@
                     $('#flangeStatus40').text(flangeStatus);
                     $('#line40').text(data40.Line);
                     $('#qty40').text(data40.qty);
+                    // Select the row element using ID
+                    var row = $('#row40');
+
+                    // Remove current class
+                    row.removeClass("table-danger table-primary");
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
                 }
             }
         });

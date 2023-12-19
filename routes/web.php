@@ -70,6 +70,9 @@ Route::get('/visual40', [VisualisasiController::class, 'getData40'])->name('data
 
 Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('data.visualisasi');
 
+Route::get('/cek', [VisualisasiController::class, 'cek'])->name('data.cek');
+
+
 
 
 Route::get('/line2', [VisualisasiController::class, 'line2'])->name('line2.visual');

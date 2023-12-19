@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riwayat Visualisasi</title>
+    <title>Riwayat Visualisasi2</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -80,11 +80,9 @@
                                 <span  id="partNumber4"></span>
                             </div></td>
                             <td><div id="partNumber-container4">
-                                <span  id="flangestatusline4">
                                 <span id="flangeStatus4"></span>
                             </div></td>
                             <td><div id="partNumber-container4">
-                                <span  id="flangestatusline4">
                                 <span id="line4"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -96,11 +94,9 @@
                                 <span  id="partNumber5"></span>
                             </div></td>
                             <td><div id="partNumber-container5">
-                                <span  id="flangestatusline5">
                                 <span id="flangeStatus5"></span>
                             </div></td>
                             <td><div id="partNumber-container5">
-                                <span  id="flangestatusline5">
                                 <span id="line5"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -112,11 +108,9 @@
                                 <span  id="partNumber6"></span>
                             </div></td>
                             <td><div id="partNumber-container6">
-                                <span  id="flangestatusline6">
                                 <span id="flangeStatus6"></span>
                             </div></td>
                             <td><div id="partNumber-container6">
-                                <span  id="flangestatusline6">
                                 <span id="line6"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -128,11 +122,9 @@
                                 <span  id="partNumber7"></span>
                             </div></td>
                             <td><div id="partNumber-container7">
-                                <span  id="flangestatusline7">
                                 <span id="flangeStatus7"></span>
                             </div></td>
                             <td><div id="partNumber-container7">
-                                <span  id="flangestatusline7">
                                 <span id="line7"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -144,11 +136,9 @@
                                 <span  id="partNumber8"></span>
                             </div></td>
                             <td><div id="partNumber-container8">
-                                <span  id="flangestatusline8">
                                 <span id="flangeStatus8"></span>
                             </div></td>
                             <td><div id="partNumber-container8">
-                                <span  id="flangestatusline8">
                                 <span id="line8"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -160,11 +150,9 @@
                                 <span  id="partNumber9"></span>
                             </div></td>
                             <td><div id="partNumber-container9">
-                                <span  id="flangestatusline9">
                                 <span id="flangeStatus9"></span>
                             </div></td>
                             <td><div id="partNumber-container9">
-                                <span  id="flangestatusline9">
                                 <span id="line9"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -176,11 +164,9 @@
                                 <span  id="partNumber10"></span>
                             </div></td>
                             <td><div id="partNumber-container10">
-                                <span  id="flangestatusline10">
                                 <span id="flangeStatus10"></span>
                             </div></td>
                             <td><div id="partNumber-container10">
-                                <span  id="flangestatusline10">
                                 <span id="line10"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -192,11 +178,9 @@
                                 <span  id="partNumber11"></span>
                             </div></td>
                             <td><div id="partNumber-container11">
-                                <span  id="flangestatusline11">
                                 <span id="flangeStatus11"></span>
                             </div></td>
                             <td><div id="partNumber-container11">
-                                <span  id="flangestatusline11">
                                 <span id="line11"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -208,11 +192,9 @@
                                 <span  id="partNumber12"></span>
                             </div></td>
                             <td><div id="partNumber-container12">
-                                <span  id="flangestatusline12">
                                 <span id="flangeStatus12"></span>
                             </div></td>
                             <td><div id="partNumber-container12">
-                                <span  id="flangestatusline12">
                                 <span id="line12"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -224,11 +206,9 @@
                                 <span  id="partNumber13"></span>
                             </div></td>
                             <td><div id="partNumber-container13">
-                                <span  id="flangestatusline13">
                                 <span id="flangeStatus13"></span>
                             </div></td>
                             <td><div id="partNumber-container13">
-                                <span  id="flangestatusline13">
                                 <span id="line13"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -240,11 +220,9 @@
                                 <span  id="partNumber14"></span>
                             </div></td>
                             <td><div id="partNumber-container14">
-                                <span  id="flangestatusline14">
                                 <span id="flangeStatus14"></span>
                             </div></td>
                             <td><div id="partNumber-container14">
-                                <span  id="flangestatusline14">
                                 <span id="line14"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -256,11 +234,9 @@
                                 <span  id="partNumber15"></span>
                             </div></td>
                             <td><div id="partNumber-container15">
-                                <span  id="flangestatusline15">
                                 <span id="flangeStatus15"></span>
                             </div></td>
                             <td><div id="partNumber-container15">
-                                <span  id="flangestatusline15">
                                 <span id="line15"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -272,11 +248,9 @@
                                 <span  id="partNumber16"></span>
                             </div></td>
                             <td><div id="partNumber-container16">
-                                <span  id="flangestatusline16">
                                 <span id="flangeStatus16"></span>
                             </div></td>
                             <td><div id="partNumber-container16">
-                                <span  id="flangestatusline16">
                                 <span id="line16"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -288,11 +262,9 @@
                                 <span  id="partNumber17"></span>
                             </div></td>
                             <td><div id="partNumber-container17">
-                                <span  id="flangestatusline17">
                                 <span id="flangeStatus17"></span>
                             </div></td>
                             <td><div id="partNumber-container17">
-                                <span  id="flangestatusline17">
                                 <span id="line17"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -304,11 +276,9 @@
                                 <span  id="partNumber18"></span>
                             </div></td>
                             <td><div id="partNumber-container18">
-                                <span  id="flangestatusline18">
                                 <span id="flangeStatus18"></span>
                             </div></td>
                             <td><div id="partNumber-container18">
-                                <span  id="flangestatusline18">
                                 <span id="line18"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -320,11 +290,9 @@
                                 <span  id="partNumber19"></span>
                             </div></td>
                             <td><div id="partNumber-container19">
-                                <span  id="flangestatusline19">
                                 <span id="flangeStatus19"></span>
                             </div></td>
                             <td><div id="partNumber-container19">
-                                <span  id="flangestatusline19">
                                 <span id="line19"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -336,11 +304,9 @@
                                 <span  id="partNumber20"></span>
                             </div></td>
                             <td><div id="partNumber-container20">
-                                <span  id="flangestatusline20">
                                 <span id="flangeStatus20"></span>
                             </div></td>
                             <td><div id="partNumber-container20">
-                                <span  id="flangestatusline20">
                                 <span id="line20"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -352,11 +318,9 @@
                                 <span  id="partNumber21"></span>
                             </div></td>
                             <td><div id="partNumber-container21">
-                                <span  id="flangestatusline21">
                                 <span id="flangeStatus21"></span>
                             </div></td>
                             <td><div id="partNumber-container21">
-                                <span  id="flangestatusline21">
                                 <span id="line21"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -368,11 +332,9 @@
                                 <span  id="partNumber22"></span>
                             </div></td>
                             <td><div id="partNumber-container22">
-                                <span  id="flangestatusline22">
                                 <span id="flangeStatus22"></span>
                             </div></td>
                             <td><div id="partNumber-container22">
-                                <span  id="flangestatusline22">
                                 <span id="line22"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -384,11 +346,9 @@
                                 <span  id="partNumber23"></span>
                             </div></td>
                             <td><div id="partNumber-container23">
-                                <span  id="flangestatusline23">
                                 <span id="flangeStatus23"></span>
                             </div></td>
                             <td><div id="partNumber-container23">
-                                <span  id="flangestatusline23">
                                 <span id="line23"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -400,11 +360,9 @@
                                 <span  id="partNumber24"></span>
                             </div></td>
                             <td><div id="partNumber-container24">
-                                <span  id="flangestatusline24">
                                 <span id="flangeStatus24"></span>
                             </div></td>
                             <td><div id="partNumber-container24">
-                                <span  id="flangestatusline24">
                                 <span id="line24"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -416,11 +374,9 @@
                                 <span  id="partNumber25"></span>
                             </div></td>
                             <td><div id="partNumber-container25">
-                                <span  id="flangestatusline25">
                                 <span id="flangeStatus25"></span>
                             </div></td>
                             <td><div id="partNumber-container25">
-                                <span  id="flangestatusline25">
                                 <span id="line25"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -432,11 +388,9 @@
                                 <span  id="partNumber26"></span>
                             </div></td>
                             <td><div id="partNumber-container26">
-                                <span  id="flangestatusline26">
                                 <span id="flangeStatus26"></span>
                             </div></td>
                             <td><div id="partNumber-container26">
-                                <span  id="flangestatusline26">
                                 <span id="line26"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -448,11 +402,9 @@
                                 <span  id="partNumber27"></span>
                             </div></td>
                             <td><div id="partNumber-container27">
-                                <span  id="flangestatusline27">
                                 <span id="flangeStatus27"></span>
                             </div></td>
                             <td><div id="partNumber-container27">
-                                <span  id="flangestatusline27">
                                 <span id="line27"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -464,11 +416,9 @@
                                 <span  id="partNumber28"></span>
                             </div></td>
                             <td><div id="partNumber-container28">
-                                <span  id="flangestatusline28">
                                 <span id="flangeStatus28"></span>
                             </div></td>
                             <td><div id="partNumber-container28">
-                                <span  id="flangestatusline28">
                                 <span id="line28"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -480,11 +430,9 @@
                                 <span  id="partNumber29"></span>
                             </div></td>
                             <td><div id="partNumber-container29">
-                                <span  id="flangestatusline29">
                                 <span id="flangeStatus29"></span>
                             </div></td>
                             <td><div id="partNumber-container29">
-                                <span  id="flangestatusline29">
                                 <span id="line29"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -496,11 +444,9 @@
                                 <span  id="partNumber30"></span>
                             </div></td>
                             <td><div id="partNumber-container30">
-                                <span  id="flangestatusline30">
                                 <span id="flangeStatus30"></span>
                             </div></td>
                             <td><div id="partNumber-container30">
-                                <span  id="flangestatusline30">
                                 <span id="line30"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -512,11 +458,9 @@
                                 <span  id="partNumber31"></span>
                             </div></td>
                             <td><div id="partNumber-container31">
-                                <span  id="flangestatusline31">
                                 <span id="flangeStatus31"></span>
                             </div></td>
                             <td><div id="partNumber-container31">
-                                <span  id="flangestatusline31">
                                 <span id="line31"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -528,11 +472,9 @@
                                 <span  id="partNumber32"></span>
                             </div></td>
                             <td><div id="partNumber-container32">
-                                <span  id="flangestatusline32">
                                 <span id="flangeStatus32"></span>
                             </div></td>
                             <td><div id="partNumber-container32">
-                                <span  id="flangestatusline32">
                                 <span id="line32"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -544,11 +486,9 @@
                                 <span  id="partNumber33"></span>
                             </div></td>
                             <td><div id="partNumber-container33">
-                                <span  id="flangestatusline33">
                                 <span id="flangeStatus33"></span>
                             </div></td>
                             <td><div id="partNumber-container33">
-                                <span  id="flangestatusline33">
                                 <span id="line33"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -560,11 +500,9 @@
                                 <span  id="partNumber34"></span>
                             </div></td>
                             <td><div id="partNumber-container34">
-                                <span  id="flangestatusline34">
                                 <span id="flangeStatus34"></span>
                             </div></td>
                             <td><div id="partNumber-container34">
-                                <span  id="flangestatusline34">
                                 <span id="line34"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -576,11 +514,9 @@
                                 <span  id="partNumber35"></span>
                             </div></td>
                             <td><div id="partNumber-container35">
-                                <span  id="flangestatusline35">
                                 <span id="flangeStatus35"></span>
                             </div></td>
                             <td><div id="partNumber-container35">
-                                <span  id="flangestatusline35">
                                 <span id="line35"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -592,11 +528,9 @@
                                 <span  id="partNumber36"></span>
                             </div></td>
                             <td><div id="partNumber-container36">
-                                <span  id="flangestatusline36">
                                 <span id="flangeStatus36"></span>
                             </div></td>
                             <td><div id="partNumber-container36">
-                                <span  id="flangestatusline36">
                                 <span id="line36"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -608,11 +542,9 @@
                                 <span  id="partNumber37"></span>
                             </div></td>
                             <td><div id="partNumber-container37">
-                                <span  id="flangestatusline37">
                                 <span id="flangeStatus37"></span>
                             </div></td>
                             <td><div id="partNumber-container37">
-                                <span  id="flangestatusline37">
                                 <span id="line37"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -624,11 +556,9 @@
                                 <span  id="partNumber38"></span>
                             </div></td>
                             <td><div id="partNumber-container38">
-                                <span  id="flangestatusline38">
                                 <span id="flangeStatus38"></span>
                             </div></td>
                             <td><div id="partNumber-container38">
-                                <span  id="flangestatusline38">
                                 <span id="line38"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -640,11 +570,9 @@
                                 <span  id="partNumber39"></span>
                             </div></td>
                             <td><div id="partNumber-container39">
-                                <span  id="flangestatusline39">
                                 <span id="flangeStatus39"></span>
                             </div></td>
                             <td><div id="partNumber-container39">
-                                <span  id="flangestatusline39">
                                 <span id="line39"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -656,11 +584,9 @@
                                 <span  id="partNumber40"></span>
                             </div></td>
                             <td><div id="partNumber-container40">
-                                <span  id="flangestatusline40">
                                 <span id="flangeStatus40"></span>
                             </div></td>
                             <td><div id="partNumber-container40">
-                                <span  id="flangestatusline40">
                                 <span id="line40"></span>
                             </div></td>
                             <td><div id="partNumber-container">
@@ -732,12 +658,10 @@
                             <span  id="partNumber4"></span>
                         </div></td>
                         <td><div id="partNumber-container4">
-                            <span  id="flangestatusline4">
+            4">
                             <span id="flangeStatus4"></span>
                         </div></td>
-                        <td><div id="partNumber-container4">
-                            <span  id="flangestatusline4">
-                            <span id="line4"></span>
+                        <td><div id="partNumber-container4">                            <span id="line4"></span>
                         </div></td>
                         <td><div id="partNumber-container">
                             <span id="qty4"></span>
@@ -747,13 +671,9 @@
                         <td><div id="partNumber-container5">
                             <span  id="partNumber5"></span>
                         </div></td>
-                        <td><div id="partNumber-container5">
-                            <span  id="flangestatusline5">
-                            <span id="flangeStatus5"></span>
+                        <td><div id="partNumber-container5">                            <span id="flangeStatus5"></span>
                         </div></td>
-                        <td><div id="partNumber-container5">
-                            <span  id="flangestatusline5">
-                            <span id="line5"></span>
+                        <td><div id="partNumber-container5">                            <span id="line5"></span>
                         </div></td>
                         <td><div id="partNumber-container">
                             <span id="qty5"></span>
@@ -763,13 +683,9 @@
                         <td><div id="partNumber-container6">
                             <span  id="partNumber6"></span>
                         </div></td>
-                        <td><div id="partNumber-container6">
-                            <span  id="flangestatusline6">
-                            <span id="flangeStatus6"></span>
+                        <td><div id="partNumber-container6">                            <span id="flangeStatus6"></span>
                         </div></td>
-                        <td><div id="partNumber-container6">
-                            <span  id="flangestatusline6">
-                            <span id="line6"></span>
+                        <td><div id="partNumber-container6">                            <span id="line6"></span>
                         </div></td>
                         <td><div id="partNumber-container">
                             <span id="qty6"></span>
@@ -779,13 +695,9 @@
                         <td><div id="partNumber-container7">
                             <span  id="partNumber7"></span>
                         </div></td>
-                        <td><div id="partNumber-container7">
-                            <span  id="flangestatusline7">
-                            <span id="flangeStatus7"></span>
+                        <td><div id="partNumber-container7">                            <span id="flangeStatus7"></span>
                         </div></td>
-                        <td><div id="partNumber-container7">
-                            <span  id="flangestatusline7">
-                            <span id="line7"></span>
+                        <td><div id="partNumber-container7">                            <span id="line7"></span>
                         </div></td>
                         <td><div id="partNumber-container">
                             <span id="qty7"></span>
@@ -795,13 +707,9 @@
                         <td><div id="partNumber-container8">
                             <span  id="partNumber8"></span>
                         </div></td>
-                        <td><div id="partNumber-container8">
-                            <span  id="flangestatusline8">
-                            <span id="flangeStatus8"></span>
+                        <td><div id="partNumber-container8">                            <span id="flangeStatus8"></span>
                         </div></td>
-                        <td><div id="partNumber-container8">
-                            <span  id="flangestatusline8">
-                            <span id="line8"></span>
+                        <td><div id="partNumber-container8">                            <span id="line8"></span>
                         </div></td>
                         <td><div id="partNumber-container">
                             <span id="qty8"></span>
@@ -811,13 +719,9 @@
                         <td><div id="partNumber-container9">
                             <span  id="partNumber9"></span>
                         </div></td>
-                        <td><div id="partNumber-container9">
-                            <span  id="flangestatusline9">
-                            <span id="flangeStatus9"></span>
+                        <td><div id="partNumber-container9">                            <span id="flangeStatus9"></span>
                         </div></td>
-                        <td><div id="partNumber-container9">
-                            <span  id="flangestatusline9">
-                            <span id="line9"></span>
+                        <td><div id="partNumber-container9">                            <span id="line9"></span>
                         </div></td>
                         <td><div id="partNumber-container">
                             <span id="qty9"></span>
@@ -828,11 +732,9 @@
                             <span  id="partNumber10"></span>
                         </div></td>
                         <td><div id="partNumber-container10">
-                            <span  id="flangestatusline10">
                             <span id="flangeStatus10"></span>
                         </div></td>
                         <td><div id="partNumber-container10">
-                            <span  id="flangestatusline10">
                             <span id="line10"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -844,11 +746,9 @@
                             <span  id="partNumber11"></span>
                         </div></td>
                         <td><div id="partNumber-container11">
-                            <span  id="flangestatusline11">
                             <span id="flangeStatus11"></span>
                         </div></td>
                         <td><div id="partNumber-container11">
-                            <span  id="flangestatusline11">
                             <span id="line11"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -860,11 +760,9 @@
                             <span  id="partNumber12"></span>
                         </div></td>
                         <td><div id="partNumber-container12">
-                            <span  id="flangestatusline12">
                             <span id="flangeStatus12"></span>
                         </div></td>
                         <td><div id="partNumber-container12">
-                            <span  id="flangestatusline12">
                             <span id="line12"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -876,11 +774,9 @@
                             <span  id="partNumber13"></span>
                         </div></td>
                         <td><div id="partNumber-container13">
-                            <span  id="flangestatusline13">
                             <span id="flangeStatus13"></span>
                         </div></td>
                         <td><div id="partNumber-container13">
-                            <span  id="flangestatusline13">
                             <span id="line13"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -892,11 +788,9 @@
                             <span  id="partNumber14"></span>
                         </div></td>
                         <td><div id="partNumber-container14">
-                            <span  id="flangestatusline14">
                             <span id="flangeStatus14"></span>
                         </div></td>
                         <td><div id="partNumber-container14">
-                            <span  id="flangestatusline14">
                             <span id="line14"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -908,11 +802,9 @@
                             <span  id="partNumber15"></span>
                         </div></td>
                         <td><div id="partNumber-container15">
-                            <span  id="flangestatusline15">
                             <span id="flangeStatus15"></span>
                         </div></td>
                         <td><div id="partNumber-container15">
-                            <span  id="flangestatusline15">
                             <span id="line15"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -924,11 +816,9 @@
                             <span  id="partNumber16"></span>
                         </div></td>
                         <td><div id="partNumber-container16">
-                            <span  id="flangestatusline16">
                             <span id="flangeStatus16"></span>
                         </div></td>
                         <td><div id="partNumber-container16">
-                            <span  id="flangestatusline16">
                             <span id="line16"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -940,11 +830,9 @@
                             <span  id="partNumber17"></span>
                         </div></td>
                         <td><div id="partNumber-container17">
-                            <span  id="flangestatusline17">
                             <span id="flangeStatus17"></span>
                         </div></td>
                         <td><div id="partNumber-container17">
-                            <span  id="flangestatusline17">
                             <span id="line17"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -956,11 +844,9 @@
                             <span  id="partNumber18"></span>
                         </div></td>
                         <td><div id="partNumber-container18">
-                            <span  id="flangestatusline18">
                             <span id="flangeStatus18"></span>
                         </div></td>
                         <td><div id="partNumber-container18">
-                            <span  id="flangestatusline18">
                             <span id="line18"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -972,11 +858,9 @@
                             <span  id="partNumber19"></span>
                         </div></td>
                         <td><div id="partNumber-container19">
-                            <span  id="flangestatusline19">
                             <span id="flangeStatus19"></span>
                         </div></td>
                         <td><div id="partNumber-container19">
-                            <span  id="flangestatusline19">
                             <span id="line19"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -988,11 +872,9 @@
                             <span  id="partNumber20"></span>
                         </div></td>
                         <td><div id="partNumber-container20">
-                            <span  id="flangestatusline20">
                             <span id="flangeStatus20"></span>
                         </div></td>
                         <td><div id="partNumber-container20">
-                            <span  id="flangestatusline20">
                             <span id="line20"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1004,11 +886,9 @@
                             <span  id="partNumber21"></span>
                         </div></td>
                         <td><div id="partNumber-container21">
-                            <span  id="flangestatusline21">
                             <span id="flangeStatus21"></span>
                         </div></td>
                         <td><div id="partNumber-container21">
-                            <span  id="flangestatusline21">
                             <span id="line21"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1020,11 +900,9 @@
                             <span  id="partNumber22"></span>
                         </div></td>
                         <td><div id="partNumber-container22">
-                            <span  id="flangestatusline22">
                             <span id="flangeStatus22"></span>
                         </div></td>
                         <td><div id="partNumber-container22">
-                            <span  id="flangestatusline22">
                             <span id="line22"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1036,11 +914,9 @@
                             <span  id="partNumber23"></span>
                         </div></td>
                         <td><div id="partNumber-container23">
-                            <span  id="flangestatusline23">
                             <span id="flangeStatus23"></span>
                         </div></td>
                         <td><div id="partNumber-container23">
-                            <span  id="flangestatusline23">
                             <span id="line23"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1052,11 +928,9 @@
                             <span  id="partNumber24"></span>
                         </div></td>
                         <td><div id="partNumber-container24">
-                            <span  id="flangestatusline24">
                             <span id="flangeStatus24"></span>
                         </div></td>
                         <td><div id="partNumber-container24">
-                            <span  id="flangestatusline24">
                             <span id="line24"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1068,11 +942,9 @@
                             <span  id="partNumber25"></span>
                         </div></td>
                         <td><div id="partNumber-container25">
-                            <span  id="flangestatusline25">
                             <span id="flangeStatus25"></span>
                         </div></td>
                         <td><div id="partNumber-container25">
-                            <span  id="flangestatusline25">
                             <span id="line25"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1084,11 +956,9 @@
                             <span  id="partNumber26"></span>
                         </div></td>
                         <td><div id="partNumber-container26">
-                            <span  id="flangestatusline26">
                             <span id="flangeStatus26"></span>
                         </div></td>
                         <td><div id="partNumber-container26">
-                            <span  id="flangestatusline26">
                             <span id="line26"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1100,11 +970,9 @@
                             <span  id="partNumber27"></span>
                         </div></td>
                         <td><div id="partNumber-container27">
-                            <span  id="flangestatusline27">
                             <span id="flangeStatus27"></span>
                         </div></td>
                         <td><div id="partNumber-container27">
-                            <span  id="flangestatusline27">
                             <span id="line27"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1116,11 +984,9 @@
                             <span  id="partNumber28"></span>
                         </div></td>
                         <td><div id="partNumber-container28">
-                            <span  id="flangestatusline28">
                             <span id="flangeStatus28"></span>
                         </div></td>
                         <td><div id="partNumber-container28">
-                            <span  id="flangestatusline28">
                             <span id="line28"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1132,11 +998,9 @@
                             <span  id="partNumber29"></span>
                         </div></td>
                         <td><div id="partNumber-container29">
-                            <span  id="flangestatusline29">
                             <span id="flangeStatus29"></span>
                         </div></td>
                         <td><div id="partNumber-container29">
-                            <span  id="flangestatusline29">
                             <span id="line29"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1148,11 +1012,9 @@
                             <span  id="partNumber30"></span>
                         </div></td>
                         <td><div id="partNumber-container30">
-                            <span  id="flangestatusline30">
                             <span id="flangeStatus30"></span>
                         </div></td>
                         <td><div id="partNumber-container30">
-                            <span  id="flangestatusline30">
                             <span id="line30"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1164,11 +1026,9 @@
                             <span  id="partNumber31"></span>
                         </div></td>
                         <td><div id="partNumber-container31">
-                            <span  id="flangestatusline31">
                             <span id="flangeStatus31"></span>
                         </div></td>
                         <td><div id="partNumber-container31">
-                            <span  id="flangestatusline31">
                             <span id="line31"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1180,11 +1040,9 @@
                             <span  id="partNumber32"></span>
                         </div></td>
                         <td><div id="partNumber-container32">
-                            <span  id="flangestatusline32">
                             <span id="flangeStatus32"></span>
                         </div></td>
                         <td><div id="partNumber-container32">
-                            <span  id="flangestatusline32">
                             <span id="line32"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1196,11 +1054,9 @@
                             <span  id="partNumber33"></span>
                         </div></td>
                         <td><div id="partNumber-container33">
-                            <span  id="flangestatusline33">
                             <span id="flangeStatus33"></span>
                         </div></td>
                         <td><div id="partNumber-container33">
-                            <span  id="flangestatusline33">
                             <span id="line33"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1212,11 +1068,9 @@
                             <span  id="partNumber34"></span>
                         </div></td>
                         <td><div id="partNumber-container34">
-                            <span  id="flangestatusline34">
                             <span id="flangeStatus34"></span>
                         </div></td>
                         <td><div id="partNumber-container34">
-                            <span  id="flangestatusline34">
                             <span id="line34"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1228,11 +1082,9 @@
                             <span  id="partNumber35"></span>
                         </div></td>
                         <td><div id="partNumber-container35">
-                            <span  id="flangestatusline35">
                             <span id="flangeStatus35"></span>
                         </div></td>
                         <td><div id="partNumber-container35">
-                            <span  id="flangestatusline35">
                             <span id="line35"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1244,11 +1096,9 @@
                             <span  id="partNumber36"></span>
                         </div></td>
                         <td><div id="partNumber-container36">
-                            <span  id="flangestatusline36">
                             <span id="flangeStatus36"></span>
                         </div></td>
                         <td><div id="partNumber-container36">
-                            <span  id="flangestatusline36">
                             <span id="line36"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1260,11 +1110,9 @@
                             <span  id="partNumber37"></span>
                         </div></td>
                         <td><div id="partNumber-container37">
-                            <span  id="flangestatusline37">
                             <span id="flangeStatus37"></span>
                         </div></td>
                         <td><div id="partNumber-container37">
-                            <span  id="flangestatusline37">
                             <span id="line37"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1276,11 +1124,9 @@
                             <span  id="partNumber38"></span>
                         </div></td>
                         <td><div id="partNumber-container38">
-                            <span  id="flangestatusline38">
                             <span id="flangeStatus38"></span>
                         </div></td>
                         <td><div id="partNumber-container38">
-                            <span  id="flangestatusline38">
                             <span id="line38"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1292,11 +1138,9 @@
                             <span  id="partNumber39"></span>
                         </div></td>
                         <td><div id="partNumber-container39">
-                            <span  id="flangestatusline39">
                             <span id="flangeStatus39"></span>
                         </div></td>
                         <td><div id="partNumber-container39">
-                            <span  id="flangestatusline39">
                             <span id="line39"></span>
                         </div></td>
                         <td><div id="partNumber-container">
@@ -1308,11 +1152,9 @@
                             <span  id="partNumber40"></span>
                         </div></td>
                         <td><div id="partNumber-container40">
-                            <span  id="flangestatusline40">
                             <span id="flangeStatus40"></span>
                         </div></td>
                         <td><div id="partNumber-container40">
-                            <span  id="flangestatusline40">
                             <span id="line40"></span>
                         </div></td>
                         <td><div id="partNumber-container">

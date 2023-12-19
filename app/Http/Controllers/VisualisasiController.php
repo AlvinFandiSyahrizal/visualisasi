@@ -31,8 +31,8 @@ class VisualisasiController extends Controller
 
     public function getData()
     {
-        $data = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
-            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapns', 'dbflanges.DC CODE', '=', 'datapns.DC CODE')
+            ->select('datapns.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapns.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -40,8 +40,8 @@ class VisualisasiController extends Controller
     }
     public function getData2()
     {
-        $data = dbflange::join('datapn2s', 'dbflanges.PartNumber', '=', 'datapn2s.PartNumber')
-            ->select('datapn2s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn2s', 'dbflanges.DC CODE', '=', 'datapn2s.DC CODE')
+            ->select('datapn2s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn2s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -49,8 +49,8 @@ class VisualisasiController extends Controller
     }
     public function getData3()
     {
-        $data = dbflange::join('datapn3s', 'dbflanges.PartNumber', '=', 'datapn3s.PartNumber')
-            ->select('datapn3s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn3s', 'dbflanges.DC CODE', '=', 'datapn3s.DC CODE')
+            ->select('datapn3s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn3s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -58,8 +58,8 @@ class VisualisasiController extends Controller
     }
     public function getData4()
     {
-        $data = dbflange::join('datapn4s', 'dbflanges.PartNumber', '=', 'datapn4s.PartNumber')
-            ->select('datapn4s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn4s', 'dbflanges.DC CODE', '=', 'datapn4s.DC CODE')
+            ->select('datapn4s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn4s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -67,8 +67,8 @@ class VisualisasiController extends Controller
     }
     public function getData5()
     {
-        $data = dbflange::join('datapn5s', 'dbflanges.PartNumber', '=', 'datapn5s.PartNumber')
-            ->select('datapn5s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn5s', 'dbflanges.DC CODE', '=', 'datapn5s.DC CODE')
+            ->select('datapn5s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn5s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -76,8 +76,8 @@ class VisualisasiController extends Controller
     }
     public function getData6()
     {
-        $data = dbflange::join('datapn6s', 'dbflanges.PartNumber', '=', 'datapn6s.PartNumber')
-            ->select('datapn6s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn6s', 'dbflanges.DC CODE', '=', 'datapn6s.DC CODE')
+            ->select('datapn6s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn6s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -85,8 +85,8 @@ class VisualisasiController extends Controller
     }
     public function getData7()
     {
-        $data = dbflange::join('datapn7s', 'dbflanges.PartNumber', '=', 'datapn7s.PartNumber')
-            ->select('datapn7s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn7s', 'dbflanges.DC CODE', '=', 'datapn7s.DC CODE')
+            ->select('datapn7s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn7s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -94,8 +94,8 @@ class VisualisasiController extends Controller
     }
     public function getData8()
     {
-        $data = dbflange::join('datapn8s', 'dbflanges.PartNumber', '=', 'datapn8s.PartNumber')
-            ->select('datapn8s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn8s', 'dbflanges.DC CODE', '=', 'datapn8s.DC CODE')
+            ->select('datapn8s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn8s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -103,8 +103,8 @@ class VisualisasiController extends Controller
     }
     public function getData9()
     {
-        $data = dbflange::join('datapn9s', 'dbflanges.PartNumber', '=', 'datapn9s.PartNumber')
-            ->select('datapn9s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn9s', 'dbflanges.DC CODE', '=', 'datapn9s.DC CODE')
+            ->select('datapn9s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn9s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -112,8 +112,8 @@ class VisualisasiController extends Controller
     }
     public function getData10()
     {
-        $data = dbflange::join('datapn10s', 'dbflanges.PartNumber', '=', 'datapn10s.PartNumber')
-            ->select('datapn10s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn10s', 'dbflanges.DC CODE', '=', 'datapn10s.DC CODE')
+            ->select('datapn10s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn10s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -121,8 +121,8 @@ class VisualisasiController extends Controller
     }
     public function getData11()
     {
-        $data = dbflange::join('datapn11s', 'dbflanges.PartNumber', '=', 'datapn11s.PartNumber')
-            ->select('datapn11s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn11s', 'dbflanges.DC CODE', '=', 'datapn11s.DC CODE')
+            ->select('datapn11s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn11s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -130,8 +130,8 @@ class VisualisasiController extends Controller
     }
     public function getData12()
     {
-        $data = dbflange::join('datapn12s', 'dbflanges.PartNumber', '=', 'datapn12s.PartNumber')
-            ->select('datapn12s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn12s', 'dbflanges.DC CODE', '=', 'datapn12s.DC CODE')
+            ->select('datapn12s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn12s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -139,8 +139,8 @@ class VisualisasiController extends Controller
     }
     public function getData13()
     {
-        $data = dbflange::join('datapn13s', 'dbflanges.PartNumber', '=', 'datapn13s.PartNumber')
-            ->select('datapn13s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn13s', 'dbflanges.DC CODE', '=', 'datapn13s.DC CODE')
+            ->select('datapn13s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn13s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -148,8 +148,8 @@ class VisualisasiController extends Controller
     }
     public function getData14()
     {
-        $data = dbflange::join('datapn14s', 'dbflanges.PartNumber', '=', 'datapn14s.PartNumber')
-            ->select('datapn14s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn14s', 'dbflanges.DC CODE', '=', 'datapn14s.DC CODE')
+            ->select('datapn14s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn14s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -157,8 +157,8 @@ class VisualisasiController extends Controller
     }
     public function getData15()
     {
-        $data = dbflange::join('datapn15s', 'dbflanges.PartNumber', '=', 'datapn15s.PartNumber')
-            ->select('datapn15s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn15s', 'dbflanges.DC CODE', '=', 'datapn15s.DC CODE')
+            ->select('datapn15s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn15s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -166,8 +166,8 @@ class VisualisasiController extends Controller
     }
     public function getData16()
     {
-        $data = dbflange::join('datapn16s', 'dbflanges.PartNumber', '=', 'datapn16s.PartNumber')
-            ->select('datapn16s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn16s', 'dbflanges.DC CODE', '=', 'datapn16s.DC CODE')
+            ->select('datapn16s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn16s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -175,8 +175,8 @@ class VisualisasiController extends Controller
     }
     public function getData17()
     {
-        $data = dbflange::join('datapn17s', 'dbflanges.PartNumber', '=', 'datapn17s.PartNumber')
-            ->select('datapn17s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn17s', 'dbflanges.DC CODE', '=', 'datapn17s.DC CODE')
+            ->select('datapn17s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn17s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -184,8 +184,8 @@ class VisualisasiController extends Controller
     }
     public function getData18()
     {
-        $data = dbflange::join('datapn18s', 'dbflanges.PartNumber', '=', 'datapn18s.PartNumber')
-            ->select('datapn18s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn18s', 'dbflanges.DC CODE', '=', 'datapn18s.DC CODE')
+            ->select('datapn18s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn18s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -193,8 +193,8 @@ class VisualisasiController extends Controller
     }
     public function getData19()
     {
-        $data = dbflange::join('datapn19s', 'dbflanges.PartNumber', '=', 'datapn19s.PartNumber')
-            ->select('datapn19s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn19s', 'dbflanges.DC CODE', '=', 'datapn19s.DC CODE')
+            ->select('datapn19s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn19s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -202,8 +202,8 @@ class VisualisasiController extends Controller
     }
     public function getData20()
     {
-        $data = dbflange::join('datapn20s', 'dbflanges.PartNumber', '=', 'datapn20s.PartNumber')
-            ->select('datapn20s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn20s', 'dbflanges.DC CODE as', '=', 'datapn20s.DC CODE')
+            ->select('datapn20s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn20s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -211,8 +211,8 @@ class VisualisasiController extends Controller
     }
     public function getData21()
     {
-        $data = dbflange::join('datapn21s', 'dbflanges.PartNumber', '=', 'datapn21s.PartNumber')
-            ->select('datapn21s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn21s', 'dbflanges.DC CODE', '=', 'datapn21s.DC CODE')
+            ->select('datapn21s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn21s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -220,8 +220,8 @@ class VisualisasiController extends Controller
     }
     public function getData22()
     {
-        $data = dbflange::join('datapn22s', 'dbflanges.PartNumber', '=', 'datapn22s.PartNumber')
-            ->select('datapn22s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn22s', 'dbflanges.DC CODE', '=', 'datapn22s.DC CODE')
+            ->select('datapn22s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn22s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -229,8 +229,8 @@ class VisualisasiController extends Controller
     }
     public function getData23()
     {
-        $data = dbflange::join('datapn23s', 'dbflanges.PartNumber', '=', 'datapn23s.PartNumber')
-            ->select('datapn23s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn23s', 'dbflanges.DC CODE', '=', 'datapn23s.DC CODE')
+            ->select('datapn23s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn23s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -238,8 +238,8 @@ class VisualisasiController extends Controller
     }
     public function getData24()
     {
-        $data = dbflange::join('datapn24s', 'dbflanges.PartNumber', '=', 'datapn24s.PartNumber')
-            ->select('datapn24s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn24s', 'dbflanges.DC CODE', '=', 'datapn24s.DC CODE')
+            ->select('datapn24s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn24s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -247,8 +247,8 @@ class VisualisasiController extends Controller
     }
     public function getData25()
     {
-        $data = dbflange::join('datapn25s', 'dbflanges.PartNumber', '=', 'datapn25s.PartNumber')
-            ->select('datapn25s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn25s', 'dbflanges.DC CODE', '=', 'datapn25s.DC CODE')
+            ->select('datapn25s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn25s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -256,8 +256,8 @@ class VisualisasiController extends Controller
     }
     public function getData26()
     {
-        $data = dbflange::join('datapn26s', 'dbflanges.PartNumber', '=', 'datapn26s.PartNumber')
-            ->select('datapn26s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn26s', 'dbflanges.DC CODE', '=', 'datapn26s.DC CODE')
+            ->select('datapn26s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn26s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -265,8 +265,8 @@ class VisualisasiController extends Controller
     }
     public function getData27()
     {
-        $data = dbflange::join('datapn27s', 'dbflanges.PartNumber', '=', 'datapn27s.PartNumber')
-            ->select('datapn27s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn27s', 'dbflanges.DC CODE', '=', 'datapn27s.DC CODE')
+            ->select('datapn27s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn27s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -274,8 +274,8 @@ class VisualisasiController extends Controller
     }
     public function getData28()
     {
-        $data = dbflange::join('datapn28s', 'dbflanges.PartNumber', '=', 'datapn28s.PartNumber')
-            ->select('datapn28s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn28s', 'dbflanges.DC CODE', '=', 'datapn28s.DC CODE')
+            ->select('datapn28s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn28s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -283,8 +283,8 @@ class VisualisasiController extends Controller
     }
     public function getData29()
     {
-        $data = dbflange::join('datapn29s', 'dbflanges.PartNumber', '=', 'datapn29s.PartNumber')
-            ->select('datapn29s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn29s', 'dbflanges.DC CODE', '=', 'datapn29s.DC CODE')
+            ->select('datapn29s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn29s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -292,8 +292,8 @@ class VisualisasiController extends Controller
     }
     public function getData30()
     {
-        $data = dbflange::join('datapn30s', 'dbflanges.PartNumber', '=', 'datapn30s.PartNumber')
-            ->select('datapn30s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn30s', 'dbflanges.DC CODE', '=', 'datapn30s.DC CODE')
+            ->select('datapn30s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn30s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -301,8 +301,8 @@ class VisualisasiController extends Controller
     }
     public function getData31()
     {
-        $data = dbflange::join('datapn31s', 'dbflanges.PartNumber', '=', 'datapn31s.PartNumber')
-            ->select('datapn31s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn31s', 'dbflanges.DC CODE', '=', 'datapn31s.DC CODE')
+            ->select('datapn31s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn31s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -310,8 +310,8 @@ class VisualisasiController extends Controller
     }
     public function getData32()
     {
-        $data = dbflange::join('datapn32s', 'dbflanges.PartNumber', '=', 'datapn32s.PartNumber')
-            ->select('datapn32s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn32s', 'dbflanges.DC CODE', '=', 'datapn32s.DC CODE')
+            ->select('datapn32s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn32s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -319,8 +319,8 @@ class VisualisasiController extends Controller
     }
     public function getData33()
     {
-        $data = dbflange::join('datapn33s', 'dbflanges.PartNumber', '=', 'datapn33s.PartNumber')
-            ->select('datapn33s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn33s', 'dbflanges.DC CODE', '=', 'datapn33s.DC CODE')
+            ->select('datapn33s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn33s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -328,8 +328,8 @@ class VisualisasiController extends Controller
     }
     public function getData34()
     {
-        $data = dbflange::join('datapn34s', 'dbflanges.PartNumber', '=', 'datapn34s.PartNumber')
-            ->select('datapn34s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn34s', 'dbflanges.DC CODE', '=', 'datapn34s.DC CODE')
+            ->select('datapn34s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn34s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -337,8 +337,8 @@ class VisualisasiController extends Controller
     }
     public function getData35()
     {
-        $data = dbflange::join('datapn35s', 'dbflanges.PartNumber', '=', 'datapn35s.PartNumber')
-            ->select('datapn35s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn35s', 'dbflanges.DC CODE', '=', 'datapn35s.DC CODE')
+            ->select('datapn35s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn35s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -346,8 +346,8 @@ class VisualisasiController extends Controller
     }
     public function getData36()
     {
-        $data = dbflange::join('datapn36s', 'dbflanges.PartNumber', '=', 'datapn36s.PartNumber')
-            ->select('datapn36s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn36s', 'dbflanges.DC CODE', '=', 'datapn36s.DC CODE')
+            ->select('datapn36s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn36s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -355,8 +355,8 @@ class VisualisasiController extends Controller
     }
     public function getData37()
     {
-        $data = dbflange::join('datapn37s', 'dbflanges.PartNumber', '=', 'datapn37s.PartNumber')
-            ->select('datapn37s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn37s', 'dbflanges.DC CODE', '=', 'datapn37s.DC CODE')
+            ->select('datapn37s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn37s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -364,8 +364,8 @@ class VisualisasiController extends Controller
     }
     public function getData38()
     {
-        $data = dbflange::join('datapn38s', 'dbflanges.PartNumber', '=', 'datapn38s.PartNumber')
-            ->select('datapn38s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn38s', 'dbflanges.DC CODE', '=', 'datapn38s.DC CODE')
+            ->select('datapn38s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn38s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -373,8 +373,8 @@ class VisualisasiController extends Controller
     }
     public function getData39()
     {
-        $data = dbflange::join('datapn39s', 'dbflanges.PartNumber', '=', 'datapn39s.PartNumber')
-            ->select('datapn39s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn39s', 'dbflanges.DC CODE', '=', 'datapn39s.DC CODE')
+            ->select('datapn39s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn39s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -382,8 +382,8 @@ class VisualisasiController extends Controller
     }
     public function getData40()
     {
-        $data = dbflange::join('datapn40s', 'dbflanges.PartNumber', '=', 'datapn40s.PartNumber')
-            ->select('datapn40s.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $data = dbflange::join('datapn40s', 'dbflanges.DC CODE', '=', 'datapn40s.DC CODE')
+            ->select('datapn40s.DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber', 'datapn40s.QTY PROD as qty')
             ->latest('dbflanges.id')
             ->first();
 
@@ -392,8 +392,8 @@ class VisualisasiController extends Controller
 
     public function getLine2Data()
     {
-        $dataline2 = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
-            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $dataline2 = dbflange::join('datapns', 'dbflanges.DC CODE as DCCODE', '=', 'datapns.DC CODE as DCCODE')
+            ->select('datapns.DC CODE as DCCODE', 'dbflanges.FlangeNon', 'dbflanges.Line')
             ->where('dbflanges.Line', 'Line2')
             ->latest('dbflanges.id')
             ->first();
@@ -402,8 +402,8 @@ class VisualisasiController extends Controller
     }
     public function getLine3Data()
     {
-        $dataline3 = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
-            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $dataline3 = dbflange::join('datapns', 'dbflanges.DC CODE as DCCODE', '=', 'datapns.DC CODE as DCCODE')
+            ->select('datapns.DC CODE as DCCODE', 'dbflanges.FlangeNon', 'dbflanges.Line')
             ->where('dbflanges.Line', 'Line3')
             ->latest('dbflanges.id')
             ->first();
@@ -412,8 +412,8 @@ class VisualisasiController extends Controller
     }
     public function getLine4Data()
     {
-        $dataline4 = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
-            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        $dataline4 = dbflange::join('datapns', 'dbflanges.DC CODE as DCCODE', '=', 'datapns.DC CODE as DCCODE')
+            ->select('datapns.DC CODE as DCCODE', 'dbflanges.FlangeNon', 'dbflanges.Line')
             ->where('dbflanges.Line', 'Line4')
             ->latest('dbflanges.id')
             ->first();
@@ -423,21 +423,27 @@ class VisualisasiController extends Controller
 
     public function riwayat()
     {
-        // Ambil top 1 data visualisasi dari model
-        $ongoing = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
-            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
-            ->latest('dbflanges.id')
-            ->first();
+        // // Ambil top 1 data visualisasi dari model
+        // $ongoing = dbflange::join('datapns', 'dbflanges.DC CODE', '=', 'datapns.DC CODE')
+        //     ->select('datapns.DC CODE as DC CODE as DCCODE', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PART NUMBER as PartNumber')
+        //     ->latest('dbflanges.id')
+        //     ->first();
 
-        // Ambil semua data visualisasi selain top 1 dari model
-        $riwayatData = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
-            ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
-            ->where('dbflanges.id', '!=', $ongoing->id) // Sesuaikan dengan kolom yang merupakan identitas unik
-            ->latest('dbflanges.id')
-            ->get();
+        // // Ambil semua data visualisasi selain top 1 dari model
+        // $riwayatData = dbflange::join('datapns', 'dbflanges.PartNumber', '=', 'datapns.PartNumber')
+        //     ->select('datapns.PartNumber', 'dbflanges.FlangeNon', 'dbflanges.Line')
+        //     ->where('dbflanges.id', '!=', $ongoing->id) // Sesuaikan dengan kolom yang merupakan identitas unik
+        //     ->latest('dbflanges.id')
+        //     ->get();
 
         // Tampilkan view riwayat.blade.php dengan data
-        return view('riwayat.visualisasi', compact('ongoing', 'riwayatData'));
+        return view('riwayat.visualisasi');
+    }
+
+    public function riwayat2()
+    {
+
+        return view('riwayat.visual');
     }
 
     public function riwayatline2()

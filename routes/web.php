@@ -67,6 +67,8 @@ Route::get('/visual37', [VisualisasiController::class, 'getData37'])->name('data
 Route::get('/visual38', [VisualisasiController::class, 'getData38'])->name('data.visual38');
 Route::get('/visual39', [VisualisasiController::class, 'getData39'])->name('data.visual39');
 Route::get('/visual40', [VisualisasiController::class, 'getData40'])->name('data.visual40');
+Route::get('/visual41', [VisualisasiController::class, 'getData41'])->name('data.visual41');
+Route::get('/visual42', [VisualisasiController::class, 'getData42'])->name('data.visual42');
 
 Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('data.visualisasi');
 

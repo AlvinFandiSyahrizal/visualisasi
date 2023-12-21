@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/navbar', function (){
+    return view('dashboard.dashboard');
+});
+
 use App\Http\Controllers\BelajarController;
 
 Route::get('/belajar', 'BelajarController@getData')->name('data.belajar');
@@ -93,4 +98,5 @@ Route::get('/riwayat/line2', [VisualisasiController::class, 'riwayatline2'])->na
 
 Route::get('/riwayat/line3', [VisualisasiController::class, 'riwayatline3'])->name('riwayat.line3');
 Route::get('/riwayat/line4', [VisualisasiController::class, 'riwayatline4'])->name('riwayat.line4');
+
 

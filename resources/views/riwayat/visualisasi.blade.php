@@ -1,5 +1,5 @@
 <!-- resources/views/riwayat.blade.php -->
-
+@include('dashboard.dashboard')
 <!DOCTYPE html>
 <html lang="en">
 

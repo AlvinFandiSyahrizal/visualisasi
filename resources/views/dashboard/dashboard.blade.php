@@ -52,6 +52,11 @@
             font-size: 17px;
             width: 100%;
             text-align: left;
+            transition: background-color 0.3s; /* Efek transisi untuk perubahan warna latar belakang */
+        }
+
+        .menu-button:hover {
+            background-color: #123b6f; /* Warna latar belakang saat di-hover */
         }
 
         .submenu {
@@ -108,7 +113,10 @@
         }
 
         function navigateTo(page) {
-            if (page.startsWith('Chart')) {
+            if (page === 'Chart2') {
+                // Redirect to the desired route for Line 2
+                window.location.href = '/visualisasi';
+            } else if (page.startsWith('Chart')) {
                 // Handle chart navigation logic here
                 console.log("Navigating to chart", page);
             } else {
@@ -116,6 +124,7 @@
                 window.location.href = '/visualisasi';
             }
         }
+
     </script>
 
 </body>

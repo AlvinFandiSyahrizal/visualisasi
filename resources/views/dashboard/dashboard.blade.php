@@ -114,14 +114,29 @@
 
         function navigateTo(page) {
             if (page === 'Chart2') {
-                // Redirect to the desired route for Line 2
-                window.location.href = '/visualisasi';
+                window.location.href = "{{ asset('visualisasi') }}" ;
             } else if (page.startsWith('Chart')) {
-                // Handle chart navigation logic here
                 console.log("Navigating to chart", page);
             } else {
-                // Redirect to the visualization route
-                window.location.href = '/visualisasi';
+                window.location.href = "{{ asset('visualisasi') }}" ;
+            }
+        }
+        function navigateTo(page) {
+            if (page === 'Chart3') {
+                window.location.href = "{{ asset('visualisasi') }}" ;
+            } else if (page.startsWith('Chart')) {
+                console.log("Navigating to chart", page);
+            } else {
+                window.location.href = "{{ asset('visualisasi') }}" ;
+            }
+        }
+        function navigateTo(page) {
+            if (page === 'Chart4') {
+                window.location.href = "{{ asset('visualisasi') }}" ;
+            } else if (page.startsWith('Chart')) {
+                console.log("Navigating to chart", page);
+            } else {
+                window.location.href = "{{ asset('visualisasi') }}" ;
             }
         }
 

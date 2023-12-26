@@ -37,7 +37,7 @@
             </thead>
             <tbody>
 
-                    <tr id="row1">
+                    {{-- <tr id="row1">
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber"></span>
@@ -773,7 +773,7 @@
                                     <span id="status18"></span>
                                 </td>
                         </td>
-                    </tr>
+                    </tr> --}}
 
                     <tr id="row19">
                             <td>
@@ -1782,7 +1782,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr id="row1">
+                        {{-- <tr id="row1">
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber"></span>
@@ -2518,7 +2518,7 @@
                                     <span id="status18"></span>
                                 </td>
                         </td>
-                    </tr>
+                    </tr> --}}
 
                     <tr id="row19">
                             <td>
@@ -4761,7 +4761,7 @@
                     $('#flangeStatus30').text(flangeStatus);
                     $('#line30').text(data30.Line);
                     $('#qty30').text(data30.qty);
-                    $('#actualqty30').text(data03.act);
+                    $('#actualqty30').text(data30.act);
                     $('#status30').text(status);
                     // Select the row element using ID
                     var row = $('#row30');
@@ -5273,24 +5273,24 @@
 
     updateDateTime();
     setInterval(updateDateTime, 1000); // Update time every second
-    fetchData();
-    fetchData2();
-    fetchData3();
-    fetchData4();
-    fetchData5();
-    fetchData6();
-    fetchData7();
-    fetchData8();
-    fetchData9();
-    fetchData10();
-    fetchData11();
-    fetchData12();
-    fetchData13();
-    fetchData14();
-    fetchData15();
-    fetchData16();
-    fetchData17();
-    fetchData18();
+    // fetchData();
+    // fetchData2();
+    // fetchData3();
+    // fetchData4();
+    // fetchData5();
+    // fetchData6();
+    // fetchData7();
+    // fetchData8();
+    // fetchData9();
+    // fetchData10();
+    // fetchData11();
+    // fetchData12();
+    // fetchData13();
+    // fetchData14();
+    // fetchData15();
+    // fetchData16();
+    // fetchData17();
+    // fetchData18();
     fetchData19();
     fetchData20();
     fetchData21();
@@ -5316,24 +5316,24 @@
     fetchData41();
     fetchData42();
 
-    setInterval(fetchData, 3000);
-    setInterval(fetchData2, 3000);
-    setInterval(fetchData3, 3000);
-    setInterval(fetchData4, 3000);
-    setInterval(fetchData5, 3000);
-    setInterval(fetchData6, 3000);
-    setInterval(fetchData7, 3000);
-    setInterval(fetchData8, 3000);
-    setInterval(fetchData9, 3000);
-    setInterval(fetchData10, 3000);
-    setInterval(fetchData11, 3000);
-    setInterval(fetchData12, 3000);
-    setInterval(fetchData13, 3000);
-    setInterval(fetchData14, 3000);
-    setInterval(fetchData15, 3000);
-    setInterval(fetchData16, 3000);
-    setInterval(fetchData17, 3000);
-    setInterval(fetchData18, 3000);
+    // setInterval(fetchData, 3000);
+    // setInterval(fetchData2, 3000);
+    // setInterval(fetchData3, 3000);
+    // setInterval(fetchData4, 3000);
+    // setInterval(fetchData5, 3000);
+    // setInterval(fetchData6, 3000);
+    // setInterval(fetchData7, 3000);
+    // setInterval(fetchData8, 3000);
+    // setInterval(fetchData9, 3000);
+    // setInterval(fetchData10, 3000);
+    // setInterval(fetchData11, 3000);
+    // setInterval(fetchData12, 3000);
+    // setInterval(fetchData13, 3000);
+    // setInterval(fetchData14, 3000);
+    // setInterval(fetchData15, 3000);
+    // setInterval(fetchData16, 3000);
+    // setInterval(fetchData17, 3000);
+    // setInterval(fetchData18, 3000);
     setInterval(fetchData19, 3000);
     setInterval(fetchData20, 3000);
     setInterval(fetchData21, 3000);

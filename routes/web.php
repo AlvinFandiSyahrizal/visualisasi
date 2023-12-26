@@ -71,7 +71,7 @@ Route::get('/visual36', [VisualisasiController::class, 'getData36'])->name('data
 Route::get('/visual37', [VisualisasiController::class, 'getData37'])->name('data.visual37');
 Route::get('/visual38', [VisualisasiController::class, 'getData38'])->name('data.visual38');
 Route::get('/visual39', [VisualisasiController::class, 'getData39'])->name('data.visual39');
-Route::get('/visual40', [VisualisasiController::class, 'getData40'])->name('data.visual40');    
+Route::get('/visual40', [VisualisasiController::class, 'getData40'])->name('data.visual40');
 Route::get('/visual41', [VisualisasiController::class, 'getData41'])->name('data.visual41');
 Route::get('/visual42', [VisualisasiController::class, 'getData42'])->name('data.visual42');
 
@@ -79,20 +79,21 @@ Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('data.
 
 Route::get('/cek', [VisualisasiController::class, 'cek'])->name('data.cek');
 
+Route::resource('line2', \App\Http\Controllers\Line2Controller::class );
 
 
+// Route::get('/line2', [VisualisasiController::class, 'line2'])->name('line2.visual');
+// Route::get('/line2s', [VisualisasiController::class, 'getLine2Data'])->name('line2.visual');
 
-Route::get('/line2', [VisualisasiController::class, 'line2'])->name('line2.visual');
-Route::get('/line2s', [VisualisasiController::class, 'getLine2Data'])->name('line2.visual');
+// Route::get('/line3', [VisualisasiController::class, 'line3'])->name('line3.visual');
+// Route::get('/line3s', [VisualisasiController::class, 'getLine3Data'])->name('line3.visual');
 
-Route::get('/line3', [VisualisasiController::class, 'line3'])->name('line3.visual');
-Route::get('/line3s', [VisualisasiController::class, 'getLine3Data'])->name('line3.visual');
-
-Route::get('/line4', [VisualisasiController::class, 'line4'])->name('line4.visual');
-Route::get('/line4s', [VisualisasiController::class, 'getLine4Data'])->name('line4.visual');
+// Route::get('/line4', [VisualisasiController::class, 'line4'])->name('line4.visual');
+// Route::get('/line4s', [VisualisasiController::class, 'getLine4Data'])->name('line4.visual');
 
 Route::get('/riwayat', [VisualisasiController::class, 'riwayat'])->name('riwayat.visual');
 Route::get('/riwayat2', [VisualisasiController::class, 'riwayat2'])->name('riwayat.visual');
+
 
 Route::get('/riwayat/line2', [VisualisasiController::class, 'riwayatline2'])->name('riwayat.line2');
 

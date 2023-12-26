@@ -18,7 +18,7 @@
 
 <div class="container text-center">
 <div class="container mt-5">
-<h2>apa namanya</h2>
+<h2>SCHEDULE PMS LINE 4</h2>
 </div>
 
 <div class="row">
@@ -38,7 +38,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr id="row1">
+        {{-- <tr id="row1">
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber"></span>
@@ -774,7 +774,7 @@
                     <span id="status18"></span>
                 </td>
         </td>
-    </tr>
+    </tr> --}}
 
     <tr id="row19">
             <td>
@@ -1789,759 +1789,759 @@
 
 
 
-    function fetchData() {
-    $.ajax({
-        url: "{{ route('data.visual') }}",
-        method: 'GET',
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        },
-        success: function (data) {
-            if (data) {
-                $('#dccode').text(data.DCCODE);
-
-                var flangeStatus = (data.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                // var status = (data.status == 2) ? 'COM' : '';
-                var status = (data.status == 1) ? 'prod' : (data.status == 2) ? 'com' : '';
-
-
-                // Format PartNumber for better display
-                var partNumberArray = data.PartNumber.split('-');
-                var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-
-                // Check if the third part exists before appending it
-                if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                    formattedPartNumber += '-' + partNumberArray[2];
-                }
-
-                // Set text on HTML elements
-                $('#seqnumber').text(data.SeqNo);
-                $('#partNumber').text(formattedPartNumber);
-                $('#flangeStatus').text(flangeStatus);
-                $('#line').text(data.Line);
-                $('#qty').text(data.qty);
-                $('#actualqty').text(data.act);
-                $('#status').text(status);
-
-
-
-                // Select the row element using ID
-                var row = $('#row1');
-
-                // Remove current class
-                row.removeClass("table-danger table-primary");
-
-                if (flangeStatus === "Flange") {
-                    row.addClass("table-danger");
-                } else if (flangeStatus === "Non-Flange") {
-                    row.addClass("table-primary");
-                }
-            }
-        }
-    });
-}
-
-
-        function fetchData2() {
-            $.ajax({
-                url: "{{ route('data.visual2') }}",
-                method: 'GET',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                success: function (data2) {
-                    if (data2) {
-                        $('#dccode2').text(data2.DCCODE);
-                        var flangeStatus = (data2.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                        var status = (data2.status == 1) ? 'prod' : (data2.status == 2) ? 'com' : '';
-
-                        // Format PartNumber for better display
-                        var partNumberArray = data2.PartNumber.split('-');
-                        var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-
-                        // Check if the third part exists before appending it
-                        if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                            formattedPartNumber += '-' + partNumberArray[2];
-                        }
-
-                        // Set text on HTML elements
-                        $('#seqnumber2').text(data2.SeqNo);
-                        $('#partNumber2').text(formattedPartNumber);
-                        $('#flangeStatus2').text(flangeStatus);
-                        $('#line2').text(data2.Line);
-                        $('#qty2').text(data2.qty);
-                        $('#actualqty2').text(data2.act);
-                        $('#status2').text(status);
-
-                        // Select the row element using ID
-                        var row = $('#row2');
-                        // Remove current class
-                        row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                    }
-                }
-            });
-        }
-
-        function fetchData3() {
-        $.ajax({
-            url: "{{ route('data.visual3') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data3) {
-                if (data3) {
-                    $('#dccode3').text(data3.DCCODE);
-                    var flangeStatus = (data3.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data3.status == 1) ? 'prod' : (data3.status == 2) ? 'com' : '';
-
-                    // Format PartNumber for better display
-                    var partNumberArray = data3.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-
-                    // Check if the third part exists before appending it
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber3').text(data3.SeqNo);
-                    $('#partNumber3').text(formattedPartNumber);
-                    // Menetapkan teks pada elemen HTML dengan ID 'flangeStatus' dan 'line'
-                    $('#flangeStatus3').text(flangeStatus);
-                    $('#line3').text(data3.Line);
-                    $('#qty3').text(data3.qty);
-                    $('#actualqty3').text(data3.act);
-                    $('#status3').text(status);
-
-                    // Select the row element using ID
-                    var row = $('#row3');
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData4() {
-        $.ajax({
-            url: "{{ route('data.visual4') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data4) {
-                if (data4) {
-                    $('#dccode4').text(data4.DCCODE);
-                    var flangeStatus = (data4.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data4.status == 1) ? 'prod' : (data4.status == 2) ? 'com' : '';
-
-                    // Format PartNumber for better display
-                    var partNumberArray = data4.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-
-                    // Check if the third part exists before appending it
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber4').text(data4.SeqNo);
-                    $('#partNumber4').text(formattedPartNumber);
-                    $('#flangeStatus4').text(flangeStatus);
-                    $('#line4').text(data4.Line);
-                    $('#qty4').text(data4.qty);
-                    $('#actualqty4').text(data4.act);
-                    $('#status4').text(status);
-                    // Select the row element using ID
-                    var row = $('#row4');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData5() {
-        $.ajax({
-            url: "{{ route('data.visual5') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data5) {
-                if (data5) {
-                    $('#dccode5').text(data5.DCCODE);
-                    var flangeStatus = (data5.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data5.status == 1) ? 'prod' : (data5.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data5.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber5').text(data5.SeqNo);
-                    $('#partNumber5').text(formattedPartNumber);
-                    $('#flangeStatus5').text(flangeStatus);
-                    $('#line5').text(data5.Line);
-                    $('#qty5').text(data5.qty);
-                    $('#actualqty5').text(data5.act);
-                    $('#status5').text(status);
-                    // Select the row element using ID
-                    var row = $('#row5');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData6() {
-        $.ajax({
-            url: "{{ route('data.visual6') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data6) {
-                if (data6) {
-                    $('#dccode6').text(data6.DCCODE);
-                    var flangeStatus = (data6.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data6.status == 1) ? 'prod' : (data6.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data6.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber6').text(data6.SeqNo);
-                    $('#partNumber6').text(formattedPartNumber);
-                    $('#flangeStatus6').text(flangeStatus);
-                    $('#line6').text(data6.Line);
-                    $('#qty6').text(data6.qty);
-                    $('#actualqty6').text(data6.act);
-                    $('#status6').text(status);
-                    // Select the row element using ID
-                    var row = $('#row6');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData7() {
-        $.ajax({
-            url: "{{ route('data.visual7') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data7) {
-                if (data7) {
-
-                    $('#dccode7').text(data7.DCCODE);
-                    var flangeStatus = (data7.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data7.status == 1) ? 'prod' : (data7.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data7.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber7').text(data7.SeqNo);
-                    $('#partNumber7').text(formattedPartNumber);
-                    $('#flangeStatus7').text(flangeStatus);
-                    $('#line7').text(data7.Line);
-                    $('#qty7').text(data7.qty);
-                    $('#actualqty7').text(data7.act);
-                    $('#status7').text(status);
-                    // Select the row element using ID
-                    var row = $('#row7');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData8() {
-        $.ajax({
-            url: "{{ route('data.visual8') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data8) {
-                if (data8) {
-
-                    $('#dccode8').text(data8.DCCODE);
-                    var flangeStatus = (data8.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data8.status == 1) ? 'prod' : (data8.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data8.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber8').text(data8.SeqNo);
-                    $('#partNumber8').text(formattedPartNumber);
-                    $('#flangeStatus8').text(flangeStatus);
-                    $('#line8').text(data8.Line);
-                    $('#qty8').text(data8.qty);
-                    $('#actualqty8').text(data8.act);
-                    $('#status8').text(status);
-                    // Select the row element using ID
-                    var row = $('#row8');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData9() {
-        $.ajax({
-            url: "{{ route('data.visual9') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data9) {
-                if (data9) {
-                    ;
-                    $('#dccode9').text(data9.DCCODE);
-                    var flangeStatus = (data9.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data9.status == 1) ? 'prod' : (data9.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data9.PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber9').text(data9.SeqNo);
-                    $('#partNumber9').text(formattedPartNumber)
-                    $('#flangeStatus9').text(flangeStatus);
-                    $('#line9').text(data9.Line);
-                    $('#qty9').text(data9.qty);
-                    $('#actualqty9').text(data9.act);
-                    $('#status9').text(status);
-                    // Select the row element using ID
-                    var row = $('#row9');
-
-                    // Remove current class
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData10() {
-        $.ajax({
-            url: "{{ route('data.visual10') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data10) {
-                if (data10) {
-
-                    $('#dccode10').text(data10.DCCODE);
-                    var flangeStatus = (data10.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data10.status == 1) ? 'prod' : (data10.status == 2) ? 'com' : '';
-                    var partNumberArray = data10 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber10').text(data10.SeqNo);
-                    $('#partNumber10').text(formattedPartNumber);
-                    $('#flangeStatus10').text(flangeStatus);
-                    $('#line10').text(data10.Line);
-                    $('#qty10').text(data10.qty);
-                    $('#actualqty10').text(data10.act);
-                    $('#status10').text(status);
-                    // Select the row element using ID
-                    var row = $('#row10');
-
-                    // Remove current class
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData11() {
-        $.ajax({
-            url: "{{ route('data.visual11') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data11) {
-                if (data11) {
-
-                    $('#dccode11').text(data11.DCCODE);
-                    var flangeStatus = (data11.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data11.status == 1) ? 'prod' : (data11.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data11 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber11').text(data11.SeqNo);
-                    $('#partNumber11').text(formattedPartNumber);
-                    $('#flangeStatus11').text(flangeStatus);
-                    $('#line11').text(data11.Line);
-                    $('#qty11').text(data11.qty);
-                    $('#actualqty11').text(data11.act);
-                    $('#status11').text(status);
-                    // Select the row element using ID
-                    var row = $('#row11');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData12() {
-        $.ajax({
-            url: "{{ route('data.visual12') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data12) {
-                if (data12) {
-
-                    $('#dccode12').text(data12.DCCODE);
-                    var flangeStatus = (data12.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data12.status == 1) ? 'prod' : (data12.status == 2) ? 'com' : '';
-                    var partNumberArray = data12 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber12').text(data12.SeqNo);
-                    $('#partNumber12').text(formattedPartNumber);
-                    $('#flangeStatus12').text(flangeStatus);
-                    $('#line12').text(data12.Line);
-                    $('#qty12').text(data12.qty);
-                    $('#actualqty12').text(data12.act);
-                    $('#status12').text(status);
-                     // Select the row element using ID
-                    var row = $('#row12');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData13() {
-        $.ajax({
-            url: "{{ route('data.visual13') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data13) {
-                if (data13) {
-                    $('#dccode13').text(data13.DCCODE);
-                    var flangeStatus = (data13.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data13.status == 1) ? 'prod' : (data13.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data13 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber13').text(data13.SeqNo);
-                    $('#partNumber13').text(formattedPartNumber);
-                    $('#flangeStatus13').text(flangeStatus);
-                    $('#line13').text(data13.Line);
-                    $('#qty13').text(data13.qty);
-                    $('#actualqty13').text(data13.act);
-                    $('#status13').text(status);
-                    // Select the row element using ID
-                    var row = $('#row13');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-        function fetchData14() {
-        $.ajax({
-            url: "{{ route('data.visual14') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data14) {
-                if (data14) {
-                    $('#dccode14').text(data14.DCCODE);
-                    var flangeStatus = (data14.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data14.status == 1) ? 'prod' : (data14.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data14 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber14').text(data14.SeqNo);
-                    $('#partNumber14').text(formattedPartNumber);
-                    $('#flangeStatus14').text(flangeStatus);
-                    $('#line14').text(data14.Line);
-                    $('#qty14').text(data14.qty);
-                    $('#actualqty14').text(data14.act);
-                    $('#status14').text(status);
-                     // Select the row element using ID
-                    var row = $('#row14');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-
-    function fetchData15() {
-        $.ajax({
-            url: "{{ route('data.visual15') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data15) {
-                if (data15) {
-                    $('#dccode15').text(data15.DCCODE);
-                    var flangeStatus = (data15.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data15.status == 1) ? 'prod' : (data15.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data15 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber15').text(data15.SeqNo);
-                    $('#partNumber15').text(formattedPartNumber);
-                    $('#flangeStatus15').text(flangeStatus);
-                    $('#line15').text(data15.Line);
-                    $('#qty15').text(data15.qty);
-                    $('#actualqty15').text(data15.act);
-                    $('#status15').text(status);
-                    // Select the row element using ID
-                    var row = $('#row15');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-
-    function fetchData16() {
-        $.ajax({
-            url: "{{ route('data.visual16') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data16) {
-                if (data16) {
-                    $('#dccode16').text(data16.DCCODE);
-                    var flangeStatus = (data16.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data16.status == 1) ? 'prod' : (data16.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data16 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber16').text(data16.SeqNo);
-                    $('#partNumber16').text(formattedPartNumber);
-                    $('#flangeStatus16').text(flangeStatus);
-                    $('#line16').text(data16.Line);
-                    $('#qty16').text(data16.qty);
-                    $('#actualqty16').text(data16.act);
-                    $('#status16').text(status);
-                     // Select the row element using ID
-                    var row = $('#row16');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-    function fetchData17() {
-        $.ajax({
-            url: "{{ route('data.visual17') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data17) {
-                if (data17) {
-                    $('#dccode17').text(data17.DCCODE);
-                    var flangeStatus = (data17.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data17.status == 1) ? 'prod' : (data17.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data17 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber17').text(data17.SeqNo);
-                    $('#partNumber17').text(formattedPartNumber);
-                    $('#flangeStatus17').text(flangeStatus);
-                    $('#line17').text(data17.Line);
-                    $('#qty17').text(data17.qty);
-                    $('#actualqty17').text(data17.act);
-                    $('#status17').text(status);
-                    // Select the row element using ID
-                    var row = $('#row17');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
-    function fetchData18() {
-        $.ajax({
-            url: "{{ route('data.visual18') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data18) {
-                if (data18) {
-                    $('#dccode18').text(data18.DCCODE);
-                    var flangeStatus = (data18.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
-                    var status = (data18.status == 1) ? 'prod' : (data18.status == 2) ? 'com' : '';
-
-                    var partNumberArray = data18 .PartNumber.split('-');
-                    var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
-                    if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
-                        formattedPartNumber += '-' + partNumberArray[2];
-                    }
-
-                    $('#seqnumber18').text(data18.SeqNo);
-                    $('#partNumber18').text(formattedPartNumber);
-                    $('#flangeStatus18').text(flangeStatus);
-                    $('#line18').text(data18.Line);
-                    $('#qty18').text(data18.qty);
-                    $('#actualqty18').text(data18.act);
-                    $('#status18').text(status);
-                    // Select the row element using ID
-                    var row = $('#row18');
-
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                }
-            }
-        });
-    }
+//     function fetchData() {
+//     $.ajax({
+//         url: "{{ route('data.visual') }}",
+//         method: 'GET',
+//         headers: {
+//             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//         },
+//         success: function (data) {
+//             if (data) {
+//                 $('#dccode').text(data.DCCODE);
+
+//                 var flangeStatus = (data.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                 // var status = (data.status == 2) ? 'COM' : '';
+//                 var status = (data.status == 1) ? 'prod' : (data.status == 2) ? 'com' : '';
+
+
+//                 // Format PartNumber for better display
+//                 var partNumberArray = data.PartNumber.split('-');
+//                 var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+
+//                 // Check if the third part exists before appending it
+//                 if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                     formattedPartNumber += '-' + partNumberArray[2];
+//                 }
+
+//                 // Set text on HTML elements
+//                 $('#seqnumber').text(data.SeqNo);
+//                 $('#partNumber').text(formattedPartNumber);
+//                 $('#flangeStatus').text(flangeStatus);
+//                 $('#line').text(data.Line);
+//                 $('#qty').text(data.qty);
+//                 $('#actualqty').text(data.act);
+//                 $('#status').text(status);
+
+
+
+//                 // Select the row element using ID
+//                 var row = $('#row1');
+
+//                 // Remove current class
+//                 row.removeClass("table-danger table-primary");
+
+//                 if (flangeStatus === "Flange") {
+//                     row.addClass("table-danger");
+//                 } else if (flangeStatus === "Non-Flange") {
+//                     row.addClass("table-primary");
+//                 }
+//             }
+//         }
+//     });
+// }
+
+
+//         function fetchData2() {
+//             $.ajax({
+//                 url: "{{ route('data.visual2') }}",
+//                 method: 'GET',
+//                 headers: {
+//                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//                 },
+//                 success: function (data2) {
+//                     if (data2) {
+//                         $('#dccode2').text(data2.DCCODE);
+//                         var flangeStatus = (data2.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                         var status = (data2.status == 1) ? 'prod' : (data2.status == 2) ? 'com' : '';
+
+//                         // Format PartNumber for better display
+//                         var partNumberArray = data2.PartNumber.split('-');
+//                         var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+
+//                         // Check if the third part exists before appending it
+//                         if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                             formattedPartNumber += '-' + partNumberArray[2];
+//                         }
+
+//                         // Set text on HTML elements
+//                         $('#seqnumber2').text(data2.SeqNo);
+//                         $('#partNumber2').text(formattedPartNumber);
+//                         $('#flangeStatus2').text(flangeStatus);
+//                         $('#line2').text(data2.Line);
+//                         $('#qty2').text(data2.qty);
+//                         $('#actualqty2').text(data2.act);
+//                         $('#status2').text(status);
+
+//                         // Select the row element using ID
+//                         var row = $('#row2');
+//                         // Remove current class
+//                         row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                     }
+//                 }
+//             });
+//         }
+
+//         function fetchData3() {
+//         $.ajax({
+//             url: "{{ route('data.visual3') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data3) {
+//                 if (data3) {
+//                     $('#dccode3').text(data3.DCCODE);
+//                     var flangeStatus = (data3.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data3.status == 1) ? 'prod' : (data3.status == 2) ? 'com' : '';
+
+//                     // Format PartNumber for better display
+//                     var partNumberArray = data3.PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+
+//                     // Check if the third part exists before appending it
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber3').text(data3.SeqNo);
+//                     $('#partNumber3').text(formattedPartNumber);
+//                     // Menetapkan teks pada elemen HTML dengan ID 'flangeStatus' dan 'line'
+//                     $('#flangeStatus3').text(flangeStatus);
+//                     $('#line3').text(data3.Line);
+//                     $('#qty3').text(data3.qty);
+//                     $('#actualqty3').text(data3.act);
+//                     $('#status3').text(status);
+
+//                     // Select the row element using ID
+//                     var row = $('#row3');
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData4() {
+//         $.ajax({
+//             url: "{{ route('data.visual4') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data4) {
+//                 if (data4) {
+//                     $('#dccode4').text(data4.DCCODE);
+//                     var flangeStatus = (data4.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data4.status == 1) ? 'prod' : (data4.status == 2) ? 'com' : '';
+
+//                     // Format PartNumber for better display
+//                     var partNumberArray = data4.PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+
+//                     // Check if the third part exists before appending it
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber4').text(data4.SeqNo);
+//                     $('#partNumber4').text(formattedPartNumber);
+//                     $('#flangeStatus4').text(flangeStatus);
+//                     $('#line4').text(data4.Line);
+//                     $('#qty4').text(data4.qty);
+//                     $('#actualqty4').text(data4.act);
+//                     $('#status4').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row4');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData5() {
+//         $.ajax({
+//             url: "{{ route('data.visual5') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data5) {
+//                 if (data5) {
+//                     $('#dccode5').text(data5.DCCODE);
+//                     var flangeStatus = (data5.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data5.status == 1) ? 'prod' : (data5.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data5.PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber5').text(data5.SeqNo);
+//                     $('#partNumber5').text(formattedPartNumber);
+//                     $('#flangeStatus5').text(flangeStatus);
+//                     $('#line5').text(data5.Line);
+//                     $('#qty5').text(data5.qty);
+//                     $('#actualqty5').text(data5.act);
+//                     $('#status5').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row5');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData6() {
+//         $.ajax({
+//             url: "{{ route('data.visual6') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data6) {
+//                 if (data6) {
+//                     $('#dccode6').text(data6.DCCODE);
+//                     var flangeStatus = (data6.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data6.status == 1) ? 'prod' : (data6.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data6.PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber6').text(data6.SeqNo);
+//                     $('#partNumber6').text(formattedPartNumber);
+//                     $('#flangeStatus6').text(flangeStatus);
+//                     $('#line6').text(data6.Line);
+//                     $('#qty6').text(data6.qty);
+//                     $('#actualqty6').text(data6.act);
+//                     $('#status6').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row6');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData7() {
+//         $.ajax({
+//             url: "{{ route('data.visual7') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data7) {
+//                 if (data7) {
+
+//                     $('#dccode7').text(data7.DCCODE);
+//                     var flangeStatus = (data7.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data7.status == 1) ? 'prod' : (data7.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data7.PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber7').text(data7.SeqNo);
+//                     $('#partNumber7').text(formattedPartNumber);
+//                     $('#flangeStatus7').text(flangeStatus);
+//                     $('#line7').text(data7.Line);
+//                     $('#qty7').text(data7.qty);
+//                     $('#actualqty7').text(data7.act);
+//                     $('#status7').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row7');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData8() {
+//         $.ajax({
+//             url: "{{ route('data.visual8') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data8) {
+//                 if (data8) {
+
+//                     $('#dccode8').text(data8.DCCODE);
+//                     var flangeStatus = (data8.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data8.status == 1) ? 'prod' : (data8.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data8.PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber8').text(data8.SeqNo);
+//                     $('#partNumber8').text(formattedPartNumber);
+//                     $('#flangeStatus8').text(flangeStatus);
+//                     $('#line8').text(data8.Line);
+//                     $('#qty8').text(data8.qty);
+//                     $('#actualqty8').text(data8.act);
+//                     $('#status8').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row8');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData9() {
+//         $.ajax({
+//             url: "{{ route('data.visual9') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data9) {
+//                 if (data9) {
+//                     ;
+//                     $('#dccode9').text(data9.DCCODE);
+//                     var flangeStatus = (data9.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data9.status == 1) ? 'prod' : (data9.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data9.PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber9').text(data9.SeqNo);
+//                     $('#partNumber9').text(formattedPartNumber)
+//                     $('#flangeStatus9').text(flangeStatus);
+//                     $('#line9').text(data9.Line);
+//                     $('#qty9').text(data9.qty);
+//                     $('#actualqty9').text(data9.act);
+//                     $('#status9').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row9');
+
+//                     // Remove current class
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData10() {
+//         $.ajax({
+//             url: "{{ route('data.visual10') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data10) {
+//                 if (data10) {
+
+//                     $('#dccode10').text(data10.DCCODE);
+//                     var flangeStatus = (data10.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data10.status == 1) ? 'prod' : (data10.status == 2) ? 'com' : '';
+//                     var partNumberArray = data10 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber10').text(data10.SeqNo);
+//                     $('#partNumber10').text(formattedPartNumber);
+//                     $('#flangeStatus10').text(flangeStatus);
+//                     $('#line10').text(data10.Line);
+//                     $('#qty10').text(data10.qty);
+//                     $('#actualqty10').text(data10.act);
+//                     $('#status10').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row10');
+
+//                     // Remove current class
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData11() {
+//         $.ajax({
+//             url: "{{ route('data.visual11') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data11) {
+//                 if (data11) {
+
+//                     $('#dccode11').text(data11.DCCODE);
+//                     var flangeStatus = (data11.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data11.status == 1) ? 'prod' : (data11.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data11 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber11').text(data11.SeqNo);
+//                     $('#partNumber11').text(formattedPartNumber);
+//                     $('#flangeStatus11').text(flangeStatus);
+//                     $('#line11').text(data11.Line);
+//                     $('#qty11').text(data11.qty);
+//                     $('#actualqty11').text(data11.act);
+//                     $('#status11').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row11');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData12() {
+//         $.ajax({
+//             url: "{{ route('data.visual12') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data12) {
+//                 if (data12) {
+
+//                     $('#dccode12').text(data12.DCCODE);
+//                     var flangeStatus = (data12.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data12.status == 1) ? 'prod' : (data12.status == 2) ? 'com' : '';
+//                     var partNumberArray = data12 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber12').text(data12.SeqNo);
+//                     $('#partNumber12').text(formattedPartNumber);
+//                     $('#flangeStatus12').text(flangeStatus);
+//                     $('#line12').text(data12.Line);
+//                     $('#qty12').text(data12.qty);
+//                     $('#actualqty12').text(data12.act);
+//                     $('#status12').text(status);
+//                      // Select the row element using ID
+//                     var row = $('#row12');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData13() {
+//         $.ajax({
+//             url: "{{ route('data.visual13') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data13) {
+//                 if (data13) {
+//                     $('#dccode13').text(data13.DCCODE);
+//                     var flangeStatus = (data13.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data13.status == 1) ? 'prod' : (data13.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data13 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber13').text(data13.SeqNo);
+//                     $('#partNumber13').text(formattedPartNumber);
+//                     $('#flangeStatus13').text(flangeStatus);
+//                     $('#line13').text(data13.Line);
+//                     $('#qty13').text(data13.qty);
+//                     $('#actualqty13').text(data13.act);
+//                     $('#status13').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row13');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//         function fetchData14() {
+//         $.ajax({
+//             url: "{{ route('data.visual14') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data14) {
+//                 if (data14) {
+//                     $('#dccode14').text(data14.DCCODE);
+//                     var flangeStatus = (data14.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data14.status == 1) ? 'prod' : (data14.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data14 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber14').text(data14.SeqNo);
+//                     $('#partNumber14').text(formattedPartNumber);
+//                     $('#flangeStatus14').text(flangeStatus);
+//                     $('#line14').text(data14.Line);
+//                     $('#qty14').text(data14.qty);
+//                     $('#actualqty14').text(data14.act);
+//                     $('#status14').text(status);
+//                      // Select the row element using ID
+//                     var row = $('#row14');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+
+//     function fetchData15() {
+//         $.ajax({
+//             url: "{{ route('data.visual15') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data15) {
+//                 if (data15) {
+//                     $('#dccode15').text(data15.DCCODE);
+//                     var flangeStatus = (data15.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data15.status == 1) ? 'prod' : (data15.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data15 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber15').text(data15.SeqNo);
+//                     $('#partNumber15').text(formattedPartNumber);
+//                     $('#flangeStatus15').text(flangeStatus);
+//                     $('#line15').text(data15.Line);
+//                     $('#qty15').text(data15.qty);
+//                     $('#actualqty15').text(data15.act);
+//                     $('#status15').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row15');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+
+//     function fetchData16() {
+//         $.ajax({
+//             url: "{{ route('data.visual16') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data16) {
+//                 if (data16) {
+//                     $('#dccode16').text(data16.DCCODE);
+//                     var flangeStatus = (data16.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data16.status == 1) ? 'prod' : (data16.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data16 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber16').text(data16.SeqNo);
+//                     $('#partNumber16').text(formattedPartNumber);
+//                     $('#flangeStatus16').text(flangeStatus);
+//                     $('#line16').text(data16.Line);
+//                     $('#qty16').text(data16.qty);
+//                     $('#actualqty16').text(data16.act);
+//                     $('#status16').text(status);
+//                      // Select the row element using ID
+//                     var row = $('#row16');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//     function fetchData17() {
+//         $.ajax({
+//             url: "{{ route('data.visual17') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data17) {
+//                 if (data17) {
+//                     $('#dccode17').text(data17.DCCODE);
+//                     var flangeStatus = (data17.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data17.status == 1) ? 'prod' : (data17.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data17 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber17').text(data17.SeqNo);
+//                     $('#partNumber17').text(formattedPartNumber);
+//                     $('#flangeStatus17').text(flangeStatus);
+//                     $('#line17').text(data17.Line);
+//                     $('#qty17').text(data17.qty);
+//                     $('#actualqty17').text(data17.act);
+//                     $('#status17').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row17');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
+//     function fetchData18() {
+//         $.ajax({
+//             url: "{{ route('data.visual18') }}",
+//             method: 'GET',
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             },
+//             success: function (data18) {
+//                 if (data18) {
+//                     $('#dccode18').text(data18.DCCODE);
+//                     var flangeStatus = (data18.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+//                     var status = (data18.status == 1) ? 'prod' : (data18.status == 2) ? 'com' : '';
+
+//                     var partNumberArray = data18 .PartNumber.split('-');
+//                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
+//                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
+//                         formattedPartNumber += '-' + partNumberArray[2];
+//                     }
+
+//                     $('#seqnumber18').text(data18.SeqNo);
+//                     $('#partNumber18').text(formattedPartNumber);
+//                     $('#flangeStatus18').text(flangeStatus);
+//                     $('#line18').text(data18.Line);
+//                     $('#qty18').text(data18.qty);
+//                     $('#actualqty18').text(data18.act);
+//                     $('#status18').text(status);
+//                     // Select the row element using ID
+//                     var row = $('#row18');
+
+//                     // Remove current class
+//                     row.removeClass("table-danger table-primary");
+//                         if (flangeStatus === "Flange") {
+//                             row.addClass("table-danger");
+//                         } else if (flangeStatus === "Non-Flange") {
+//                             row.addClass("table-primary");
+//                         }
+//                 }
+//             }
+//         });
+//     }
 
     function fetchData19() {
         $.ajax({
@@ -3018,7 +3018,7 @@
                     $('#flangeStatus30').text(flangeStatus);
                     $('#line30').text(data30.Line);
                     $('#qty30').text(data30.qty);
-                    $('#actualqty30').text(data03.act);
+                    $('#actualqty30').text(data30.act);
                     $('#status30').text(status);
                     // Select the row element using ID
                     var row = $('#row30');
@@ -3530,24 +3530,24 @@
 
     updateDateTime();
     setInterval(updateDateTime, 1000); // Update time every second
-    fetchData();
-    fetchData2();
-    fetchData3();
-    fetchData4();
-    fetchData5();
-    fetchData6();
-    fetchData7();
-    fetchData8();
-    fetchData9();
-    fetchData10();
-    fetchData11();
-    fetchData12();
-    fetchData13();
-    fetchData14();
-    fetchData15();
-    fetchData16();
-    fetchData17();
-    fetchData18();
+    // fetchData();
+    // fetchData2();
+    // fetchData3();
+    // fetchData4();
+    // fetchData5();
+    // fetchData6();
+    // fetchData7();
+    // fetchData8();
+    // fetchData9();
+    // fetchData10();
+    // fetchData11();
+    // fetchData12();
+    // fetchData13();
+    // fetchData14();
+    // fetchData15();
+    // fetchData16();
+    // fetchData17();
+    // fetchData18();
     fetchData19();
     fetchData20();
     fetchData21();
@@ -3573,24 +3573,24 @@
     fetchData41();
     fetchData42();
 
-    setInterval(fetchData, 3000);
-    setInterval(fetchData2, 3000);
-    setInterval(fetchData3, 3000);
-    setInterval(fetchData4, 3000);
-    setInterval(fetchData5, 3000);
-    setInterval(fetchData6, 3000);
-    setInterval(fetchData7, 3000);
-    setInterval(fetchData8, 3000);
-    setInterval(fetchData9, 3000);
-    setInterval(fetchData10, 3000);
-    setInterval(fetchData11, 3000);
-    setInterval(fetchData12, 3000);
-    setInterval(fetchData13, 3000);
-    setInterval(fetchData14, 3000);
-    setInterval(fetchData15, 3000);
-    setInterval(fetchData16, 3000);
-    setInterval(fetchData17, 3000);
-    setInterval(fetchData18, 3000);
+    // setInterval(fetchData, 3000);
+    // setInterval(fetchData2, 3000);
+    // setInterval(fetchData3, 3000);
+    // setInterval(fetchData4, 3000);
+    // setInterval(fetchData5, 3000);
+    // setInterval(fetchData6, 3000);
+    // setInterval(fetchData7, 3000);
+    // setInterval(fetchData8, 3000);
+    // setInterval(fetchData9, 3000);
+    // setInterval(fetchData10, 3000);
+    // setInterval(fetchData11, 3000);
+    // setInterval(fetchData12, 3000);
+    // setInterval(fetchData13, 3000);
+    // setInterval(fetchData14, 3000);
+    // setInterval(fetchData15, 3000);
+    // setInterval(fetchData16, 3000);
+    // setInterval(fetchData17, 3000);
+    // setInterval(fetchData18, 3000);
     setInterval(fetchData19, 3000);
     setInterval(fetchData20, 3000);
     setInterval(fetchData21, 3000);

@@ -88,16 +88,16 @@
     </header>
 
     <div class="sidebar" id="mySidebar">
-        <button class="menu-button" onclick="navigateTo('Chart2')">Line 2</button>
-        <button class="menu-button" onclick="navigateTo('Chart3')">Line 3</button>
-        <button class="menu-button" onclick="navigateTo('Chart4')">Line 4</button>
+        <button class="menu-button" data-page="Chart2">Line 2</button>
+        <button class="menu-button" data-page="Chart3">Line 3</button>
+        <button class="menu-button" data-page="Chart4">Line 4</button>
         <button class="menu-button" onclick="toggleSubmenu('chartsSubmenu')">
             Visualizations
         </button>
         <div id="chartsSubmenu" class="submenu">
-            <button class="submenu-button" onclick="navigateTo('Chart2')">Line 2</button>
-            <button class="submenu-button" onclick="navigateTo('Chart3')">Line 3</button>
-            <button class="submenu-button" onclick="navigateTo('Chart4')">Line 4</button>
+            <button class="submenu-button" data-page="Chart2">Line 2</button>
+            <button class="submenu-button" data-page="Chart3">Line 3</button>
+            <button class="submenu-button" data-page="Chart4">Line 4</button>
         </div>
     </div>
 
@@ -112,35 +112,20 @@
             submenu.style.display = submenu.style.display === "block" ? "none" : "block";
         }
 
-        function navigateTo(page) {
-            if (page === 'Chart2') {
-                window.location.href = "{{ asset('visualisasi') }}" ;
-            } else if (page.startsWith('Chart')) {
-                console.log("Navigating to chart", page);
-            } else {
-                window.location.href = "{{ asset('visualisasi') }}" ;
+        document.getElementById("mySidebar").addEventListener("click", function(event) {
+            const target = event.target;
+            if (target.classList.contains("menu-button")) {
+                const page = target.getAttribute("data-page");
+                if (page.startsWith('Chart')) {
+                    console.log("Navigating to chart", page);
+                } else {
+                    window.location.href = "{{ asset('visualisasi') }}";
+                }
             }
-        }
-        function navigateTo(page) {
-            if (page === 'Chart3') {
-                window.location.href = "{{ asset('visualisasi') }}" ;
-            } else if (page.startsWith('Chart')) {
-                console.log("Navigating to chart", page);
-            } else {
-                window.location.href = "{{ asset('visualisasi') }}" ;
-            }
-        }
-        function navigateTo(page) {
-            if (page === 'Chart4') {
-                window.location.href = "{{ asset('visualisasi') }}" ;
-            } else if (page.startsWith('Chart')) {
-                console.log("Navigating to chart", page);
-            } else {
-                window.location.href = "{{ asset('visualisasi') }}" ;
-            }
-        }
-
+        });
+        
     </script>
 
 </body>
 </html>
+

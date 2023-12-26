@@ -2569,7 +2569,8 @@
                     $('#qty19').text(data19.qty);
                     $('#actualqty19').text(data19.act);
                     $('#status19').text(status);
-                    // Select the row element using ID
+
+
                     var row = $('#row19');
 
                     // Remove current class
@@ -2660,6 +2661,10 @@
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                        if (data21.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }

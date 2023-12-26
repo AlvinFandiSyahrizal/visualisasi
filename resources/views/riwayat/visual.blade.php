@@ -27,6 +27,7 @@
 <table class="table table-bordered border-primary">
     <thead class="table-light table-bordered border-primary">
         <tr>
+            <th>No</th>
             <th>SeqNo</th>
             <th>P/N</th>
             <th>DcCode</th>
@@ -39,6 +40,11 @@
     </thead>
     <tbody>
         {{-- <tr id="row1">
+                    <td>
+            <div id="partNumber-container">
+                <span>1</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber"></span>
@@ -80,6 +86,11 @@
     </tr>
 
     <tr id="row2">
+                <td>
+            <div id="partNumber-container">
+                <span>2</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container2">
                     <span id="seqnumber2"></span>
@@ -121,6 +132,11 @@
     </tr>
 
     <tr id="row3">
+                <td>
+            <div id="partNumber-container">
+                <span>3</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber3"></span>
@@ -162,6 +178,11 @@
     </tr>
 
     <tr id="row4">
+                <td>
+            <div id="partNumber-container">
+                <span>4</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber4"></span>
@@ -203,6 +224,11 @@
     </tr>
 
     <tr id="row5">
+                <td>
+            <div id="partNumber-container">
+                <span>5</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber5"></span>
@@ -244,6 +270,11 @@
     </tr>
 
     <tr id="row6">
+                <td>
+            <div id="partNumber-container">
+                <span>6</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber6"></span>
@@ -285,6 +316,11 @@
     </tr>
 
     <tr id="row7">
+                <td>
+            <div id="partNumber-container">
+                <span>7</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber7"></span>
@@ -326,6 +362,11 @@
     </tr>
 
     <tr id="row8">
+                <td>
+            <div id="partNumber-container">
+                <span>8</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber8"></span>
@@ -367,6 +408,11 @@
     </tr>
 
     <tr id="row9">
+                <td>
+            <div id="partNumber-container">
+                <span>9</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber9"></span>
@@ -408,6 +454,11 @@
     </tr>
 
     <tr id="row10">
+                <td>
+            <div id="partNumber-container">
+                <span>10</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber10"></span>
@@ -449,6 +500,11 @@
     </tr>
 
     <tr id="row11">
+                <td>
+            <div id="partNumber-container">
+                <span>11</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber11"></span>
@@ -490,6 +546,11 @@
     </tr>
 
     <tr id="row12">
+                <td>
+            <div id="partNumber-container">
+                <span>12</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber12"></span>
@@ -531,6 +592,11 @@
     </tr>
 
     <tr id="row13">
+                <td>
+            <div id="partNumber-container">
+                <span>13</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber13"></span>
@@ -572,6 +638,11 @@
     </tr>
 
     <tr id="row14">
+                <td>
+            <div id="partNumber-container">
+                <span>14</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber14"></span>
@@ -613,6 +684,11 @@
     </tr>
 
     <tr id="row15">
+                <td>
+            <div id="partNumber-container">
+                <span>15</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber15"></span>
@@ -654,6 +730,11 @@
     </tr>
 
     <tr id="row16">
+                <td>
+            <div id="partNumber-container">
+                <span>16</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber16"></span>
@@ -695,6 +776,11 @@
     </tr>
 
     <tr id="row17">
+                <td>
+            <div id="partNumber-container">
+                <span>17</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber17"></span>
@@ -736,6 +822,11 @@
     </tr>
 
     <tr id="row18">
+                <td>
+            <div id="partNumber-container">
+                <span>18</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber18"></span>
@@ -777,6 +868,11 @@
     </tr> --}}
 
     <tr id="row19">
+        <td>
+            <div id="partNumber-container">
+                <span>19</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber19"></span>
@@ -818,6 +914,11 @@
     </tr>
 
     <tr id="row20">
+        <td>
+            <div id="partNumber-container">
+                <span>20</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber20"></span>
@@ -859,6 +960,11 @@
     </tr>
 
     <tr id="row21">
+        <td>
+            <div id="partNumber-container">
+                <span>21</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber21"></span>
@@ -900,6 +1006,11 @@
     </tr>
 
     <tr id="row22">
+        <td>
+            <div id="partNumber-container">
+                <span>22</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber22"></span>
@@ -941,6 +1052,11 @@
     </tr>
 
     <tr id="row23">
+        <td>
+            <div id="partNumber-container">
+                <span>23</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber23"></span>
@@ -982,6 +1098,11 @@
     </tr>
 
     <tr id="row24">
+        <td>
+            <div id="partNumber-container">
+                <span>24</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber24"></span>
@@ -1023,6 +1144,11 @@
     </tr>
 
     <tr id="row25">
+        <td>
+            <div id="partNumber-container">
+                <span>25</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber25"></span>
@@ -1064,6 +1190,11 @@
     </tr>
 
     <tr id="row26">
+        <td>
+            <div id="partNumber-container">
+                <span>26</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber26"></span>
@@ -1105,6 +1236,11 @@
     </tr>
 
     <tr id="row27">
+        <td>
+            <div id="partNumber-container">
+                <span>27</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber27"></span>
@@ -1146,6 +1282,11 @@
     </tr>
 
     <tr id="row28">
+        <td>
+            <div id="partNumber-container">
+                <span>28</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber28"></span>
@@ -1187,6 +1328,11 @@
     </tr>
 
     <tr id="row29">
+        <td>
+            <div id="partNumber-container">
+                <span>29</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber29"></span>
@@ -1228,6 +1374,11 @@
     </tr>
 
     <tr id="row30">
+        <td>
+            <div id="partNumber-container">
+                <span>30</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber30"></span>
@@ -1269,6 +1420,11 @@
     </tr>
 
     <tr id="row31">
+        <td>
+            <div id="partNumber-container">
+                <span>31</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber31"></span>
@@ -1310,6 +1466,11 @@
     </tr>
 
     <tr id="row32">
+        <td>
+            <div id="partNumber-container">
+                <span>32</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber32"></span>
@@ -1351,6 +1512,11 @@
     </tr>
 
     <tr id="row33">
+        <td>
+            <div id="partNumber-container">
+                <span>33</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber33"></span>
@@ -1392,6 +1558,11 @@
     </tr>
 
     <tr id="row34">
+        <td>
+            <div id="partNumber-container">
+                <span>34</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber34"></span>
@@ -1433,6 +1604,11 @@
     </tr>
 
     <tr id="row35">
+        <td>
+            <div id="partNumber-container">
+                <span>35</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber35"></span>
@@ -1474,6 +1650,11 @@
     </tr>
 
     <tr id="row36">
+        <td>
+            <div id="partNumber-container">
+                <span>36</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber36"></span>
@@ -1515,6 +1696,11 @@
     </tr>
 
     <tr id="row37">
+        <td>
+            <div id="partNumber-container">
+                <span>37</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber37"></span>
@@ -1556,6 +1742,11 @@
     </tr>
 
     <tr id="row38">
+        <td>
+            <div id="partNumber-container">
+                <span>38</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber38"></span>
@@ -1597,6 +1788,11 @@
     </tr>
 
     <tr id="row39">
+        <td>
+            <div id="partNumber-container">
+                <span>39</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber39"></span>
@@ -1638,6 +1834,11 @@
     </tr>
 
     <tr id="row40">
+        <td>
+            <div id="partNumber-container">
+                <span>40</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber40"></span>
@@ -1679,6 +1880,11 @@
     </tr>
 
     <tr id="row41">
+        <td>
+            <div id="partNumber-container">
+                <span>41</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber41"></span>
@@ -1720,6 +1926,11 @@
     </tr>
 
     <tr id="row42">
+        <td>
+            <div id="partNumber-container">
+                <span>42</span>
+            </div>
+        </td>
             <td>
                 <div id="partNumber-container">
                     <span id="seqnumber342"></span>
@@ -1805,16 +2016,15 @@
 //                 var status = (data.status == 1) ? 'prod' : (data.status == 2) ? 'com' : '';
 
 
-//                 // Format PartNumber for better display
+
 //                 var partNumberArray = data.PartNumber.split('-');
 //                 var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
 
-//                 // Check if the third part exists before appending it
+
 //                 if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
 //                     formattedPartNumber += '-' + partNumberArray[2];
 //                 }
 
-//                 // Set text on HTML elements
 //                 $('#seqnumber').text(data.SeqNo);
 //                 $('#partNumber').text(formattedPartNumber);
 //                 $('#flangeStatus').text(flangeStatus);
@@ -1825,10 +2035,8 @@
 
 
 
-//                 // Select the row element using ID
 //                 var row = $('#row1');
 
-//                 // Remove current class
 //                 row.removeClass("table-danger table-primary");
 
 //                 if (flangeStatus === "Flange") {
@@ -1855,16 +2063,14 @@
 //                         var flangeStatus = (data2.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
 //                         var status = (data2.status == 1) ? 'prod' : (data2.status == 2) ? 'com' : '';
 
-//                         // Format PartNumber for better display
 //                         var partNumberArray = data2.PartNumber.split('-');
 //                         var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
 
-//                         // Check if the third part exists before appending it
+
 //                         if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
 //                             formattedPartNumber += '-' + partNumberArray[2];
 //                         }
 
-//                         // Set text on HTML elements
 //                         $('#seqnumber2').text(data2.SeqNo);
 //                         $('#partNumber2').text(formattedPartNumber);
 //                         $('#flangeStatus2').text(flangeStatus);
@@ -1873,9 +2079,7 @@
 //                         $('#actualqty2').text(data2.act);
 //                         $('#status2').text(status);
 
-//                         // Select the row element using ID
 //                         var row = $('#row2');
-//                         // Remove current class
 //                         row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -1900,27 +2104,22 @@
 //                     var flangeStatus = (data3.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
 //                     var status = (data3.status == 1) ? 'prod' : (data3.status == 2) ? 'com' : '';
 
-//                     // Format PartNumber for better display
 //                     var partNumberArray = data3.PartNumber.split('-');
 //                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
 
-//                     // Check if the third part exists before appending it
 //                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
 //                         formattedPartNumber += '-' + partNumberArray[2];
 //                     }
 
 //                     $('#seqnumber3').text(data3.SeqNo);
 //                     $('#partNumber3').text(formattedPartNumber);
-//                     // Menetapkan teks pada elemen HTML dengan ID 'flangeStatus' dan 'line'
 //                     $('#flangeStatus3').text(flangeStatus);
 //                     $('#line3').text(data3.Line);
 //                     $('#qty3').text(data3.qty);
 //                     $('#actualqty3').text(data3.act);
 //                     $('#status3').text(status);
 
-//                     // Select the row element using ID
 //                     var row = $('#row3');
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -1944,11 +2143,9 @@
 //                     var flangeStatus = (data4.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
 //                     var status = (data4.status == 1) ? 'prod' : (data4.status == 2) ? 'com' : '';
 
-//                     // Format PartNumber for better display
 //                     var partNumberArray = data4.PartNumber.split('-');
 //                     var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
 
-//                     // Check if the third part exists before appending it
 //                     if (partNumberArray.length > 2 && partNumberArray[2].length > 0) {
 //                         formattedPartNumber += '-' + partNumberArray[2];
 //                     }
@@ -1963,7 +2160,6 @@
 //                     // Select the row element using ID
 //                     var row = $('#row4');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2000,10 +2196,8 @@
 //                     $('#qty5').text(data5.qty);
 //                     $('#actualqty5').text(data5.act);
 //                     $('#status5').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row5');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2040,10 +2234,8 @@
 //                     $('#qty6').text(data6.qty);
 //                     $('#actualqty6').text(data6.act);
 //                     $('#status6').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row6');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2081,10 +2273,8 @@
 //                     $('#qty7').text(data7.qty);
 //                     $('#actualqty7').text(data7.act);
 //                     $('#status7').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row7');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2122,10 +2312,8 @@
 //                     $('#qty8').text(data8.qty);
 //                     $('#actualqty8').text(data8.act);
 //                     $('#status8').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row8');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2163,11 +2351,8 @@
 //                     $('#qty9').text(data9.qty);
 //                     $('#actualqty9').text(data9.act);
 //                     $('#status9').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row9');
 
-//                     // Remove current class
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2207,8 +2392,6 @@
 //                     // Select the row element using ID
 //                     var row = $('#row10');
 
-//                     // Remove current class
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2249,7 +2432,6 @@
 //                     // Select the row element using ID
 //                     var row = $('#row11');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2286,10 +2468,8 @@
 //                     $('#qty12').text(data12.qty);
 //                     $('#actualqty12').text(data12.act);
 //                     $('#status12').text(status);
-//                      // Select the row element using ID
 //                     var row = $('#row12');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2326,10 +2506,8 @@
 //                     $('#qty13').text(data13.qty);
 //                     $('#actualqty13').text(data13.act);
 //                     $('#status13').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row13');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2366,10 +2544,8 @@
 //                     $('#qty14').text(data14.qty);
 //                     $('#actualqty14').text(data14.act);
 //                     $('#status14').text(status);
-//                      // Select the row element using ID
 //                     var row = $('#row14');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2407,10 +2583,8 @@
 //                     $('#qty15').text(data15.qty);
 //                     $('#actualqty15').text(data15.act);
 //                     $('#status15').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row15');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2448,10 +2622,8 @@
 //                     $('#qty16').text(data16.qty);
 //                     $('#actualqty16').text(data16.act);
 //                     $('#status16').text(status);
-//                      // Select the row element using ID
 //                     var row = $('#row16');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2488,10 +2660,8 @@
 //                     $('#qty17').text(data17.qty);
 //                     $('#actualqty17').text(data17.act);
 //                     $('#status17').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row17');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2528,10 +2698,8 @@
 //                     $('#qty18').text(data18.qty);
 //                     $('#actualqty18').text(data18.act);
 //                     $('#status18').text(status);
-//                     // Select the row element using ID
 //                     var row = $('#row18');
 
-//                     // Remove current class
 //                     row.removeClass("table-danger table-primary");
 //                         if (flangeStatus === "Flange") {
 //                             row.addClass("table-danger");
@@ -2573,12 +2741,18 @@
 
                     var row = $('#row19');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data19.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data19.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -2610,15 +2784,21 @@
                     $('#qty20').text(data20.qty);
                     $('#actualqty20').text(data20.act);
                     $('#status20').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row20');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data20.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data20.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -2652,16 +2832,18 @@
                     $('#qty21').text(data21.qty);
                     $('#actualqty21').text(data21.act);
                     $('#status21').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row21');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data21.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
+                    }
                         if (data21.status == 1) {
                         row.removeClass("table-danger table-primary");
                         row.addClass("table-success");
@@ -2697,16 +2879,23 @@
                     $('#qty22').text(data22.qty);
                     $('#actualqty22').text(data22.act);
                     $('#status22').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row22');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data22.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
+                    }
+                         if (data22.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
+                        }
+
                 }
             }
         });
@@ -2738,15 +2927,21 @@
                     $('#qty23').text(data23.qty);
                     $('#actualqty23').text(data23.act);
                     $('#status23').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row23');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data23.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data23.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -2779,15 +2974,21 @@
                     $('#qty24').text(data24.qty);
                     $('#actualqty24').text(data24.act);
                     $('#status24').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row24');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data24.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data24.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -2820,15 +3021,21 @@
                     $('#qty25').text(data25.qty);
                     $('#actualqty25').text(data25.act);
                     $('#status25').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row25');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data25.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data25.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -2861,15 +3068,21 @@
                     $('#qty26').text(data26.qty);
                     $('#actualqty26').text(data26.act);
                     $('#status26').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row26');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data26.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data26.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -2902,15 +3115,21 @@
                     $('#qty27').text(data27.qty);
                     $('#actualqty27').text(data27.act);
                     $('#status27').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row27');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data27.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data27.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -2943,15 +3162,21 @@
                     $('#qty28').text(data28.qty);
                     $('#actualqty28').text(data28.act);
                     $('#status28').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row28');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data28.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data28.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -2984,15 +3209,20 @@
                     $('#qty29').text(data29.qty);
                     $('#actualqty29').text(data29.act);
                     $('#status29').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row29');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data29.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data29.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3025,15 +3255,21 @@
                     $('#qty30').text(data30.qty);
                     $('#actualqty30').text(data30.act);
                     $('#status30').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row30');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data30.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data30.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3066,15 +3302,21 @@
                     $('#qty31').text(data31.qty);
                     $('#actualqty31').text(data31.act);
                     $('#status31').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row31');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data31.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data31.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3107,15 +3349,21 @@
                     $('#qty32').text(data32.qty);
                     $('#actualqty32').text(data32.act);
                     $('#status32').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row32');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data32.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data32.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3148,15 +3396,21 @@
                     $('#qty33').text(data33.qty);
                     $('#actualqty33').text(data33.act);
                     $('#status33').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row33');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data33.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data33.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3189,15 +3443,21 @@
                     $('#qty34').text(data34.qty);
                     $('#actualqty34').text(data34.act);
                     $('#status34').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row34');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data34.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data34.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3230,15 +3490,21 @@
                     $('#qty35').text(data35.qty);
                     $('#actualqty35').text(data35.act);
                     $('#status35').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row35');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data35.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data35.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3271,15 +3537,21 @@
                     $('#qty36').text(data36.qty);
                     $('#actualqty36').text(data36.act);
                     $('#status36').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row36');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data36.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data36.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3312,15 +3584,21 @@
                     $('#qty37').text(data37.qty);
                     $('#actualqty37').text(data37.act);
                     $('#status37').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row37');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data37.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data37.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3353,15 +3631,21 @@
                     $('#qty38').text(data38.qty);
                     $('#actualqty38').text(data38.act);
                     $('#status38').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row38');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data38.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data38.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3394,15 +3678,21 @@
                     $('#qty39').text(data39.qty);
                     $('#actualqty39').text(data39.act);
                     $('#status39').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row39');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data39.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data39.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3435,15 +3725,21 @@
                     $('#qty40').text(data40.qty);
                     $('#actualqty40').text(data40.act);
                     $('#status40').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row40');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data40.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data40.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3475,15 +3771,21 @@
                     $('#qty41').text(data41.qty);
                     $('#actualqty41').text(data41.act);
                     $('#status41').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row41');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data41.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data41.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3515,15 +3817,21 @@
                     $('#qty42').text(data42.qty);
                     $('#actualqty42').text(data42.act);
                     $('#status42').text(status);
-                    // Select the row element using ID
+
                     var row = $('#row42');
 
-                    // Remove current class
-                    row.removeClass("table-danger table-primary");
+
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data42.status == 2) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-danger");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
+                        }
+                    }
+                        if (data42.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
                         }
                 }
             }
@@ -3534,7 +3842,7 @@
 
 
     updateDateTime();
-    setInterval(updateDateTime, 1000); // Update time every second
+    setInterval(updateDateTime, 1000);
     // fetchData();
     // fetchData2();
     // fetchData3();

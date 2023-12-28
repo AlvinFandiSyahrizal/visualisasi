@@ -48,7 +48,7 @@
             padding-left: 20px; /* Jarak kiri */
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px; /* Tambahkan jarak ke bawah */
+            margin-bottom: 20px; /*  Tambahkan jarak ke bawah */
         }
 
         #date {

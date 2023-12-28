@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('line2s', function (Blueprint $table) {
             $table->id();
-            $table->string('PartNumber');
+            $table->string('PART NUMBER');
             $table->integer('FLANGENON');
             $table->string('LINE');
             $table->dateTime('created_at')->nullable();

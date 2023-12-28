@@ -11,11 +11,12 @@ use Illuminate\Support\Facades\DB;
 
 class Line2Controller extends Controller
 {
-    public function index()
+    public function index(): View
     {
-        $line2s = dbflange::all();
-        return view('input.line2', compact('line2s'));
+        $dbflanges = dbflange::where('LINE', 'LINE 2')->paginate(10);
+        return view('input.line2', compact('dbflanges'));
     }
+
 
     public function create(): View
     {
@@ -24,7 +25,7 @@ class Line2Controller extends Controller
 
     public function store(Request $request): RedirectResponse
     {
-        // Validasi data jika diperlukan
+
         $request->validate([
             'PartNumber' => 'required',
             'FLANGENON' => 'required|integer',
@@ -32,25 +33,24 @@ class Line2Controller extends Controller
             'DC NUMBER' => 'required|integer',
         ]);
 
-        // Simpan data baru
         Line2::create($request->all());
 
         return redirect()->route('line2.index')->with('success', 'Data Line2 berhasil ditambahkan.');
     }
 
-    public function show(Line2 $line2): View
+    public function show(Line2 $dbflange): View
     {
-        return view('line2.show', compact('line2'));
+        return view('line2.show', compact('dbflanges'));
     }
 
-    public function edit(Line2 $line2): View
+    public function edit(Line2 $dbflange): View
     {
-        return view('line2.edit', compact('line2'));
+        return view('line2.edit', compact('dbflanges'));
     }
 
-    public function update(Request $request, Line2 $line2): RedirectResponse
+    public function update(Request $request, Line2 $dbflange): RedirectResponse
     {
-        // Validasi data jika diperlukan
+
         $request->validate([
             'PartNumber' => 'required',
             'FLANGENON' => 'required|integer',
@@ -58,16 +58,14 @@ class Line2Controller extends Controller
             'DC NUMBER' => 'required|integer',
         ]);
 
-        // Perbarui data
-        $line2->update($request->all());
+        $dbflange->update($request->all());
 
         return redirect()->route('line2.index')->with('success', 'Data Line2 berhasil diperbarui.');
     }
 
-    public function destroy(Line2 $line2): RedirectResponse
+    public function destroy(Line2 $dbflange): RedirectResponse
     {
-        // Hapus data
-        $line2->delete();
+        $dbflange->delete();
 
         return redirect()->route('line2.index')->with('success', 'Data Line2 berhasil dihapus.');
     }

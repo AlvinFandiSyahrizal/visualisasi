@@ -80,6 +80,8 @@ Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('data.
 Route::get('/cek', [VisualisasiController::class, 'cek'])->name('data.cek');
 
 Route::resource('line2', \App\Http\Controllers\Line2Controller::class );
+Route::resource('line3', \App\Http\Controllers\Line3Controller::class );
+Route::resource('line4', \App\Http\Controllers\Line4Controller::class );
 
 
 // Route::get('/line2', [VisualisasiController::class, 'line2'])->name('line2.visual');
@@ -93,6 +95,7 @@ Route::resource('line2', \App\Http\Controllers\Line2Controller::class );
 
 Route::get('/riwayat', [VisualisasiController::class, 'riwayat'])->name('riwayat.visual');
 Route::get('/riwayat2', [VisualisasiController::class, 'riwayat2'])->name('riwayat.visual');
+Route::get('/riwayat3', [VisualisasiController::class, 'riwayat3'])->name('riwayat.visual');
 
 
 Route::get('/riwayat/line2', [VisualisasiController::class, 'riwayatline2'])->name('riwayat.line2');

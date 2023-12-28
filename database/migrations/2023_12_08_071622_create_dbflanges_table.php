@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('dbflanges', function (Blueprint $table) {
             $table->id();
-            $table->string('DcCode');
-            $table->string('Model');
-            $table->integer('FlangeNon');
-            $table->string('Line');
+            $table->string('[PART NUMBER]');
+            $table->integer('FLANGENON');
+            $table->string('LINE');
+            $table->dateTime('created_at')->nullable();
+            $table->dateTime('updated_at')->nullable();
+            $table->integer('[DC CODE]');
             $table->timestamps();
         });
     }

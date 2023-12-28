@@ -21,1964 +21,8 @@
 
     <div class="row">
         <div class="col table-bordered">
-            
-        <table class="table table-bordered border-primary">
-            <thead class="table-light table-bordered border-primary">
-                <tr>
-                    <th>No</th>
-                    <th>SeqNo</th>
-                    <th>P/N</th>
-                    <th>DcCode</th>
-                    <th>Type</th>
-                    <th>Line</th>
-                    <th>Qty</th>
-                    <th>Act</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
+            <div class="col table-bordered">
 
-        {{-- <tr id="row1">
-                    <td>
-            <div id="partNumber-container">
-                <span>1</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row2">
-                <td>
-            <div id="partNumber-container">
-                <span>2</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container2">
-                    <span id="seqnumber2"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container2">
-                    <span id="partNumber2"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container2">
-                    <span id="dccode2"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container2">
-                    <span id="flangeStatus2"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container2">
-                    <span id="line2"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container2">
-                    <span id="qty2"></span>
-        </td>
-            <td>
-                <div id="partNumber-container2">
-                    <span id="actualqty2"></span>
-        </td>
-            <td>
-                <div id="partNumber-container2">
-                    <span id="status2"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row3">
-                <td>
-            <div id="partNumber-container">
-                <span>3</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber3"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber3"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode3"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus3"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line3"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty3"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty3"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status3"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row4">
-                <td>
-            <div id="partNumber-container">
-                <span>4</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber4"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber4"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode4"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus4"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line4"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty4"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty4"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status4"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row5">
-                <td>
-            <div id="partNumber-container">
-                <span>5</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber5"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber5"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode5"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus5"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line5"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty5"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty5"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status5"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row6">
-                <td>
-            <div id="partNumber-container">
-                <span>6</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber6"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber6"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode6"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus6"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line6"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty6"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty6"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status6"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row7">
-                <td>
-            <div id="partNumber-container">
-                <span>7</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber7"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber7"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode7"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus7"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line7"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty7"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty7"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status7"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row8">
-                <td>
-            <div id="partNumber-container">
-                <span>8</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber8"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber8"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode8"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus8"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line8"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty8"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty8"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status8"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row9">
-                <td>
-            <div id="partNumber-container">
-                <span>9</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber9"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber9"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode9"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus9"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line9"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty9"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty9"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status9"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row10">
-                <td>
-            <div id="partNumber-container">
-                <span>10</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber10"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber10"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode10"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus10"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line10"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty10"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty10"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status10"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row11">
-                <td>
-            <div id="partNumber-container">
-                <span>11</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber11"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber11"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode11"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus11"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line11"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty11"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty11"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status11"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row12">
-                <td>
-            <div id="partNumber-container">
-                <span>12</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber12"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber12"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode12"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus12"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line12"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty12"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty12"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status12"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row13">
-                <td>
-            <div id="partNumber-container">
-                <span>13</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber13"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber13"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode13"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus13"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line13"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty13"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty13"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status13"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row14">
-                <td>
-            <div id="partNumber-container">
-                <span>14</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber14"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber14"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode14"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus14"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line14"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty14"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty14"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status14"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row15">
-                <td>
-            <div id="partNumber-container">
-                <span>15</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber15"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber15"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode15"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus15"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line15"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty15"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty15"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status15"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row16">
-                <td>
-            <div id="partNumber-container">
-                <span>16</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber16"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber16"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode16"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus16"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line16"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty16"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty16"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status16"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row17">
-                <td>
-            <div id="partNumber-container">
-                <span>17</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber17"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber17"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode17"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus17"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line17"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty17"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty17"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status17"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row18">
-                <td>
-            <div id="partNumber-container">
-                <span>18</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber18"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber18"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode18"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus18"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line18"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty18"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty18"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status18"></span>
-                </td>
-        </td>
-    </tr> --}}
-
-    <tr id="row19">
-        <td>
-            <div id="partNumber-container">
-                <span>19</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber19"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber19"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode19"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus19"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line19"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty19"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty19"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status19"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row20">
-        <td>
-            <div id="partNumber-container">
-                <span>20</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber20"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber20"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode20"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus20"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line20"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty20"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty20"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status20"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row21">
-        <td>
-            <div id="partNumber-container">
-                <span>21</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber21"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber21"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode21"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus21"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line21"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty21"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty21"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status21"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row22">
-        <td>
-            <div id="partNumber-container">
-                <span>22</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber22"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber22"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode22"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus22"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line22"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty22"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty22"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status22"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row23">
-        <td>
-            <div id="partNumber-container">
-                <span>23</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber23"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber23"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode23"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus23"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line23"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty23"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty23"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status23"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row24">
-        <td>
-            <div id="partNumber-container">
-                <span>24</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber24"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber24"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode24"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus24"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line24"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty24"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty24"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status24"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row25">
-        <td>
-            <div id="partNumber-container">
-                <span>25</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber25"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber25"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode25"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus25"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line25"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty25"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty25"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status25"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row26">
-        <td>
-            <div id="partNumber-container">
-                <span>26</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber26"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber26"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode26"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus26"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line26"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty26"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty26"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status26"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row27">
-        <td>
-            <div id="partNumber-container">
-                <span>27</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber27"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber27"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode27"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus27"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line27"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty27"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty27"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status27"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row28">
-        <td>
-            <div id="partNumber-container">
-                <span>28</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber28"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber28"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode28"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus28"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line28"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty28"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty28"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status28"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row29">
-        <td>
-            <div id="partNumber-container">
-                <span>29</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber29"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber29"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode29"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus29"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line29"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty29"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty29"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status29"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row30">
-        <td>
-            <div id="partNumber-container">
-                <span>30</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber30"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber30"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode30"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus30"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line30"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty30"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty30"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status30"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row31">
-        <td>
-            <div id="partNumber-container">
-                <span>31</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber31"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber31"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode31"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus31"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line31"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty31"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty31"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status31"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row32">
-        <td>
-            <div id="partNumber-container">
-                <span>32</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber32"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber32"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode32"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus32"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line32"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty32"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty32"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status32"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row33">
-        <td>
-            <div id="partNumber-container">
-                <span>33</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber33"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber33"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode33"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus33"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line33"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty33"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty33"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status33"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row34">
-        <td>
-            <div id="partNumber-container">
-                <span>34</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber34"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber34"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode34"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus34"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line34"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty34"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty34"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status34"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row35">
-        <td>
-            <div id="partNumber-container">
-                <span>35</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber35"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber35"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode35"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus35"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line35"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty35"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty35"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status35"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row36">
-        <td>
-            <div id="partNumber-container">
-                <span>36</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber36"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber36"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode36"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus36"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line36"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty36"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty36"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status36"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row37">
-        <td>
-            <div id="partNumber-container">
-                <span>37</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber37"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber37"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode37"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus37"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line37"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty37"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty37"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status37"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row38">
-        <td>
-            <div id="partNumber-container">
-                <span>38</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber38"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber38"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode38"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus38"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line38"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty38"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty38"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status38"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row39">
-        <td>
-            <div id="partNumber-container">
-                <span>39</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber39"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber39"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode39"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus39"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line39"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty39"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty39"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status39"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row40">
-        <td>
-            <div id="partNumber-container">
-                <span>40</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber40"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber40"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode40"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus40"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line40"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty40"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty40"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status40"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row41">
-        <td>
-            <div id="partNumber-container">
-                <span>41</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber41"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber41"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode41"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus41"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line41"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty41"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty41"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status41"></span>
-                </td>
-        </td>
-    </tr>
-
-    <tr id="row42">
-        <td>
-            <div id="partNumber-container">
-                <span>42</span>
-            </div>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="seqnumber342"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="partNumber42"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="dccode42"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="flangeStatus42"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="line42"></span>
-                </div>
-            </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="qty42"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="actualqty42"></span>
-        </td>
-            <td>
-                <div id="partNumber-container">
-                    <span id="status42"></span>
-                </td>
-        </td>
-    </tr>
-
-
-                    </div>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-        <div class="col table-bordered">
-            <tbody>
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
                         <tr>
@@ -1994,745 +38,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {{-- <tr id="row1">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status"></span>
-                                </td>
-                        </td>
-                    </tr>
 
-                    <tr id="row2">
-                            <td>
-                                <div id="partNumber-container2">
-                                    <span id="seqnumber2"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container2">
-                                    <span id="partNumber2"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container2">
-                                    <span id="dccode2"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container2">
-                                    <span id="flangeStatus2"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container2">
-                                    <span id="line2"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container2">
-                                    <span id="qty2"></span>
+                        <tr id="row19">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>19</span>
+                            </div>
                         </td>
-                            <td>
-                                <div id="partNumber-container2">
-                                    <span id="actualqty2"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container2">
-                                    <span id="status2"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row3">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber3"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber3"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode3"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus3"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line3"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty3"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty3"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status3"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row4">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber4"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber4"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode4"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus4"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line4"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty4"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty4"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status4"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row5">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber5"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber5"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode5"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus5"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line5"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty5"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty5"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status5"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row6">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber6"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber6"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode6"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus6"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line6"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty6"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty6"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status6"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row7">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber7"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber7"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode7"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus7"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line7"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty7"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty7"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status7"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row8">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber8"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber8"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode8"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus8"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line8"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty8"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty8"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status8"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row9">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber9"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber9"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode9"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus9"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line9"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty9"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty9"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status9"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row10">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber10"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber10"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode10"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus10"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line10"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty10"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty10"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status10"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row11">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber11"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber11"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode11"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus11"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line11"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty11"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty11"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status11"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row12">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber12"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber12"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode12"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus12"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line12"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty12"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty12"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status12"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row13">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber13"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber13"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode13"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus13"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line13"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty13"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty13"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status13"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row14">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber14"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber14"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode14"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus14"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line14"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty14"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty14"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status14"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row15">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber15"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber15"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode15"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus15"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line15"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty15"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty15"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status15"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row16">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber16"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber16"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode16"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus16"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line16"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty16"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty16"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status16"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row17">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber17"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber17"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode17"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus17"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line17"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty17"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty17"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status17"></span>
-                                </td>
-                        </td>
-                    </tr>
-
-                    <tr id="row18">
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="seqnumber18"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="partNumber18"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="dccode18"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="flangeStatus18"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="line18"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="qty18"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="actualqty18"></span>
-                        </td>
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="status18"></span>
-                                </td>
-                        </td>
-                    </tr> --}}
-
-                    <tr id="row19">
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber19"></span>
@@ -2771,9 +83,14 @@
                                     <span id="status19"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row20">
+                        <tr id="row20">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>20</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber20"></span>
@@ -2812,9 +129,14 @@
                                     <span id="status20"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row21">
+                        <tr id="row21">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>21</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber21"></span>
@@ -2853,9 +175,14 @@
                                     <span id="status21"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row22">
+                        <tr id="row22">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>22</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber22"></span>
@@ -2894,9 +221,14 @@
                                     <span id="status22"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row23">
+                        <tr id="row23">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>23</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber23"></span>
@@ -2935,9 +267,14 @@
                                     <span id="status23"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row24">
+                        <tr id="row24">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>24</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber24"></span>
@@ -2976,9 +313,14 @@
                                     <span id="status24"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row25">
+                        <tr id="row25">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>25</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber25"></span>
@@ -3017,9 +359,14 @@
                                     <span id="status25"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row26">
+                        <tr id="row26">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>26</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber26"></span>
@@ -3058,9 +405,14 @@
                                     <span id="status26"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row27">
+                        <tr id="row27">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>27</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber27"></span>
@@ -3099,9 +451,14 @@
                                     <span id="status27"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row28">
+                        <tr id="row28">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>28</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber28"></span>
@@ -3140,9 +497,14 @@
                                     <span id="status28"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row29">
+                        <tr id="row29">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>29</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber29"></span>
@@ -3181,9 +543,14 @@
                                     <span id="status29"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row30">
+                        <tr id="row30">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>30</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber30"></span>
@@ -3222,9 +589,14 @@
                                     <span id="status30"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row31">
+                        <tr id="row31">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>31</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber31"></span>
@@ -3263,9 +635,14 @@
                                     <span id="status31"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row32">
+                        <tr id="row32">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>32</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber32"></span>
@@ -3304,9 +681,14 @@
                                     <span id="status32"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row33">
+                        <tr id="row33">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>33</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber33"></span>
@@ -3345,9 +727,14 @@
                                     <span id="status33"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row34">
+                        <tr id="row34">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>34</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber34"></span>
@@ -3386,9 +773,14 @@
                                     <span id="status34"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row35">
+                        <tr id="row35">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>35</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber35"></span>
@@ -3427,9 +819,14 @@
                                     <span id="status35"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row36">
+                        <tr id="row36">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>36</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber36"></span>
@@ -3468,9 +865,14 @@
                                     <span id="status36"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row37">
+                        <tr id="row37">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>37</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber37"></span>
@@ -3509,9 +911,14 @@
                                     <span id="status37"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row38">
+                        <tr id="row38">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>38</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber38"></span>
@@ -3550,9 +957,14 @@
                                     <span id="status38"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row39">
+                        <tr id="row39">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>39</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber39"></span>
@@ -3591,9 +1003,14 @@
                                     <span id="status39"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row40">
+                        <tr id="row40">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>40</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber40"></span>
@@ -3632,9 +1049,14 @@
                                     <span id="status40"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row41">
+                        <tr id="row41">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>41</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber41"></span>
@@ -3673,12 +1095,17 @@
                                     <span id="status41"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
 
-                    <tr id="row42">
+                        <tr id="row42">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>42</span>
+                            </div>
+                        </td>
                             <td>
                                 <div id="partNumber-container">
-                                    <span id="seqnumber342"></span>
+                                    <span id="seqnumber42"></span>
                                 </div>
                             </td>
                             <td>
@@ -3714,20 +1141,2272 @@
                                     <span id="status42"></span>
                                 </td>
                         </td>
-                    </tr>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        </div>
 
-                </div>
+        <div class="col table-bordered">
+            <div class="col table-bordered">
 
-        </tbody>
-    </table>
-    </div>
+                <table class="table table-bordered border-primary">
+                    <thead class="table-light table-bordered border-primary">
+                        <tr>
+                            <th>No</th>
+                            <th>SeqNo</th>
+                            <th>P/N</th>
+                            <th>DcCode</th>
+                            <th>Type</th>
+                            <th>Line</th>
+                            <th>Qty</th>
+                            <th>Act</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr id="row19">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>19</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty19"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty19"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status19"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row20">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>20</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty20"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty20"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status20"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row21">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>21</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty21"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty21"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status21"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row22">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>22</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty22"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty22"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status22"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row23">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>23</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty23"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty23"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status23"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row24">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>24</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty24"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty24"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status24"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row25">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>25</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty25"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty25"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status25"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row26">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>26</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty26"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty26"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status26"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row27">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>27</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty27"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty27"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status27"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row28">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>28</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty28"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty28"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status28"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row29">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>29</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty29"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty29"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status29"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row30">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>30</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty30"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty30"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status30"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row31">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>31</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty31"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty31"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status31"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row32">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>32</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty32"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty32"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status32"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row33">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>33</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty33"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty33"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status33"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row34">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>34</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty34"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty34"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status34"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row35">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>35</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty35"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty35"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status35"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row36">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>36</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty36"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty36"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status36"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row37">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>37</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty37"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty37"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status37"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row38">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>38</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty38"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty38"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status38"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row39">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>39</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty39"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty39"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status39"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row40">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>40</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty40"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty40"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status40"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row41">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>41</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty41"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty41"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status41"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row42">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>42</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty42"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty42"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status42"></span>
+                                </td>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        </div>
+
+        <div class="col table-bordered">
+            <div class="col table-bordered">
+
+                <table class="table table-bordered border-primary">
+                    <thead class="table-light table-bordered border-primary">
+                        <tr>
+                            <th>No</th>
+                            <th>SeqNo</th>
+                            <th>P/N</th>
+                            <th>DcCode</th>
+                            <th>Type</th>
+                            <th>Line</th>
+                            <th>Qty</th>
+                            <th>Act</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr id="row19">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>19</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line19"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty19"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty19"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status19"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row20">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>20</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line20"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty20"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty20"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status20"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row21">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>21</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line21"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty21"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty21"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status21"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row22">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>22</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line22"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty22"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty22"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status22"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row23">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>23</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line23"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty23"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty23"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status23"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row24">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>24</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line24"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty24"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty24"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status24"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row25">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>25</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line25"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty25"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty25"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status25"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row26">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>26</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line26"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty26"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty26"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status26"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row27">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>27</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line27"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty27"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty27"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status27"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row28">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>28</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line28"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty28"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty28"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status28"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row29">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>29</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line29"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty29"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty29"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status29"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row30">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>30</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line30"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty30"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty30"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status30"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row31">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>31</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line31"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty31"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty31"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status31"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row32">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>32</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line32"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty32"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty32"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status32"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row33">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>33</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line33"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty33"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty33"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status33"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row34">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>34</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line34"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty34"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty34"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status34"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row35">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>35</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line35"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty35"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty35"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status35"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row36">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>36</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line36"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty36"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty36"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status36"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row37">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>37</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line37"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty37"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty37"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status37"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row38">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>38</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line38"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty38"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty38"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status38"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row39">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>39</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line39"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty39"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty39"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status39"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row40">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>40</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line40"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty40"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty40"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status40"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row41">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>41</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line41"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty41"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty41"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status41"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row42">
+                        <td>
+                            <div id="partNumber-container">
+                                <span>42</span>
+                            </div>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="line42"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="qty42"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="actualqty42"></span>
+                        </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status42"></span>
+                                </td>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
         </div>
     </div>
-{{-- </div> --}}
 
 </body>
-<script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
 
+
+<script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script>
 

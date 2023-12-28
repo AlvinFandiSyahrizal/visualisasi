@@ -52,7 +52,7 @@ class VisualisasiController extends Controller
 {
     public function index()
     {
-        $data = dbflange::all();
+        $data = datapn21::all();
         return view('belajar.visualisasi', compact('data'));
     }
 
@@ -507,6 +507,11 @@ class VisualisasiController extends Controller
     {
 
         return view('riwayat.visual');
+    }
+    public function riwayat3()
+    {
+
+        return view('riwayat.visualll');
     }
     public function cek()
     {

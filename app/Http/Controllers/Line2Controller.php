@@ -51,7 +51,7 @@ class Line2Controller extends Controller
     public function update(Request $request, Line2 $dbflange): RedirectResponse
     {
 
-        $request->validate([
+        $request->validate([    
             'PartNumber' => 'required',
             'FLANGENON' => 'required|integer',
             'LINE' => 'required',

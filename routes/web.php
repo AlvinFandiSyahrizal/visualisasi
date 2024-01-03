@@ -33,23 +33,7 @@ Route::get('/belajara', [BelajarController::class, 'index'])->name('data.belajar
 use App\Http\Controllers\VisualisasiController;
 
 Route::get('/visual', [VisualisasiController::class, 'getData'])->name('data.visual');
-Route::get('/visual2', [VisualisasiController::class, 'getData2'])->name('data.visual2');
-Route::get('/visual3', [VisualisasiController::class, 'getData3'])->name('data.visual3');
-Route::get('/visual4', [VisualisasiController::class, 'getData4'])->name('data.visual4');
-Route::get('/visual5', [VisualisasiController::class, 'getData5'])->name('data.visual5');
-Route::get('/visual6', [VisualisasiController::class, 'getData6'])->name('data.visual6');
-Route::get('/visual7', [VisualisasiController::class, 'getData7'])->name('data.visual7');
-Route::get('/visual8', [VisualisasiController::class, 'getData8'])->name('data.visual8');
-Route::get('/visual9', [VisualisasiController::class, 'getData9'])->name('data.visual9');
-Route::get('/visual10', [VisualisasiController::class, 'getData10'])->name('data.visual10');
-Route::get('/visual11', [VisualisasiController::class, 'getData11'])->name('data.visual11');
-Route::get('/visual12', [VisualisasiController::class, 'getData12'])->name('data.visual12');
-Route::get('/visual13', [VisualisasiController::class, 'getData13'])->name('data.visual13');
-Route::get('/visual14', [VisualisasiController::class, 'getData14'])->name('data.visual14');
-Route::get('/visual15', [VisualisasiController::class, 'getData15'])->name('data.visual15');
-Route::get('/visual16', [VisualisasiController::class, 'getData16'])->name('data.visual16');
-Route::get('/visual17', [VisualisasiController::class, 'getData17'])->name('data.visual17');
-Route::get('/visual18', [VisualisasiController::class, 'getData18'])->name('data.visual18');
+
 Route::get('/visual19', [VisualisasiController::class, 'getData19'])->name('data.visual19');
 Route::get('/visual20', [VisualisasiController::class, 'getData20'])->name('data.visual20');
 Route::get('/visual21', [VisualisasiController::class, 'getData21'])->name('data.visual21');
@@ -74,6 +58,58 @@ Route::get('/visual39', [VisualisasiController::class, 'getData39'])->name('data
 Route::get('/visual40', [VisualisasiController::class, 'getData40'])->name('data.visual40');
 Route::get('/visual41', [VisualisasiController::class, 'getData41'])->name('data.visual41');
 Route::get('/visual42', [VisualisasiController::class, 'getData42'])->name('data.visual42');
+
+//ini buat line3
+Route::get('/visual19line3', [VisualisasiController::class, 'getData19line3'])->name('data.visual19line3');
+Route::get('/visual20line3', [VisualisasiController::class, 'getData20line3'])->name('data.visual20line3');
+Route::get('/visual21line3', [VisualisasiController::class, 'getData21line3'])->name('data.visual21line3');
+Route::get('/visual22line3', [VisualisasiController::class, 'getData22line3'])->name('data.visual22line3');
+Route::get('/visual23line3', [VisualisasiController::class, 'getData23line3'])->name('data.visual23line3');
+Route::get('/visual24line3', [VisualisasiController::class, 'getData24line3'])->name('data.visual24line3');
+Route::get('/visual25line3', [VisualisasiController::class, 'getData25line3'])->name('data.visual25line3');
+Route::get('/visual26line3', [VisualisasiController::class, 'getData26line3'])->name('data.visual26line3');
+Route::get('/visual27line3', [VisualisasiController::class, 'getData27line3'])->name('data.visual27line3');
+Route::get('/visual28line3', [VisualisasiController::class, 'getData28line3'])->name('data.visual28line3');
+Route::get('/visual29line3', [VisualisasiController::class, 'getData29line3'])->name('data.visual29line3');
+Route::get('/visual30line3', [VisualisasiController::class, 'getData30line3'])->name('data.visual30line3');
+Route::get('/visual31line3', [VisualisasiController::class, 'getData31line3'])->name('data.visual31line3');
+Route::get('/visual32line3', [VisualisasiController::class, 'getData32line3'])->name('data.visual32line3');
+Route::get('/visual33line3', [VisualisasiController::class, 'getData33line3'])->name('data.visual33line3');
+Route::get('/visual34line3', [VisualisasiController::class, 'getData34line3'])->name('data.visual34line3');
+Route::get('/visual35line3', [VisualisasiController::class, 'getData35line3'])->name('data.visual35line3');
+Route::get('/visual36line3', [VisualisasiController::class, 'getData36line3'])->name('data.visual36line3');
+Route::get('/visual37line3', [VisualisasiController::class, 'getData37line3'])->name('data.visual37line3');
+Route::get('/visual38line3', [VisualisasiController::class, 'getData38line3'])->name('data.visual38line3');
+Route::get('/visual39line3', [VisualisasiController::class, 'getData39line3'])->name('data.visual39line3');
+Route::get('/visual40line3', [VisualisasiController::class, 'getData40line3'])->name('data.visual40line3');
+Route::get('/visual41line3', [VisualisasiController::class, 'getData41line3'])->name('data.visual41line3');
+Route::get('/visual42line3', [VisualisasiController::class, 'getData42line3'])->name('data.visual42line3');
+
+//ini buat line
+Route::get('/visual19line2', [VisualisasiController::class, 'getData19line2'])->name('data.visual19line2');
+Route::get('/visual20line2', [VisualisasiController::class, 'getData20line2'])->name('data.visual20line2');
+Route::get('/visual21line2', [VisualisasiController::class, 'getData21line2'])->name('data.visual21line2');
+Route::get('/visual22line2', [VisualisasiController::class, 'getData22line2'])->name('data.visual22line2');
+Route::get('/visual23line2', [VisualisasiController::class, 'getData23line2'])->name('data.visual23line2');
+Route::get('/visual24line2', [VisualisasiController::class, 'getData24line2'])->name('data.visual24line2');
+Route::get('/visual25line2', [VisualisasiController::class, 'getData25line2'])->name('data.visual25line2');
+Route::get('/visual26line2', [VisualisasiController::class, 'getData26line2'])->name('data.visual26line2');
+Route::get('/visual27line2', [VisualisasiController::class, 'getData27line2'])->name('data.visual27line2');
+Route::get('/visual28line2', [VisualisasiController::class, 'getData28line2'])->name('data.visual28line2');
+Route::get('/visual29line2', [VisualisasiController::class, 'getData29line2'])->name('data.visual29line2');
+Route::get('/visual30line2', [VisualisasiController::class, 'getData30line2'])->name('data.visual30line2');
+Route::get('/visual31line2', [VisualisasiController::class, 'getData31line2'])->name('data.visual31line2');
+Route::get('/visual32line2', [VisualisasiController::class, 'getData32line2'])->name('data.visual32line2');
+Route::get('/visual33line2', [VisualisasiController::class, 'getData33line2'])->name('data.visual33line2');
+Route::get('/visual34line2', [VisualisasiController::class, 'getData34line2'])->name('data.visual34line2');
+Route::get('/visual35line2', [VisualisasiController::class, 'getData35line2'])->name('data.visual35line2');
+Route::get('/visual36line2', [VisualisasiController::class, 'getData36line2'])->name('data.visual36line2');
+Route::get('/visual37line2', [VisualisasiController::class, 'getData37line2'])->name('data.visual37line2');
+Route::get('/visual38line2', [VisualisasiController::class, 'getData38line2'])->name('data.visual38line2');
+Route::get('/visual39line2', [VisualisasiController::class, 'getData39line2'])->name('data.visual39line2');
+Route::get('/visual40line2', [VisualisasiController::class, 'getData40line2'])->name('data.visual40line2');
+Route::get('/visual41line2', [VisualisasiController::class, 'getData41line2'])->name('data.visual41line2');
+Route::get('/visual42line2', [VisualisasiController::class, 'getData42line2'])->name('data.visual42line2');
 
 Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('data.visualisasi');
 

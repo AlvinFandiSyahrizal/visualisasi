@@ -1,4 +1,3 @@
-<!-- resources/views/riwayat.blade.php -->
 @include('dashboard.dashboard')
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +23,7 @@
             <div class="col table-bordered">
 
                 <table class="table table-bordered border-primary">
-                    <thead class="table-light table-bordered border-primary">
+                    <thead class="table-secondary table-bordered border-primary">
                         <tr>
                             <th>No</th>
                             <th>SeqNo</th>
@@ -955,7 +954,7 @@
             <div class="col table-bordered">
 
                 <table class="table table-bordered border-primary">
-                    <thead class="table-light table-bordered border-primary">
+                    <thead class="table-secondary table-bordered border-primary">
                         <tr>
                             <th>No</th>
                             <th>SeqNo</th>
@@ -1886,7 +1885,7 @@
             <div class="col table-bordered">
 
                 <table class="table table-bordered border-primary">
-                    <thead class="table-light table-bordered border-primary">
+                    <thead class="table-secondary table-bordered border-primary">
                         <tr>
                             <th>No</th>
                             <th>SeqNo</th>

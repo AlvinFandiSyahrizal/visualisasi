@@ -9,6 +9,8 @@
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4-beta3/css/all.min.css" integrity="sha512-dU/jbJt+Exm6aSyq8Mscy9xLvbq8zAZdspt4xWsoJ1x+K1B9CbAGG2TpR8t+ntLj3qIi0IXL+abF99MReOj5Jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="container mt-5">
@@ -89,14 +91,16 @@
                                                 @csrf
                                                 <a href="#" class="btn btn-sm btn-primary edit-button"
                                                     data-toggle="modal" data-target="#editModal-{{ $dbflange->id }}"
-                                                    data-operations="{{ $dbflange->LINE }}">Edit</a>
+                                                    data-operations="{{ $dbflange->LINE }}">
+                                                    <i class="fa-solid fa-pen-to-square"></i> Edit</a>
                                             </form>
                                             <form action="{{ route('line2.destroy', $dbflange->id) }}" method="POST"
                                                 style="display: inline;">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-danger"
-                                                    onclick="return confirm('Apakah Anda yakin?')">Delete</button>
+                                                <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin?')">
+                                                    <i class="fa fa-trash"></i> Delete
+                                                </button>
                                             </form>
                                         </td>
                                     </tr>
@@ -116,6 +120,7 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
 
     <script>
 

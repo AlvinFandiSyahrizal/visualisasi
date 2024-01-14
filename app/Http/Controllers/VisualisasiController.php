@@ -32,6 +32,7 @@ use App\Models\datapn40;
 use App\Models\datapn41;
 use App\Models\datapn42;
 use App\Models\datapn43;
+
 use App\Models\datapn19line3;
 use App\Models\datapn20line3;
 use App\Models\datapn21line3;
@@ -181,6 +182,7 @@ class VisualisasiController extends Controller
 
         return response()->json($data);
     }
+
     public function getData26()
     {
         $data = datapn26::leftjoin('dbflanges', 'dbflanges.DC CODE', '=', 'datapn26s.DC CODE')

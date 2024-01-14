@@ -1,3 +1,4 @@
+<!-- resources/views/riwayat.blade.php -->
 @include('dashboard.dashboard')
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +24,7 @@
             <div class="col table-bordered">
 
                 <table class="table table-bordered border-primary">
-                    <thead class="table-secondary table-bordered border-primary">
+                    <thead class="table-light table-bordered border-primary">
                         <tr>
                             <th>No</th>
                             <th>SeqNo</th>
@@ -277,7 +278,7 @@
                             </td>
                             <td>
                                 <div id="partNumber-container">
-                                    <span id="partNumber25"></span>
+                                    <span id="partNumber25line2"></span>
                                 </div>
                             </td>
                             <td>
@@ -954,7 +955,7 @@
             <div class="col table-bordered">
 
                 <table class="table table-bordered border-primary">
-                    <thead class="table-secondary table-bordered border-primary">
+                    <thead class="table-light table-bordered border-primary">
                         <tr>
                             <th>No</th>
                             <th>SeqNo</th>
@@ -1208,7 +1209,7 @@
                             </td>
                             <td>
                                 <div id="partNumber-container">
-                                    <span id="partNumber25"></span>
+                                    <span id="partNumber25line3"></span>
                                 </div>
                             </td>
                             <td>
@@ -1885,7 +1886,7 @@
             <div class="col table-bordered">
 
                 <table class="table table-bordered border-primary">
-                    <thead class="table-secondary table-bordered border-primary">
+                    <thead class="table-light table-bordered border-primary">
                         <tr>
                             <th>No</th>
                             <th>SeqNo</th>

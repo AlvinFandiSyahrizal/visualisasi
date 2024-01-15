@@ -86,14 +86,13 @@
                                         <td>{{ $dbflange->{'DCCODE'} }}</td>
 
                                         <td class="text-center">
-                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('line2.destroy', $dbflange->id) }}" method="POST">
-                                                @csrf
-                                                <a href="#" class="btn btn-sm btn-primary edit-button"
-                                                    data-toggle="modal" data-target="#editModal-{{ $dbflange->id }}"
-                                                    data-operations="{{ $dbflange->LINE }}">
-                                                    <i class="fa-solid fa-pen-to-square"></i> Edit</a>
-                                            </form>
+                                            <a href="#" class="btn btn-sm btn-primary edit-button"
+                                                data-toggle="modal" data-target="#editModal"
+                                                data-partnumber="{{ $dbflange->{'PARTNUMBER'} }}"
+                                                data-flangenon="{{ $dbflange->FLANGENON }}"
+                                                data-dccode="{{ $dbflange->{'DCCODE'} }}">
+                                                <i class="fa-solid fa-pen-to-square"></i> Edit
+                                            </a>
                                             <form action="{{ route('line2.destroy', $dbflange->id) }}" method="POST"
                                                 style="display: inline;">
                                                 @csrf
@@ -116,16 +115,66 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- Modal for Edit -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add your form fields for editing here -->
+                    <form id="editForm">
+                        @csrf
+                        @method('PUT') <!-- Assuming you are using a PUT request for editing -->
+                        <div class="form-group">
+                            <label for="editPartNumber">PartNumber</label>
+                            <input type="text" class="form-control" id="editPartNumber" name="editPartNumber" placeholder="Edit PartNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="editFlangeNon">FlangeNon</label>
+                            <select class="form-control" id="editFlangeNon" name="editFlangeNon">
+                                <option value="1">1</option>
+                                <option value="0">0</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="editDcCode">DcCode</label>
+                            <input type="number" class="form-control" id="editDcCode" name="editDcCode" min="0" step="1" placeholder="Edit DcCode">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-
     <script>
+        $('.edit-button').on('click', function () {
+            var partNumber = $(this).data('partnumber');
+            var flangeNon = $(this).data('flangenon');
+            var dcCode = $(this).data('dccode');
 
+            $('#editPartNumber').val(partNumber);
+            $('#editFlangeNon').val(flangeNon);
+            $('#editDcCode').val(dcCode);
+
+            // Modify the form action based on the record ID
+            var recordId = $(this).data('recordid');
+            $('#editForm').attr('action', '/line2/' + recordId);
+        });
     </script>
-
 
 </body>
 

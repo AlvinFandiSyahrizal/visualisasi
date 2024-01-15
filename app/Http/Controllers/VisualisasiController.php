@@ -656,6 +656,7 @@ class VisualisasiController extends Controller
 
         return response()->json($data);
     }
+
     public function getData30line2()
     {
         $data = datapn30line2::leftjoin('dbflange2s', 'dbflange2s.DC CODE', '=', 'datapn30line2s.DC CODE')
@@ -665,6 +666,7 @@ class VisualisasiController extends Controller
 
         return response()->json($data);
     }
+
     public function getData31line2()
     {
         $data = datapn31line2::leftjoin('dbflange2s', 'dbflange2s.DC CODE', '=', 'datapn31line2s.DC CODE')
@@ -674,6 +676,9 @@ class VisualisasiController extends Controller
 
         return response()->json($data);
     }
+
+
+
     public function getData32line2()
     {
         $data = datapn32line2::leftjoin('dbflange2s', 'dbflange2s.DC CODE', '=', 'datapn32line2s.DC CODE')

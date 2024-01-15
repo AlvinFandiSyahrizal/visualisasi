@@ -8,13 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class line2 extends Model
 {
     use HasFactory;
-    protected $table = 'dbflanges';
+    protected $table = 'dbflange2s';
 
     protected $fillable = [
-        'PartNumber',
+        'PARTNUMBER',
         'FLANGENON',
         'LINE',
-        'DC CODE',
-
+        'DCCODE',
     ];
 }

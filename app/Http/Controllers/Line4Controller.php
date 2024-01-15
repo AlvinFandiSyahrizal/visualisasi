@@ -13,7 +13,7 @@ class Line4Controller extends Controller
 {
     public function index(): View
     {
-        $dbflanges = dbflange::where('LINE', 'LINE 4')->paginate(10);
+        $dbflanges = dbflange::orderBy('id','desc')->paginate(100);
         return view('input.line4', compact('dbflanges'));
     }
 
@@ -27,11 +27,14 @@ class Line4Controller extends Controller
     {
 
         $request->validate([
-            'PartNumber' => 'required',
+            'PARTNUMBER' => 'required',
             'FLANGENON' => 'required|integer',
             'LINE' => 'required',
-            'DC NUMBER' => 'required|integer',
+            'created_at' => 'nullable',
+            'updated_at' => 'nullable',
+            'DCCODE' => 'required|integer',
         ]);
+        // dd($request);
 
         Line4::create($request->all());
 

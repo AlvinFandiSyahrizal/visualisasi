@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Input Data Line2</title>
+    <title>Input Data Line4</title>
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
@@ -35,7 +35,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="text" name="PartNumber" class="form-control" placeholder="Write here">
+                                            <input type="text" name="PARTNUMBER" class="form-control" placeholder="Write here">
                                         </td>
                                         <td>
                                             <select name="FLANGENON" class="form-control">
@@ -78,10 +78,10 @@
                             <tbody>
                                 @forelse($dbflanges as $dbflange)
                                     <tr>
-                                        <td>{{ $dbflange->{'PART NUMBER'} }}</td>
+                                        <td>{{ $dbflange->{'PARTNUMBER'} }}</td>
                                         <td>{{ $dbflange->FLANGENON }}</td>
                                         <td>{{ $dbflange->LINE }}</td>
-                                        <td>{{ $dbflange->{'DC CODE'} }}</td>
+                                        <td>{{ $dbflange->{'DCCODE'} }}</td>
 
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"

@@ -16,12 +16,12 @@
 
 
     <div class="container text-center mt-5">
-        <h2>PART NUMBER SEQUENCES</h2>
     </div>
 
         <div class="row d-flex flex-nowrap overflow-auto">
 
-            <div class="col table-bordered">
+            <div class="col table-bordered" >
+                <center><h3> LINE 2 </h3></center>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -443,6 +443,8 @@
                         </td>
                         </tr>
 
+
+
                         <tr id="row31line2">
 
                             <td>
@@ -855,6 +857,7 @@
             </div>
 
             <div class="col table-bordered">
+                <center><h3> LINE 3 </h3></center>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -1689,6 +1692,7 @@
             </div>
 
             <div class="col table-bordered">
+                <center><h3> LINE 4 </h3></center>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -2112,6 +2116,8 @@
                                 </td>
                         </td>
                         </tr>
+
+
 
                         <tr id="row31">
 
@@ -5058,7 +5064,6 @@ function fetchData19line3() {
         });
     }
 
-
     function fetchData29line2() {
         $.ajax({
             url: "{{ route('data.visual29line2') }}",
@@ -5101,7 +5106,6 @@ function fetchData19line3() {
             }
         });
     }
-
 
     function fetchData30line2() {
         $.ajax({
@@ -5146,7 +5150,6 @@ function fetchData19line3() {
         });
     }
 
-
     function fetchData31line2() {
         $.ajax({
             url: "{{ route('data.visual31line2') }}",
@@ -5189,7 +5192,6 @@ function fetchData19line3() {
             }
         });
     }
-
 
     function fetchData32line2() {
         $.ajax({
@@ -5234,7 +5236,6 @@ function fetchData19line3() {
         });
     }
 
-
     function fetchData33line2() {
         $.ajax({
             url: "{{ route('data.visual33line2') }}",
@@ -5277,7 +5278,6 @@ function fetchData19line3() {
             }
         });
     }
-
 
     function fetchData34line2() {
         $.ajax({
@@ -5322,7 +5322,6 @@ function fetchData19line3() {
         });
     }
 
-
     function fetchData35line2() {
         $.ajax({
             url: "{{ route('data.visual35line2') }}",
@@ -5365,7 +5364,6 @@ function fetchData19line3() {
             }
         });
     }
-
 
     function fetchData36line2() {
         $.ajax({
@@ -5410,7 +5408,6 @@ function fetchData19line3() {
         });
     }
 
-
     function fetchData37line2() {
         $.ajax({
             url: "{{ route('data.visual37line2') }}",
@@ -5453,7 +5450,48 @@ function fetchData19line3() {
             }
         });
     }
+    function fetchData38line2() {
+        $.ajax({
+            url: "{{ route('data.visual38line2') }}",
+            method: 'GET',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            success: function (data38line2) {
+                if (data38line2) {
+                    $('#dccode38line2').text(data38line2.DCCODE);
+                    $('#seqnumber38line2').text(data38line2.SeqNo);
+                    // $('#partNumber38line2').text(formattedPartNumber);
+                    $('#partNumber38line2').text(data38line2.NDCODEAWAL);
+                    
+                    $('#line38line2').text(data38line2.Line);
 
+                    var actQtyText = data38line2.act + '/' + data38line2.qty;
+                    $('#actualqty38line2').text(actQtyText);
+                    var status = (data38line2.status == 1) ? 'prod' : (data38line2.status == 2) ? 'com' : '';
+                    $('#status38line2').text(status);
+
+                    
+                    var flangeStatus = (data38line2.FlangeNon == 1) ? 'Flange' : (data38line2.FlangeNon == 0) ? 'Non-Flange' : '';
+
+                    $('#flangeStatus38line2').text(flangeStatus);
+                    var row = $('#row38line2');
+                    row.removeClass("table-danger table-primary table-success");
+                    if (data38line2.status == 2 || data38line2.status == 0) {
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-danger");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
+                    }
+                        if (data38line2.status == 1) {
+                        row.removeClass("table-danger table-primary");
+                        row.addClass("table-success");
+                        }
+                }
+            }
+        });
+    }
 
     function fetchData39line2() {
         $.ajax({
@@ -5498,8 +5536,7 @@ function fetchData19line3() {
         });
     }
 
-
-    function fetchData40line2() {
+        function fetchData40line2() {
         $.ajax({
             url: "{{ route('data.visual40line2') }}",
             method: 'GET',
@@ -5541,7 +5578,6 @@ function fetchData19line3() {
             }
         });
     }
-
 
     function fetchData41line2() {
         $.ajax({
@@ -5586,7 +5622,6 @@ function fetchData19line3() {
         });
     }
 
-
     function fetchData42line2() {
         $.ajax({
             url: "{{ route('data.visual42line2') }}",
@@ -5629,6 +5664,8 @@ function fetchData19line3() {
             }
         });
     }
+
+ 
 
 
     updateDateTime();

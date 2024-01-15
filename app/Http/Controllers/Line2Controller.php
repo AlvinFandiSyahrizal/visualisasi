@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Line2;
-use App\Models\dbflange;
+use App\Models\dbflange2;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
@@ -13,8 +13,8 @@ class Line2Controller extends Controller
 {
     public function index(): View
     {
-        $dbflanges = dbflange::where('LINE', 'LINE 2')->paginate(10);
-        return view('input.line2', compact('dbflanges'));
+        $dbflange2s = dbflange2::orderBy('id','desc')->paginate(10);
+        return view('input.line2', compact('dbflange2s'));
     }
 
 
@@ -27,10 +27,12 @@ class Line2Controller extends Controller
     {
 
         $request->validate([
-            'PartNumber' => 'required',
+            'PARTNUMBER' => 'required',
             'FLANGENON' => 'required|integer',
             'LINE' => 'required',
-            'DC NUMBER' => 'required|integer',
+            'created_at' => 'nullable',
+            'updated_at' => 'nullable',
+            'DCCODE' => 'required|integer',
         ]);
 
         Line2::create($request->all());
@@ -40,12 +42,12 @@ class Line2Controller extends Controller
 
     public function show(Line2 $dbflange): View
     {
-        return view('line2.show', compact('dbflanges'));
+        return view('line2.show', compact('line2'));
     }
 
     public function edit(Line2 $dbflange): View
     {
-        return view('line2.edit', compact('dbflanges'));
+        return view('line2.edit', compact('line2'));
     }
 
     public function update(Request $request, Line2 $dbflange): RedirectResponse
@@ -63,7 +65,7 @@ class Line2Controller extends Controller
         return redirect()->route('line2.index')->with('success', 'Data Line2 berhasil diperbarui.');
     }
 
-    public function destroy(Line2 $dbflange): RedirectResponse
+    public function destroy(Line2 $line2): RedirectResponse
     {
         $dbflange->delete();
 

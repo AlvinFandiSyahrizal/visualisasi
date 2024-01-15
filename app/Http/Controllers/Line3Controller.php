@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Line3;
-use App\Models\dbflange;
+use App\Models\dbflange3;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
@@ -11,10 +11,11 @@ use Illuminate\Support\Facades\DB;
 
 class Line3Controller extends Controller
 {
-    public function index(): View
+    public function index(): View   
     {
-        $dbflanges = dbflange::where('LINE', 'LINE 3')->paginate(10);
-        return view('input.line3', compact('dbflanges'));
+        $dbflange3s = dbflange3::orderBy('id','desc')->paginate(10);
+        
+        return view('input.line3', compact('dbflange3s'));
     }
 
 
@@ -27,10 +28,12 @@ class Line3Controller extends Controller
     {
 
         $request->validate([
-            'PartNumber' => 'required',
+            'PARTNUMBER' => 'required',
             'FLANGENON' => 'required|integer',
             'LINE' => 'required',
-            'DC NUMBER' => 'required|integer',
+            'created_at' => 'nullable',
+            'updated_at' => 'nullable',
+            'DCCODE' => 'required|integer',
         ]);
 
         Line3::create($request->all());

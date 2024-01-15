@@ -84,7 +84,7 @@
 
     <header>
         <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
-        Navbar
+        PART NUMBER SEQUENCE
     </header>
 
     <div class="sidebar" id="mySidebar">

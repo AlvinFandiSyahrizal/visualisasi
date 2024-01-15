@@ -37,7 +37,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="text" name="PartNumber" class="form-control" placeholder="Write here">
+                                            <input type="text" name="PARTNUMBER" class="form-control" placeholder="Write here">
                                         </td>
                                         <td>
                                             <select name="FLANGENON" class="form-control">
@@ -78,12 +78,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse($dbflanges as $dbflange)
+                                @forelse($dbflange2s as $dbflange)
                                     <tr>
-                                        <td>{{ $dbflange->{'PART NUMBER'} }}</td>
+                                        <td>{{ $dbflange->{'PARTNUMBER'} }}</td>
                                         <td>{{ $dbflange->FLANGENON }}</td>
                                         <td>{{ $dbflange->LINE }}</td>
-                                        <td>{{ $dbflange->{'DC CODE'} }}</td>
+                                        <td>{{ $dbflange->{'DCCODE'} }}</td>
 
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"

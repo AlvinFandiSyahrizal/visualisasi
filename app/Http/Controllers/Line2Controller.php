@@ -54,10 +54,10 @@ class Line2Controller extends Controller
     {
 
         $request->validate([    
-            'PartNumber' => 'required',
+            'PARTNUMBER' => 'required',
             'FLANGENON' => 'required|integer',
             'LINE' => 'required',
-            'DC NUMBER' => 'required|integer',
+            'DCCODE' => 'required|integer',
         ]);
 
         $dbflange->update($request->all());

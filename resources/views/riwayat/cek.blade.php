@@ -7,7 +7,7 @@
     <title>Riwayat Visualisasi2</title>
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
+    <style>body { transform: rotate(180deg); }</style>
 </head>
 
 <body>

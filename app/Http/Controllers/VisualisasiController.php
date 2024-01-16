@@ -826,6 +826,10 @@ class VisualisasiController extends Controller
     {
         return view('riwayat.visualll');
     }
+    public function visualline2()
+    {
+        return view('riwayat.visualline2');
+    }
     public function cek()
     {
         return view('riwayat.cek');

@@ -40,17 +40,17 @@ class Line2Controller extends Controller
         return redirect()->route('line2.index')->with('success', 'Data Line2 berhasil ditambahkan.');
     }
 
-    public function show(Line2 $dbflange): View
+    public function show(Line2 $dbflange2): View
     {
         return view('line2.show', compact('line2'));
     }
 
-    public function edit(Line2 $dbflange): View
+    public function edit(Line2 $dbflange2): View
     {
         return view('line2.edit', compact('line2'));
     }
 
-    public function update(Request $request, Line2 $dbflange): RedirectResponse
+    public function update(Request $request, Line2 $dbflange2): RedirectResponse
     {
 
         $request->validate([    
@@ -60,14 +60,14 @@ class Line2Controller extends Controller
             'DCCODE' => 'required|integer',
         ]);
 
-        $dbflange->update($request->all());
+        $dbflange2->update($request->all());
 
         return redirect()->route('line2.index')->with('success', 'Data Line2 berhasil diperbarui.');
     }
 
     public function destroy(Line2 $line2): RedirectResponse
     {
-        $dbflange->delete();
+        $line2->delete();
 
         return redirect()->route('line2.index')->with('success', 'Data Line2 berhasil dihapus.');
     }

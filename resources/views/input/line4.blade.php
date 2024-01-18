@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Input Data</title>
 
-    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <<script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <script src="{{ asset('css/bootstrap.min.css') }}"></script>
-    <link rel="stylesheet" href="{{ asset('js\toastr.min.js') }}">
-    <script src="{{ asset('css\toastr.min.css')}}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 
 <body>

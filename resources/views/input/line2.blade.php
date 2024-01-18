@@ -7,11 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Input Data</title>
 
-    <<script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body>
@@ -112,12 +115,14 @@
                                 @endforelse
                             </tbody>
                         </table>
+
                     </div>
                 </div>
             </div>
         </div>
 
         @foreach ($dbflange2s as $dbflange)
+
             <div class="modal fade" id="editModal-{{ $dbflange->id }}" tabindex="-1" role="dialog"
                 aria-labelledby="editModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -163,6 +168,7 @@
                     </div>
                 </div>
             </div>
+
         @endforeach
     </div>
 

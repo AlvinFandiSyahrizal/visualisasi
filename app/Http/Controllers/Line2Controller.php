@@ -13,8 +13,7 @@ class Line2Controller extends Controller
 {
     public function index(): View
     {
-
-        $dbflange2s = dbflange2::orderBy('id', 'desc')->paginate(50);
+        $dbflange2s = dbflange2::orderBy('id', 'desc')->paginate(10);
 
         return view('input.line2', compact('dbflange2s'));
     }

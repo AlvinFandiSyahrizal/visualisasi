@@ -115,7 +115,7 @@ Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('data.
 
 Route::get('/cek', [VisualisasiController::class, 'cek'])->name('data.cek');
 
-Route::resource('line2', \App\Http\Controllers\Line2Controller::class );
+Route::resource('/line2', \App\Http\Controllers\Line2Controller::class );
 Route::resource('line3', \App\Http\Controllers\Line3Controller::class );
 Route::resource('line4', \App\Http\Controllers\Line4Controller::class );
 
@@ -139,5 +139,6 @@ Route::get('/riwayat/line2', [VisualisasiController::class, 'riwayatline2'])->na
 
 Route::get('/riwayat/line3', [VisualisasiController::class, 'riwayatline3'])->name('riwayat.line3');
 Route::get('/riwayat/line4', [VisualisasiController::class, 'riwayatline4'])->name('riwayat.line4');
+
 
 

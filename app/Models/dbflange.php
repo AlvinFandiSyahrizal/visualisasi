@@ -11,10 +11,11 @@ class dbflange extends Model
     protected $table = 'dbflanges';
 
     protected $fillable = [
-        'PartNumber',
+        'PARTNUMBER',
         'FLANGENON',
         'LINE',
-        'DC COdE',
-
+        'DCCODE',
+        'created_at',
+        'updated_at'
     ];
 }

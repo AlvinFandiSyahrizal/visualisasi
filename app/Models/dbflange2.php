@@ -11,10 +11,11 @@ class dbflange2 extends Model
     protected $table = 'dbflange2s';
 
     protected $fillable = [
-        'PartNumber',
+        'PARTNUMBER',
         'FLANGENON',
         'LINE',
-        'DC COdE',
-
+        'DCCODE',
+        'created_at',
+        'updated_at'
     ];
 }

@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Input Data Line4</title>
+    <title>Input Data</title>
 
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
+
 <body>
     <div class="container mt-5">
         <div class="row">
@@ -21,15 +25,15 @@
 
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
-                        <form action="{{ route('line4.store') }}" method="POST">
+                        <form action="{{ route('line4.store') }}" method="POST" id="createForm">
                             @csrf
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>PartNumber</th>
+                                        <th>Part Number</th>
                                         <th>FlangeNon</th>
                                         <th>Line</th>
-                                        <th>DcCode</th>
+                                        <th>Dc Code</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -68,30 +72,31 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>PartNumber</th>
+                                    <th>Part Number</th>
                                     <th>FlangeNon</th>
                                     <th>Line</th>
-                                    <th>DcCode</th>
+                                    <th>DC Code</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @forelse($dbflanges as $dbflange)
                                     <tr>
-                                        <td>{{ $dbflange->{'PARTNUMBER'} }}</td>
+                                        <td>{{ $dbflange->PARTNUMBER }}</td>
                                         <td>{{ $dbflange->FLANGENON }}</td>
                                         <td>{{ $dbflange->LINE }}</td>
-                                        <td>{{ $dbflange->{'DCCODE'} }}</td>
-
+                                        <td>{{ $dbflange->DCCODE }}</td>
                                         <td class="text-center">
+                                            <a href="#" class="btn btn-sm btn-primary edit-button"
+                                                data-toggle="modal" data-target="#editModal-{{ $dbflange->id }}"
+                                                data-partnumber="{{ $dbflange->PARTNUMBER }}"
+                                                data-flangenon="{{ $dbflange->FLANGENON }}"
+                                                data-line="{{ $dbflange->LINE }}"
+                                                data-dccode="{{ $dbflange->DCCODE }}"
+                                                data-recordid="{{ $dbflange->id }}">Edit
+                                            </a>
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('line4.destroy', $dbflange->id) }}" method="POST">
-                                                @csrf
-                                                <a href="#" class="btn btn-sm btn-primary edit-button"
-                                                    data-toggle="modal" data-target="#editModal-{{ $dbflange->id }}"
-                                                    data-operations="{{ $dbflange->LINE }}">Edit</a>
-                                            </form>
-                                            <form action="{{ route('line4.destroy', $dbflange->id) }}" method="POST"
+                                                action="{{ route('line4.destroy', $dbflange->id) }}" method="POST"
                                                 style="display: inline;">
                                                 @csrf
                                                 @method('DELETE')
@@ -112,16 +117,117 @@
             </div>
         </div>
 
-    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        @foreach ($dbflanges as $dbflange)
+            <div class="modal fade" id="editModal-{{ $dbflange->id }}" tabindex="-1" role="dialog"
+                aria-labelledby="editModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editModalLabel">Edit Data</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="editForm-{{ $dbflange->id }}" method="POST"
+                                action="{{ route('line4.update', ['line4' => $dbflange->id]) }}">
+                                @csrf
+                                @method('PUT')
+                                <div>
+                                    <label for="editPartNumber">Part Number</label>
+                                    <input type="text" id="editPartNumber-{{ $dbflange->id }}" name="PARTNUMBER" class="form-control" placeholder="Write here">
+                                </div>
+                                <div>
+                                    <label for="editFlangeNon">FlangeNon</label>
+                                    <select name="FLANGENON" id="editFlangeNon-{{ $dbflange->id }}" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="0">0</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="editLine">Line</label>
+                                    <input type="text" id="editLine-{{ $dbflange->id }}" name="LINE" class="form-control" value="Line4" readonly>
+                                </div>
+                                <div>
+                                    <label for="editDcCode">Dc Code</label>
+                                    <input type="text" id="editDcCode-{{ $dbflange->id }}" name="DCCODE" class="form-control" min="0" step="1">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success save-edit-button"
+                                data-inputid="{{ $dbflange->id }}">Simpan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
 
-    <script>
+    <div aria-live="polite" aria-atomic="true"
+        class="d-flex justify-content-center align-items-center" style="min-height: 200px;">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.edit-button').on('click', function () {
+                var inputId = $(this).data('recordid');
+                var modalId = '#editModal-' + inputId;
+                var editForm = $(modalId).find('form');
+                var partNumber = $(this).data('partnumber');
+                var flangeNon = $(this).data('flangenon');
+                var line = $(this).data('line');
+                var dcCode = $(this).data('dccode');
+
+                editForm.find('#editPartNumber-' + inputId).val(partNumber);
+                editForm.find('#editFlangeNon-' + inputId).val(flangeNon);
+                editForm.find('#editLine-' + inputId).val(line);
+                editForm.find('#editDcCode-' + inputId).val(dcCode);
+
+                $(modalId).modal('show');
+            });
+
+            $('.save-edit-button').on('click', function () {
+                var inputId = $(this).data('inputid');
+                var editForm = $('#editForm-' + inputId);
+                var formData = editForm.serialize();
+
+                $.ajax({
+                    type: 'POST',
+                    url: editForm.attr('action'),
+                    data: formData,
+                    success: function (response) {
+                        var modalId = '#editModal-' + inputId;
+                        $(modalId).modal('hide');
+
+                        // Menampilkan pesan toast
+                        var toast = $('.toast');
+                        toast.toast('show');
+
+                        // Menyegarkan halaman setelah berhasil edit
+                        location.reload();
+                    },
+                    error: function (xhr) {
+                        var errors = xhr.responseJSON;
+                    }
+                });
+            });
+        });
     </script>
-
-
 </body>
 
 </html>

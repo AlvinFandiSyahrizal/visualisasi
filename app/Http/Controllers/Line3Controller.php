@@ -11,66 +11,74 @@ use Illuminate\Support\Facades\DB;
 
 class Line3Controller extends Controller
 {
-    public function index(): View   
+    public function index(): View
     {
-        $dbflange3s = dbflange3::orderBy('id','desc')->paginate(10);
-        
+
+        $dbflange3s = dbflange3::orderBy('id', 'desc')->paginate(50);
+
         return view('input.line3', compact('dbflange3s'));
     }
 
-
     public function create(): View
     {
-        return view('line3.create');
+        return view('input.line3', compact('dbflange3s'));
     }
 
     public function store(Request $request): RedirectResponse
     {
-
-        $request->validate([
+        $this->validate($request, [
             'PARTNUMBER' => 'required',
             'FLANGENON' => 'required|integer',
             'LINE' => 'required',
             'created_at' => 'nullable',
             'updated_at' => 'nullable',
-            'DCCODE' => 'required|integer',
+            'DCCODE' => 'required|numeric',
         ]);
 
-        Line3::create($request->all());
+        dbflange3::create([
+            'PARTNUMBER' => $request->input('PARTNUMBER'),
+            'FLANGENON' => $request->input('FLANGENON'),
+            'LINE' => $request->input('LINE'),
+            'DCCODE' => $request->input('DCCODE'),
+        ]);
 
-        return redirect()->route('line3.index')->with('success', 'Data Line3 berhasil ditambahkan.');
+        return redirect()->route('line3.index')->with(['success' => 'Data Berhasil Disimpan!']);
     }
 
-    public function show(Line3 $line3): View
+    public function edit(string $id): View
     {
-        return view('line3.show', compact('line3'));
-    }
-
-    public function edit(Line3 $line3): View
-    {
+        $dbflange3s = dbflange3::findOrFail($id);
         return view('line3.edit', compact('line3'));
     }
 
-    public function update(Request $request, Line3 $line3): RedirectResponse
+    public function update(Request $request, $id)
     {
-        // Validasi data jika diperlukan
-        $request->validate([
-            'PartNumber' => 'required',
+
+        $this->validate($request, [
+            'PARTNUMBER' => 'required',
             'FLANGENON' => 'required|integer',
             'LINE' => 'required',
-            'DC NUMBER' => 'required|integer',
+            'created_at' => 'nullable',
+            'updated_at' => 'nullable',
+            'DCCODE' => 'required|numeric',
         ]);
 
-        $line3->update($request->all());
+        $dbflange3s = dbflange3::findOrFail($id);
 
-        return redirect()->route('line3.index')->with('success', 'Data Line3 berhasil diperbarui.');
+        $dbflange3s->update([
+            'PARTNUMBER' => $request->input('PARTNUMBER'),
+            'FLANGENON' => $request->input('FLANGENON'),
+            'LINE' => $request->input('LINE'),
+            'DCCODE' => $request->input('DCCODE'),
+        ]);
+
+        return redirect()->route('line3.index')->with(['success' => 'Data berhasil diperbarui']);
     }
 
-    public function destroy(Line3 $line3): RedirectResponse
+    public function destroy($id): RedirectResponse
     {
-        // Hapus data
-        $line3->delete();
-
-        return redirect()->route('line3.index')->with('success', 'Data Line3 berhasil dihapus.');
+        $dbflange3s = dbflange3::findOrFail($id);
+        $dbflange3s->delete();
+        return redirect()->route('line3.index')->with(['success' => 'Data Berhasil Dihapus!']);
     }
 }

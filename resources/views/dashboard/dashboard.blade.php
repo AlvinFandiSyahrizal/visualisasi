@@ -54,6 +54,7 @@
             width: 100%;
             text-align: left;
             transition: background-color 0.3s;
+            position: relative;
         }
 
         .menu-button:hover {
@@ -101,6 +102,82 @@
         .dark-mode .menu-button:hover {
             background-color: #555;
         }
+
+        /* Toggle switch container */
+        .toggle-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Toggle switch styling */
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .toggle-slider:before {
+            content: "";
+            position: absolute;
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        .toggle-switch input:checked + .toggle-slider {
+            background-color: #2196F3;
+        }
+
+        .toggle-switch input:focus + .toggle-slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        .toggle-switch input:checked + .toggle-slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Style untuk lampu indikator */
+        .dark-mode-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ffd700; /* Warna kuning */
+            margin-left: 10px;
+        }
+
+        .dark-mode-on .dark-mode-indicator {
+            background-color: #4caf50; /* Warna hijau */
+        }
     </style>
 </head>
 <body>
@@ -116,7 +193,13 @@
         <button class="menu-button" onclick="navigateTo('/belajar/public/line4')">Line 4</button>
         <button class="menu-button" onclick="navigateTo('/belajar/public/visualisasi')">Visualizations</button>
         <!-- Tambahkan tombol untuk mengaktifkan/demokrat dark mode -->
-        <button class="menu-button" onclick="toggleDarkMode()">Dark Mode</button>
+        <div class="toggle-container">
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+                <span class="toggle-slider"></span>
+            </label>
+            <span class="dark-mode-indicator"></span>
+        </div>
     </div>
 
     <script>
@@ -132,7 +215,15 @@
         // Fungsi untuk mengaktifkan/demokrat dark mode
         function toggleDarkMode() {
             const body = document.body;
-            body.classList.toggle('dark-mode');
+            const darkModeToggle = document.getElementById("darkModeToggle");
+
+            if (darkModeToggle.checked) {
+                body.classList.toggle('dark-mode', true);
+                body.classList.toggle('dark-mode-on', true);
+            } else {
+                body.classList.toggle('dark-mode', false);
+                body.classList.toggle('dark-mode-on', false);
+            }
         }
     </script>
 

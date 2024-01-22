@@ -233,7 +233,7 @@
                         toast.toast('show');
 
 
-                        dataTable.ajax.reload();
+                        location.reload();
                     },
                     error: function (xhr) {
                         var errors = xhr.responseJSON;

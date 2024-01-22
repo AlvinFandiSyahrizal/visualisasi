@@ -36,11 +36,11 @@
             position: fixed;
             top: 50px;
             left: 0;
-            background-color: rgba(37, 144, 237, 0.9); /* Semi-transparent background */
+            background-color: rgba(37, 144, 237, 0.9);
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 20px;
-            z-index: 3; /* Set z-index to a higher value */
+            z-index: 3;
         }
 
         .menu-button {
@@ -52,11 +52,11 @@
             font-size: 17px;
             width: 100%;
             text-align: left;
-            transition: background-color 0.3s; /* Efek transisi untuk perubahan warna latar belakang */
+            transition: background-color 0.3s;
         }
 
         .menu-button:hover {
-            background-color: #123b6f; /* Warna latar belakang saat di-hover */
+            background-color: #123b6f;
         }
 
         .submenu {
@@ -88,18 +88,12 @@
     </header>
 
     <div class="sidebar" id="mySidebar">
-        <button class="menu-button" data-page="Chart2">Line 2</button>
-        <button class="menu-button" data-page="Chart3">Line 3</button>
-        <button class="menu-button" data-page="Chart4">Line 4</button>
-        <button class="menu-button" onclick="toggleSubmenu('chartsSubmenu')">
-            Visualizations
-        </button>
-        <div id="chartsSubmenu" class="submenu">
-            <button class="submenu-button" data-page="Chart2">Line 2</button>
-            <button class="submenu-button" data-page="Chart3">Line 3</button>
-            <button class="submenu-button" data-page="Chart4">Line 4</button>
-        </div>
+        <button class="menu-button" onclick="navigateTo('/belajar/public/line2')">Line 2</button>
+        <button class="menu-button" onclick="navigateTo('/belajar/public/line3')">Line 3</button>
+        <button class="menu-button" onclick="navigateTo('/belajar/public/line4')">Line 4</button>
+        <button class="menu-button" onclick="navigateTo('/belajar/public/visualisasi')">Visualizations</button>
     </div>
+
 
     <script>
         function toggleSidebar() {
@@ -107,25 +101,10 @@
             sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
         }
 
-        function toggleSubmenu(submenuId) {
-            const submenu = document.getElementById(submenuId);
-            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+        function navigateTo(url) {
+            window.location.href = url;
         }
-
-        document.getElementById("mySidebar").addEventListener("click", function(event) {
-            const target = event.target;
-            if (target.classList.contains("menu-button")) {
-                const page = target.getAttribute("data-page");
-                if (page.startsWith('Chart')) {
-                    console.log("Navigating to chart", page);
-                } else {
-                    window.location.href = "{{ asset('visualisasi') }}";
-                }
-            }
-        });
-        
     </script>
 
 </body>
 </html>
-

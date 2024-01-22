@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Input Data</title>
 
+
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.dataTables.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
@@ -15,6 +16,7 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 </head>
 
 <body>
@@ -52,7 +54,7 @@
                                             </select>
                                         </td>
                                         <td>
-                                            <input type="text" name="LINE" class="form-control" value="Line3" readonly>
+                                            <input type="text" name="LINE" class="form-control" value="Line2" readonly>
                                         </td>
                                         <td>
                                             <input type="number" name="DCCODE" class="form-control" min="0" step="1">
@@ -72,7 +74,7 @@
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
                         <h3 class="text-center my-4">Data Input</h3>
-                        <table class="table table-bordered">
+                        <table id="dataInputTable" class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th>Part Number</th>
@@ -115,12 +117,14 @@
                                 @endforelse
                             </tbody>
                         </table>
+
                     </div>
                 </div>
             </div>
         </div>
 
         @foreach ($dbflange3s as $dbflange)
+
             <div class="modal fade" id="editModal-{{ $dbflange->id }}" tabindex="-1" role="dialog"
                 aria-labelledby="editModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -150,7 +154,7 @@
                                 </div>
                                 <div>
                                     <label for="editLine">Line</label>
-                                    <input type="text" id="editLine-{{ $dbflange->id }}" name="LINE" class="form-control" value="Line3" readonly>
+                                    <input type="text" id="editLine-{{ $dbflange->id }}" name="LINE" class="form-control" value="Line2" readonly>
                                 </div>
                                 <div>
                                     <label for="editDcCode">Dc Code</label>
@@ -166,6 +170,7 @@
                     </div>
                 </div>
             </div>
+
         @endforeach
     </div>
 
@@ -187,6 +192,7 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+
             $('.edit-button').on('click', function () {
                 var inputId = $(this).data('recordid');
                 var modalId = '#editModal-' + inputId;
@@ -208,6 +214,7 @@
                 "order": [[0, "desc"]]
             });
 
+
             $('.save-edit-button').on('click', function () {
                 var inputId = $(this).data('inputid');
                 var editForm = $('#editForm-' + inputId);
@@ -221,11 +228,11 @@
                         var modalId = '#editModal-' + inputId;
                         $(modalId).modal('hide');
 
-                        // Menampilkan pesan toast
+
                         var toast = $('.toast');
                         toast.toast('show');
 
-                        // Menyegarkan halaman setelah berhasil edit
+
                         dataTable.ajax.reload();
                     },
                     error: function (xhr) {

@@ -7,14 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Input Data</title>
 
-    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('jsjquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 
 <body>
@@ -72,7 +71,7 @@
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
                         <h3 class="text-center my-4">Data Input</h3>
-                        <table class="table table-bordered">
+                        <table id="dataInputTable" class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th>Part Number</th>
@@ -190,6 +189,11 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            // Inisialisasi DataTable setelah tabel dimuat
+            $('#dataInputTable').DataTable({
+                "order": [[0, "desc"]]
+            });
+
             $('.edit-button').on('click', function () {
                 var inputId = $(this).data('recordid');
                 var modalId = '#editModal-' + inputId;

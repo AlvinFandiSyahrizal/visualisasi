@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Input Data</title>
 
-    <<script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/jquery.dataTables.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 
@@ -201,6 +204,10 @@
                 $(modalId).modal('show');
             });
 
+            $('#dataInputTable').DataTable({
+                "order": [[0, "desc"]]
+            });
+
             $('.save-edit-button').on('click', function () {
                 var inputId = $(this).data('inputid');
                 var editForm = $('#editForm-' + inputId);
@@ -219,7 +226,7 @@
                         toast.toast('show');
 
                         // Menyegarkan halaman setelah berhasil edit
-                        location.reload();
+                        dataTable.ajax.reload();
                     },
                     error: function (xhr) {
                         var errors = xhr.responseJSON;

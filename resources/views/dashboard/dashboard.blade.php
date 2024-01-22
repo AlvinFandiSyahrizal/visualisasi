@@ -8,6 +8,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            transition: background-color 0.5s;
         }
 
         header {
@@ -78,6 +79,28 @@
         .active {
             border: 2px solid #fff;
         }
+
+        /* Gaya untuk dark mode */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .dark-mode header {
+            background-color: #333;
+        }
+
+        .dark-mode .sidebar {
+            background-color: #2c2c2c;
+        }
+
+        .dark-mode .menu-button {
+            background-color: #333;
+        }
+
+        .dark-mode .menu-button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -92,8 +115,9 @@
         <button class="menu-button" onclick="navigateTo('/belajar/public/line3')">Line 3</button>
         <button class="menu-button" onclick="navigateTo('/belajar/public/line4')">Line 4</button>
         <button class="menu-button" onclick="navigateTo('/belajar/public/visualisasi')">Visualizations</button>
+        <!-- Tambahkan tombol untuk mengaktifkan/demokrat dark mode -->
+        <button class="menu-button" onclick="toggleDarkMode()">Dark Mode</button>
     </div>
-
 
     <script>
         function toggleSidebar() {
@@ -102,7 +126,13 @@
         }
 
         function navigateTo(url) {
-            window.location.href = url;
+            window.open(url, '_blank');
+        }
+
+        // Fungsi untuk mengaktifkan/demokrat dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
         }
     </script>
 

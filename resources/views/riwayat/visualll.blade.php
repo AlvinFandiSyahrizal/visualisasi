@@ -14,19 +14,18 @@
 <body>
 
 
-
     <div class="container text-center mt-5">
     </div>
     
         <div class="row d-flex flex-nowrap overflow-auto">
 
-                <div class="col table-bordered" >
+            <div class="col table-bordered" >
                     <div class="row">
-                        <div class="col" id="waktuline2"><h3> </h3>
+                        <div class="col"><h4 id="waktuline2"></h4>
                     </div>
                         <div class="col"><h3 class="text-right"> LINE 2 </h3>
+                        </div>
                     </div>
-                </div>
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
                         <tr>
@@ -108,12 +107,6 @@
                         </tr>
 
                         <tr id="row21line2">
-
-                            <td>
-                                <div id="partNumber-container">
-                                    <span id="waktuline2"></span>
-                                </div>
-                            </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber21line2"></span>
@@ -866,7 +859,12 @@
             </div>
 
             <div class="col table-bordered">
-                <center><h3> LINE 3 </h3></center>
+                <div class="row">
+                        <div class="col"><h4 id="waktuline3"></h4>
+                        </div>
+                            <div class="col"><h3 class="text-right"> LINE 3 </h3>
+                        </div>
+                </div>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -1700,8 +1698,13 @@
                 </table>
             </div>
 
-            <div class="col table-bordered">
-                <center><h3> LINE 4 </h3></center>
+            <div class="col table-bordered">                    
+                <div class="row">
+                    <div class="col"><h4 id="waktuline4"></h4>
+                    </div>
+                        <div class="col"><h3 class="text-right"> LINE 4 </h3>
+                    </div>
+                </div>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -2659,6 +2662,27 @@
             },
             success: function (data21) {
                 if (data21) {
+                    
+                    var timestamp = data21.TIMESTAMP;
+         
+                    var date = new Date(timestamp);
+
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1; 
+                    var year = date.getFullYear() % 100;
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+   
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+ 
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline4').text(formattedTimestamp);
                     $('#dccode21').text(data21.DCCODE);
                     $('#seqnumber21').text(data21.SeqNo);
                     // $('#partNumber21').text(formattedPartNumber);
@@ -3694,7 +3718,28 @@ function fetchData19line3() {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             success: function (data21line3) {
-                if (data21line3) {
+                if (data21line3) {      
+                    var timestamp = data21line3.TIMESTAMP;
+     
+                    var date = new Date(timestamp);
+
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1; 
+                    var year = date.getFullYear() % 100; 
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline3').text(formattedTimestamp);
+
                     $('#dccode21line3').text(data21line3.DCCODE);
                     $('#seqnumber21line3').text(data21line3.SeqNo);
                     // $('#partNumber21line3').text(formattedPartNumber);
@@ -4731,6 +4776,33 @@ function fetchData19line3() {
             },
             success: function (data21line2) {
                 if (data21line2) {
+                    
+                    var timestamp = data21line2.TIMESTAMP;
+
+                    
+                    var date = new Date(timestamp);
+
+                    
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1; 
+                    var year = date.getFullYear() % 100;
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+
+                    
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+
+                   
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline2').text(formattedTimestamp);
+
+
                     $('#dccode21line2').text(data21line2.DCCODE);
                     $('#seqnumber21line2').text(data21line2.SeqNo);
                     // $('#partNumber21line2').text(formattedPartNumber);
@@ -5513,7 +5585,6 @@ function fetchData19line3() {
                 if (data39line2) {
                     $('#dccode39line2').text(data39line2.DCCODE);
                     $('#seqnumber39line2').text(data39line2.SeqNo);
-                    // $('#partNumber39line2').text(formattedPartNumber);
                     $('#partNumber39line2').text(data39line2.NDCODEAWAL);
                     
                     $('#line39line2').text(data39line2.Line);
@@ -5556,7 +5627,6 @@ function fetchData19line3() {
                 if (data40line2) {
                     $('#dccode40line2').text(data40line2.DCCODE);
                     $('#seqnumber40line2').text(data40line2.SeqNo);
-                    // $('#partNumber40line2').text(formattedPartNumber);
                     $('#partNumber40line2').text(data40line2.NDCODEAWAL);
                     
                     $('#line40line2').text(data40line2.Line);
@@ -5599,7 +5669,6 @@ function fetchData19line3() {
                 if (data41line2) {
                     $('#dccode41line2').text(data41line2.DCCODE);
                     $('#seqnumber41line2').text(data41line2.SeqNo);
-                    // $('#partNumber41line2').text(formattedPartNumber);
                     $('#partNumber41line2').text(data41line2.NDCODEAWAL);
                     
                     $('#line41line2').text(data41line2.Line);
@@ -5642,7 +5711,6 @@ function fetchData19line3() {
                 if (data42line2) {
                     $('#dccode42line2').text(data42line2.DCCODE);
                     $('#seqnumber42line2').text(data42line2.SeqNo);
-                    // $('#partNumber42line2').text(formattedPartNumber);
                     $('#partNumber42line2').text(data42line2.NDCODEAWAL);
                     
                     $('#line42line2').text(data42line2.Line);
@@ -5674,77 +5742,10 @@ function fetchData19line3() {
         });
     }
 
-    // funtion waktuline2() {
-    //     $.ajax({
-    //         url: "{{ route('data.visual21line2') }}",
-    //         method: 'GET',
-    //         headers: {
-    //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    //         },
-    //         success: function (data21line2) {
-    //             if (data21line2) {
-    //                 $('#waktuline2').text(data21line2.TIMESTAMP);
-    //             }
-    //         }
-
-    //     })
-    // }
-
- 
-
-
     updateDateTime();
     setInterval(updateDateTime, 1000);
 
     // waktuline2();
-    fetchData19();
-    fetchData20();
-    fetchData21();
-    fetchData22();
-    fetchData23();
-    fetchData24();
-    fetchData25();
-    fetchData26();
-    fetchData27();
-    fetchData28();
-    fetchData29();
-    fetchData30();
-    fetchData31();
-    fetchData32();
-    fetchData33();
-    fetchData34();
-    fetchData35();
-    fetchData36();
-    fetchData37();
-    fetchData38();
-    fetchData39();
-    fetchData40();
-    fetchData41();
-    fetchData42();
-    fetchData19line3();
-    fetchData20line3();
-    fetchData21line3();
-    fetchData22line3();
-    fetchData23line3();
-    fetchData24line3();
-    fetchData25line3();
-    fetchData26line3();
-    fetchData27line3();
-    fetchData28line3();
-    fetchData29line3();
-    fetchData30line3();
-    fetchData31line3();
-    fetchData32line3();
-    fetchData33line3();
-    fetchData34line3();
-    fetchData35line3();
-    fetchData36line3();
-    fetchData37line3();
-    fetchData38line3();
-    fetchData39line3();
-    fetchData40line3();
-    fetchData41line3();
-    fetchData42line3();
     fetchData19line2();
     fetchData20line2();
     fetchData21line2();
@@ -5769,57 +5770,58 @@ function fetchData19line3() {
     fetchData40line2();
     fetchData41line2();
     fetchData42line2();
+    fetchData19line3();
+    fetchData20line3();
+    fetchData21line3();
+    fetchData22line3();
+    fetchData23line3();
+    fetchData24line3();
+    fetchData25line3();
+    fetchData26line3();
+    fetchData27line3();
+    fetchData28line3();
+    fetchData29line3();
+    fetchData30line3();
+    fetchData31line3();
+    fetchData32line3();
+    fetchData33line3();
+    fetchData34line3();
+    fetchData35line3();
+    fetchData36line3();
+    fetchData37line3();
+    fetchData38line3();
+    fetchData39line3();
+    fetchData40line3();
+    fetchData41line3();
+    fetchData42line3();
+    fetchData19();
+    fetchData20();
+    fetchData21();
+    fetchData22();
+    fetchData23();
+    fetchData24();
+    fetchData25();
+    fetchData26();
+    fetchData27();
+    fetchData28();
+    fetchData29();
+    fetchData30();
+    fetchData31();
+    fetchData32();
+    fetchData33();
+    fetchData34();
+    fetchData35();
+    fetchData36();
+    fetchData37();
+    fetchData38();
+    fetchData39();
+    fetchData40();
+    fetchData41();
+    fetchData42();
+
 
 
     // setInterval(waktuline2, 1000);
-    setInterval(fetchData19, 3000);
-    setInterval(fetchData20, 3000);
-    setInterval(fetchData21, 3000);
-    setInterval(fetchData22, 3000);
-    setInterval(fetchData23, 3000);
-    setInterval(fetchData24, 3000);
-    setInterval(fetchData25, 3000);
-    setInterval(fetchData26, 3000);
-    setInterval(fetchData27, 3000);
-    setInterval(fetchData28, 3000);
-    setInterval(fetchData29, 3000);
-    setInterval(fetchData30, 3000);
-    setInterval(fetchData31, 3000);
-    setInterval(fetchData32, 3000);
-    setInterval(fetchData33, 3000);
-    setInterval(fetchData34, 3000);
-    setInterval(fetchData35, 3000);
-    setInterval(fetchData36, 3000);
-    setInterval(fetchData37, 3000);
-    setInterval(fetchData38, 3000);
-    setInterval(fetchData39, 3000);
-    setInterval(fetchData40, 3000);
-    setInterval(fetchData41, 3000);
-    setInterval(fetchData42, 3000);
-    setInterval(fetchData19line3, 3000);
-    setInterval(fetchData20line3, 3000);
-    setInterval(fetchData21line3, 3000);
-    setInterval(fetchData22line3, 3000);
-    setInterval(fetchData23line3, 3000);
-    setInterval(fetchData24line3, 3000);
-    setInterval(fetchData25line3, 3000);
-    setInterval(fetchData26line3, 3000);
-    setInterval(fetchData27line3, 3000);
-    setInterval(fetchData28line3, 3000);
-    setInterval(fetchData29line3, 3000);
-    setInterval(fetchData30line3, 3000);
-    setInterval(fetchData31line3, 3000);
-    setInterval(fetchData32line3, 3000);
-    setInterval(fetchData33line3, 3000);
-    setInterval(fetchData34line3, 3000);
-    setInterval(fetchData35line3, 3000);
-    setInterval(fetchData36line3, 3000);
-    setInterval(fetchData37line3, 3000);
-    setInterval(fetchData38line3, 3000);
-    setInterval(fetchData39line3, 3000);
-    setInterval(fetchData40line3, 3000);
-    setInterval(fetchData41line3, 3000);
-    setInterval(fetchData42line3, 3000);
     setInterval(fetchData19line2, 3000);
     setInterval(fetchData20line2, 3000);
     setInterval(fetchData21line2, 3000);
@@ -5844,11 +5846,54 @@ function fetchData19line3() {
     setInterval(fetchData40line2, 3000);
     setInterval(fetchData41line2, 3000);
     setInterval(fetchData42line2, 3000);
-
-
-    $(document).ready(function () {
-        console.log('jQuery berhasil dimuat!');
-    });
+    setInterval(fetchData19line3, 3000);
+    setInterval(fetchData20line3, 3000);
+    setInterval(fetchData21line3, 3000);
+    setInterval(fetchData22line3, 3000);
+    setInterval(fetchData23line3, 3000);
+    setInterval(fetchData24line3, 3000);
+    setInterval(fetchData25line3, 3000);
+    setInterval(fetchData26line3, 3000);
+    setInterval(fetchData27line3, 3000);
+    setInterval(fetchData28line3, 3000);
+    setInterval(fetchData29line3, 3000);
+    setInterval(fetchData30line3, 3000);
+    setInterval(fetchData31line3, 3000);
+    setInterval(fetchData32line3, 3000);
+    setInterval(fetchData33line3, 3000);
+    setInterval(fetchData34line3, 3000);
+    setInterval(fetchData35line3, 3000);
+    setInterval(fetchData36line3, 3000);
+    setInterval(fetchData37line3, 3000);
+    setInterval(fetchData38line3, 3000);
+    setInterval(fetchData39line3, 3000);
+    setInterval(fetchData40line3, 3000);
+    setInterval(fetchData41line3, 3000);
+    setInterval(fetchData42line3, 3000);
+    setInterval(fetchData19, 3000);
+    setInterval(fetchData20, 3000);
+    setInterval(fetchData21, 3000);
+    setInterval(fetchData22, 3000);
+    setInterval(fetchData23, 3000);
+    setInterval(fetchData24, 3000);
+    setInterval(fetchData25, 3000);
+    setInterval(fetchData26, 3000);
+    setInterval(fetchData27, 3000);
+    setInterval(fetchData28, 3000);
+    setInterval(fetchData29, 3000);
+    setInterval(fetchData30, 3000);
+    setInterval(fetchData31, 3000);
+    setInterval(fetchData32, 3000);
+    setInterval(fetchData33, 3000);
+    setInterval(fetchData34, 3000);
+    setInterval(fetchData35, 3000);
+    setInterval(fetchData36, 3000);
+    setInterval(fetchData37, 3000);
+    setInterval(fetchData38, 3000);
+    setInterval(fetchData39, 3000);
+    setInterval(fetchData40, 3000);
+    setInterval(fetchData41, 3000);
+    setInterval(fetchData42, 3000);
 </script>
 
 

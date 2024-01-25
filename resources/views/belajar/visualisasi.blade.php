@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualisasi</title>
 
-    <<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <style>
         /* Tambahkan styling untuk mengunci gambar */
@@ -100,7 +100,7 @@
         }
     </style>
 
-    <<script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
 
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
@@ -141,17 +141,17 @@
 
         function fetchData() {
             $.ajax({
-                url: "{{ route('data.visual') }}",
+                url: "{{ route('belajar.visualisasi') }}",
                 method: 'GET',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 success: function (data) {
                     if (data) {
-                        var flangeStatus = (data.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+                        var flangeStatus = (data21line2.FlangeNon == 1) ? 'Flange' : (data21line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                         // Format PartNumber for better display
-                        var partNumberArray = data.PartNumber.split('-');
+                        var partNumberArray = data21line2.NDCODEAWAL.split('-');
                         var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
 
                         // Check if the third part exists before appending it
@@ -159,11 +159,10 @@
                             formattedPartNumber += '-' + partNumberArray[2];
                         }
 
-                        $('#partNumber').text(formattedPartNumber);
+                        $('#partNumber21line2').text(data21line2.NDCODEAWAL);
 
-                        // Menetapkan teks pada elemen HTML dengan ID 'flangeStatus' dan 'line'
-                        $('#flangeStatus').text(flangeStatus);
-                        $('#line').text(data.Line);
+                        $('#flangeStatus21line2').text(data21line2.FlangeNon);
+                        $('#line21line2').text(data21line2.Line);
                     }
                 }
             });

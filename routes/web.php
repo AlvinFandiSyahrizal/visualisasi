@@ -111,7 +111,7 @@ Route::get('/visual40line2', [VisualisasiController::class, 'getData40line2'])->
 Route::get('/visual41line2', [VisualisasiController::class, 'getData41line2'])->name('data.visual41line2');
 Route::get('/visual42line2', [VisualisasiController::class, 'getData42line2'])->name('data.visual42line2');
 
-Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('data.visualisasi');
+Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('belajar.visualisasi');
 
 Route::get('/cek', [VisualisasiController::class, 'cek'])->name('data.cek');
 

@@ -141,7 +141,7 @@ class VisualisasiController extends Controller
     public function getData21()
     {
         $data = datapn21::leftjoin('dbflanges', 'dbflanges.DCCODE', '=', 'datapn21s.DC CODE')
-            ->select('datapn21s.DC CODE as DCCODE','datapn21s.ND CODE AWAL as NDCODEAWAL', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PARTNUMBER as PartNumber', 'datapn21s.QTY PROD as qty', \DB::raw('datapn21s.[SEQ.NUMBER] as SeqNo'), 'datapn21s.ACTUAL PROD as act', 'datapn21s.STATUS as status')
+            ->select('datapn21s.DC CODE as DCCODE','datapn21s.ND CODE AWAL as NDCODEAWAL', 'dbflanges.FLANGENON as FlangeNon', 'dbflanges.LINE as Line', 'dbflanges.PARTNUMBER as PartNumber', 'datapn21s.QTY PROD as qty', \DB::raw('datapn21s.[SEQ.NUMBER] as SeqNo'), 'datapn21s.ACTUAL PROD as act', 'datapn21s.STATUS as status','datapn21s.TIMESTAMP as TIMESTAMP')
             ->latest('datapn21s.id')
             ->first();
 
@@ -360,7 +360,7 @@ class VisualisasiController extends Controller
     public function getData21line3()
     {
         $data = datapn21line3::leftjoin('dbflange3s', 'dbflange3s.DCCODE', '=', 'datapn21line3s.DC CODE')
-            ->select('datapn21line3s.DC CODE as DCCODE','datapn21line3s.ND CODE AWAL as NDCODEAWAL', 'dbflange3s.FLANGENON as FlangeNon', 'dbflange3s.LINE as Line', 'dbflange3s.PARTNUMBER as PartNumber', 'datapn21line3s.QTY PROD as qty', \DB::raw('datapn21line3s.[SEQ.NUMBER] as SeqNo'), 'datapn21line3s.ACTUAL PROD as act', 'datapn21line3s.STATUS as status')
+            ->select('datapn21line3s.DC CODE as DCCODE','datapn21line3s.ND CODE AWAL as NDCODEAWAL', 'dbflange3s.FLANGENON as FlangeNon', 'dbflange3s.LINE as Line', 'dbflange3s.PARTNUMBER as PartNumber', 'datapn21line3s.QTY PROD as qty', \DB::raw('datapn21line3s.[SEQ.NUMBER] as SeqNo'), 'datapn21line3s.ACTUAL PROD as act', 'datapn21line3s.STATUS as status','datapn21line3s.TIMESTAMP as TIMESTAMP')
             ->latest('datapn21line3s.id')
             ->first();
 
@@ -579,7 +579,7 @@ class VisualisasiController extends Controller
     public function getData21line2()
     {
         $data = datapn21line2::leftjoin('dbflange2s', 'dbflange2s.DCCODE', '=', 'datapn21line2s.DC CODE')
-            ->select('datapn21line2s.DC CODE as DCCODE','datapn21line2s.ND CODE AWAL as NDCODEAWAL', 'dbflange2s.FLANGENON as FlangeNon', 'dbflange2s.LINE as Line', 'dbflange2s.PARTNUMBER as PartNumber', 'datapn21line2s.QTY PROD as qty', \DB::raw('datapn21line2s.[SEQ.NUMBER] as SeqNo'), 'datapn21line2s.ACTUAL PROD as act', 'datapn21line2s.STATUS as status','datapn21line2s.TIMESTAMP as waktuline2')
+            ->select('datapn21line2s.DC CODE as DCCODE','datapn21line2s.ND CODE AWAL as NDCODEAWAL', 'dbflange2s.FLANGENON as FlangeNon', 'dbflange2s.LINE as Line', 'dbflange2s.PARTNUMBER as PartNumber', 'datapn21line2s.QTY PROD as qty', \DB::raw('datapn21line2s.[SEQ.NUMBER] as SeqNo'), 'datapn21line2s.ACTUAL PROD as act', 'datapn21line2s.STATUS as status','datapn21line2s.TIMESTAMP as TIMESTAMP')
             ->latest('datapn21line2s.id')
             ->first();
 

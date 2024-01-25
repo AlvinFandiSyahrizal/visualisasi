@@ -29,6 +29,10 @@
             cursor: pointer;
             font-size: 20px;
             margin-right: 20px;
+            position: fixed;
+            top: 10px;
+            display: flex;
+            align-items: center;
         }
 
         .sidebar {
@@ -173,6 +177,7 @@
             border-radius: 50%;
             background-color: #ffd700; /* Warna kuning */
             margin-left: 10px;
+            
         }
 
         .dark-mode-on .dark-mode-indicator {
@@ -183,15 +188,15 @@
 <body>
 
     <header>
-        <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
-        PART NUMBER SEQUENCE
+        <span class="menu-icon" onclick="toggleSidebar()">&#9776; &#0001; PART NUMBER SEQUENCE</span>
+        <center><h3> TIMESTAMP </h3></center>
     </header>
 
     <div class="sidebar" id="mySidebar">
-        <button class="menu-button" onclick="navigateTo('/belajar/public/line2')">Line 2</button>
-        <button class="menu-button" onclick="navigateTo('/belajar/public/line3')">Line 3</button>
-        <button class="menu-button" onclick="navigateTo('/belajar/public/line4')">Line 4</button>
-        <button class="menu-button" onclick="navigateTo('/belajar/public/visualisasi')">Visualizations</button>
+        <button class="menu-button" onclick="navigateTo('/visualisasi/public/line2')">Line 2</button>
+        <button class="menu-button" onclick="navigateTo('/visualisasi/public/line3')">Line 3</button>
+        <button class="menu-button" onclick="navigateTo('/visualisasi/public/line4')">Line 4</button>
+        <button class="menu-button" onclick="navigateTo('/visualisasi/public/visualisasi')">Visualizations</button>
         <!-- Tambahkan tombol untuk mengaktifkan/demokrat dark mode -->
         <div class="toggle-container">
             <label class="toggle-switch">

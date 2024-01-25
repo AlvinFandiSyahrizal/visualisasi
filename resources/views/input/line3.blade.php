@@ -54,7 +54,7 @@
                                             </select>
                                         </td>
                                         <td>
-                                            <input type="text" name="LINE" class="form-control" value="Line2" readonly>
+                                            <input type="text" name="LINE" class="form-control" value="Line3" readonly>
                                         </td>
                                         <td>
                                             <input type="number" name="DCCODE" class="form-control" min="0" step="1">
@@ -77,6 +77,7 @@
                         <table id="dataInputTable" class="table table-bordered">
                             <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Part Number</th>
                                     <th>FlangeNon</th>
                                     <th>Line</th>
@@ -87,6 +88,7 @@
                             <tbody>
                                 @forelse($dbflange3s as $dbflange)
                                     <tr>
+                                        <td>{{ $dbflange->id }}</td>
                                         <td>{{ $dbflange->PARTNUMBER }}</td>
                                         <td>{{ $dbflange->FLANGENON }}</td>
                                         <td>{{ $dbflange->LINE }}</td>
@@ -154,7 +156,7 @@
                                 </div>
                                 <div>
                                     <label for="editLine">Line</label>
-                                    <input type="text" id="editLine-{{ $dbflange->id }}" name="LINE" class="form-control" value="Line2" readonly>
+                                    <input type="text" id="editLine-{{ $dbflange->id }}" name="LINE" class="form-control" value="Line3" readonly>
                                 </div>
                                 <div>
                                     <label for="editDcCode">Dc Code</label>

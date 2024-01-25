@@ -14,7 +14,8 @@ class Line4Controller extends Controller
     public function index(): View
     {
 
-        $dbflanges = dbflange::orderBy('id', 'desc')->paginate(50);
+        
+        $dbflanges = dbflange::all();;
 
         return view('input.line4', compact('dbflanges'));
     }

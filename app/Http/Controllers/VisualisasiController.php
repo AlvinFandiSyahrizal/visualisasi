@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\dbflange;
 use App\Models\dbflange2;
+use App\Models\dbflange3;
 use App\Models\datapn;
 use App\Models\datapn19;
 use App\Models\datapn20;
@@ -578,7 +579,7 @@ class VisualisasiController extends Controller
     public function getData21line2()
     {
         $data = datapn21line2::leftjoin('dbflange2s', 'dbflange2s.DCCODE', '=', 'datapn21line2s.DC CODE')
-            ->select('datapn21line2s.DC CODE as DCCODE','datapn21line2s.ND CODE AWAL as NDCODEAWAL', 'dbflange2s.FLANGENON as FlangeNon', 'dbflange2s.LINE as Line', 'dbflange2s.PARTNUMBER as PartNumber', 'datapn21line2s.QTY PROD as qty', \DB::raw('datapn21line2s.[SEQ.NUMBER] as SeqNo'), 'datapn21line2s.ACTUAL PROD as act', 'datapn21line2s.STATUS as status')
+            ->select('datapn21line2s.DC CODE as DCCODE','datapn21line2s.ND CODE AWAL as NDCODEAWAL', 'dbflange2s.FLANGENON as FlangeNon', 'dbflange2s.LINE as Line', 'dbflange2s.PARTNUMBER as PartNumber', 'datapn21line2s.QTY PROD as qty', \DB::raw('datapn21line2s.[SEQ.NUMBER] as SeqNo'), 'datapn21line2s.ACTUAL PROD as act', 'datapn21line2s.STATUS as status','datapn21line2s.TIMESTAMP as waktuline2')
             ->latest('datapn21line2s.id')
             ->first();
 

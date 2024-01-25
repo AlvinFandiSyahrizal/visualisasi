@@ -17,12 +17,16 @@
 
     <div class="container text-center mt-5">
     </div>
-
+    
         <div class="row d-flex flex-nowrap overflow-auto">
 
-            <div class="col table-bordered" >
-                <center><h3> LINE 2 </h3></center>
-
+                <div class="col table-bordered" >
+                    <div class="row">
+                        <div class="col" id="waktuline2"><h3> </h3>
+                    </div>
+                        <div class="col"><h3 class="text-right"> LINE 2 </h3>
+                    </div>
+                </div>
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
                         <tr>
@@ -105,6 +109,11 @@
 
                         <tr id="row21line2">
 
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="waktuline2"></span>
+                                </div>
+                            </td>
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber21line2"></span>
@@ -5665,12 +5674,29 @@ function fetchData19line3() {
         });
     }
 
+    // funtion waktuline2() {
+    //     $.ajax({
+    //         url: "{{ route('data.visual21line2') }}",
+    //         method: 'GET',
+    //         headers: {
+    //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    //         },
+    //         success: function (data21line2) {
+    //             if (data21line2) {
+    //                 $('#waktuline2').text(data21line2.TIMESTAMP);
+    //             }
+    //         }
+
+    //     })
+    // }
+
  
 
 
     updateDateTime();
     setInterval(updateDateTime, 1000);
 
+    // waktuline2();
     fetchData19();
     fetchData20();
     fetchData21();
@@ -5745,6 +5771,7 @@ function fetchData19line3() {
     fetchData42line2();
 
 
+    // setInterval(waktuline2, 1000);
     setInterval(fetchData19, 3000);
     setInterval(fetchData20, 3000);
     setInterval(fetchData21, 3000);

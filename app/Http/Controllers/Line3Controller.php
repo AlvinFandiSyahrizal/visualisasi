@@ -14,7 +14,7 @@ class Line3Controller extends Controller
     public function index(): View
     {
 
-        $dbflange3s = dbflange3::orderBy('id', 'desc')->paginate(50);
+        $dbflange3s = dbflange3::all();
 
         return view('input.line3', compact('dbflange3s'));
     }

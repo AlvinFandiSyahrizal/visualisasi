@@ -135,6 +135,9 @@ Route::get('/riwayat3', [VisualisasiController::class, 'riwayat3'])->name('riway
 Route::get('/visualline2', [VisualisasiController::class, 'visualline2'])->name('riwayat.visualline2');
 Route::get('/testdrive', [VisualisasiController::class, 'testdrive'])->name('riwayat.testdrive');
 
+use App\Http\Controllers\LoggingController;
+Route::get('/logging', [LoggingController::class, 'index']);
+
 
 Route::get('/riwayat/line2', [VisualisasiController::class, 'riwayatline2'])->name('riwayat.line2');
 

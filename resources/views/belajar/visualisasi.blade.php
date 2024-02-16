@@ -100,7 +100,7 @@
         }
     </style>
 
-    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <<script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
 
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
@@ -148,10 +148,10 @@
                 },
                 success: function (data) {
                     if (data) {
-                        var flangeStatus = (data21line2.FlangeNon == 1) ? 'Flange' : (data21line2.FlangeNon == 0) ? 'Non-Flange' : '';
+                        var flangeStatus = (data.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
 
                         // Format PartNumber for better display
-                        var partNumberArray = data21line2.NDCODEAWAL.split('-');
+                        var partNumberArray = data.PartNumber.split('-');
                         var formattedPartNumber = partNumberArray.slice(0, 2).join('-');
 
                         // Check if the third part exists before appending it
@@ -159,10 +159,11 @@
                             formattedPartNumber += '-' + partNumberArray[2];
                         }
 
-                        $('#partNumber21line2').text(data21line2.NDCODEAWAL);
+                        $('#partNumber').text(formattedPartNumber);
 
-                        $('#flangeStatus21line2').text(data21line2.FlangeNon);
-                        $('#line21line2').text(data21line2.Line);
+                        // Menetapkan teks pada elemen HTML dengan ID 'flangeStatus' dan 'line'
+                        $('#flangeStatus').text(flangeStatus);
+                        $('#line').text(data.Line);
                     }
                 }
             });

@@ -189,7 +189,7 @@
 
     <header>
         <span class="menu-icon" onclick="toggleSidebar()">&#9776; &#0001; PART NUMBER SEQUENCE</span>
-        <center><h3> TIMESTAMP </h3></center>
+        <center><h3> <span id="dateTime"></span> </h3></center>
     </header>
 
     <div class="sidebar" id="mySidebar">
@@ -230,6 +230,22 @@
                 body.classList.toggle('dark-mode-on', false);
             }
         }
+
+        function updateDateTime() {
+            var currentDate = new Date();
+            var optionsDate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var optionsTime = { hour: 'numeric', minute: 'numeric', second: 'numeric' };
+
+            var formattedDate = currentDate.toLocaleDateString('en-US', optionsDate);
+            var formattedTime = currentDate.toLocaleTimeString('en-US', optionsTime);
+
+            document.getElementById('dateTime').textContent = formattedDate + ' ' + formattedTime;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000); // Update time every second
+        fetchData();
+        setInterval(fetchData, 3000);
     </script>
 
 </body>

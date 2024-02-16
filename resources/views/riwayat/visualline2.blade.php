@@ -25,7 +25,12 @@
         <div class="row d-flex flex-nowrap overflow-auto">
 
             <div class="col table-bordered" >
-                <center><h3> LINE 2 </h3></center>
+                    <div class="row">
+                        <div class="col"><h4 id="waktuline2"></h4>
+                        </div>
+                        <div class="col"><h3 class="text-right"> LINE 2 </h3>
+                        </div>
+                    </div>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -861,7 +866,12 @@
             </div>
 
             <div class="col table-bordered">
-                <center><h3> LINE 3 </h3></center>
+                <div class="row">
+                        <div class="col"><h4 id="waktuline3"></h4>
+                        </div>
+                            <div class="col"><h3 class="text-right"> LINE 3 </h3>
+                        </div>
+                </div>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -1696,7 +1706,12 @@
             </div>
 
             <div class="col table-bordered">
-                <center><h3> LINE 4 </h3></center>
+                <div class="row">
+                    <div class="col"><h4 id="waktuline4"></h4>
+                    </div>
+                        <div class="col"><h3 class="text-right"> LINE 4 </h3>
+                    </div>
+                </div>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -2654,6 +2669,27 @@
             },
             success: function (data21) {
                 if (data21) {
+                    
+                    var timestamp = data21.TIMESTAMP;
+         
+                    var date = new Date(timestamp);
+
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1; 
+                    var year = date.getFullYear() % 100;
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+   
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+ 
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline4').text(formattedTimestamp);
                     $('#dccode21').text(data21.DCCODE);
                     $('#seqnumber21').text(data21.SeqNo);
                     // $('#partNumber21').text(formattedPartNumber);
@@ -3689,7 +3725,28 @@ function fetchData19line3() {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             success: function (data21line3) {
-                if (data21line3) {
+                if (data21line3) {      
+                    var timestamp = data21line3.TIMESTAMP;
+     
+                    var date = new Date(timestamp);
+
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1; 
+                    var year = date.getFullYear() % 100; 
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline3').text(formattedTimestamp);
+
                     $('#dccode21line3').text(data21line3.DCCODE);
                     $('#seqnumber21line3').text(data21line3.SeqNo);
                     // $('#partNumber21line3').text(formattedPartNumber);
@@ -4726,6 +4783,33 @@ function fetchData19line3() {
             },
             success: function (data21line2) {
                 if (data21line2) {
+                    
+                    var timestamp = data21line2.TIMESTAMP;
+
+                    
+                    var date = new Date(timestamp);
+
+                    
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1; 
+                    var year = date.getFullYear() % 100;
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+
+                    
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+
+                   
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline2').text(formattedTimestamp);
+
+
                     $('#dccode21line2').text(data21line2.DCCODE);
                     $('#seqnumber21line2').text(data21line2.SeqNo);
                     // $('#partNumber21line2').text(formattedPartNumber);

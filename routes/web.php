@@ -133,6 +133,7 @@ Route::get('/riwayat', [VisualisasiController::class, 'riwayat'])->name('riwayat
 Route::get('/riwayat2', [VisualisasiController::class, 'riwayat2'])->name('riwayat.visual');
 Route::get('/riwayat3', [VisualisasiController::class, 'riwayat3'])->name('riwayat.visual');
 Route::get('/visualline2', [VisualisasiController::class, 'visualline2'])->name('riwayat.visualline2');
+Route::get('/testdrive', [VisualisasiController::class, 'testdrive'])->name('riwayat.testdrive');
 
 
 Route::get('/riwayat/line2', [VisualisasiController::class, 'riwayatline2'])->name('riwayat.line2');

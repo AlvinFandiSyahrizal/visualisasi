@@ -11,11 +11,11 @@ class Logging extends Model
     protected $table = 'LOG_PROD';
 
     protected $fillable = [
-        'DCCODELINE2',
-        'PARTNOLINE2',
-        'DCCODELINE3',
-        'PARTNOLINE3',
-        'DCCODELINE4',
-        'PARTNOLINE4',
+        'DC CODE LINE 2',
+        'PART NO LINE 2',
+        'DC CODE LINE 3',
+        'PART NO LINE 3',
+        'DC CODE LINE 4',
+        'PART NO LINE 4',
     ];
 }

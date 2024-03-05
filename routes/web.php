@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('aaa');
 });
 
 
@@ -137,6 +137,7 @@ Route::get('/testdrive', [VisualisasiController::class, 'testdrive'])->name('riw
 
 use App\Http\Controllers\LoggingController;
 Route::get('/logging', [LoggingController::class, 'index']);
+Route::get('/export-to-excel', [LoggingController::class, 'exportToExcel']);
 
 
 Route::get('/riwayat/line2', [VisualisasiController::class, 'riwayatline2'])->name('riwayat.line2');

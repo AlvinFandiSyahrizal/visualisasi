@@ -8,10 +8,13 @@
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.dataTables.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
 
     <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
 </head>
 
 <body>
@@ -26,15 +29,15 @@
                         <thead>
                             <tr>
                                 <th>TIMESTAMP</th>
-                                <th>DCCODELINE2</th>
-                                <th>PARTNOLINE2</th>
-                                <th>FLANGENONLINE2</th>
-                                <th>DCCODELINE3</th>
-                                <th>PARTNOLINE3</th>
-                                <th>FLANGENONLINE3</th>
-                                <th>DCCODELINE4</th>
-                                <th>PARTNOLINE4</th>
-                                <th>FLANGENONLINE4</th>
+                                <th>DCCODE LINE 2</th>
+                                <th>PART NO LINE 2</th>
+                                <th>FLANGENON LINE 2</th>
+                                <th>DC CODE LINE 3</th>
+                                <th>PART NO LINE 3</th>
+                                <th>FLANGENON LINE 3</th>
+                                <th>DC CODE LINE 4</th>
+                                <th>PART NO LINE 4</th>
+                                <th>FLANGENON LINE 4</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -58,6 +61,7 @@
                             @endforelse
                         </tbody>
                     </table>
+                    <button class="btn btn-success" id="exportExcel">Export to Excel</button>
                 </div>
             </div>
         </div>
@@ -66,8 +70,20 @@
 
 <script>
     $(document).ready(function() {
-        $('#dataInputTable').DataTable({
-            "order": [[0, "desc"]]
+        var table = $('#dataInputTable').DataTable({
+            "order": [[0, "desc"]],
+            "dom": 'Bfrtip', // Add buttons to the DOM
+            "buttons": [
+                {
+                    extend: 'excelHtml5', // Choose the Excel export option
+                    text: 'Export to Excel',
+                    className: 'btn btn-success'
+                }
+            ]
+        });
+
+        $('#exportExcel').on('click', function() {
+            table.button('.buttons-excel').trigger();
         });
     });
 </script>

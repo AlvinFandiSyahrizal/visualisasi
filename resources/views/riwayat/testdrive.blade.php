@@ -9,14 +9,9 @@
     <title>Visualisasi</title>
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <style>body {
-        transform: rotate(180deg);
-        scroll-margin-bottom:100vh;
-        }</style>
 </head>
 
 <body>
-
 
 
     <div class="container text-center mt-5">
@@ -25,8 +20,12 @@
         <div class="row d-flex flex-nowrap overflow-auto">
 
             <div class="col table-bordered" >
-                <center><h3> LINE 2 </h3></center>
-
+                    <div class="row">
+                        <div class="col"><h4 id="waktuline2"></h4>
+                    </div>
+                        <div class="col"><h3 class="text-right"> LINE 2 </h3>
+                        </div>
+                    </div>
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
                         <tr>
@@ -108,7 +107,6 @@
                         </tr>
 
                         <tr id="row21line2">
-
                             <td>
                                 <div id="partNumber-container">
                                     <span id="seqnumber21line2"></span>
@@ -861,7 +859,12 @@
             </div>
 
             <div class="col table-bordered">
-                <center><h3> LINE 3 </h3></center>
+                <div class="row">
+                        <div class="col"><h4 id="waktuline3"></h4>
+                        </div>
+                            <div class="col"><h3 class="text-right"> LINE 3 </h3>
+                        </div>
+                </div>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -1696,7 +1699,12 @@
             </div>
 
             <div class="col table-bordered">
-                <center><h3> LINE 4 </h3></center>
+                <div class="row">
+                    <div class="col"><h4 id="waktuline4"></h4>
+                    </div>
+                        <div class="col"><h3 class="text-right"> LINE 4 </h3>
+                    </div>
+                </div>
 
                 <table class="table table-bordered border-primary">
                     <thead class="table-light table-bordered border-primary">
@@ -2584,16 +2592,16 @@
 
                     $('#flangeStatus19').text(flangeStatus);
                     var row = $('#row19');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data19.status == 2 || data19.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data19.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -2627,16 +2635,16 @@
 
                     $('#flangeStatus20').text(flangeStatus);
                     var row = $('#row20');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data20.status == 2 || data20.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data20.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -2654,6 +2662,27 @@
             },
             success: function (data21) {
                 if (data21) {
+
+                    var timestamp = data21.TIMESTAMP;
+
+                    var date = new Date(timestamp);
+
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1;
+                    var year = date.getFullYear() % 100;
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline4').text(formattedTimestamp);
                     $('#dccode21').text(data21.DCCODE);
                     $('#seqnumber21').text(data21.SeqNo);
                     // $('#partNumber21').text(formattedPartNumber);
@@ -2671,59 +2700,16 @@
 
                     $('#flangeStatus21').text(flangeStatus);
                     var row = $('#row21');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data21.status == 2 || data21.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data21.status == 1) {
-                        row.removeClass("table-danger table-primary");
-                        row.addClass("table-success");
-                        }
-                }
-            }
-        });
-    }
-
-    function fetchData22() {
-        $.ajax({
-            url: "{{ route('data.visual22') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data22) {
-                if (data22) {
-                    $('#dccode22').text(data22.DCCODE);
-                    $('#seqnumber22').text(data22.SeqNo);
-                    // $('#partNumber22').text(formattedPartNumber);
-                    $('#partNumber22').text(data22.NDCODEAWAL);
-
-                    $('#line22').text(data22.Line);
-
-                    var actQtyText = data22.act + '/' + data22.qty;
-                    $('#actualqty22').text(actQtyText);
-                    var status = (data22.status == 1) ? 'prod' : (data22.status == 2) ? 'com' : '';
-                    $('#status22').text(status);
-
-
-                    var flangeStatus = (data22.FlangeNon == 1) ? 'Flange' : (data22.FlangeNon == 0) ? 'Non-Flange' : '';
-
-                    $('#flangeStatus22').text(flangeStatus);
-                    var row = $('#row22');
-                    row.removeClass("table-danger table-primary table-success");
-                    if (data22.status == 2 || data22.status == 0) {
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                    }
-                        if (data22.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -2757,16 +2743,16 @@
 
                     $('#flangeStatus23').text(flangeStatus);
                     var row = $('#row23');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data23.status == 2 || data23.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data23.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -2800,16 +2786,16 @@
 
                     $('#flangeStatus24').text(flangeStatus);
                     var row = $('#row24');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data24.status == 2 || data24.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data24.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -2843,16 +2829,16 @@
 
                     $('#flangeStatus25').text(flangeStatus);
                     var row = $('#row25');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data25.status == 2 || data25.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data25.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -2886,16 +2872,16 @@
 
                     $('#flangeStatus26').text(flangeStatus);
                     var row = $('#row26');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data26.status == 2 || data26.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data26.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -2929,16 +2915,16 @@
 
                     $('#flangeStatus27').text(flangeStatus);
                     var row = $('#row27');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data27.status == 2 || data27.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data27.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -2972,16 +2958,16 @@
 
                     $('#flangeStatus28').text(flangeStatus);
                     var row = $('#row28');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data28.status == 2 || data28.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data28.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3015,16 +3001,16 @@
 
                     $('#flangeStatus29').text(flangeStatus);
                     var row = $('#row29');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data29.status == 2 || data29.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data29.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3058,16 +3044,16 @@
 
                     $('#flangeStatus30').text(flangeStatus);
                     var row = $('#row30');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data30.status == 2 || data30.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data30.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3101,16 +3087,16 @@
 
                     $('#flangeStatus31').text(flangeStatus);
                     var row = $('#row31');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data31.status == 2 || data31.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data31.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3144,16 +3130,16 @@
 
                     $('#flangeStatus32').text(flangeStatus);
                     var row = $('#row32');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data32.status == 2 || data32.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data32.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3187,16 +3173,16 @@
 
                     $('#flangeStatus33').text(flangeStatus);
                     var row = $('#row33');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data33.status == 2 || data33.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data33.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3230,16 +3216,16 @@
 
                     $('#flangeStatus34').text(flangeStatus);
                     var row = $('#row34');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data34.status == 2 || data34.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data34.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3273,16 +3259,16 @@
 
                     $('#flangeStatus35').text(flangeStatus);
                     var row = $('#row35');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data35.status == 2 || data35.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data35.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3316,16 +3302,16 @@
 
                     $('#flangeStatus36').text(flangeStatus);
                     var row = $('#row36');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data36.status == 2 || data36.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data36.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3359,16 +3345,16 @@
 
                     $('#flangeStatus37').text(flangeStatus);
                     var row = $('#row37');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data37.status == 2 || data37.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data37.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3402,16 +3388,16 @@
 
                     $('#flangeStatus38').text(flangeStatus);
                     var row = $('#row38');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data38.status == 2 || data38.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data38.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3445,16 +3431,16 @@
 
                     $('#flangeStatus39').text(flangeStatus);
                     var row = $('#row39');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data39.status == 2 || data39.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data39.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3488,16 +3474,16 @@
 
                     $('#flangeStatus40').text(flangeStatus);
                     var row = $('#row40');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data40.status == 2 || data40.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data40.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3531,16 +3517,16 @@
 
                     $('#flangeStatus41').text(flangeStatus);
                     var row = $('#row41');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data41.status == 2 || data41.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data41.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3574,16 +3560,16 @@
 
                     $('#flangeStatus42').text(flangeStatus);
                     var row = $('#row42');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data42.status == 2 || data42.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data42.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3621,16 +3607,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus19line3').text(flangeStatus);
                     var row = $('#row19line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data19line3.status == 2 || data19line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data19line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3664,16 +3650,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus20line3').text(flangeStatus);
                     var row = $('#row20line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data20line3.status == 2 || data20line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data20line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3690,6 +3676,27 @@ function fetchData19line3() {
             },
             success: function (data21line3) {
                 if (data21line3) {
+                    var timestamp = data21line3.TIMESTAMP;
+
+                    var date = new Date(timestamp);
+
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1;
+                    var year = date.getFullYear() % 100;
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline3').text(formattedTimestamp);
+
                     $('#dccode21line3').text(data21line3.DCCODE);
                     $('#seqnumber21line3').text(data21line3.SeqNo);
                     // $('#partNumber21line3').text(formattedPartNumber);
@@ -3707,16 +3714,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus21line3').text(flangeStatus);
                     var row = $('#row21line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data21line3.status == 2 || data21line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data21line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3750,16 +3757,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus22line3').text(flangeStatus);
                     var row = $('#row22line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data22line3.status == 2 || data22line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data22line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3793,16 +3800,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus23line3').text(flangeStatus);
                     var row = $('#row23line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data23line3.status == 2 || data23line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data23line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3836,16 +3843,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus24line3').text(flangeStatus);
                     var row = $('#row24line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data24line3.status == 2 || data24line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data24line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3879,16 +3886,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus25line3').text(flangeStatus);
                     var row = $('#row25line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data25line3.status == 2 || data25line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data25line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3922,16 +3929,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus26line3').text(flangeStatus);
                     var row = $('#row26line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data26line3.status == 2 || data26line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data26line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -3965,16 +3972,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus27line3').text(flangeStatus);
                     var row = $('#row27line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data27line3.status == 2 || data27line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data27line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4008,16 +4015,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus28line3').text(flangeStatus);
                     var row = $('#row28line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data28line3.status == 2 || data28line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data28line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4051,16 +4058,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus29line3').text(flangeStatus);
                     var row = $('#row29line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data29line3.status == 2 || data29line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data29line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4094,16 +4101,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus30line3').text(flangeStatus);
                     var row = $('#row30line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data30line3.status == 2 || data30line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data30line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4137,16 +4144,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus31line3').text(flangeStatus);
                     var row = $('#row31line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data31line3.status == 2 || data31line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data31line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4180,16 +4187,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus32line3').text(flangeStatus);
                     var row = $('#row32line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data32line3.status == 2 || data32line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data32line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4223,16 +4230,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus33line3').text(flangeStatus);
                     var row = $('#row33line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data33line3.status == 2 || data33line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data33line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4265,16 +4272,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus34line3').text(flangeStatus);
                     var row = $('#row34line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data34line3.status == 2 || data34line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data34line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4308,16 +4315,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus35line3').text(flangeStatus);
                     var row = $('#row35line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data35line3.status == 2 || data35line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data35line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4351,16 +4358,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus36line3').text(flangeStatus);
                     var row = $('#row36line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data36line3.status == 2 || data36line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data36line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4394,16 +4401,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus37line3').text(flangeStatus);
                     var row = $('#row37line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data37line3.status == 2 || data37line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data37line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4437,16 +4444,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus38line3').text(flangeStatus);
                     var row = $('#row38line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data38line3.status == 2 || data38line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data38line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4480,16 +4487,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus39line3').text(flangeStatus);
                     var row = $('#row39line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data39line3.status == 2 || data39line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data39line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4523,16 +4530,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus40line3').text(flangeStatus);
                     var row = $('#row40line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data40line3.status == 2 || data40line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data40line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4566,16 +4573,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus41line3').text(flangeStatus);
                     var row = $('#row41line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data41line3.status == 2 || data41line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data41line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4609,16 +4616,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus42line3').text(flangeStatus);
                     var row = $('#row42line3');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data42line3.status == 2 || data42line3.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data42line3.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4655,16 +4662,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus19line2').text(flangeStatus);
                     var row = $('#row19line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data19line2.status == 2 || data19line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data19line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4699,16 +4706,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus20line2').text(flangeStatus);
                     var row = $('#row20line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data20line2.status == 2 || data20line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data20line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4726,6 +4733,33 @@ function fetchData19line3() {
             },
             success: function (data21line2) {
                 if (data21line2) {
+
+                    var timestamp = data21line2.TIMESTAMP;
+
+
+                    var date = new Date(timestamp);
+
+
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1;
+                    var year = date.getFullYear() % 100;
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+
+
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+
+
+                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+
+                    $('#waktuline2').text(formattedTimestamp);
+
+
                     $('#dccode21line2').text(data21line2.DCCODE);
                     $('#seqnumber21line2').text(data21line2.SeqNo);
                     // $('#partNumber21line2').text(formattedPartNumber);
@@ -4743,67 +4777,22 @@ function fetchData19line3() {
 
                     $('#flangeStatus21line2').text(flangeStatus);
                     var row = $('#row21line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data21line2.status == 2 || data21line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data21line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
             }
         });
     }
-
-
-    function fetchData22line2() {
-        $.ajax({
-            url: "{{ route('data.visual22line2') }}",
-            method: 'GET',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function (data22line2) {
-                if (data22line2) {
-                    $('#dccode22line2').text(data22line2.DCCODE);
-                    $('#seqnumber22line2').text(data22line2.SeqNo);
-                    // $('#partNumber22line2').text(formattedPartNumber);
-                    $('#partNumber22line2').text(data22line2.NDCODEAWAL);
-
-                    $('#line22line2').text(data22line2.Line);
-
-                    var actQtyText = data22line2.act + '/' + data22line2.qty;
-                    $('#actualqty22line2').text(actQtyText);
-                    var status = (data22line2.status == 1) ? 'prod' : (data22line2.status == 2) ? 'com' : '';
-                    $('#status22line2').text(status);
-
-
-                    var flangeStatus = (data22line2.FlangeNon == 1) ? 'Flange' : (data22line2.FlangeNon == 0) ? 'Non-Flange' : '';
-
-                    $('#flangeStatus22line2').text(flangeStatus);
-                    var row = $('#row22line2');
-                    row.removeClass("table-danger table-primary table-success");
-                    if (data22line2.status == 2 || data22line2.status == 0) {
-                        if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
-                        } else if (flangeStatus === "Non-Flange") {
-                            row.addClass("table-primary");
-                        }
-                    }
-                        if (data22line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
-                        row.addClass("table-success");
-                        }
-                }
-            }
-        });
-    }
-
 
     function fetchData23line2() {
         $.ajax({
@@ -4831,16 +4820,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus23line2').text(flangeStatus);
                     var row = $('#row23line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data23line2.status == 2 || data23line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data23line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4875,16 +4864,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus24line2').text(flangeStatus);
                     var row = $('#row24line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data24line2.status == 2 || data24line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data24line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4919,16 +4908,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus25line2').text(flangeStatus);
                     var row = $('#row25line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data25line2.status == 2 || data25line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data25line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -4963,16 +4952,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus26line2').text(flangeStatus);
                     var row = $('#row26line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data26line2.status == 2 || data26line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data26line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5007,16 +4996,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus27line2').text(flangeStatus);
                     var row = $('#row27line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data27line2.status == 2 || data27line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data27line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5051,16 +5040,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus28line2').text(flangeStatus);
                     var row = $('#row28line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data28line2.status == 2 || data28line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data28line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5094,16 +5083,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus29line2').text(flangeStatus);
                     var row = $('#row29line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data29line2.status == 2 || data29line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data29line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5137,16 +5126,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus30line2').text(flangeStatus);
                     var row = $('#row30line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data30line2.status == 2 || data30line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data30line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5180,16 +5169,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus31line2').text(flangeStatus);
                     var row = $('#row31line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data31line2.status == 2 || data31line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data31line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5223,16 +5212,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus32line2').text(flangeStatus);
                     var row = $('#row32line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data32line2.status == 2 || data32line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data32line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5266,16 +5255,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus33line2').text(flangeStatus);
                     var row = $('#row33line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data33line2.status == 2 || data33line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data33line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5309,16 +5298,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus34line2').text(flangeStatus);
                     var row = $('#row34line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data34line2.status == 2 || data34line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data34line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5352,16 +5341,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus35line2').text(flangeStatus);
                     var row = $('#row35line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data35line2.status == 2 || data35line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data35line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5395,16 +5384,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus36line2').text(flangeStatus);
                     var row = $('#row36line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data36line2.status == 2 || data36line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data36line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5438,16 +5427,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus37line2').text(flangeStatus);
                     var row = $('#row37line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data37line2.status == 2 || data37line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data37line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5480,16 +5469,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus38line2').text(flangeStatus);
                     var row = $('#row38line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data38line2.status == 2 || data38line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data38line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5508,7 +5497,6 @@ function fetchData19line3() {
                 if (data39line2) {
                     $('#dccode39line2').text(data39line2.DCCODE);
                     $('#seqnumber39line2').text(data39line2.SeqNo);
-                    // $('#partNumber39line2').text(formattedPartNumber);
                     $('#partNumber39line2').text(data39line2.NDCODEAWAL);
 
                     $('#line39line2').text(data39line2.Line);
@@ -5523,16 +5511,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus39line2').text(flangeStatus);
                     var row = $('#row39line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data39line2.status == 2 || data39line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data39line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5551,7 +5539,6 @@ function fetchData19line3() {
                 if (data40line2) {
                     $('#dccode40line2').text(data40line2.DCCODE);
                     $('#seqnumber40line2').text(data40line2.SeqNo);
-                    // $('#partNumber40line2').text(formattedPartNumber);
                     $('#partNumber40line2').text(data40line2.NDCODEAWAL);
 
                     $('#line40line2').text(data40line2.Line);
@@ -5566,16 +5553,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus40line2').text(flangeStatus);
                     var row = $('#row40line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data40line2.status == 2 || data40line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data40line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5594,7 +5581,6 @@ function fetchData19line3() {
                 if (data41line2) {
                     $('#dccode41line2').text(data41line2.DCCODE);
                     $('#seqnumber41line2').text(data41line2.SeqNo);
-                    // $('#partNumber41line2').text(formattedPartNumber);
                     $('#partNumber41line2').text(data41line2.NDCODEAWAL);
 
                     $('#line41line2').text(data41line2.Line);
@@ -5609,16 +5595,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus41line2').text(flangeStatus);
                     var row = $('#row41line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data41line2.status == 2 || data41line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data41line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5637,7 +5623,6 @@ function fetchData19line3() {
                 if (data42line2) {
                     $('#dccode42line2').text(data42line2.DCCODE);
                     $('#seqnumber42line2').text(data42line2.SeqNo);
-                    // $('#partNumber42line2').text(formattedPartNumber);
                     $('#partNumber42line2').text(data42line2.NDCODEAWAL);
 
                     $('#line42line2').text(data42line2.Line);
@@ -5652,16 +5637,16 @@ function fetchData19line3() {
 
                     $('#flangeStatus42line2').text(flangeStatus);
                     var row = $('#row42line2');
-                    row.removeClass("table-danger table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success");
                     if (data42line2.status == 2 || data42line2.status == 0) {
                         if (flangeStatus === "Flange") {
-                            row.addClass("table-danger");
+                            row.addClass("table-warning");
                         } else if (flangeStatus === "Non-Flange") {
                             row.addClass("table-primary");
                         }
                     }
                         if (data42line2.status == 1) {
-                        row.removeClass("table-danger table-primary");
+                        row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
                 }
@@ -5669,94 +5654,479 @@ function fetchData19line3() {
         });
     }
 
+// Fungsi untuk mengecek status flange
+function checkFlangeStatus(data22, data22line2, data22line3) {
+    var flangeStatus = {
+        data22: data22 && data22.FlangeNon == 1,
+        data22line2: data22line2 && data22line2.FlangeNon == 1,
+        data22line3: data22line3 && data22line3.FlangeNon == 1
+    };
 
-updateDateTime();
-setInterval(updateDateTime, 1000);
-
-async function fetchData() {
-    await Promise.all([
-        fetchData19(),
-        fetchData20(),
-        fetchData21(),
-        fetchData22(),
-        fetchData23(),
-        fetchData24(),
-        fetchData25(),
-        fetchData26(),
-        fetchData27(),
-        fetchData28(),
-        fetchData29(),
-        fetchData30(),
-        fetchData31(),
-        fetchData32(),
-        fetchData33(),
-        fetchData34(),
-        fetchData35(),
-        fetchData36(),
-        fetchData37(),
-        fetchData38(),
-        fetchData39(),
-        fetchData40(),
-        fetchData41(),
-        fetchData42(),
-        fetchData19line3(),
-        fetchData20line3(),
-        fetchData21line3(),
-        fetchData22line3(),
-        fetchData23line3(),
-        fetchData24line3(),
-        fetchData25line3(),
-        fetchData26line3(),
-        fetchData27line3(),
-        fetchData28line3(),
-        fetchData29line3(),
-        fetchData30line3(),
-        fetchData31line3(),
-        fetchData32line3(),
-        fetchData33line3(),
-        fetchData34line3(),
-        fetchData35line3(),
-        fetchData36line3(),
-        fetchData37line3(),
-        fetchData38line3(),
-        fetchData39line3(),
-        fetchData40line3(),
-        fetchData41line3(),
-        fetchData42line3(),
-        fetchData19line2(),
-        fetchData20line2(),
-        fetchData21line2(),
-        fetchData22line2(),
-        fetchData23line2(),
-        fetchData24line2(),
-        fetchData25line2(),
-        fetchData26line2(),
-        fetchData27line2(),
-        fetchData28line2(),
-        fetchData29line2(),
-        fetchData30line2(),
-        fetchData31line2(),
-        fetchData32line2(),
-        fetchData33line2(),
-        fetchData34line2(),
-        fetchData35line2(),
-        fetchData36line2(),
-        fetchData37line2(),
-        fetchData38line2(),
-        fetchData39line2(),
-        fetchData40line2(),
-        fetchData41line2(),
-        fetchData42line2()
-    ]);
+    return flangeStatus;
 }
 
-fetchData();
+// Fungsi callback untuk pemrosesan data yang diterima dari server
+function fetchDataCallback(data22, data22line2, data22line3, lineId) {
+    var row = $('#row' + lineId);
+    var flangeStatus = {
+        data22: data22 && data22.FlangeNon == 1,
+        data22line2: data22line2 && data22line2.FlangeNon == 1,
+        data22line3: data22line3 && data22line3.FlangeNon == 1
+    };
 
-setInterval(fetchData, 3000);
+    // Handle data22
+    $('#dccode' + lineId).text(data22 ? data22.DCCODE : '');
+    $('#seqnumber' + lineId).text(data22 ? data22.SeqNo : '');
+    $('#partNumber' + lineId).text(data22 ? data22.NDCODEAWAL : '');
+    $('#line' + lineId).text(data22 ? data22.Line : '');
+    var actQtyText = data22 ? data22.act + '/' + data22.qty : '';
+    $('#actualqty' + lineId).text(actQtyText);
+    var status = (data22 && data22.status == 1) ? 'prod' : (data22 && data22.status == 2) ? 'com' : '';
+    $('#status' + lineId).text(status);
 
-    $(document).ready(function () {
-        console.log('jQuery berhasil dimuat!');
+    // Handle data22line2
+    if (data22line2) {
+        $('#dccode' + lineId).text(data22line2.DCCODE);
+        $('#seqnumber' + lineId).text(data22line2.SeqNo);
+        $('#partNumber' + lineId).text(data22line2.NDCODEAWAL);
+        $('#line' + lineId).text(data22line2.Line);
+        var actQtyText2 = data22line2 ? data22line2.act + '/' + data22line2.qty : '';
+        $('#actualqty' + lineId).text(actQtyText2);
+        var status2 = (data22line2 && data22line2.status == 1) ? 'prod' : (data22line2 && data22line2.status == 2) ? 'com' : '';
+        $('#status' + lineId).text(status2);
+    }
+
+    // Handle data22line3
+    if (data22line3) {
+        $('#dccode' + lineId).text(data22line3.DCCODE);
+        $('#seqnumber' + lineId).text(data22line3.SeqNo);
+        $('#partNumber' + lineId).text(data22line3.NDCODEAWAL);
+        $('#line' + lineId).text(data22line3.Line);
+        var actQtyText3 = data22line3 ? data22line3.act + '/' + data22line3.qty : '';
+        $('#actualqty' + lineId).text(actQtyText3);
+        var status3 = (data22line3 && data22line3.status == 1) ? 'prod' : (data22line3 && data22line3.status == 2) ? 'com' : '';
+        $('#status' + lineId).text(status3);
+    }
+
+    // Set flange status text and row color based on flange presence
+    if (flangeStatus.data22 && flangeStatus.data22line2 && flangeStatus.data22line3) {
+        row.removeClass("table-primary table-warning").addClass("table-danger");
+        $('#flangeStatus' + lineId).text('Flange');
+    } else if (flangeStatus.data22 || flangeStatus.data22line2 || flangeStatus.data22line3) {
+        row.removeClass("table-primary").addClass("table-warning");
+        $('#flangeStatus' + lineId).text('Flange');
+    } else {
+        row.removeClass("table-warning table-danger").addClass("table-primary");
+        $('#flangeStatus' + lineId).text('Non-Flange');
+    }
+}
+
+
+
+
+
+function fetchData(url, lineId) {
+    $.ajax({
+        url: url,
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data) {
+            if (data) {
+                fetchDataCallback(data, null, null, lineId);
+            }
+        }
     });
+}
+
+function fetchData22line2() {
+    $.ajax({
+        url: "{{ route('data.visual22line2') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data22line2) {
+            if (data22line2) {
+                fetchDataCallback(null, data22line2, null, "22line2");
+            }
+        }
+    });
+}
+
+function fetchData22line3() {
+    $.ajax({
+        url: "{{ route('data.visual22line3') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data22line3) {
+            if (data22line3) {
+                fetchDataCallback(null, null, data22line3, "22line3");
+            }
+        }
+    });
+}
+
+function fetchData22() {
+    $.ajax({
+        url: "{{ route('data.visual22') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data22) {
+            if (data22) {
+                fetchDataCallback(data22, null, null, "22");
+            }
+        }
+    });
+}
+
+function fetchData23() {
+    $.ajax({
+        url: "{{ route('data.visual23') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data23) {
+            if (data23) {
+                var allFlange23 = (data23.FlangeNon == 1);
+
+                $('#dccode23').text(data23.DCCODE);
+                $('#seqnumber23').text(data23.SeqNo);
+                $('#partNumber23').text(data23.NDCODEAWAL);
+                $('#line23').text(data23.Line);
+
+                var actQtyText23 = data23.act + '/' + data23.qty;
+                $('#actualqty23').text(actQtyText23);
+                var status23 = (data23.status == 1) ? 'prod' : (data23.status == 2) ? 'com' : '';
+                $('#status23').text(status23);
+
+                if (allFlange23) {
+                    $('#flangeStatus23').text('Flange');
+                } else {
+                    $('#flangeStatus23').text('Non-Flange');
+                }
+
+                // Fetch data23line2 and data23line3
+                fetchData23line2();
+                fetchData23line3();
+
+                // Check if all data have FlangeNon == 1 for row23
+                var allFlangeLine2 = $('#row23line2').hasClass("table-danger");
+                var allFlangeLine3 = $('#row23line3').hasClass("table-danger");
+
+                if (allFlange23 && allFlangeLine2 && allFlangeLine3) {
+                    // Add table-danger class to row23
+                    $('#row23').addClass("table-danger");
+                } else {
+                        // Apply different logic when main condition is not fulfilled
+                        var flangeStatus23 = (data23.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+
+                        $('#flangeStatus23').text(flangeStatus23);
+                        var row23 = $('#row23');
+                        row23.removeClass("table-warning table-primary table-success table-danger");
+
+                        if (data23.status == 2 || data23.status == 0) {
+                            if (flangeStatus23 === "Flange") {
+                                row23.addClass("table-warning");
+                            } else if (flangeStatus23 === "Non-Flange") {
+                                row23.addClass("table-primary");
+                            }
+                        } else if (data23.status == 1) {
+                            row23.removeClass("table-warning table-primary table-danger");
+                            row23.addClass("table-success");
+                        }
+
+                }
+            }
+        }
+    });
+}
+
+
+function fetchData23line2() {
+    $.ajax({
+        url: "{{ route('data.visual23line2') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data23line2) {
+            if (data23line2) {
+                var allFlangeLine2 = (data23line2.FlangeNon == 1);
+
+                $('#dccode23line2').text(data23line2.DCCODE);
+                $('#seqnumber23line2').text(data23line2.SeqNo);
+                $('#partNumber23line2').text(data23line2.NDCODEAWAL);
+                $('#line23line2').text(data23line2.Line);
+
+                var actQtyTextLine2 = data23line2.act + '/' + data23line2.qty;
+                $('#actualqty23line2').text(actQtyTextLine2);
+                var statusLine2 = (data23line2.status == 1) ? 'prod' : (data23line2.status == 2) ? 'com' : '';
+                $('#status23line2').text(statusLine2);
+
+                if (allFlangeLine2) {
+                    $('#flangeStatus23line2').text('Flange');
+                } else {
+                    $('#flangeStatus23line2').text('Non-Flange');
+                }
+
+                // Check if all data have FlangeNon == 1 for row23line2
+                var allFlange23line2 = $('#row23line2').hasClass("table-danger");
+
+                if (allFlangeLine2) {
+                    // Add table-danger class to row23line2
+                    $('#row23line2').addClass("table-danger");
+                } else {
+                        // Apply different logic when main condition is not fulfilled
+                        var flangeStatus23line2 = (data23line2.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+
+                        $('#flangeStatus23line2').text(flangeStatus23line2);
+                        var row23line2 = $('#row23line2');
+                        row23line2.removeClass("table-warning table-primary table-success table-danger");
+
+                        if (data23line2.status == 2 || data23line2.status == 0) {
+                            if (flangeStatus23line2 === "Flange") {
+                                row23line2.removeClass("table-primary table-danger");
+                                row23line2.addClass("table-warning");
+                            } else if (flangeStatus23line2 === "Non-Flange") {
+                                row23line2.removeClass("table-warning table-danger");
+                                row23line2.addClass("table-primary");
+                            }
+                        } else if (data23line2.status == 1) {
+                            row23line2.removeClass("table-warning table-primary table-danger");
+                            row23line2.addClass("table-success");
+                        }
+
+                }
+            }
+        }
+    });
+}
+
+function fetchData23line3() {
+    $.ajax({
+        url: "{{ route('data.visual23line3') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data23line3) {
+            if (data23line3) {
+                var allFlangeLine3 = (data23line3.FlangeNon == 1);
+
+                $('#dccode23line3').text(data23line3.DCCODE);
+                $('#seqnumber23line3').text(data23line3.SeqNo);
+                $('#partNumber23line3').text(data23line3.NDCODEAWAL);
+                $('#line23line3').text(data23line3.Line);
+
+                var actQtyTextLine3 = data23line3.act + '/' + data23line3.qty;
+                $('#actualqty23line3').text(actQtyTextLine3);
+                var statusLine3 = (data23line3.status == 1) ? 'prod' : (data23line3.status == 2) ? 'com' : '';
+                $('#status23line3').text(statusLine3);
+
+                if (allFlangeLine3) {
+                    $('#flangeStatus23line3').text('Flange');
+                } else {
+                    $('#flangeStatus23line3').text('Non-Flange');
+                }
+
+                // Check if all data have FlangeNon == 1 for row23line3
+                var allFlange23line3 = $('#row23line3').hasClass("table-danger");
+
+                if (allFlangeLine3) {
+                    // Add table-danger class to row23line3
+                    $('#row23line3').addClass("table-danger");
+                } else {
+                        // Apply different logic when main condition is not fulfilled
+                        var flangeStatus23line3 = (data23line3.FlangeNon == 1) ? 'Flange' : 'Non-Flange';
+
+                        $('#flangeStatus23line3').text(flangeStatus23line3);
+                        var row23line3 = $('#row23line3');
+                        row23line3.removeClass("table-warning table-primary table-success table-danger");
+
+                        if (data23line3.status == 2 || data23line3.status == 0) {
+                            if (flangeStatus23line3 === "Flange") {
+                                row23line3.removeClass("table-primary table-danger");
+                                row23line3.addClass("table-warning");
+                            } else if (flangeStatus23line3 === "Non-Flange") {
+                                row23line3.removeClass("table-warning table-primary table-danger");
+                                row23line3.addClass("table-primary");
+                            }
+                        } else if (data23line3.status == 1) {
+                            row23line3.removeClass("table-warning table-danger");
+                            row23line3.addClass("table-success");
+                        }
+                }
+            }
+        }
+    });
+}
+
+
+
+
+
+
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+
+    // waktuline2();
+    fetchData19line2();
+    fetchData20line2();
+    fetchData21line2();
+    fetchData22line2();
+    fetchData23line2();
+    fetchData24line2();
+    fetchData25line2();
+    fetchData26line2();
+    fetchData27line2();
+    fetchData28line2();
+    fetchData29line2();
+    fetchData30line2();
+    fetchData31line2();
+    fetchData32line2();
+    fetchData33line2();
+    fetchData34line2();
+    fetchData35line2();
+    fetchData36line2();
+    fetchData37line2();
+    fetchData38line2();
+    fetchData39line2();
+    fetchData40line2();
+    fetchData41line2();
+    fetchData42line2();
+    fetchData19line3();
+    fetchData20line3();
+    fetchData21line3();
+    fetchData22line3();
+    fetchData23line3();
+    fetchData24line3();
+    fetchData25line3();
+    fetchData26line3();
+    fetchData27line3();
+    fetchData28line3();
+    fetchData29line3();
+    fetchData30line3();
+    fetchData31line3();
+    fetchData32line3();
+    fetchData33line3();
+    fetchData34line3();
+    fetchData35line3();
+    fetchData36line3();
+    fetchData37line3();
+    fetchData38line3();
+    fetchData39line3();
+    fetchData40line3();
+    fetchData41line3();
+    fetchData42line3();
+    fetchData19();
+    fetchData20();
+    fetchData21();
+    fetchData22();
+    fetchData23();
+    fetchData24();
+    fetchData25();
+    fetchData26();
+    fetchData27();
+    fetchData28();
+    fetchData29();
+    fetchData30();
+    fetchData31();
+    fetchData32();
+    fetchData33();
+    fetchData34();
+    fetchData35();
+    fetchData36();
+    fetchData37();
+    fetchData38();
+    fetchData39();
+    fetchData40();
+    fetchData41();
+    fetchData42();
+
+
+
+    // setInterval(waktuline2, 1000);
+    // setInterval(fetchDataCallback, 3000);
+    setInterval(fetchData19line2, 3000);
+    setInterval(fetchData20line2, 3000);
+    setInterval(fetchData21line2, 3000);
+    setInterval(fetchData22line2, 3000);
+    setInterval(fetchData23line2, 3000);
+    setInterval(fetchData24line2, 3000);
+    setInterval(fetchData25line2, 3000);
+    setInterval(fetchData26line2, 3000);
+    setInterval(fetchData27line2, 3000);
+    setInterval(fetchData28line2, 3000);
+    setInterval(fetchData29line2, 3000);
+    setInterval(fetchData30line2, 3000);
+    setInterval(fetchData31line2, 3000);
+    setInterval(fetchData32line2, 3000);
+    setInterval(fetchData33line2, 3000);
+    setInterval(fetchData34line2, 3000);
+    setInterval(fetchData35line2, 3000);
+    setInterval(fetchData36line2, 3000);
+    setInterval(fetchData37line2, 3000);
+    setInterval(fetchData38line2, 3000);
+    setInterval(fetchData39line2, 3000);
+    setInterval(fetchData40line2, 3000);
+    setInterval(fetchData41line2, 3000);
+    setInterval(fetchData42line2, 3000);
+    setInterval(fetchData19line3, 3000);
+    setInterval(fetchData20line3, 3000);
+    setInterval(fetchData21line3, 3000);
+    setInterval(fetchData22line3, 3000);
+    setInterval(fetchData23line3, 3000);
+    setInterval(fetchData24line3, 3000);
+    setInterval(fetchData25line3, 3000);
+    setInterval(fetchData26line3, 3000);
+    setInterval(fetchData27line3, 3000);
+    setInterval(fetchData28line3, 3000);
+    setInterval(fetchData29line3, 3000);
+    setInterval(fetchData30line3, 3000);
+    setInterval(fetchData31line3, 3000);
+    setInterval(fetchData32line3, 3000);
+    setInterval(fetchData33line3, 3000);
+    setInterval(fetchData34line3, 3000);
+    setInterval(fetchData35line3, 3000);
+    setInterval(fetchData36line3, 3000);
+    setInterval(fetchData37line3, 3000);
+    setInterval(fetchData38line3, 3000);
+    setInterval(fetchData39line3, 3000);
+    setInterval(fetchData40line3, 3000);
+    setInterval(fetchData41line3, 3000);
+    setInterval(fetchData42line3, 3000);
+    setInterval(fetchData19, 3000);
+    setInterval(fetchData20, 3000);
+    setInterval(fetchData21, 3000);
+    setInterval(fetchData22, 3000);
+    setInterval(fetchData23, 3000);
+    setInterval(fetchData24, 3000);
+    setInterval(fetchData25, 3000);
+    setInterval(fetchData26, 3000);
+    setInterval(fetchData27, 3000);
+    setInterval(fetchData28, 3000);
+    setInterval(fetchData29, 3000);
+    setInterval(fetchData30, 3000);
+    setInterval(fetchData31, 3000);
+    setInterval(fetchData32, 3000);
+    setInterval(fetchData33, 3000);
+    setInterval(fetchData34, 3000);
+    setInterval(fetchData35, 3000);
+    setInterval(fetchData36, 3000);
+    setInterval(fetchData37, 3000);
+    setInterval(fetchData38, 3000);
+    setInterval(fetchData39, 3000);
+    setInterval(fetchData40, 3000);
+    setInterval(fetchData41, 3000);
+    setInterval(fetchData42, 3000);
 </script>
 
 

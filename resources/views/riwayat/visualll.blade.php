@@ -16,7 +16,7 @@
 
     <div class="container text-center mt-5">
     </div>
-    
+
         <div class="row d-flex flex-nowrap overflow-auto">
 
             <div class="col table-bordered" >
@@ -1698,7 +1698,7 @@
                 </table>
             </div>
 
-            <div class="col table-bordered">                    
+            <div class="col table-bordered">
                 <div class="row">
                     <div class="col"><h4 id="waktuline4"></h4>
                     </div>
@@ -2579,7 +2579,7 @@
                     $('#seqnumber19').text(data19.SeqNo);
                     // $('#partNumber19').text(formattedPartNumber);
                     $('#partNumber19').text(data19.NDCODEAWAL);
-                    
+
                     $('#line19').text(data19.Line);
 
                     var actQtyText = data19.act + '/' + data19.qty;
@@ -2587,7 +2587,7 @@
                     var status = (data19.status == 1) ? 'prod' : (data19.status == 2) ? 'com' : '';
                     $('#status19').text(status);
 
-                    
+
                     var flangeStatus = (data19.FlangeNon == 1) ? 'Flange' : (data19.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus19').text(flangeStatus);
@@ -2622,7 +2622,7 @@
                     $('#seqnumber20').text(data20.SeqNo);
                     // $('#partNumber20').text(formattedPartNumber);
                     $('#partNumber20').text(data20.NDCODEAWAL);
-                    
+
                     $('#line20').text(data20.Line);
 
                     var actQtyText = data20.act + '/' + data20.qty;
@@ -2630,7 +2630,7 @@
                     var status = (data20.status == 1) ? 'prod' : (data20.status == 2) ? 'com' : '';
                     $('#status20').text(status);
 
-                    
+
                     var flangeStatus = (data20.FlangeNon == 1) ? 'Flange' : (data20.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus20').text(flangeStatus);
@@ -2662,24 +2662,24 @@
             },
             success: function (data21) {
                 if (data21) {
-                    
+
                     var timestamp = data21.TIMESTAMP;
-         
+
                     var date = new Date(timestamp);
 
                     var day = date.getDate();
-                    var month = date.getMonth() + 1; 
+                    var month = date.getMonth() + 1;
                     var year = date.getFullYear() % 100;
                     var hours = date.getHours();
                     var minutes = date.getMinutes();
                     var seconds = date.getSeconds();
-   
+
                     day = (day < 10) ? '0' + day : day;
                     month = (month < 10) ? '0' + month : month;
                     year = (year < 10) ? '0' + year : year;
                     hours = (hours < 10) ? '0' + hours : hours;
                     minutes = (minutes < 10) ? '0' + minutes : minutes;
- 
+
                     var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
 
                     $('#waktuline4').text(formattedTimestamp);
@@ -2687,7 +2687,7 @@
                     $('#seqnumber21').text(data21.SeqNo);
                     // $('#partNumber21').text(formattedPartNumber);
                     $('#partNumber21').text(data21.NDCODEAWAL);
-                    
+
                     $('#line21').text(data21.Line);
 
                     var actQtyText = data21.act + '/' + data21.qty;
@@ -2695,7 +2695,7 @@
                     var status = (data21.status == 1) ? 'prod' : (data21.status == 2) ? 'com' : '';
                     $('#status21').text(status);
 
-                    
+
                     var flangeStatus = (data21.FlangeNon == 1) ? 'Flange' : (data21.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus21').text(flangeStatus);
@@ -2730,7 +2730,7 @@
                     $('#seqnumber22').text(data22.SeqNo);
                     // $('#partNumber22').text(formattedPartNumber);
                     $('#partNumber22').text(data22.NDCODEAWAL);
-                    
+
                     $('#line22').text(data22.Line);
 
                     var actQtyText = data22.act + '/' + data22.qty;
@@ -2738,7 +2738,7 @@
                     var status = (data22.status == 1) ? 'prod' : (data22.status == 2) ? 'com' : '';
                     $('#status22').text(status);
 
-                    
+
                     var flangeStatus = (data22.FlangeNon == 1) ? 'Flange' : (data22.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus22').text(flangeStatus);
@@ -2773,7 +2773,7 @@
                     $('#seqnumber23').text(data23.SeqNo);
                     // $('#partNumber23').text(formattedPartNumber);
                     $('#partNumber23').text(data23.NDCODEAWAL);
-                    
+
                     $('#line23').text(data23.Line);
 
                     var actQtyText = data23.act + '/' + data23.qty;
@@ -2781,7 +2781,7 @@
                     var status = (data23.status == 1) ? 'prod' : (data23.status == 2) ? 'com' : '';
                     $('#status23').text(status);
 
-                    
+
                     var flangeStatus = (data23.FlangeNon == 1) ? 'Flange' : (data23.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus23').text(flangeStatus);
@@ -2816,7 +2816,7 @@
                     $('#seqnumber24').text(data24.SeqNo);
                     // $('#partNumber24').text(formattedPartNumber);
                     $('#partNumber24').text(data24.NDCODEAWAL);
-                    
+
                     $('#line24').text(data24.Line);
 
                     var actQtyText = data24.act + '/' + data24.qty;
@@ -2824,7 +2824,7 @@
                     var status = (data24.status == 1) ? 'prod' : (data24.status == 2) ? 'com' : '';
                     $('#status24').text(status);
 
-                    
+
                     var flangeStatus = (data24.FlangeNon == 1) ? 'Flange' : (data24.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus24').text(flangeStatus);
@@ -2859,7 +2859,7 @@
                     $('#seqnumber25').text(data25.SeqNo);
                     // $('#partNumber25').text(formattedPartNumber);
                     $('#partNumber25').text(data25.NDCODEAWAL);
-                    
+
                     $('#line25').text(data25.Line);
 
                     var actQtyText = data25.act + '/' + data25.qty;
@@ -2867,7 +2867,7 @@
                     var status = (data25.status == 1) ? 'prod' : (data25.status == 2) ? 'com' : '';
                     $('#status25').text(status);
 
-                    
+
                     var flangeStatus = (data25.FlangeNon == 1) ? 'Flange' : (data25.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus25').text(flangeStatus);
@@ -2902,7 +2902,7 @@
                     $('#seqnumber26').text(data26.SeqNo);
                     // $('#partNumber26').text(formattedPartNumber);
                     $('#partNumber26').text(data26.NDCODEAWAL);
-                    
+
                     $('#line26').text(data26.Line);
 
                     var actQtyText = data26.act + '/' + data26.qty;
@@ -2910,7 +2910,7 @@
                     var status = (data26.status == 1) ? 'prod' : (data26.status == 2) ? 'com' : '';
                     $('#status26').text(status);
 
-                    
+
                     var flangeStatus = (data26.FlangeNon == 1) ? 'Flange' : (data26.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus26').text(flangeStatus);
@@ -2945,7 +2945,7 @@
                     $('#seqnumber27').text(data27.SeqNo);
                     // $('#partNumber27').text(formattedPartNumber);
                     $('#partNumber27').text(data27.NDCODEAWAL);
-                    
+
                     $('#line27').text(data27.Line);
 
                     var actQtyText = data27.act + '/' + data27.qty;
@@ -2953,7 +2953,7 @@
                     var status = (data27.status == 1) ? 'prod' : (data27.status == 2) ? 'com' : '';
                     $('#status27').text(status);
 
-                    
+
                     var flangeStatus = (data27.FlangeNon == 1) ? 'Flange' : (data27.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus27').text(flangeStatus);
@@ -2988,7 +2988,7 @@
                     $('#seqnumber28').text(data28.SeqNo);
                     // $('#partNumber28').text(formattedPartNumber);
                     $('#partNumber28').text(data28.NDCODEAWAL);
-                    
+
                     $('#line28').text(data28.Line);
 
                     var actQtyText = data28.act + '/' + data28.qty;
@@ -2996,7 +2996,7 @@
                     var status = (data28.status == 1) ? 'prod' : (data28.status == 2) ? 'com' : '';
                     $('#status28').text(status);
 
-                    
+
                     var flangeStatus = (data28.FlangeNon == 1) ? 'Flange' : (data28.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus28').text(flangeStatus);
@@ -3031,7 +3031,7 @@
                     $('#seqnumber29').text(data29.SeqNo);
                     // $('#partNumber29').text(formattedPartNumber);
                     $('#partNumber29').text(data29.NDCODEAWAL);
-                    
+
                     $('#line29').text(data29.Line);
 
                     var actQtyText = data29.act + '/' + data29.qty;
@@ -3039,7 +3039,7 @@
                     var status = (data29.status == 1) ? 'prod' : (data29.status == 2) ? 'com' : '';
                     $('#status29').text(status);
 
-                    
+
                     var flangeStatus = (data29.FlangeNon == 1) ? 'Flange' : (data29.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus29').text(flangeStatus);
@@ -3074,7 +3074,7 @@
                     $('#seqnumber30').text(data30.SeqNo);
                     // $('#partNumber30').text(formattedPartNumber);
                     $('#partNumber30').text(data30.NDCODEAWAL);
-                    
+
                     $('#line30').text(data30.Line);
 
                     var actQtyText = data30.act + '/' + data30.qty;
@@ -3082,7 +3082,7 @@
                     var status = (data30.status == 1) ? 'prod' : (data30.status == 2) ? 'com' : '';
                     $('#status30').text(status);
 
-                    
+
                     var flangeStatus = (data30.FlangeNon == 1) ? 'Flange' : (data30.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus30').text(flangeStatus);
@@ -3117,7 +3117,7 @@
                     $('#seqnumber31').text(data31.SeqNo);
                     // $('#partNumber31').text(formattedPartNumber);
                     $('#partNumber31').text(data31.NDCODEAWAL);
-                    
+
                     $('#line31').text(data31.Line);
 
                     var actQtyText = data31.act + '/' + data31.qty;
@@ -3125,7 +3125,7 @@
                     var status = (data31.status == 1) ? 'prod' : (data31.status == 2) ? 'com' : '';
                     $('#status31').text(status);
 
-                    
+
                     var flangeStatus = (data31.FlangeNon == 1) ? 'Flange' : (data31.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus31').text(flangeStatus);
@@ -3160,7 +3160,7 @@
                     $('#seqnumber32').text(data32.SeqNo);
                     // $('#partNumber32').text(formattedPartNumber);
                     $('#partNumber32').text(data32.NDCODEAWAL);
-                    
+
                     $('#line32').text(data32.Line);
 
                     var actQtyText = data32.act + '/' + data32.qty;
@@ -3168,7 +3168,7 @@
                     var status = (data32.status == 1) ? 'prod' : (data32.status == 2) ? 'com' : '';
                     $('#status32').text(status);
 
-                    
+
                     var flangeStatus = (data32.FlangeNon == 1) ? 'Flange' : (data32.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus32').text(flangeStatus);
@@ -3203,7 +3203,7 @@
                     $('#seqnumber33').text(data33.SeqNo);
                     // $('#partNumber33').text(formattedPartNumber);
                     $('#partNumber33').text(data33.NDCODEAWAL);
-                    
+
                     $('#line33').text(data33.Line);
 
                     var actQtyText = data33.act + '/' + data33.qty;
@@ -3211,7 +3211,7 @@
                     var status = (data33.status == 1) ? 'prod' : (data33.status == 2) ? 'com' : '';
                     $('#status33').text(status);
 
-                    
+
                     var flangeStatus = (data33.FlangeNon == 1) ? 'Flange' : (data33.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus33').text(flangeStatus);
@@ -3246,7 +3246,7 @@
                     $('#seqnumber34').text(data34.SeqNo);
                     // $('#partNumber34').text(formattedPartNumber);
                     $('#partNumber34').text(data34.NDCODEAWAL);
-                    
+
                     $('#line34').text(data34.Line);
 
                     var actQtyText = data34.act + '/' + data34.qty;
@@ -3254,7 +3254,7 @@
                     var status = (data34.status == 1) ? 'prod' : (data34.status == 2) ? 'com' : '';
                     $('#status34').text(status);
 
-                    
+
                     var flangeStatus = (data34.FlangeNon == 1) ? 'Flange' : (data34.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus34').text(flangeStatus);
@@ -3289,7 +3289,7 @@
                     $('#seqnumber35').text(data35.SeqNo);
                     // $('#partNumber35').text(formattedPartNumber);
                     $('#partNumber35').text(data35.NDCODEAWAL);
-                    
+
                     $('#line35').text(data35.Line);
 
                     var actQtyText = data35.act + '/' + data35.qty;
@@ -3297,7 +3297,7 @@
                     var status = (data35.status == 1) ? 'prod' : (data35.status == 2) ? 'com' : '';
                     $('#status35').text(status);
 
-                    
+
                     var flangeStatus = (data35.FlangeNon == 1) ? 'Flange' : (data35.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus35').text(flangeStatus);
@@ -3332,7 +3332,7 @@
                     $('#seqnumber36').text(data36.SeqNo);
                     // $('#partNumber36').text(formattedPartNumber);
                     $('#partNumber36').text(data36.NDCODEAWAL);
-                    
+
                     $('#line36').text(data36.Line);
 
                     var actQtyText = data36.act + '/' + data36.qty;
@@ -3340,7 +3340,7 @@
                     var status = (data36.status == 1) ? 'prod' : (data36.status == 2) ? 'com' : '';
                     $('#status36').text(status);
 
-                    
+
                     var flangeStatus = (data36.FlangeNon == 1) ? 'Flange' : (data36.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus36').text(flangeStatus);
@@ -3375,7 +3375,7 @@
                     $('#seqnumber37').text(data37.SeqNo);
                     // $('#partNumber37').text(formattedPartNumber);
                     $('#partNumber37').text(data37.NDCODEAWAL);
-                    
+
                     $('#line37').text(data37.Line);
 
                     var actQtyText = data37.act + '/' + data37.qty;
@@ -3383,7 +3383,7 @@
                     var status = (data37.status == 1) ? 'prod' : (data37.status == 2) ? 'com' : '';
                     $('#status37').text(status);
 
-                    
+
                     var flangeStatus = (data37.FlangeNon == 1) ? 'Flange' : (data37.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus37').text(flangeStatus);
@@ -3418,7 +3418,7 @@
                     $('#seqnumber38').text(data38.SeqNo);
                     // $('#partNumber38').text(formattedPartNumber);
                     $('#partNumber38').text(data38.NDCODEAWAL);
-                    
+
                     $('#line38').text(data38.Line);
 
                     var actQtyText = data38.act + '/' + data38.qty;
@@ -3426,7 +3426,7 @@
                     var status = (data38.status == 1) ? 'prod' : (data38.status == 2) ? 'com' : '';
                     $('#status38').text(status);
 
-                    
+
                     var flangeStatus = (data38.FlangeNon == 1) ? 'Flange' : (data38.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus38').text(flangeStatus);
@@ -3461,7 +3461,7 @@
                     $('#seqnumber39').text(data39.SeqNo);
                     // $('#partNumber39').text(formattedPartNumber);
                     $('#partNumber39').text(data39.NDCODEAWAL);
-                    
+
                     $('#line39').text(data39.Line);
 
                     var actQtyText = data39.act + '/' + data39.qty;
@@ -3469,7 +3469,7 @@
                     var status = (data39.status == 1) ? 'prod' : (data39.status == 2) ? 'com' : '';
                     $('#status39').text(status);
 
-                    
+
                     var flangeStatus = (data39.FlangeNon == 1) ? 'Flange' : (data39.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus39').text(flangeStatus);
@@ -3504,7 +3504,7 @@
                     $('#seqnumber40').text(data40.SeqNo);
                     // $('#partNumber40').text(formattedPartNumber);
                     $('#partNumber40').text(data40.NDCODEAWAL);
-                    
+
                     $('#line40').text(data40.Line);
 
                     var actQtyText = data40.act + '/' + data40.qty;
@@ -3512,7 +3512,7 @@
                     var status = (data40.status == 1) ? 'prod' : (data40.status == 2) ? 'com' : '';
                     $('#status40').text(status);
 
-                    
+
                     var flangeStatus = (data40.FlangeNon == 1) ? 'Flange' : (data40.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus40').text(flangeStatus);
@@ -3547,7 +3547,7 @@
                     $('#seqnumber41').text(data41.SeqNo);
                     // $('#partNumber41').text(formattedPartNumber);
                     $('#partNumber41').text(data41.NDCODEAWAL);
-                    
+
                     $('#line41').text(data41.Line);
 
                     var actQtyText = data41.act + '/' + data41.qty;
@@ -3555,7 +3555,7 @@
                     var status = (data41.status == 1) ? 'prod' : (data41.status == 2) ? 'com' : '';
                     $('#status41').text(status);
 
-                    
+
                     var flangeStatus = (data41.FlangeNon == 1) ? 'Flange' : (data41.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus41').text(flangeStatus);
@@ -3590,7 +3590,7 @@
                     $('#seqnumber42').text(data42.SeqNo);
                     // $('#partNumber42').text(formattedPartNumber);
                     $('#partNumber42').text(data42.NDCODEAWAL);
-                    
+
                     $('#line42').text(data42.Line);
 
                     var actQtyText = data42.act + '/' + data42.qty;
@@ -3598,7 +3598,7 @@
                     var status = (data42.status == 1) ? 'prod' : (data42.status == 2) ? 'com' : '';
                     $('#status42').text(status);
 
-                    
+
                     var flangeStatus = (data42.FlangeNon == 1) ? 'Flange' : (data42.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus42').text(flangeStatus);
@@ -3637,7 +3637,7 @@ function fetchData19line3() {
                     $('#seqnumber19line3').text(data19line3.SeqNo);
                     // $('#partNumber19line3').text(formattedPartNumber);
                     $('#partNumber19line3').text(data19line3.NDCODEAWAL);
-                    
+
                     $('#line19line3').text(data19line3.Line);
 
                     var actQtyText = data19line3.act + '/' + data19line3.qty;
@@ -3645,7 +3645,7 @@ function fetchData19line3() {
                     var status = (data19line3.status == 1) ? 'prod' : (data19line3.status == 2) ? 'com' : '';
                     $('#status19line3').text(status);
 
-                    
+
                     var flangeStatus = (data19line3.FlangeNon == 1) ? 'Flange' : (data19line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus19line3').text(flangeStatus);
@@ -3680,7 +3680,7 @@ function fetchData19line3() {
                     $('#seqnumber20line3').text(data20line3.SeqNo);
                     // $('#partNumber20line3').text(formattedPartNumber);
                     $('#partNumber20line3').text(data20line3.NDCODEAWAL);
-                    
+
                     $('#line20line3').text(data20line3.Line);
 
                     var actQtyText = data20line3.act + '/' + data20line3.qty;
@@ -3688,7 +3688,7 @@ function fetchData19line3() {
                     var status = (data20line3.status == 1) ? 'prod' : (data20line3.status == 2) ? 'com' : '';
                     $('#status20line3').text(status);
 
-                    
+
                     var flangeStatus = (data20line3.FlangeNon == 1) ? 'Flange' : (data20line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus20line3').text(flangeStatus);
@@ -3709,7 +3709,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData21line3() {
         $.ajax({
             url: "{{ route('data.visual21line3') }}",
@@ -3718,14 +3718,14 @@ function fetchData19line3() {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             success: function (data21line3) {
-                if (data21line3) {      
+                if (data21line3) {
                     var timestamp = data21line3.TIMESTAMP;
-     
+
                     var date = new Date(timestamp);
 
                     var day = date.getDate();
-                    var month = date.getMonth() + 1; 
-                    var year = date.getFullYear() % 100; 
+                    var month = date.getMonth() + 1;
+                    var year = date.getFullYear() % 100;
                     var hours = date.getHours();
                     var minutes = date.getMinutes();
                     var seconds = date.getSeconds();
@@ -3744,7 +3744,7 @@ function fetchData19line3() {
                     $('#seqnumber21line3').text(data21line3.SeqNo);
                     // $('#partNumber21line3').text(formattedPartNumber);
                     $('#partNumber21line3').text(data21line3.NDCODEAWAL);
-                    
+
                     $('#line21line3').text(data21line3.Line);
 
                     var actQtyText = data21line3.act + '/' + data21line3.qty;
@@ -3752,7 +3752,7 @@ function fetchData19line3() {
                     var status = (data21line3.status == 1) ? 'prod' : (data21line3.status == 2) ? 'com' : '';
                     $('#status21line3').text(status);
 
-                    
+
                     var flangeStatus = (data21line3.FlangeNon == 1) ? 'Flange' : (data21line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus21line3').text(flangeStatus);
@@ -3773,7 +3773,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData22line3() {
         $.ajax({
             url: "{{ route('data.visual22line3') }}",
@@ -3787,7 +3787,7 @@ function fetchData19line3() {
                     $('#seqnumber22line3').text(data22line3.SeqNo);
                     // $('#partNumber22line3').text(formattedPartNumber);
                     $('#partNumber22line3').text(data22line3.NDCODEAWAL);
-                    
+
                     $('#line22line3').text(data22line3.Line);
 
                     var actQtyText = data22line3.act + '/' + data22line3.qty;
@@ -3795,7 +3795,7 @@ function fetchData19line3() {
                     var status = (data22line3.status == 1) ? 'prod' : (data22line3.status == 2) ? 'com' : '';
                     $('#status22line3').text(status);
 
-                    
+
                     var flangeStatus = (data22line3.FlangeNon == 1) ? 'Flange' : (data22line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus22line3').text(flangeStatus);
@@ -3816,7 +3816,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData23line3() {
         $.ajax({
             url: "{{ route('data.visual23line3') }}",
@@ -3830,7 +3830,7 @@ function fetchData19line3() {
                     $('#seqnumber23line3').text(data23line3.SeqNo);
                     // $('#partNumber23line3').text(formattedPartNumber);
                     $('#partNumber23line3').text(data23line3.NDCODEAWAL);
-                    
+
                     $('#line23line3').text(data23line3.Line);
 
                     var actQtyText = data23line3.act + '/' + data23line3.qty;
@@ -3838,7 +3838,7 @@ function fetchData19line3() {
                     var status = (data23line3.status == 1) ? 'prod' : (data23line3.status == 2) ? 'com' : '';
                     $('#status23line3').text(status);
 
-                    
+
                     var flangeStatus = (data23line3.FlangeNon == 1) ? 'Flange' : (data23line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus23line3').text(flangeStatus);
@@ -3859,7 +3859,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData24line3() {
         $.ajax({
             url: "{{ route('data.visual24line3') }}",
@@ -3873,7 +3873,7 @@ function fetchData19line3() {
                     $('#seqnumber24line3').text(data24line3.SeqNo);
                     // $('#partNumber24line3').text(formattedPartNumber);
                     $('#partNumber24line3').text(data24line3.NDCODEAWAL);
-                    
+
                     $('#line24line3').text(data24line3.Line);
 
                     var actQtyText = data24line3.act + '/' + data24line3.qty;
@@ -3881,7 +3881,7 @@ function fetchData19line3() {
                     var status = (data24line3.status == 1) ? 'prod' : (data24line3.status == 2) ? 'com' : '';
                     $('#status24line3').text(status);
 
-                    
+
                     var flangeStatus = (data24line3.FlangeNon == 1) ? 'Flange' : (data24line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus24line3').text(flangeStatus);
@@ -3902,7 +3902,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData25line3() {
         $.ajax({
             url: "{{ route('data.visual25line3') }}",
@@ -3916,7 +3916,7 @@ function fetchData19line3() {
                     $('#seqnumber25line3').text(data25line3.SeqNo);
                     // $('#partNumber25line3').text(formattedPartNumber);
                     $('#partNumber25line3').text(data25line3.NDCODEAWAL);
-                    
+
                     $('#line25line3').text(data25line3.Line);
 
                     var actQtyText = data25line3.act + '/' + data25line3.qty;
@@ -3924,7 +3924,7 @@ function fetchData19line3() {
                     var status = (data25line3.status == 1) ? 'prod' : (data25line3.status == 2) ? 'com' : '';
                     $('#status25line3').text(status);
 
-                    
+
                     var flangeStatus = (data25line3.FlangeNon == 1) ? 'Flange' : (data25line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus25line3').text(flangeStatus);
@@ -3945,7 +3945,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData26line3() {
         $.ajax({
             url: "{{ route('data.visual26line3') }}",
@@ -3959,7 +3959,7 @@ function fetchData19line3() {
                     $('#seqnumber26line3').text(data26line3.SeqNo);
                     // $('#partNumber26line3').text(formattedPartNumber);
                     $('#partNumber26line3').text(data26line3.NDCODEAWAL);
-                    
+
                     $('#line26line3').text(data26line3.Line);
 
                     var actQtyText = data26line3.act + '/' + data26line3.qty;
@@ -3967,7 +3967,7 @@ function fetchData19line3() {
                     var status = (data26line3.status == 1) ? 'prod' : (data26line3.status == 2) ? 'com' : '';
                     $('#status26line3').text(status);
 
-                    
+
                     var flangeStatus = (data26line3.FlangeNon == 1) ? 'Flange' : (data26line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus26line3').text(flangeStatus);
@@ -3988,7 +3988,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData27line3() {
         $.ajax({
             url: "{{ route('data.visual27line3') }}",
@@ -4002,7 +4002,7 @@ function fetchData19line3() {
                     $('#seqnumber27line3').text(data27line3.SeqNo);
                     // $('#partNumber27line3').text(formattedPartNumber);
                     $('#partNumber27line3').text(data27line3.NDCODEAWAL);
-                    
+
                     $('#line27line3').text(data27line3.Line);
 
                     var actQtyText = data27line3.act + '/' + data27line3.qty;
@@ -4010,7 +4010,7 @@ function fetchData19line3() {
                     var status = (data27line3.status == 1) ? 'prod' : (data27line3.status == 2) ? 'com' : '';
                     $('#status27line3').text(status);
 
-                    
+
                     var flangeStatus = (data27line3.FlangeNon == 1) ? 'Flange' : (data27line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus27line3').text(flangeStatus);
@@ -4031,7 +4031,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData28line3() {
         $.ajax({
             url: "{{ route('data.visual28line3') }}",
@@ -4045,7 +4045,7 @@ function fetchData19line3() {
                     $('#seqnumber28line3').text(data28line3.SeqNo);
                     // $('#partNumber28line3').text(formattedPartNumber);
                     $('#partNumber28line3').text(data28line3.NDCODEAWAL);
-                    
+
                     $('#line28line3').text(data28line3.Line);
 
                     var actQtyText = data28line3.act + '/' + data28line3.qty;
@@ -4053,7 +4053,7 @@ function fetchData19line3() {
                     var status = (data28line3.status == 1) ? 'prod' : (data28line3.status == 2) ? 'com' : '';
                     $('#status28line3').text(status);
 
-                    
+
                     var flangeStatus = (data28line3.FlangeNon == 1) ? 'Flange' : (data28line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus28line3').text(flangeStatus);
@@ -4074,7 +4074,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData29line3() {
         $.ajax({
             url: "{{ route('data.visual29line3') }}",
@@ -4088,7 +4088,7 @@ function fetchData19line3() {
                     $('#seqnumber29line3').text(data29line3.SeqNo);
                     // $('#partNumber29line3').text(formattedPartNumber);
                     $('#partNumber29line3').text(data29line3.NDCODEAWAL);
-                    
+
                     $('#line29line3').text(data29line3.Line);
 
                     var actQtyText = data29line3.act + '/' + data29line3.qty;
@@ -4096,7 +4096,7 @@ function fetchData19line3() {
                     var status = (data29line3.status == 1) ? 'prod' : (data29line3.status == 2) ? 'com' : '';
                     $('#status29line3').text(status);
 
-                    
+
                     var flangeStatus = (data29line3.FlangeNon == 1) ? 'Flange' : (data29line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus29line3').text(flangeStatus);
@@ -4117,7 +4117,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData30line3() {
         $.ajax({
             url: "{{ route('data.visual30line3') }}",
@@ -4131,7 +4131,7 @@ function fetchData19line3() {
                     $('#seqnumber30line3').text(data30line3.SeqNo);
                     // $('#partNumber30line3').text(formattedPartNumber);
                     $('#partNumber30line3').text(data30line3.NDCODEAWAL);
-                    
+
                     $('#line30line3').text(data30line3.Line);
 
                     var actQtyText = data30line3.act + '/' + data30line3.qty;
@@ -4139,7 +4139,7 @@ function fetchData19line3() {
                     var status = (data30line3.status == 1) ? 'prod' : (data30line3.status == 2) ? 'com' : '';
                     $('#status30line3').text(status);
 
-                    
+
                     var flangeStatus = (data30line3.FlangeNon == 1) ? 'Flange' : (data30line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus30line3').text(flangeStatus);
@@ -4160,7 +4160,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData31line3() {
         $.ajax({
             url: "{{ route('data.visual31line3') }}",
@@ -4174,7 +4174,7 @@ function fetchData19line3() {
                     $('#seqnumber31line3').text(data31line3.SeqNo);
                     // $('#partNumber31line3').text(formattedPartNumber);
                     $('#partNumber31line3').text(data31line3.NDCODEAWAL);
-                    
+
                     $('#line31line3').text(data31line3.Line);
 
                     var actQtyText = data31line3.act + '/' + data31line3.qty;
@@ -4182,7 +4182,7 @@ function fetchData19line3() {
                     var status = (data31line3.status == 1) ? 'prod' : (data31line3.status == 2) ? 'com' : '';
                     $('#status31line3').text(status);
 
-                    
+
                     var flangeStatus = (data31line3.FlangeNon == 1) ? 'Flange' : (data31line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus31line3').text(flangeStatus);
@@ -4203,7 +4203,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData32line3() {
         $.ajax({
             url: "{{ route('data.visual32line3') }}",
@@ -4217,7 +4217,7 @@ function fetchData19line3() {
                     $('#seqnumber32line3').text(data32line3.SeqNo);
                     // $('#partNumber32line3').text(formattedPartNumber);
                     $('#partNumber32line3').text(data32line3.NDCODEAWAL);
-                    
+
                     $('#line32line3').text(data32line3.Line);
 
                     var actQtyText = data32line3.act + '/' + data32line3.qty;
@@ -4225,7 +4225,7 @@ function fetchData19line3() {
                     var status = (data32line3.status == 1) ? 'prod' : (data32line3.status == 2) ? 'com' : '';
                     $('#status32line3').text(status);
 
-                    
+
                     var flangeStatus = (data32line3.FlangeNon == 1) ? 'Flange' : (data32line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus32line3').text(flangeStatus);
@@ -4246,7 +4246,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData33line3() {
         $.ajax({
             url: "{{ route('data.visual33line3') }}",
@@ -4260,7 +4260,7 @@ function fetchData19line3() {
                     $('#seqnumber33line3').text(data33line3.SeqNo);
                     // $('#partNumber33line3').text(formattedPartNumber);
                     $('#partNumber33line3').text(data33line3.NDCODEAWAL);
-                    
+
                     $('#line33line3').text(data33line3.Line);
 
                     var actQtyText = data33line3.act + '/' + data33line3.qty;
@@ -4268,7 +4268,7 @@ function fetchData19line3() {
                     var status = (data33line3.status == 1) ? 'prod' : (data33line3.status == 2) ? 'com' : '';
                     $('#status33line3').text(status);
 
-                    
+
                     var flangeStatus = (data33line3.FlangeNon == 1) ? 'Flange' : (data33line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus33line3').text(flangeStatus);
@@ -4302,7 +4302,7 @@ function fetchData19line3() {
                     $('#seqnumber34line3').text(data34line3.SeqNo);
                     // $('#partNumber34line3').text(formattedPartNumber);
                     $('#partNumber34line3').text(data34line3.NDCODEAWAL);
-                    
+
                     $('#line34line3').text(data34line3.Line);
 
                     var actQtyText = data34line3.act + '/' + data34line3.qty;
@@ -4310,7 +4310,7 @@ function fetchData19line3() {
                     var status = (data34line3.status == 1) ? 'prod' : (data34line3.status == 2) ? 'com' : '';
                     $('#status34line3').text(status);
 
-                    
+
                     var flangeStatus = (data34line3.FlangeNon == 1) ? 'Flange' : (data34line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus34line3').text(flangeStatus);
@@ -4331,7 +4331,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData35line3() {
         $.ajax({
             url: "{{ route('data.visual35line3') }}",
@@ -4345,7 +4345,7 @@ function fetchData19line3() {
                     $('#seqnumber35line3').text(data35line3.SeqNo);
                     // $('#partNumber35line3').text(formattedPartNumber);
                     $('#partNumber35line3').text(data35line3.NDCODEAWAL);
-                    
+
                     $('#line35line3').text(data35line3.Line);
 
                     var actQtyText = data35line3.act + '/' + data35line3.qty;
@@ -4353,7 +4353,7 @@ function fetchData19line3() {
                     var status = (data35line3.status == 1) ? 'prod' : (data35line3.status == 2) ? 'com' : '';
                     $('#status35line3').text(status);
 
-                    
+
                     var flangeStatus = (data35line3.FlangeNon == 1) ? 'Flange' : (data35line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus35line3').text(flangeStatus);
@@ -4374,7 +4374,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData36line3() {
         $.ajax({
             url: "{{ route('data.visual36line3') }}",
@@ -4388,7 +4388,7 @@ function fetchData19line3() {
                     $('#seqnumber36line3').text(data36line3.SeqNo);
                     // $('#partNumber36line3').text(formattedPartNumber);
                     $('#partNumber36line3').text(data36line3.NDCODEAWAL);
-                    
+
                     $('#line36line3').text(data36line3.Line);
 
                     var actQtyText = data36line3.act + '/' + data36line3.qty;
@@ -4396,7 +4396,7 @@ function fetchData19line3() {
                     var status = (data36line3.status == 1) ? 'prod' : (data36line3.status == 2) ? 'com' : '';
                     $('#status36line3').text(status);
 
-                    
+
                     var flangeStatus = (data36line3.FlangeNon == 1) ? 'Flange' : (data36line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus36line3').text(flangeStatus);
@@ -4417,7 +4417,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData37line3() {
         $.ajax({
             url: "{{ route('data.visual37line3') }}",
@@ -4431,7 +4431,7 @@ function fetchData19line3() {
                     $('#seqnumber37line3').text(data37line3.SeqNo);
                     // $('#partNumber37line3').text(formattedPartNumber);
                     $('#partNumber37line3').text(data37line3.NDCODEAWAL);
-                    
+
                     $('#line37line3').text(data37line3.Line);
 
                     var actQtyText = data37line3.act + '/' + data37line3.qty;
@@ -4439,7 +4439,7 @@ function fetchData19line3() {
                     var status = (data37line3.status == 1) ? 'prod' : (data37line3.status == 2) ? 'com' : '';
                     $('#status37line3').text(status);
 
-                    
+
                     var flangeStatus = (data37line3.FlangeNon == 1) ? 'Flange' : (data37line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus37line3').text(flangeStatus);
@@ -4460,7 +4460,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData38line3() {
         $.ajax({
             url: "{{ route('data.visual38line3') }}",
@@ -4474,7 +4474,7 @@ function fetchData19line3() {
                     $('#seqnumber38line3').text(data38line3.SeqNo);
                     // $('#partNumber38line3').text(formattedPartNumber);
                     $('#partNumber38line3').text(data38line3.NDCODEAWAL);
-                    
+
                     $('#line38line3').text(data38line3.Line);
 
                     var actQtyText = data38line3.act + '/' + data38line3.qty;
@@ -4482,7 +4482,7 @@ function fetchData19line3() {
                     var status = (data38line3.status == 1) ? 'prod' : (data38line3.status == 2) ? 'com' : '';
                     $('#status38line3').text(status);
 
-                    
+
                     var flangeStatus = (data38line3.FlangeNon == 1) ? 'Flange' : (data38line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus38line3').text(flangeStatus);
@@ -4503,7 +4503,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData39line3() {
         $.ajax({
             url: "{{ route('data.visual39line3') }}",
@@ -4517,7 +4517,7 @@ function fetchData19line3() {
                     $('#seqnumber39line3').text(data39line3.SeqNo);
                     // $('#partNumber39line3').text(formattedPartNumber);
                     $('#partNumber39line3').text(data39line3.NDCODEAWAL);
-                    
+
                     $('#line39line3').text(data39line3.Line);
 
                     var actQtyText = data39line3.act + '/' + data39line3.qty;
@@ -4525,7 +4525,7 @@ function fetchData19line3() {
                     var status = (data39line3.status == 1) ? 'prod' : (data39line3.status == 2) ? 'com' : '';
                     $('#status39line3').text(status);
 
-                    
+
                     var flangeStatus = (data39line3.FlangeNon == 1) ? 'Flange' : (data39line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus39line3').text(flangeStatus);
@@ -4546,7 +4546,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData40line3() {
         $.ajax({
             url: "{{ route('data.visual40line3') }}",
@@ -4560,7 +4560,7 @@ function fetchData19line3() {
                     $('#seqnumber40line3').text(data40line3.SeqNo);
                     // $('#partNumber40line3').text(formattedPartNumber);
                     $('#partNumber40line3').text(data40line3.NDCODEAWAL);
-                    
+
                     $('#line40line3').text(data40line3.Line);
 
                     var actQtyText = data40line3.act + '/' + data40line3.qty;
@@ -4568,7 +4568,7 @@ function fetchData19line3() {
                     var status = (data40line3.status == 1) ? 'prod' : (data40line3.status == 2) ? 'com' : '';
                     $('#status40line3').text(status);
 
-                    
+
                     var flangeStatus = (data40line3.FlangeNon == 1) ? 'Flange' : (data40line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus40line3').text(flangeStatus);
@@ -4589,7 +4589,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData41line3() {
         $.ajax({
             url: "{{ route('data.visual41line3') }}",
@@ -4603,7 +4603,7 @@ function fetchData19line3() {
                     $('#seqnumber41line3').text(data41line3.SeqNo);
                     // $('#partNumber41line3').text(formattedPartNumber);
                     $('#partNumber41line3').text(data41line3.NDCODEAWAL);
-                    
+
                     $('#line41line3').text(data41line3.Line);
 
                     var actQtyText = data41line3.act + '/' + data41line3.qty;
@@ -4611,7 +4611,7 @@ function fetchData19line3() {
                     var status = (data41line3.status == 1) ? 'prod' : (data41line3.status == 2) ? 'com' : '';
                     $('#status41line3').text(status);
 
-                    
+
                     var flangeStatus = (data41line3.FlangeNon == 1) ? 'Flange' : (data41line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus41line3').text(flangeStatus);
@@ -4632,7 +4632,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
     function fetchData42line3() {
         $.ajax({
             url: "{{ route('data.visual42line3') }}",
@@ -4646,7 +4646,7 @@ function fetchData19line3() {
                     $('#seqnumber42line3').text(data42line3.SeqNo);
                     // $('#partNumber42line3').text(formattedPartNumber);
                     $('#partNumber42line3').text(data42line3.NDCODEAWAL);
-                    
+
                     $('#line42line3').text(data42line3.Line);
 
                     var actQtyText = data42line3.act + '/' + data42line3.qty;
@@ -4654,7 +4654,7 @@ function fetchData19line3() {
                     var status = (data42line3.status == 1) ? 'prod' : (data42line3.status == 2) ? 'com' : '';
                     $('#status42line3').text(status);
 
-                    
+
                     var flangeStatus = (data42line3.FlangeNon == 1) ? 'Flange' : (data42line3.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus42line3').text(flangeStatus);
@@ -4675,7 +4675,7 @@ function fetchData19line3() {
             }
         });
     }
-    
+
 
     // iniii buat line2
 
@@ -4692,7 +4692,7 @@ function fetchData19line3() {
                     $('#seqnumber19line2').text(data19line2.SeqNo);
                     // $('#partNumber19line2').text(formattedPartNumber);
                     $('#partNumber19line2').text(data19line2.NDCODEAWAL);
-                    
+
                     $('#line19line2').text(data19line2.Line);
 
                     var actQtyText = data19line2.act + '/' + data19line2.qty;
@@ -4700,7 +4700,7 @@ function fetchData19line3() {
                     var status = (data19line2.status == 1) ? 'prod' : (data19line2.status == 2) ? 'com' : '';
                     $('#status19line2').text(status);
 
-                    
+
                     var flangeStatus = (data19line2.FlangeNon == 1) ? 'Flange' : (data19line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus19line2').text(flangeStatus);
@@ -4736,7 +4736,7 @@ function fetchData19line3() {
                     $('#seqnumber20line2').text(data20line2.SeqNo);
                     // $('#partNumber20line2').text(formattedPartNumber);
                     $('#partNumber20line2').text(data20line2.NDCODEAWAL);
-                    
+
                     $('#line20line2').text(data20line2.Line);
 
                     var actQtyText = data20line2.act + '/' + data20line2.qty;
@@ -4744,7 +4744,7 @@ function fetchData19line3() {
                     var status = (data20line2.status == 1) ? 'prod' : (data20line2.status == 2) ? 'com' : '';
                     $('#status20line2').text(status);
 
-                    
+
                     var flangeStatus = (data20line2.FlangeNon == 1) ? 'Flange' : (data20line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus20line2').text(flangeStatus);
@@ -4776,28 +4776,28 @@ function fetchData19line3() {
             },
             success: function (data21line2) {
                 if (data21line2) {
-                    
+
                     var timestamp = data21line2.TIMESTAMP;
 
-                    
+
                     var date = new Date(timestamp);
 
-                    
+
                     var day = date.getDate();
-                    var month = date.getMonth() + 1; 
+                    var month = date.getMonth() + 1;
                     var year = date.getFullYear() % 100;
                     var hours = date.getHours();
                     var minutes = date.getMinutes();
                     var seconds = date.getSeconds();
 
-                    
+
                     day = (day < 10) ? '0' + day : day;
                     month = (month < 10) ? '0' + month : month;
                     year = (year < 10) ? '0' + year : year;
                     hours = (hours < 10) ? '0' + hours : hours;
                     minutes = (minutes < 10) ? '0' + minutes : minutes;
 
-                   
+
                     var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
 
                     $('#waktuline2').text(formattedTimestamp);
@@ -4807,7 +4807,7 @@ function fetchData19line3() {
                     $('#seqnumber21line2').text(data21line2.SeqNo);
                     // $('#partNumber21line2').text(formattedPartNumber);
                     $('#partNumber21line2').text(data21line2.NDCODEAWAL);
-                    
+
                     $('#line21line2').text(data21line2.Line);
 
                     var actQtyText = data21line2.act + '/' + data21line2.qty;
@@ -4815,7 +4815,7 @@ function fetchData19line3() {
                     var status = (data21line2.status == 1) ? 'prod' : (data21line2.status == 2) ? 'com' : '';
                     $('#status21line2').text(status);
 
-                    
+
                     var flangeStatus = (data21line2.FlangeNon == 1) ? 'Flange' : (data21line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus21line2').text(flangeStatus);
@@ -4851,7 +4851,7 @@ function fetchData19line3() {
                     $('#seqnumber22line2').text(data22line2.SeqNo);
                     // $('#partNumber22line2').text(formattedPartNumber);
                     $('#partNumber22line2').text(data22line2.NDCODEAWAL);
-                    
+
                     $('#line22line2').text(data22line2.Line);
 
                     var actQtyText = data22line2.act + '/' + data22line2.qty;
@@ -4859,7 +4859,7 @@ function fetchData19line3() {
                     var status = (data22line2.status == 1) ? 'prod' : (data22line2.status == 2) ? 'com' : '';
                     $('#status22line2').text(status);
 
-                    
+
                     var flangeStatus = (data22line2.FlangeNon == 1) ? 'Flange' : (data22line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus22line2').text(flangeStatus);
@@ -4895,7 +4895,7 @@ function fetchData19line3() {
                     $('#seqnumber23line2').text(data23line2.SeqNo);
                     // $('#partNumber23line2').text(formattedPartNumber);
                     $('#partNumber23line2').text(data23line2.NDCODEAWAL);
-                    
+
                     $('#line23line2').text(data23line2.Line);
 
                     var actQtyText = data23line2.act + '/' + data23line2.qty;
@@ -4903,7 +4903,7 @@ function fetchData19line3() {
                     var status = (data23line2.status == 1) ? 'prod' : (data23line2.status == 2) ? 'com' : '';
                     $('#status23line2').text(status);
 
-                    
+
                     var flangeStatus = (data23line2.FlangeNon == 1) ? 'Flange' : (data23line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus23line2').text(flangeStatus);
@@ -4939,7 +4939,7 @@ function fetchData19line3() {
                     $('#seqnumber24line2').text(data24line2.SeqNo);
                     // $('#partNumber24line2').text(formattedPartNumber);
                     $('#partNumber24line2').text(data24line2.NDCODEAWAL);
-                    
+
                     $('#line24line2').text(data24line2.Line);
 
                     var actQtyText = data24line2.act + '/' + data24line2.qty;
@@ -4947,7 +4947,7 @@ function fetchData19line3() {
                     var status = (data24line2.status == 1) ? 'prod' : (data24line2.status == 2) ? 'com' : '';
                     $('#status24line2').text(status);
 
-                    
+
                     var flangeStatus = (data24line2.FlangeNon == 1) ? 'Flange' : (data24line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus24line2').text(flangeStatus);
@@ -4983,7 +4983,7 @@ function fetchData19line3() {
                     $('#seqnumber25line2').text(data25line2.SeqNo);
                     // $('#partNumber25line2').text(formattedPartNumber);
                     $('#partNumber25line2').text(data25line2.NDCODEAWAL);
-                    
+
                     $('#line25line2').text(data25line2.Line);
 
                     var actQtyText = data25line2.act + '/' + data25line2.qty;
@@ -4991,7 +4991,7 @@ function fetchData19line3() {
                     var status = (data25line2.status == 1) ? 'prod' : (data25line2.status == 2) ? 'com' : '';
                     $('#status25line2').text(status);
 
-                    
+
                     var flangeStatus = (data25line2.FlangeNon == 1) ? 'Flange' : (data25line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus25line2').text(flangeStatus);
@@ -5027,7 +5027,7 @@ function fetchData19line3() {
                     $('#seqnumber26line2').text(data26line2.SeqNo);
                     // $('#partNumber26line2').text(formattedPartNumber);
                     $('#partNumber26line2').text(data26line2.NDCODEAWAL);
-                    
+
                     $('#line26line2').text(data26line2.Line);
 
                     var actQtyText = data26line2.act + '/' + data26line2.qty;
@@ -5035,7 +5035,7 @@ function fetchData19line3() {
                     var status = (data26line2.status == 1) ? 'prod' : (data26line2.status == 2) ? 'com' : '';
                     $('#status26line2').text(status);
 
-                    
+
                     var flangeStatus = (data26line2.FlangeNon == 1) ? 'Flange' : (data26line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus26line2').text(flangeStatus);
@@ -5071,7 +5071,7 @@ function fetchData19line3() {
                     $('#seqnumber27line2').text(data27line2.SeqNo);
                     // $('#partNumber27line2').text(formattedPartNumber);
                     $('#partNumber27line2').text(data27line2.NDCODEAWAL);
-                    
+
                     $('#line27line2').text(data27line2.Line);
 
                     var actQtyText = data27line2.act + '/' + data27line2.qty;
@@ -5079,7 +5079,7 @@ function fetchData19line3() {
                     var status = (data27line2.status == 1) ? 'prod' : (data27line2.status == 2) ? 'com' : '';
                     $('#status27line2').text(status);
 
-                    
+
                     var flangeStatus = (data27line2.FlangeNon == 1) ? 'Flange' : (data27line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus27line2').text(flangeStatus);
@@ -5115,7 +5115,7 @@ function fetchData19line3() {
                     $('#seqnumber28line2').text(data28line2.SeqNo);
                     // $('#partNumber28line2').text(formattedPartNumber);
                     $('#partNumber28line2').text(data28line2.NDCODEAWAL);
-                    
+
                     $('#line28line2').text(data28line2.Line);
 
                     var actQtyText = data28line2.act + '/' + data28line2.qty;
@@ -5123,7 +5123,7 @@ function fetchData19line3() {
                     var status = (data28line2.status == 1) ? 'prod' : (data28line2.status == 2) ? 'com' : '';
                     $('#status28line2').text(status);
 
-                    
+
                     var flangeStatus = (data28line2.FlangeNon == 1) ? 'Flange' : (data28line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus28line2').text(flangeStatus);
@@ -5158,7 +5158,7 @@ function fetchData19line3() {
                     $('#seqnumber29line2').text(data29line2.SeqNo);
                     // $('#partNumber29line2').text(formattedPartNumber);
                     $('#partNumber29line2').text(data29line2.NDCODEAWAL);
-                    
+
                     $('#line29line2').text(data29line2.Line);
 
                     var actQtyText = data29line2.act + '/' + data29line2.qty;
@@ -5166,7 +5166,7 @@ function fetchData19line3() {
                     var status = (data29line2.status == 1) ? 'prod' : (data29line2.status == 2) ? 'com' : '';
                     $('#status29line2').text(status);
 
-                    
+
                     var flangeStatus = (data29line2.FlangeNon == 1) ? 'Flange' : (data29line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus29line2').text(flangeStatus);
@@ -5201,7 +5201,7 @@ function fetchData19line3() {
                     $('#seqnumber30line2').text(data30line2.SeqNo);
                     // $('#partNumber30line2').text(formattedPartNumber);
                     $('#partNumber30line2').text(data30line2.NDCODEAWAL);
-                    
+
                     $('#line30line2').text(data30line2.Line);
 
                     var actQtyText = data30line2.act + '/' + data30line2.qty;
@@ -5209,7 +5209,7 @@ function fetchData19line3() {
                     var status = (data30line2.status == 1) ? 'prod' : (data30line2.status == 2) ? 'com' : '';
                     $('#status30line2').text(status);
 
-                    
+
                     var flangeStatus = (data30line2.FlangeNon == 1) ? 'Flange' : (data30line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus30line2').text(flangeStatus);
@@ -5244,7 +5244,7 @@ function fetchData19line3() {
                     $('#seqnumber31line2').text(data31line2.SeqNo);
                     // $('#partNumber31line2').text(formattedPartNumber);
                     $('#partNumber31line2').text(data31line2.NDCODEAWAL);
-                    
+
                     $('#line31line2').text(data31line2.Line);
 
                     var actQtyText = data31line2.act + '/' + data31line2.qty;
@@ -5252,7 +5252,7 @@ function fetchData19line3() {
                     var status = (data31line2.status == 1) ? 'prod' : (data31line2.status == 2) ? 'com' : '';
                     $('#status31line2').text(status);
 
-                    
+
                     var flangeStatus = (data31line2.FlangeNon == 1) ? 'Flange' : (data31line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus31line2').text(flangeStatus);
@@ -5287,7 +5287,7 @@ function fetchData19line3() {
                     $('#seqnumber32line2').text(data32line2.SeqNo);
                     // $('#partNumber32line2').text(formattedPartNumber);
                     $('#partNumber32line2').text(data32line2.NDCODEAWAL);
-                    
+
                     $('#line32line2').text(data32line2.Line);
 
                     var actQtyText = data32line2.act + '/' + data32line2.qty;
@@ -5295,7 +5295,7 @@ function fetchData19line3() {
                     var status = (data32line2.status == 1) ? 'prod' : (data32line2.status == 2) ? 'com' : '';
                     $('#status32line2').text(status);
 
-                    
+
                     var flangeStatus = (data32line2.FlangeNon == 1) ? 'Flange' : (data32line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus32line2').text(flangeStatus);
@@ -5330,7 +5330,7 @@ function fetchData19line3() {
                     $('#seqnumber33line2').text(data33line2.SeqNo);
                     // $('#partNumber33line2').text(formattedPartNumber);
                     $('#partNumber33line2').text(data33line2.NDCODEAWAL);
-                    
+
                     $('#line33line2').text(data33line2.Line);
 
                     var actQtyText = data33line2.act + '/' + data33line2.qty;
@@ -5338,7 +5338,7 @@ function fetchData19line3() {
                     var status = (data33line2.status == 1) ? 'prod' : (data33line2.status == 2) ? 'com' : '';
                     $('#status33line2').text(status);
 
-                    
+
                     var flangeStatus = (data33line2.FlangeNon == 1) ? 'Flange' : (data33line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus33line2').text(flangeStatus);
@@ -5373,7 +5373,7 @@ function fetchData19line3() {
                     $('#seqnumber34line2').text(data34line2.SeqNo);
                     // $('#partNumber34line2').text(formattedPartNumber);
                     $('#partNumber34line2').text(data34line2.NDCODEAWAL);
-                    
+
                     $('#line34line2').text(data34line2.Line);
 
                     var actQtyText = data34line2.act + '/' + data34line2.qty;
@@ -5381,7 +5381,7 @@ function fetchData19line3() {
                     var status = (data34line2.status == 1) ? 'prod' : (data34line2.status == 2) ? 'com' : '';
                     $('#status34line2').text(status);
 
-                    
+
                     var flangeStatus = (data34line2.FlangeNon == 1) ? 'Flange' : (data34line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus34line2').text(flangeStatus);
@@ -5416,7 +5416,7 @@ function fetchData19line3() {
                     $('#seqnumber35line2').text(data35line2.SeqNo);
                     // $('#partNumber35line2').text(formattedPartNumber);
                     $('#partNumber35line2').text(data35line2.NDCODEAWAL);
-                    
+
                     $('#line35line2').text(data35line2.Line);
 
                     var actQtyText = data35line2.act + '/' + data35line2.qty;
@@ -5424,7 +5424,7 @@ function fetchData19line3() {
                     var status = (data35line2.status == 1) ? 'prod' : (data35line2.status == 2) ? 'com' : '';
                     $('#status35line2').text(status);
 
-                    
+
                     var flangeStatus = (data35line2.FlangeNon == 1) ? 'Flange' : (data35line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus35line2').text(flangeStatus);
@@ -5459,7 +5459,7 @@ function fetchData19line3() {
                     $('#seqnumber36line2').text(data36line2.SeqNo);
                     // $('#partNumber36line2').text(formattedPartNumber);
                     $('#partNumber36line2').text(data36line2.NDCODEAWAL);
-                    
+
                     $('#line36line2').text(data36line2.Line);
 
                     var actQtyText = data36line2.act + '/' + data36line2.qty;
@@ -5467,7 +5467,7 @@ function fetchData19line3() {
                     var status = (data36line2.status == 1) ? 'prod' : (data36line2.status == 2) ? 'com' : '';
                     $('#status36line2').text(status);
 
-                    
+
                     var flangeStatus = (data36line2.FlangeNon == 1) ? 'Flange' : (data36line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus36line2').text(flangeStatus);
@@ -5502,7 +5502,7 @@ function fetchData19line3() {
                     $('#seqnumber37line2').text(data37line2.SeqNo);
                     // $('#partNumber37line2').text(formattedPartNumber);
                     $('#partNumber37line2').text(data37line2.NDCODEAWAL);
-                    
+
                     $('#line37line2').text(data37line2.Line);
 
                     var actQtyText = data37line2.act + '/' + data37line2.qty;
@@ -5510,7 +5510,7 @@ function fetchData19line3() {
                     var status = (data37line2.status == 1) ? 'prod' : (data37line2.status == 2) ? 'com' : '';
                     $('#status37line2').text(status);
 
-                    
+
                     var flangeStatus = (data37line2.FlangeNon == 1) ? 'Flange' : (data37line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus37line2').text(flangeStatus);
@@ -5544,7 +5544,7 @@ function fetchData19line3() {
                     $('#seqnumber38line2').text(data38line2.SeqNo);
                     // $('#partNumber38line2').text(formattedPartNumber);
                     $('#partNumber38line2').text(data38line2.NDCODEAWAL);
-                    
+
                     $('#line38line2').text(data38line2.Line);
 
                     var actQtyText = data38line2.act + '/' + data38line2.qty;
@@ -5552,7 +5552,7 @@ function fetchData19line3() {
                     var status = (data38line2.status == 1) ? 'prod' : (data38line2.status == 2) ? 'com' : '';
                     $('#status38line2').text(status);
 
-                    
+
                     var flangeStatus = (data38line2.FlangeNon == 1) ? 'Flange' : (data38line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus38line2').text(flangeStatus);
@@ -5586,7 +5586,7 @@ function fetchData19line3() {
                     $('#dccode39line2').text(data39line2.DCCODE);
                     $('#seqnumber39line2').text(data39line2.SeqNo);
                     $('#partNumber39line2').text(data39line2.NDCODEAWAL);
-                    
+
                     $('#line39line2').text(data39line2.Line);
 
                     var actQtyText = data39line2.act + '/' + data39line2.qty;
@@ -5594,7 +5594,7 @@ function fetchData19line3() {
                     var status = (data39line2.status == 1) ? 'prod' : (data39line2.status == 2) ? 'com' : '';
                     $('#status39line2').text(status);
 
-                    
+
                     var flangeStatus = (data39line2.FlangeNon == 1) ? 'Flange' : (data39line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus39line2').text(flangeStatus);
@@ -5628,7 +5628,7 @@ function fetchData19line3() {
                     $('#dccode40line2').text(data40line2.DCCODE);
                     $('#seqnumber40line2').text(data40line2.SeqNo);
                     $('#partNumber40line2').text(data40line2.NDCODEAWAL);
-                    
+
                     $('#line40line2').text(data40line2.Line);
 
                     var actQtyText = data40line2.act + '/' + data40line2.qty;
@@ -5636,7 +5636,7 @@ function fetchData19line3() {
                     var status = (data40line2.status == 1) ? 'prod' : (data40line2.status == 2) ? 'com' : '';
                     $('#status40line2').text(status);
 
-                    
+
                     var flangeStatus = (data40line2.FlangeNon == 1) ? 'Flange' : (data40line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus40line2').text(flangeStatus);
@@ -5670,7 +5670,7 @@ function fetchData19line3() {
                     $('#dccode41line2').text(data41line2.DCCODE);
                     $('#seqnumber41line2').text(data41line2.SeqNo);
                     $('#partNumber41line2').text(data41line2.NDCODEAWAL);
-                    
+
                     $('#line41line2').text(data41line2.Line);
 
                     var actQtyText = data41line2.act + '/' + data41line2.qty;
@@ -5678,7 +5678,7 @@ function fetchData19line3() {
                     var status = (data41line2.status == 1) ? 'prod' : (data41line2.status == 2) ? 'com' : '';
                     $('#status41line2').text(status);
 
-                    
+
                     var flangeStatus = (data41line2.FlangeNon == 1) ? 'Flange' : (data41line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus41line2').text(flangeStatus);
@@ -5712,7 +5712,7 @@ function fetchData19line3() {
                     $('#dccode42line2').text(data42line2.DCCODE);
                     $('#seqnumber42line2').text(data42line2.SeqNo);
                     $('#partNumber42line2').text(data42line2.NDCODEAWAL);
-                    
+
                     $('#line42line2').text(data42line2.Line);
 
                     var actQtyText = data42line2.act + '/' + data42line2.qty;
@@ -5720,7 +5720,7 @@ function fetchData19line3() {
                     var status = (data42line2.status == 1) ? 'prod' : (data42line2.status == 2) ? 'com' : '';
                     $('#status42line2').text(status);
 
-                    
+
                     var flangeStatus = (data42line2.FlangeNon == 1) ? 'Flange' : (data42line2.FlangeNon == 0) ? 'Non-Flange' : '';
 
                     $('#flangeStatus42line2').text(flangeStatus);

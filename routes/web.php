@@ -120,6 +120,9 @@ Route::resource('line3', \App\Http\Controllers\Line3Controller::class );
 Route::resource('line4', \App\Http\Controllers\Line4Controller::class );
 
 
+Route::resource('jam', \App\Http\Controllers\JamController::class );
+
+
 // Route::get('/line2', [VisualisasiController::class, 'line2'])->name('line2.visual');
 // Route::get('/line2s', [VisualisasiController::class, 'getLine2Data'])->name('line2.visual');
 

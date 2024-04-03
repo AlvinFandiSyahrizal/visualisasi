@@ -8,31 +8,56 @@ use App\Models\dbflange;
 use App\Models\dbflange2;
 use App\Models\dbflange3;
 use App\Models\datapn;
-use App\Models\datapn19;
-use App\Models\datapn20;
-use App\Models\datapn21;
-use App\Models\datapn22;
-use App\Models\datapn23;
-use App\Models\datapn24;
-use App\Models\datapn25;
-use App\Models\datapn26;
-use App\Models\datapn27;
-use App\Models\datapn28;
-use App\Models\datapn29;
-use App\Models\datapn30;
-use App\Models\datapn31;
-use App\Models\datapn32;
-use App\Models\datapn33;
-use App\Models\datapn34;
-use App\Models\datapn35;
-use App\Models\datapn36;
-use App\Models\datapn37;
-use App\Models\datapn38;
-use App\Models\datapn39;
-use App\Models\datapn40;
-use App\Models\datapn41;
-use App\Models\datapn42;
-use App\Models\datapn43;
+use App\Models\datapn19line1;
+use App\Models\datapn20line1;
+use App\Models\datapn21line1;
+use App\Models\datapn22line1;
+use App\Models\datapn23line1;
+use App\Models\datapn24line1;
+use App\Models\datapn25line1;
+use App\Models\datapn26line1;
+use App\Models\datapn27line1;
+use App\Models\datapn28line1;
+use App\Models\datapn29line1;
+use App\Models\datapn30line1;
+use App\Models\datapn31line1;
+use App\Models\datapn32line1;
+use App\Models\datapn33line1;
+use App\Models\datapn34line1;
+use App\Models\datapn35line1;
+use App\Models\datapn36line1;
+use App\Models\datapn37line1;
+use App\Models\datapn38line1;
+use App\Models\datapn39line1;
+use App\Models\datapn40line1;
+use App\Models\datapn41line1;
+use App\Models\datapn42line1;
+
+use App\Models\datapn19line2;
+use App\Models\datapn20line2;
+use App\Models\datapn21line2;
+use App\Models\datapn22line2;
+use App\Models\datapn23line2;
+use App\Models\datapn24line2;
+use App\Models\datapn25line2;
+use App\Models\datapn26line2;
+use App\Models\datapn27line2;
+use App\Models\datapn28line2;
+use App\Models\datapn29line2;
+use App\Models\datapn30line2;
+use App\Models\datapn31line2;
+use App\Models\datapn32line2;
+use App\Models\datapn33line2;
+use App\Models\datapn34line2;
+use App\Models\datapn35line2;
+use App\Models\datapn36line2;
+use App\Models\datapn37line2;
+use App\Models\datapn38line2;
+use App\Models\datapn39line2;
+use App\Models\datapn40line2;
+use App\Models\datapn41line2;
+use App\Models\datapn42line2;
+
 
 use App\Models\datapn19line3;
 use App\Models\datapn20line3;
@@ -59,30 +84,32 @@ use App\Models\datapn40line3;
 use App\Models\datapn41line3;
 use App\Models\datapn42line3;
 
-use App\Models\datapn19line2;
-use App\Models\datapn20line2;
-use App\Models\datapn21line2;
-use App\Models\datapn22line2;
-use App\Models\datapn23line2;
-use App\Models\datapn24line2;
-use App\Models\datapn25line2;
-use App\Models\datapn26line2;
-use App\Models\datapn27line2;
-use App\Models\datapn28line2;
-use App\Models\datapn29line2;
-use App\Models\datapn30line2;
-use App\Models\datapn31line2;
-use App\Models\datapn32line2;
-use App\Models\datapn33line2;
-use App\Models\datapn34line2;
-use App\Models\datapn35line2;
-use App\Models\datapn36line2;
-use App\Models\datapn37line2;
-use App\Models\datapn38line2;
-use App\Models\datapn39line2;
-use App\Models\datapn40line2;
-use App\Models\datapn41line2;
-use App\Models\datapn42line2;
+use App\Models\datapn19;
+use App\Models\datapn20;
+use App\Models\datapn21;
+use App\Models\datapn22;
+use App\Models\datapn23;
+use App\Models\datapn24;
+use App\Models\datapn25;
+use App\Models\datapn26;
+use App\Models\datapn27;
+use App\Models\datapn28;
+use App\Models\datapn29;
+use App\Models\datapn30;
+use App\Models\datapn31;
+use App\Models\datapn32;
+use App\Models\datapn33;
+use App\Models\datapn34;
+use App\Models\datapn35;
+use App\Models\datapn36;
+use App\Models\datapn37;
+use App\Models\datapn38;
+use App\Models\datapn39;
+use App\Models\datapn40;
+use App\Models\datapn41;
+use App\Models\datapn42;
+use App\Models\datapn43;
+
 
 class VisualisasiController extends Controller
 {
@@ -775,6 +802,228 @@ class VisualisasiController extends Controller
         $data = datapn42line2::leftjoin('dbflange2s', 'dbflange2s.DCCODE', '=', 'datapn42line2s.DC CODE')
             ->select('datapn42line2s.DC CODE as DCCODE','datapn42line2s.ND CODE AWAL as NDCODEAWAL', 'dbflange2s.FLANGENON as FlangeNon', 'dbflange2s.LINE as Line', 'dbflange2s.PARTNUMBER as PartNumber', 'datapn42line2s.QTY PROD as qty', \DB::raw('datapn42line2s.[SEQ.NUMBER] as SeqNo'), 'datapn42line2s.ACTUAL PROD as act', 'datapn42line2s.STATUS as status')
             ->latest('datapn42line2s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    // ini buat line1
+    public function getData19line1()
+    {
+        $data = datapn19line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn19line1s.DC CODE')
+            ->select('datapn19line1s.DC CODE as DCCODE','datapn19line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn19line1s.QTY PROD as qty', \DB::raw('datapn19line1s.[SEQ.NUMBER] as SeqNo'), 'datapn19line1s.ACTUAL PROD as act', 'datapn19line1s.STATUS as status')
+            ->latest('datapn19line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData20line1()
+    {
+        $data = datapn20line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn20line1s.DC CODE')
+            ->select('datapn20line1s.DC CODE as DCCODE','datapn20line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn20line1s.QTY PROD as qty', \DB::raw('datapn20line1s.[SEQ.NUMBER] as SeqNo'), 'datapn20line1s.ACTUAL PROD as act', 'datapn20line1s.STATUS as status')
+            ->latest('datapn20line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData21line1()
+    {
+        $data = datapn21line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn21line1s.DC CODE')
+            ->select('datapn21line1s.DC CODE as DCCODE','datapn21line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn21line1s.QTY PROD as qty', \DB::raw('datapn21line1s.[SEQ.NUMBER] as SeqNo'), 'datapn21line1s.ACTUAL PROD as act', 'datapn21line1s.STATUS as status','datapn21line1s.TIMESTAMP as TIMESTAMP')
+            ->latest('datapn21line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData22line1()
+    {
+        $data = datapn22line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn22line1s.DC CODE')
+            ->select('datapn22line1s.DC CODE as DCCODE','datapn22line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn22line1s.QTY PROD as qty', \DB::raw('datapn22line1s.[SEQ.NUMBER] as SeqNo'), 'datapn22line1s.ACTUAL PROD as act', 'datapn22line1s.STATUS as status')
+            ->latest('datapn22line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData23line1()
+    {
+        $data = datapn23line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn23line1s.DC CODE')
+            ->select('datapn23line1s.DC CODE as DCCODE','datapn23line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn23line1s.QTY PROD as qty', \DB::raw('datapn23line1s.[SEQ.NUMBER] as SeqNo'), 'datapn23line1s.ACTUAL PROD as act', 'datapn23line1s.STATUS as status')
+            ->latest('datapn23line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData24line1()
+    {
+        $data = datapn24line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn24line1s.DC CODE')
+            ->select('datapn24line1s.DC CODE as DCCODE','datapn24line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn24line1s.QTY PROD as qty', \DB::raw('datapn24line1s.[SEQ.NUMBER] as SeqNo'), 'datapn24line1s.ACTUAL PROD as act', 'datapn24line1s.STATUS as status')
+            ->latest('datapn24line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData25line1()
+    {
+        $data = datapn25line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn25line1s.DC CODE')
+            ->select('datapn25line1s.DC CODE as DCCODE','datapn25line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn25line1s.QTY PROD as qty', \DB::raw('datapn25line1s.[SEQ.NUMBER] as SeqNo'), 'datapn25line1s.ACTUAL PROD as act', 'datapn25line1s.STATUS as status')
+            ->latest('datapn25line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData26line1()
+    {
+        $data = datapn26line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn26line1s.DC CODE')
+            ->select('datapn26line1s.DC CODE as DCCODE','datapn26line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn26line1s.QTY PROD as qty', \DB::raw('datapn26line1s.[SEQ.NUMBER] as SeqNo'), 'datapn26line1s.ACTUAL PROD as act', 'datapn26line1s.STATUS as status')
+            ->latest('datapn26line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData27line1()
+    {
+        $data = datapn27line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn27line1s.DC CODE')
+            ->select('datapn27line1s.DC CODE as DCCODE','datapn27line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn27line1s.QTY PROD as qty', \DB::raw('datapn27line1s.[SEQ.NUMBER] as SeqNo'), 'datapn27line1s.ACTUAL PROD as act', 'datapn27line1s.STATUS as status')
+            ->latest('datapn27line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData28line1()
+    {
+        $data = datapn28line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn28line1s.DC CODE')
+            ->select('datapn28line1s.DC CODE as DCCODE','datapn28line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn28line1s.QTY PROD as qty', \DB::raw('datapn28line1s.[SEQ.NUMBER] as SeqNo'), 'datapn28line1s.ACTUAL PROD as act', 'datapn28line1s.STATUS as status')
+            ->latest('datapn28line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData29line1()
+    {
+        $data = datapn29line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn29line1s.DC CODE')
+            ->select('datapn29line1s.DC CODE as DCCODE','datapn29line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn29line1s.QTY PROD as qty', \DB::raw('datapn29line1s.[SEQ.NUMBER] as SeqNo'), 'datapn29line1s.ACTUAL PROD as act', 'datapn29line1s.STATUS as status')
+            ->latest('datapn29line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+
+    public function getData30line1()
+    {
+        $data = datapn30line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn30line1s.DC CODE')
+            ->select('datapn30line1s.DC CODE as DCCODE','datapn30line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn30line1s.QTY PROD as qty', \DB::raw('datapn30line1s.[SEQ.NUMBER] as SeqNo'), 'datapn30line1s.ACTUAL PROD as act', 'datapn30line1s.STATUS as status')
+            ->latest('datapn30line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+
+    public function getData31line1()
+    {
+        $data = datapn31line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn31line1s.DC CODE')
+            ->select('datapn31line1s.DC CODE as DCCODE','datapn31line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn31line1s.QTY PROD as qty', \DB::raw('datapn31line1s.[SEQ.NUMBER] as SeqNo'), 'datapn31line1s.ACTUAL PROD as act', 'datapn31line1s.STATUS as status')
+            ->latest('datapn31line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+
+
+
+    public function getData32line1()
+    {
+        $data = datapn32line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn32line1s.DC CODE')
+            ->select('datapn32line1s.DC CODE as DCCODE','datapn32line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn32line1s.QTY PROD as qty', \DB::raw('datapn32line1s.[SEQ.NUMBER] as SeqNo'), 'datapn32line1s.ACTUAL PROD as act', 'datapn32line1s.STATUS as status')
+            ->latest('datapn32line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData33line1()
+    {
+        $data = datapn33line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn33line1s.DC CODE')
+            ->select('datapn33line1s.DC CODE as DCCODE','datapn33line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn33line1s.QTY PROD as qty', \DB::raw('datapn33line1s.[SEQ.NUMBER] as SeqNo'), 'datapn33line1s.ACTUAL PROD as act', 'datapn33line1s.STATUS as status')
+            ->latest('datapn33line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData34line1()
+    {
+        $data = datapn34line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn34line1s.DC CODE')
+            ->select('datapn34line1s.DC CODE as DCCODE','datapn34line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn34line1s.QTY PROD as qty', \DB::raw('datapn34line1s.[SEQ.NUMBER] as SeqNo'), 'datapn34line1s.ACTUAL PROD as act', 'datapn34line1s.STATUS as status')
+            ->latest('datapn34line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData35line1()
+    {
+        $data = datapn35line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn35line1s.DC CODE')
+            ->select('datapn35line1s.DC CODE as DCCODE','datapn35line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn35line1s.QTY PROD as qty', \DB::raw('datapn35line1s.[SEQ.NUMBER] as SeqNo'), 'datapn35line1s.ACTUAL PROD as act', 'datapn35line1s.STATUS as status')
+            ->latest('datapn35line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData36line1()
+    {
+        $data = datapn36line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn36line1s.DC CODE')
+            ->select('datapn36line1s.DC CODE as DCCODE','datapn36line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn36line1s.QTY PROD as qty', \DB::raw('datapn36line1s.[SEQ.NUMBER] as SeqNo'), 'datapn36line1s.ACTUAL PROD as act', 'datapn36line1s.STATUS as status')
+            ->latest('datapn36line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData37line1()
+    {
+        $data = datapn37line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn37line1s.DC CODE')
+            ->select('datapn37line1s.DC CODE as DCCODE','datapn37line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn37line1s.QTY PROD as qty', \DB::raw('datapn37line1s.[SEQ.NUMBER] as SeqNo'), 'datapn37line1s.ACTUAL PROD as act', 'datapn37line1s.STATUS as status')
+            ->latest('datapn37line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData38line1()
+    {
+        $data = datapn38line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn38line1s.DC CODE')
+            ->select('datapn38line1s.DC CODE as DCCODE','datapn38line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn38line1s.QTY PROD as qty', \DB::raw('datapn38line1s.[SEQ.NUMBER] as SeqNo'), 'datapn38line1s.ACTUAL PROD as act', 'datapn38line1s.STATUS as status')
+            ->latest('datapn38line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData39line1()
+    {
+        $data = datapn39line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn39line1s.DC CODE')
+            ->select('datapn39line1s.DC CODE as DCCODE','datapn39line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn39line1s.QTY PROD as qty', \DB::raw('datapn39line1s.[SEQ.NUMBER] as SeqNo'), 'datapn39line1s.ACTUAL PROD as act', 'datapn39line1s.STATUS as status')
+            ->latest('datapn39line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData40line1()
+    {
+        $data = datapn40line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn40line1s.DC CODE')
+            ->select('datapn40line1s.DC CODE as DCCODE','datapn40line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn40line1s.QTY PROD as qty', \DB::raw('datapn40line1s.[SEQ.NUMBER] as SeqNo'), 'datapn40line1s.ACTUAL PROD as act', 'datapn40line1s.STATUS as status')
+            ->latest('datapn40line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData41line1()
+    {
+        $data = datapn41line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn41line1s.DC CODE')
+            ->select('datapn41line1s.DC CODE as DCCODE','datapn41line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn41line1s.QTY PROD as qty', \DB::raw('datapn41line1s.[SEQ.NUMBER] as SeqNo'), 'datapn41line1s.ACTUAL PROD as act', 'datapn41line1s.STATUS as status')
+            ->latest('datapn41line1s.id')
+            ->first();
+
+        return response()->json($data);
+    }
+    public function getData42line1()
+    {
+        $data = datapn42line1::leftjoin('dbflange1s', 'dbflange1s.DCCODE', '=', 'datapn42line1s.DC CODE')
+            ->select('datapn42line1s.DC CODE as DCCODE','datapn42line1s.ND CODE AWAL as NDCODEAWAL', 'dbflange1s.FLANGENON as FlangeNon', 'dbflange1s.LINE as Line', 'dbflange1s.PARTNUMBER as PartNumber', 'datapn42line1s.QTY PROD as qty', \DB::raw('datapn42line1s.[SEQ.NUMBER] as SeqNo'), 'datapn42line1s.ACTUAL PROD as act', 'datapn42line1s.STATUS as status')
+            ->latest('datapn42line1s.id')
             ->first();
 
         return response()->json($data);

@@ -9,6 +9,7 @@
     <title>Visualisasi</title>
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link  href="{{ asset('css/ikon.min.css') }}" rel="stylesheet" integrity="sha512-LpBMz6EMeFJwWKpzVnO6+6Zz3FtLP/x+64yeFN1Xa0bI6tKt5vGyTrxB6+WxWgS0nsDd3cTk3d7hK01xBlV5Jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -21,9 +22,848 @@
 
             <div class="col table-bordered" >
                     <div class="row">
-                        <div class="col"><h4 id="waktuline2"></h4>
+                        <div class="col-8"><h4 id="waktuline1"></h4>
                     </div>
-                        <div class="col"><h3 class="text-right"> LINE 2 </h3>
+                        <div class="col-4"><h3 class="text-right"> LINE 1 </h3>
+                        </div>
+                    </div>
+                <table class="table table-bordered border-primary">
+                    <thead class="table-light table-bordered border-primary">
+                        <tr>
+                            <th>SeqNo</th>
+                            <th>P/N</th>
+                            <th>DcCode</th>
+                            <th>Type</th>
+                            <th class="act-qty">Act/Qty</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr id="row19line1">
+                                <td>
+                                    <div id="partNumber-container">
+                                        <span id="seqnumber19line1"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="partNumber-container">
+                                        <span class="text-nowrap" id="partNumber19line1"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="partNumber-container">
+                                        <span id="dccode19line1"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="partNumber-container">
+                                        <span class="text-nowrap"id="flangeStatus19line1"></span>
+                                    </div>
+                                </td>
+                                <td class="act-qty">
+                                    <div id="partNumber-container">
+                                        <span id="actualqty19line1"><span> <span id="qty19line1"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="partNumber-container">
+                                        <span id="status19line1"></span>
+                                    </td>
+                            </td>
+                            </tr>
+
+                        <tr id="row20line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber20line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber20line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode20line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus20line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty20line1"></span><span id="qty20line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status20line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row21line1">
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber21line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber21line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode21line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus21line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty21line1"></span><span id="qty21line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status21line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row22line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber22line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber22line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode22line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus22line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty22line1"><span><span id="qty22line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status22line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row23line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber23line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber23line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode23line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus23line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty23line1"><span><span id="qty23line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status23line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row24line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber24line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber24line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode24line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus24line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty24line1"><span><span id="qty24line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status24line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row25line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber25line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber25line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode25line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus25line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty25line1"><span><span id="qty25line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status25line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row26line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber26line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber26line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode26line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus26line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty26line1"><span><span id="qty26line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status26line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row27line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber27line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber27line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode27line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus27line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty27line1"><span><span id="qty27line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status27line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row28line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber28line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber28line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode28line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus28line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty28line1"><span><span id="qty28line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status28line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row29line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber29line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber29line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode29line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus29line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty29line1"><span><span id="qty29line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status29line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row30line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber30line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber30line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode30line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus30line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty30line1"><span><span id="qty30line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status30line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+
+
+                        <tr id="row31line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber31line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber31line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode31line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus31line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty31line1"><span><span id="qty31line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status31line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row32line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber32line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber32line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode32line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus32line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty32line1"><span><span id="qty32line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status32line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row33line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber33line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber33line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode33line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus33line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty33line1"><span><span id="qty33line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status33line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row34line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber34line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber34line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode34line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus34line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty34line1"><span><span id="qty34line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status34line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row35line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber35line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber35line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode35line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus35line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty35line1"><span><span id="qty35line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status35line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row36line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber36line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber36line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode36line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus36line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty36line1"><span><span id="qty36line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status36line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row37line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber37line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber37line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode37line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus37line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty37line1"><span><span id="qty37line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status37line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row38line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber38line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber38line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode38line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus38line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty38line1"><span><span id="qty38line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status38line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row39line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber39line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber39line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode39line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus39line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty39line1"><span><span id="qty39line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status39line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row40line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber40line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber40line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode40line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus40line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty40line1"><span><span id="qty40line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status40line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row41line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber41line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber41line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode41line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus41line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty41line1"><span><span id="qty41line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status41line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+
+                        <tr id="row42line1">
+
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="seqnumber42line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="partNumber42line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="dccode42line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="flangeStatus42line1"></span>
+                                </div>
+                            </td>
+                            <td class="act-qty">
+                                <div id="partNumber-container">
+                                    <span id="actualqty42line1"><span><span id="qty42line1"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="partNumber-container">
+                                    <span id="status42line1"></span>
+                                </td>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col table-bordered" >
+                    <div class="row">
+                        <div class="col-8"><h4 id="waktuline2"></h4>
+                    </div>
+                        <div class="col-4"><h3 class="text-right"> LINE 2 </h3>
                         </div>
                     </div>
                 <table class="table table-bordered border-primary">
@@ -860,9 +1700,9 @@
 
             <div class="col table-bordered">
                 <div class="row">
-                        <div class="col"><h4 id="waktuline3"></h4>
+                        <div class="col-8"><h4 id="waktuline3"></h4>
                         </div>
-                            <div class="col"><h3 class="text-right"> LINE 3 </h3>
+                            <div class="col-4"><h3 class="text-right"> LINE 3 </h3>
                         </div>
                 </div>
 
@@ -1700,9 +2540,9 @@
 
             <div class="col table-bordered">
                 <div class="row">
-                    <div class="col"><h4 id="waktuline4"></h4>
+                    <div class="col-8"><h4 id="waktuline4"></h4>
                     </div>
-                        <div class="col"><h3 class="text-right"> LINE 4 </h3>
+                        <div class="col-4"><h3 class="text-right"> LINE 4 </h3>
                     </div>
                 </div>
 
@@ -2544,6 +3384,24 @@
 
         </div>
 
+        <div class="modal fade" id="flangeCollisionModal" tabindex="-1" role="dialog" aria-labelledby="flangeCollisionModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="flangeCollisionModalLabel">
+                            <span class="badge badge-danger">!</span>  Peringatan Tabrakan Flange !
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="flangeCollisionMessage"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 </body>
 
@@ -2565,6 +3423,7 @@
         $('#time').text(formattedTime);
     }
 
+    //ini buat line4 
     function fetchData21() {
         $.ajax({
             url: "{{ route('data.visual21') }}",
@@ -2592,7 +3451,7 @@
                     hours = (hours < 10) ? '0' + hours : hours;
                     minutes = (minutes < 10) ? '0' + minutes : minutes;
 
-                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+                    var formattedTimestamp = 'Updated : ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes;
 
                     $('#waktuline4').text(formattedTimestamp);
                     $('#dccode21').text(data21.DCCODE);
@@ -2612,7 +3471,7 @@
 
                     $('#flangeStatus21').text(flangeStatus);
                     var row = $('#row21');
-                    row.removeClass("table-warning table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success table-danger");
                     if (data21.status == 2 || data21.status == 0) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-warning");
@@ -2628,6 +3487,7 @@
             }
         });
     }
+
 // iniii buat line3
     function fetchData21line3() {
         $.ajax({
@@ -2655,7 +3515,7 @@
                     hours = (hours < 10) ? '0' + hours : hours;
                     minutes = (minutes < 10) ? '0' + minutes : minutes;
 
-                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+                    var formattedTimestamp = 'Updated : ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes;
 
                     $('#waktuline3').text(formattedTimestamp);
 
@@ -2676,7 +3536,7 @@
 
                     $('#flangeStatus21line3').text(flangeStatus);
                     var row = $('#row21line3');
-                    row.removeClass("table-warning table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success table-danger");
                     if (data21line3.status == 2 || data21line3.status == 0) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-warning");
@@ -2692,6 +3552,7 @@
             }
         });
     }
+
     // iniii buat line2
     function fetchData21line2() {
         $.ajax({
@@ -2724,7 +3585,7 @@
                     minutes = (minutes < 10) ? '0' + minutes : minutes;
 
 
-                    var formattedTimestamp = 'Last Update: ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':00';
+                    var formattedTimestamp = 'Updated : ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes;
 
                     $('#waktuline2').text(formattedTimestamp);
 
@@ -2746,7 +3607,7 @@
 
                     $('#flangeStatus21line2').text(flangeStatus);
                     var row = $('#row21line2');
-                    row.removeClass("table-warning table-primary table-success");
+                    row.removeClass("table-warning table-primary table-success table-danger");
                     if (data21line2.status == 2 || data21line2.status == 0) {
                         if (flangeStatus === "Flange") {
                             row.addClass("table-warning");
@@ -2755,6 +3616,77 @@
                         }
                     }
                         if (data21line2.status == 1) {
+                        row.removeClass("table-warning table-primary");
+                        row.addClass("table-success");
+                        }
+                }
+            }
+        });
+    }
+
+    // iniii buat line1
+    function fetchData21line1() {
+        $.ajax({
+            url: "{{ route('data.visual21line1') }}",
+            method: 'GET',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            success: function (data21line1) {
+                if (data21line1) {
+
+                    var timestamp = data21line1.TIMESTAMP;
+
+
+                    var date = new Date(timestamp);
+
+
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1;
+                    var year = date.getFullYear() % 100;
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+
+
+                    day = (day < 10) ? '0' + day : day;
+                    month = (month < 10) ? '0' + month : month;
+                    year = (year < 10) ? '0' + year : year;
+                    hours = (hours < 10) ? '0' + hours : hours;
+                    minutes = (minutes < 10) ? '0' + minutes : minutes;
+
+
+                    var formattedTimestamp = 'Updated : ' + day + '-' + month + '-' + year + ' ' + hours + ':' + minutes;
+
+                    $('#waktuline1').text(formattedTimestamp);
+
+
+                    $('#dccode21line1').text(data21line1.DCCODE);
+                    $('#seqnumber21line1').text(data21line1.SeqNo);
+                    // $('#partNumber21line1').text(formattedPartNumber);
+                    $('#partNumber21line1').text(data21line1.NDCODEAWAL);
+
+                    $('#line21line1').text(data21line1.Line);
+
+                    var actQtyText = data21line1.act + '/' + data21line1.qty;
+                    $('#actualqty21line1').text(actQtyText);
+                    var status = (data21line1.status == 1) ? 'prod' : (data21line1.status == 2) ? 'com' : '';
+                    $('#status21line1').text(status);
+
+
+                    var flangeStatus = (data21line1.FlangeNon == 1) ? 'Flange' : (data21line1.FlangeNon == 0) ? 'Non-Flange' : '';
+
+                    $('#flangeStatus21line1').text(flangeStatus);
+                    var row = $('#row21line1');
+                    row.removeClass("table-warning table-primary table-success table-danger");
+                    if (data21line1.status == 2 || data21line1.status == 0) {
+                        if (flangeStatus === "Flange") {
+                            row.addClass("table-warning");
+                        } else if (flangeStatus === "Non-Flange") {
+                            row.addClass("table-primary");
+                        }
+                    }
+                        if (data21line1.status == 1) {
                         row.removeClass("table-warning table-primary");
                         row.addClass("table-success");
                         }
@@ -2778,7 +3710,50 @@ function handleFlangeDanger19() {
     if (flangeStatus19line2 === 'Flange' && flangeStatus19line3 === 'Flange' && flangeStatus19 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row19line2, #row19line3, #row19').addClass(flangeDangerClasses);
+
+        // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 19. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
     }
+}
+
+function fetchData19line1() {
+    $.ajax({
+        url: "{{ route('data.visual19line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data19line1) {
+            if (data19line1) {
+                $('#dccode19line1').text(data19line1.DCCODE);
+                $('#seqnumber19line1').text(data19line1.SeqNo);
+                $('#partNumber19line1').text(data19line1.NDCODEAWAL);
+                $('#line19line1').text(data19line1.Line);
+
+                var actQtyText = data19line1.act + '/' + data19line1.qty;
+                $('#actualqty19line1').text(actQtyText);
+                var status = (data19line1.status == 1) ? 'prod' : (data19line1.status == 2) ? 'com' : '';
+                $('#status19line1').text(status);
+
+                var flangeStatus = (data19line1.FlangeNon == 1) ? 'Flange' : (data19line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus19line1').text(flangeStatus);
+                var row = $('#row19line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data19line1.status == 2 || data19line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data19line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData19line2() {
@@ -2803,7 +3778,7 @@ function fetchData19line2() {
                 var flangeStatus = (data19line2.FlangeNon == 1) ? 'Flange' : (data19line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus19line2').text(flangeStatus);
                 var row = $('#row19line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data19line2.status == 2 || data19line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -2843,7 +3818,7 @@ function fetchData19line3() {
                 var flangeStatus = (data19line3.FlangeNon == 1) ? 'Flange' : (data19line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus19line3').text(flangeStatus);
                 var row = $('#row19line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data19line3.status == 2 || data19line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -2883,7 +3858,7 @@ function fetchData19() {
                 var flangeStatus = (data19.FlangeNon == 1) ? 'Flange' : (data19.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus19').text(flangeStatus);
                 var row = $('#row19');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data19.status == 2 || data19.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -2914,7 +3889,52 @@ function handleFlangeDanger20() {
     if (flangeStatus20line2 === 'Flange' && flangeStatus20line3 === 'Flange' && flangeStatus20 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row20line2, #row20line3, #row20').addClass(flangeDangerClasses);
+        
+        // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 20. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
     }
+}
+
+function fetchData20line1() {
+    $.ajax({
+        url: "{{ route('data.visual20line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data20line1) {
+            if (data20line1) {
+                $('#dccode20line1').text(data20line1.DCCODE);
+                $('#seqnumber20line1').text(data20line1.SeqNo);
+                $('#partNumber20line1').text(data20line1.NDCODEAWAL);
+                $('#line10line1').text(data20line1.Line);
+
+                var actQtyText = data20line1.act + '/' + data20line1.qty;
+                $('#actualqty20line1').text(actQtyText);
+                var status = (data20line1.status == 1) ? 'prod' : (data20line1.status == 2) ? 'com' : '';
+                $('#status20line1').text(status);
+
+                var flangeStatus = (data20line1.FlangeNon == 1) ? 'Flange' : (data20line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus20line1').text(flangeStatus);
+                var row = $('#row20line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data20line1.status == 2 || data20line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data20line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData20line2() {
@@ -2939,7 +3959,7 @@ function fetchData20line2() {
                 var flangeStatus = (data20line2.FlangeNon == 1) ? 'Flange' : (data20line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus20line2').text(flangeStatus);
                 var row = $('#row20line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data20line2.status == 2 || data20line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -2979,7 +3999,7 @@ function fetchData20line3() {
                 var flangeStatus = (data20line3.FlangeNon == 1) ? 'Flange' : (data20line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus20line3').text(flangeStatus);
                 var row = $('#row20line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data20line3.status == 2 || data20line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3019,7 +4039,7 @@ function fetchData20() {
                 var flangeStatus = (data20.FlangeNon == 1) ? 'Flange' : (data20.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus20').text(flangeStatus);
                 var row = $('#row20');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data20.status == 2 || data20.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3050,7 +4070,55 @@ function handleFlangeDanger22() {
     if (flangeStatus22line2 === 'Flange' && flangeStatus22line3 === 'Flange' && flangeStatus22 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row22line2, #row22line3, #row22').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 22. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData22line1() {
+    $.ajax({
+        url: "{{ route('data.visual22line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data22line1) {
+            if (data22line1) {
+                $('#dccode22line1').text(data22line1.DCCODE);
+                $('#seqnumber22line1').text(data22line1.SeqNo);
+                $('#partNumber22line1').text(data22line1.NDCODEAWAL);
+                $('#line22line1').text(data22line1.Line);
+
+                var actQtyText = data22line1.act + '/' + data22line1.qty;
+                $('#actualqty22line1').text(actQtyText);
+                var status = (data22line1.status == 1) ? 'prod' : (data22line1.status == 2) ? 'com' : '';
+                $('#status22line1').text(status);
+
+                var flangeStatus = (data22line1.FlangeNon == 1) ? 'Flange' : (data22line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus22line1').text(flangeStatus);
+                var row = $('#row22line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data22line1.status == 2 || data22line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data22line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData22line2() {
@@ -3075,7 +4143,7 @@ function fetchData22line2() {
                 var flangeStatus = (data22line2.FlangeNon == 1) ? 'Flange' : (data22line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus22line2').text(flangeStatus);
                 var row = $('#row22line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data22line2.status == 2 || data22line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3115,7 +4183,7 @@ function fetchData22line3() {
                 var flangeStatus = (data22line3.FlangeNon == 1) ? 'Flange' : (data22line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus22line3').text(flangeStatus);
                 var row = $('#row22line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data22line3.status == 2 || data22line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3155,7 +4223,7 @@ function fetchData22() {
                 var flangeStatus = (data22.FlangeNon == 1) ? 'Flange' : (data22.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus22').text(flangeStatus);
                 var row = $('#row22');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data22.status == 2 || data22.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3187,7 +4255,55 @@ function handleFlangeDanger23() {
     if (flangeStatus23line2 === 'Flange' && flangeStatus23line3 === 'Flange' && flangeStatus23 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row23line2, #row23line3, #row23').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 23. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData23line1() {
+    $.ajax({
+        url: "{{ route('data.visual23line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data23line1) {
+            if (data23line1) {
+                $('#dccode23line1').text(data23line1.DCCODE);
+                $('#seqnumber23line1').text(data23line1.SeqNo);
+                $('#partNumber23line1').text(data23line1.NDCODEAWAL);
+                $('#line13line1').text(data23line1.Line);
+
+                var actQtyText = data23line1.act + '/' + data23line1.qty;
+                $('#actualqty23line1').text(actQtyText);
+                var status = (data23line1.status == 1) ? 'prod' : (data23line1.status == 2) ? 'com' : '';
+                $('#status23line1').text(status);
+
+                var flangeStatus = (data23line1.FlangeNon == 1) ? 'Flange' : (data23line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus23line1').text(flangeStatus);
+                var row = $('#row23line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data23line1.status == 2 || data23line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data23line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData23line2() {
@@ -3212,7 +4328,7 @@ function fetchData23line2() {
                 var flangeStatus = (data23line2.FlangeNon == 1) ? 'Flange' : (data23line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus23line2').text(flangeStatus);
                 var row = $('#row23line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data23line2.status == 2 || data23line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3252,7 +4368,7 @@ function fetchData23line3() {
                 var flangeStatus = (data23line3.FlangeNon == 1) ? 'Flange' : (data23line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus23line3').text(flangeStatus);
                 var row = $('#row23line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data23line3.status == 2 || data23line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3292,7 +4408,7 @@ function fetchData23() {
                 var flangeStatus = (data23.FlangeNon == 1) ? 'Flange' : (data23.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus23').text(flangeStatus);
                 var row = $('#row23');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data23.status == 2 || data23.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3324,7 +4440,56 @@ function handleFlangeDanger24() {
     if (flangeStatus24line2 === 'Flange' && flangeStatus24line3 === 'Flange' && flangeStatus24 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row24line2, #row24line3, #row24').addClass(flangeDangerClasses);
+
+        
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 24. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData24line1() {
+    $.ajax({
+        url: "{{ route('data.visual24line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data24line1) {
+            if (data24line1) {
+                $('#dccode24line1').text(data24line1.DCCODE);
+                $('#seqnumber24line1').text(data24line1.SeqNo);
+                $('#partNumber24line1').text(data24line1.NDCODEAWAL);
+                $('#line14line1').text(data24line1.Line);
+
+                var actQtyText = data24line1.act + '/' + data24line1.qty;
+                $('#actualqty24line1').text(actQtyText);
+                var status = (data24line1.status == 1) ? 'prod' : (data24line1.status == 2) ? 'com' : '';
+                $('#status24line1').text(status);
+
+                var flangeStatus = (data24line1.FlangeNon == 1) ? 'Flange' : (data24line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus24line1').text(flangeStatus);
+                var row = $('#row24line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data24line1.status == 2 || data24line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data24line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData24line2() {
@@ -3349,7 +4514,7 @@ function fetchData24line2() {
                 var flangeStatus = (data24line2.FlangeNon == 1) ? 'Flange' : (data24line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus24line2').text(flangeStatus);
                 var row = $('#row24line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data24line2.status == 2 || data24line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3389,7 +4554,7 @@ function fetchData24line3() {
                 var flangeStatus = (data24line3.FlangeNon == 1) ? 'Flange' : (data24line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus24line3').text(flangeStatus);
                 var row = $('#row24line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data24line3.status == 2 || data24line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3429,7 +4594,7 @@ function fetchData24() {
                 var flangeStatus = (data24.FlangeNon == 1) ? 'Flange' : (data24.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus24').text(flangeStatus);
                 var row = $('#row24');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data24.status == 2 || data24.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3461,7 +4626,55 @@ function handleFlangeDanger25() {
     if (flangeStatus25line2 === 'Flange' && flangeStatus25line3 === 'Flange' && flangeStatus25 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row25line2, #row25line3, #row25').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 25. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData25line1() {
+    $.ajax({
+        url: "{{ route('data.visual25line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data25line1) {
+            if (data25line1) {
+                $('#dccode25line1').text(data25line1.DCCODE);
+                $('#seqnumber25line1').text(data25line1.SeqNo);
+                $('#partNumber25line1').text(data25line1.NDCODEAWAL);
+                $('#line15line1').text(data25line1.Line);
+
+                var actQtyText = data25line1.act + '/' + data25line1.qty;
+                $('#actualqty25line1').text(actQtyText);
+                var status = (data25line1.status == 1) ? 'prod' : (data25line1.status == 2) ? 'com' : '';
+                $('#status25line1').text(status);
+
+                var flangeStatus = (data25line1.FlangeNon == 1) ? 'Flange' : (data25line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus25line1').text(flangeStatus);
+                var row = $('#row25line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data25line1.status == 2 || data25line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data25line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData25line2() {
@@ -3486,7 +4699,7 @@ function fetchData25line2() {
                 var flangeStatus = (data25line2.FlangeNon == 1) ? 'Flange' : (data25line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus25line2').text(flangeStatus);
                 var row = $('#row25line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data25line2.status == 2 || data25line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3526,7 +4739,7 @@ function fetchData25line3() {
                 var flangeStatus = (data25line3.FlangeNon == 1) ? 'Flange' : (data25line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus25line3').text(flangeStatus);
                 var row = $('#row25line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data25line3.status == 2 || data25line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3566,7 +4779,7 @@ function fetchData25() {
                 var flangeStatus = (data25.FlangeNon == 1) ? 'Flange' : (data25.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus25').text(flangeStatus);
                 var row = $('#row25');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data25.status == 2 || data25.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3598,7 +4811,55 @@ function handleFlangeDanger26() {
     if (flangeStatus26line2 === 'Flange' && flangeStatus26line3 === 'Flange' && flangeStatus26 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row26line2, #row26line3, #row26').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 26. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData26line1() {
+    $.ajax({
+        url: "{{ route('data.visual26line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data26line1) {
+            if (data26line1) {
+                $('#dccode26line1').text(data26line1.DCCODE);
+                $('#seqnumber26line1').text(data26line1.SeqNo);
+                $('#partNumber26line1').text(data26line1.NDCODEAWAL);
+                $('#line16line1').text(data26line1.Line);
+
+                var actQtyText = data26line1.act + '/' + data26line1.qty;
+                $('#actualqty26line1').text(actQtyText);
+                var status = (data26line1.status == 1) ? 'prod' : (data26line1.status == 2) ? 'com' : '';
+                $('#status26line1').text(status);
+
+                var flangeStatus = (data26line1.FlangeNon == 1) ? 'Flange' : (data26line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus26line1').text(flangeStatus);
+                var row = $('#row26line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data26line1.status == 2 || data26line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data26line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData26line2() {
@@ -3623,7 +4884,7 @@ function fetchData26line2() {
                 var flangeStatus = (data26line2.FlangeNon == 1) ? 'Flange' : (data26line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus26line2').text(flangeStatus);
                 var row = $('#row26line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data26line2.status == 2 || data26line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3663,7 +4924,7 @@ function fetchData26line3() {
                 var flangeStatus = (data26line3.FlangeNon == 1) ? 'Flange' : (data26line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus26line3').text(flangeStatus);
                 var row = $('#row26line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data26line3.status == 2 || data26line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3703,7 +4964,7 @@ function fetchData26() {
                 var flangeStatus = (data26.FlangeNon == 1) ? 'Flange' : (data26.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus26').text(flangeStatus);
                 var row = $('#row26');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data26.status == 2 || data26.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3735,7 +4996,55 @@ function handleFlangeDanger27() {
     if (flangeStatus27line2 === 'Flange' && flangeStatus27line3 === 'Flange' && flangeStatus27 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row27line2, #row27line3, #row27').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 27. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData27line1() {
+    $.ajax({
+        url: "{{ route('data.visual27line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data27line1) {
+            if (data27line1) {
+                $('#dccode27line1').text(data27line1.DCCODE);
+                $('#seqnumber27line1').text(data27line1.SeqNo);
+                $('#partNumber27line1').text(data27line1.NDCODEAWAL);
+                $('#line17line1').text(data27line1.Line);
+
+                var actQtyText = data27line1.act + '/' + data27line1.qty;
+                $('#actualqty27line1').text(actQtyText);
+                var status = (data27line1.status == 1) ? 'prod' : (data27line1.status == 2) ? 'com' : '';
+                $('#status27line1').text(status);
+
+                var flangeStatus = (data27line1.FlangeNon == 1) ? 'Flange' : (data27line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus27line1').text(flangeStatus);
+                var row = $('#row27line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data27line1.status == 2 || data27line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data27line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData27line2() {
@@ -3760,7 +5069,7 @@ function fetchData27line2() {
                 var flangeStatus = (data27line2.FlangeNon == 1) ? 'Flange' : (data27line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus27line2').text(flangeStatus);
                 var row = $('#row27line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data27line2.status == 2 || data27line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3800,7 +5109,7 @@ function fetchData27line3() {
                 var flangeStatus = (data27line3.FlangeNon == 1) ? 'Flange' : (data27line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus27line3').text(flangeStatus);
                 var row = $('#row27line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data27line3.status == 2 || data27line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3840,7 +5149,7 @@ function fetchData27() {
                 var flangeStatus = (data27.FlangeNon == 1) ? 'Flange' : (data27.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus27').text(flangeStatus);
                 var row = $('#row27');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data27.status == 2 || data27.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3872,7 +5181,55 @@ function handleFlangeDanger28() {
     if (flangeStatus28line2 === 'Flange' && flangeStatus28line3 === 'Flange' && flangeStatus28 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row28line2, #row28line3, #row28').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 28. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData28line1() {
+    $.ajax({
+        url: "{{ route('data.visual28line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data28line1) {
+            if (data28line1) {
+                $('#dccode28line1').text(data28line1.DCCODE);
+                $('#seqnumber28line1').text(data28line1.SeqNo);
+                $('#partNumber28line1').text(data28line1.NDCODEAWAL);
+                $('#line18line1').text(data28line1.Line);
+
+                var actQtyText = data28line1.act + '/' + data28line1.qty;
+                $('#actualqty28line1').text(actQtyText);
+                var status = (data28line1.status == 1) ? 'prod' : (data28line1.status == 2) ? 'com' : '';
+                $('#status28line1').text(status);
+
+                var flangeStatus = (data28line1.FlangeNon == 1) ? 'Flange' : (data28line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus28line1').text(flangeStatus);
+                var row = $('#row28line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data28line1.status == 2 || data28line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data28line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData28line2() {
@@ -3897,7 +5254,7 @@ function fetchData28line2() {
                 var flangeStatus = (data28line2.FlangeNon == 1) ? 'Flange' : (data28line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus28line2').text(flangeStatus);
                 var row = $('#row28line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data28line2.status == 2 || data28line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3937,7 +5294,7 @@ function fetchData28line3() {
                 var flangeStatus = (data28line3.FlangeNon == 1) ? 'Flange' : (data28line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus28line3').text(flangeStatus);
                 var row = $('#row28line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data28line3.status == 2 || data28line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -3977,7 +5334,7 @@ function fetchData28() {
                 var flangeStatus = (data28.FlangeNon == 1) ? 'Flange' : (data28.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus28').text(flangeStatus);
                 var row = $('#row28');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data28.status == 2 || data28.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4009,7 +5366,56 @@ function handleFlangeDanger29() {
     if (flangeStatus29line2 === 'Flange' && flangeStatus29line3 === 'Flange' && flangeStatus29 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row29line2, #row29line3, #row29').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 29. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+
+function fetchData29line1() {
+    $.ajax({
+        url: "{{ route('data.visual29line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data29line1) {
+            if (data29line1) {
+                $('#dccode29line1').text(data29line1.DCCODE);
+                $('#seqnumber29line1').text(data29line1.SeqNo);
+                $('#partNumber29line1').text(data29line1.NDCODEAWAL);
+                $('#line19line1').text(data29line1.Line);
+
+                var actQtyText = data29line1.act + '/' + data29line1.qty;
+                $('#actualqty29line1').text(actQtyText);
+                var status = (data29line1.status == 1) ? 'prod' : (data29line1.status == 2) ? 'com' : '';
+                $('#status29line1').text(status);
+
+                var flangeStatus = (data29line1.FlangeNon == 1) ? 'Flange' : (data29line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus29line1').text(flangeStatus);
+                var row = $('#row29line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data29line1.status == 2 || data29line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data29line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData29line2() {
@@ -4034,7 +5440,7 @@ function fetchData29line2() {
                 var flangeStatus = (data29line2.FlangeNon == 1) ? 'Flange' : (data29line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus29line2').text(flangeStatus);
                 var row = $('#row29line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data29line2.status == 2 || data29line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4074,7 +5480,7 @@ function fetchData29line3() {
                 var flangeStatus = (data29line3.FlangeNon == 1) ? 'Flange' : (data29line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus29line3').text(flangeStatus);
                 var row = $('#row29line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data29line3.status == 2 || data29line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4114,7 +5520,7 @@ function fetchData29() {
                 var flangeStatus = (data29.FlangeNon == 1) ? 'Flange' : (data29.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus29').text(flangeStatus);
                 var row = $('#row29');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data29.status == 2 || data29.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4146,9 +5552,56 @@ function handleFlangeDanger30() {
     if (flangeStatus30line2 === 'Flange' && flangeStatus30line3 === 'Flange' && flangeStatus30 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row30line2, #row30line3, #row30').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 30. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
 }
 
+function fetchData30line1() {
+    $.ajax({
+        url: "{{ route('data.visual30line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data30line1) {
+            if (data30line1) {
+                $('#dccode30line1').text(data30line1.DCCODE);
+                $('#seqnumber30line1').text(data30line1.SeqNo);
+                $('#partNumber30line1').text(data30line1.NDCODEAWAL);
+                $('#line30line1').text(data30line1.Line);
+
+                var actQtyText = data30line1.act + '/' + data30line1.qty;
+                $('#actualqty30line1').text(actQtyText);
+                var status = (data30line1.status == 1) ? 'prod' : (data30line1.status == 2) ? 'com' : '';
+                $('#status30line1').text(status);
+
+                var flangeStatus = (data30line1.FlangeNon == 1) ? 'Flange' : (data30line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus30line1').text(flangeStatus);
+                var row = $('#row30line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data30line1.status == 2 || data30line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data30line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
+}
 function fetchData30line2() {
     $.ajax({
         url: "{{ route('data.visual30line2') }}",
@@ -4171,7 +5624,7 @@ function fetchData30line2() {
                 var flangeStatus = (data30line2.FlangeNon == 1) ? 'Flange' : (data30line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus30line2').text(flangeStatus);
                 var row = $('#row30line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data30line2.status == 2 || data30line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4211,7 +5664,7 @@ function fetchData30line3() {
                 var flangeStatus = (data30line3.FlangeNon == 1) ? 'Flange' : (data30line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus30line3').text(flangeStatus);
                 var row = $('#row30line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data30line3.status == 2 || data30line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4251,7 +5704,7 @@ function fetchData30() {
                 var flangeStatus = (data30.FlangeNon == 1) ? 'Flange' : (data30.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus30').text(flangeStatus);
                 var row = $('#row30');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data30.status == 2 || data30.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4283,9 +5736,56 @@ function handleFlangeDanger31() {
     if (flangeStatus31line2 === 'Flange' && flangeStatus31line3 === 'Flange' && flangeStatus31 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row31line2, #row31line3, #row31').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 31. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
 }
 
+function fetchData31line1() {
+    $.ajax({
+        url: "{{ route('data.visual31line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data31line1) {
+            if (data31line1) {
+                $('#dccode31line1').text(data31line1.DCCODE);
+                $('#seqnumber31line1').text(data31line1.SeqNo);
+                $('#partNumber31line1').text(data31line1.NDCODEAWAL);
+                $('#line31line1').text(data31line1.Line);
+
+                var actQtyText = data31line1.act + '/' + data31line1.qty;
+                $('#actualqty31line1').text(actQtyText);
+                var status = (data31line1.status == 1) ? 'prod' : (data31line1.status == 2) ? 'com' : '';
+                $('#status31line1').text(status);
+
+                var flangeStatus = (data31line1.FlangeNon == 1) ? 'Flange' : (data31line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus31line1').text(flangeStatus);
+                var row = $('#row31line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data31line1.status == 2 || data31line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data31line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
+}
 function fetchData31line2() {
     $.ajax({
         url: "{{ route('data.visual31line2') }}",
@@ -4308,7 +5808,7 @@ function fetchData31line2() {
                 var flangeStatus = (data31line2.FlangeNon == 1) ? 'Flange' : (data31line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus31line2').text(flangeStatus);
                 var row = $('#row31line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data31line2.status == 2 || data31line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4348,7 +5848,7 @@ function fetchData31line3() {
                 var flangeStatus = (data31line3.FlangeNon == 1) ? 'Flange' : (data31line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus31line3').text(flangeStatus);
                 var row = $('#row31line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data31line3.status == 2 || data31line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4388,7 +5888,7 @@ function fetchData31() {
                 var flangeStatus = (data31.FlangeNon == 1) ? 'Flange' : (data31.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus31').text(flangeStatus);
                 var row = $('#row31');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data31.status == 2 || data31.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4420,7 +5920,55 @@ function handleFlangeDanger32() {
     if (flangeStatus32line2 === 'Flange' && flangeStatus32line3 === 'Flange' && flangeStatus32 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row32line2, #row32line3, #row32').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 32. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData32line1() {
+    $.ajax({
+        url: "{{ route('data.visual32line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data32line1) {
+            if (data32line1) {
+                $('#dccode32line1').text(data32line1.DCCODE);
+                $('#seqnumber32line1').text(data32line1.SeqNo);
+                $('#partNumber32line1').text(data32line1.NDCODEAWAL);
+                $('#line32line1').text(data32line1.Line);
+
+                var actQtyText = data32line1.act + '/' + data32line1.qty;
+                $('#actualqty32line1').text(actQtyText);
+                var status = (data32line1.status == 1) ? 'prod' : (data32line1.status == 2) ? 'com' : '';
+                $('#status32line1').text(status);
+
+                var flangeStatus = (data32line1.FlangeNon == 1) ? 'Flange' : (data32line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus32line1').text(flangeStatus);
+                var row = $('#row32line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data32line1.status == 2 || data32line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data32line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData32line2() {
@@ -4445,7 +5993,7 @@ function fetchData32line2() {
                 var flangeStatus = (data32line2.FlangeNon == 1) ? 'Flange' : (data32line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus32line2').text(flangeStatus);
                 var row = $('#row32line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data32line2.status == 2 || data32line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4485,7 +6033,7 @@ function fetchData32line3() {
                 var flangeStatus = (data32line3.FlangeNon == 1) ? 'Flange' : (data32line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus32line3').text(flangeStatus);
                 var row = $('#row32line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data32line3.status == 2 || data32line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4525,7 +6073,7 @@ function fetchData32() {
                 var flangeStatus = (data32.FlangeNon == 1) ? 'Flange' : (data32.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus32').text(flangeStatus);
                 var row = $('#row32');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data32.status == 2 || data32.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4557,7 +6105,55 @@ function handleFlangeDanger33() {
     if (flangeStatus33line2 === 'Flange' && flangeStatus33line3 === 'Flange' && flangeStatus33 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row33line2, #row33line3, #row33').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 33. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData33line1() {
+    $.ajax({
+        url: "{{ route('data.visual33line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data33line1) {
+            if (data33line1) {
+                $('#dccode33line1').text(data33line1.DCCODE);
+                $('#seqnumber33line1').text(data33line1.SeqNo);
+                $('#partNumber33line1').text(data33line1.NDCODEAWAL);
+                $('#line33line1').text(data33line1.Line);
+
+                var actQtyText = data33line1.act + '/' + data33line1.qty;
+                $('#actualqty33line1').text(actQtyText);
+                var status = (data33line1.status == 1) ? 'prod' : (data33line1.status == 2) ? 'com' : '';
+                $('#status33line1').text(status);
+
+                var flangeStatus = (data33line1.FlangeNon == 1) ? 'Flange' : (data33line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus33line1').text(flangeStatus);
+                var row = $('#row33line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data33line1.status == 2 || data33line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data33line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData33line2() {
@@ -4582,7 +6178,7 @@ function fetchData33line2() {
                 var flangeStatus = (data33line2.FlangeNon == 1) ? 'Flange' : (data33line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus33line2').text(flangeStatus);
                 var row = $('#row33line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data33line2.status == 2 || data33line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4622,7 +6218,7 @@ function fetchData33line3() {
                 var flangeStatus = (data33line3.FlangeNon == 1) ? 'Flange' : (data33line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus33line3').text(flangeStatus);
                 var row = $('#row33line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data33line3.status == 2 || data33line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4662,7 +6258,7 @@ function fetchData33() {
                 var flangeStatus = (data33.FlangeNon == 1) ? 'Flange' : (data33.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus33').text(flangeStatus);
                 var row = $('#row33');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data33.status == 2 || data33.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4694,7 +6290,55 @@ function handleFlangeDanger34() {
     if (flangeStatus34line2 === 'Flange' && flangeStatus34line3 === 'Flange' && flangeStatus34 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row34line2, #row34line3, #row34').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 34. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData34line1() {
+    $.ajax({
+        url: "{{ route('data.visual34line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data34line1) {
+            if (data34line1) {
+                $('#dccode34line1').text(data34line1.DCCODE);
+                $('#seqnumber34line1').text(data34line1.SeqNo);
+                $('#partNumber34line1').text(data34line1.NDCODEAWAL);
+                $('#line34line1').text(data34line1.Line);
+
+                var actQtyText = data34line1.act + '/' + data34line1.qty;
+                $('#actualqty34line1').text(actQtyText);
+                var status = (data34line1.status == 1) ? 'prod' : (data34line1.status == 2) ? 'com' : '';
+                $('#status34line1').text(status);
+
+                var flangeStatus = (data34line1.FlangeNon == 1) ? 'Flange' : (data34line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus34line1').text(flangeStatus);
+                var row = $('#row34line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data34line1.status == 2 || data34line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data34line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData34line2() {
@@ -4719,7 +6363,7 @@ function fetchData34line2() {
                 var flangeStatus = (data34line2.FlangeNon == 1) ? 'Flange' : (data34line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus34line2').text(flangeStatus);
                 var row = $('#row34line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data34line2.status == 2 || data34line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4759,7 +6403,7 @@ function fetchData34line3() {
                 var flangeStatus = (data34line3.FlangeNon == 1) ? 'Flange' : (data34line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus34line3').text(flangeStatus);
                 var row = $('#row34line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data34line3.status == 2 || data34line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4799,7 +6443,7 @@ function fetchData34() {
                 var flangeStatus = (data34.FlangeNon == 1) ? 'Flange' : (data34.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus34').text(flangeStatus);
                 var row = $('#row34');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data34.status == 2 || data34.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4831,7 +6475,55 @@ function handleFlangeDanger35() {
     if (flangeStatus35line2 === 'Flange' && flangeStatus35line3 === 'Flange' && flangeStatus35 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row35line2, #row35line3, #row35').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 35. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData35line1() {
+    $.ajax({
+        url: "{{ route('data.visual35line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data35line1) {
+            if (data35line1) {
+                $('#dccode35line1').text(data35line1.DCCODE);
+                $('#seqnumber35line1').text(data35line1.SeqNo);
+                $('#partNumber35line1').text(data35line1.NDCODEAWAL);
+                $('#line35line1').text(data35line1.Line);
+
+                var actQtyText = data35line1.act + '/' + data35line1.qty;
+                $('#actualqty35line1').text(actQtyText);
+                var status = (data35line1.status == 1) ? 'prod' : (data35line1.status == 2) ? 'com' : '';
+                $('#status35line1').text(status);
+
+                var flangeStatus = (data35line1.FlangeNon == 1) ? 'Flange' : (data35line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus35line1').text(flangeStatus);
+                var row = $('#row35line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data35line1.status == 2 || data35line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data35line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData35line2() {
@@ -4856,7 +6548,7 @@ function fetchData35line2() {
                 var flangeStatus = (data35line2.FlangeNon == 1) ? 'Flange' : (data35line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus35line2').text(flangeStatus);
                 var row = $('#row35line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data35line2.status == 2 || data35line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4896,7 +6588,7 @@ function fetchData35line3() {
                 var flangeStatus = (data35line3.FlangeNon == 1) ? 'Flange' : (data35line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus35line3').text(flangeStatus);
                 var row = $('#row35line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data35line3.status == 2 || data35line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4936,7 +6628,7 @@ function fetchData35() {
                 var flangeStatus = (data35.FlangeNon == 1) ? 'Flange' : (data35.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus35').text(flangeStatus);
                 var row = $('#row35');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data35.status == 2 || data35.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -4968,7 +6660,55 @@ function handleFlangeDanger36() {
     if (flangeStatus36line2 === 'Flange' && flangeStatus36line3 === 'Flange' && flangeStatus36 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row36line2, #row36line3, #row36').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 36. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData36line1() {
+    $.ajax({
+        url: "{{ route('data.visual36line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data36line1) {
+            if (data36line1) {
+                $('#dccode36line1').text(data36line1.DCCODE);
+                $('#seqnumber36line1').text(data36line1.SeqNo);
+                $('#partNumber36line1').text(data36line1.NDCODEAWAL);
+                $('#line36line1').text(data36line1.Line);
+
+                var actQtyText = data36line1.act + '/' + data36line1.qty;
+                $('#actualqty36line1').text(actQtyText);
+                var status = (data36line1.status == 1) ? 'prod' : (data36line1.status == 2) ? 'com' : '';
+                $('#status36line1').text(status);
+
+                var flangeStatus = (data36line1.FlangeNon == 1) ? 'Flange' : (data36line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus36line1').text(flangeStatus);
+                var row = $('#row36line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data36line1.status == 2 || data36line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data36line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData36line2() {
@@ -4993,7 +6733,7 @@ function fetchData36line2() {
                 var flangeStatus = (data36line2.FlangeNon == 1) ? 'Flange' : (data36line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus36line2').text(flangeStatus);
                 var row = $('#row36line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data36line2.status == 2 || data36line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5033,7 +6773,7 @@ function fetchData36line3() {
                 var flangeStatus = (data36line3.FlangeNon == 1) ? 'Flange' : (data36line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus36line3').text(flangeStatus);
                 var row = $('#row36line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data36line3.status == 2 || data36line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5073,7 +6813,7 @@ function fetchData36() {
                 var flangeStatus = (data36.FlangeNon == 1) ? 'Flange' : (data36.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus36').text(flangeStatus);
                 var row = $('#row36');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data36.status == 2 || data36.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5105,7 +6845,55 @@ function handleFlangeDanger37() {
     if (flangeStatus37line2 === 'Flange' && flangeStatus37line3 === 'Flange' && flangeStatus37 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row37line2, #row37line3, #row37').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 37. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData37line1() {
+    $.ajax({
+        url: "{{ route('data.visual37line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data37line1) {
+            if (data37line1) {
+                $('#dccode37line1').text(data37line1.DCCODE);
+                $('#seqnumber37line1').text(data37line1.SeqNo);
+                $('#partNumber37line1').text(data37line1.NDCODEAWAL);
+                $('#line37line1').text(data37line1.Line);
+
+                var actQtyText = data37line1.act + '/' + data37line1.qty;
+                $('#actualqty37line1').text(actQtyText);
+                var status = (data37line1.status == 1) ? 'prod' : (data37line1.status == 2) ? 'com' : '';
+                $('#status37line1').text(status);
+
+                var flangeStatus = (data37line1.FlangeNon == 1) ? 'Flange' : (data37line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus37line1').text(flangeStatus);
+                var row = $('#row37line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data37line1.status == 2 || data37line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data37line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData37line2() {
@@ -5130,7 +6918,7 @@ function fetchData37line2() {
                 var flangeStatus = (data37line2.FlangeNon == 1) ? 'Flange' : (data37line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus37line2').text(flangeStatus);
                 var row = $('#row37line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data37line2.status == 2 || data37line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5170,7 +6958,7 @@ function fetchData37line3() {
                 var flangeStatus = (data37line3.FlangeNon == 1) ? 'Flange' : (data37line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus37line3').text(flangeStatus);
                 var row = $('#row37line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data37line3.status == 2 || data37line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5210,7 +6998,7 @@ function fetchData37() {
                 var flangeStatus = (data37.FlangeNon == 1) ? 'Flange' : (data37.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus37').text(flangeStatus);
                 var row = $('#row37');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data37.status == 2 || data37.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5242,7 +7030,55 @@ function handleFlangeDanger38() {
     if (flangeStatus38line2 === 'Flange' && flangeStatus38line3 === 'Flange' && flangeStatus38 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row38line2, #row38line3, #row38').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 38. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData38line1() {
+    $.ajax({
+        url: "{{ route('data.visual38line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data38line1) {
+            if (data38line1) {
+                $('#dccode38line1').text(data38line1.DCCODE);
+                $('#seqnumber38line1').text(data38line1.SeqNo);
+                $('#partNumber38line1').text(data38line1.NDCODEAWAL);
+                $('#line38line1').text(data38line1.Line);
+
+                var actQtyText = data38line1.act + '/' + data38line1.qty;
+                $('#actualqty38line1').text(actQtyText);
+                var status = (data38line1.status == 1) ? 'prod' : (data38line1.status == 2) ? 'com' : '';
+                $('#status38line1').text(status);
+
+                var flangeStatus = (data38line1.FlangeNon == 1) ? 'Flange' : (data38line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus38line1').text(flangeStatus);
+                var row = $('#row38line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data38line1.status == 2 || data38line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data38line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData38line2() {
@@ -5267,7 +7103,7 @@ function fetchData38line2() {
                 var flangeStatus = (data38line2.FlangeNon == 1) ? 'Flange' : (data38line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus38line2').text(flangeStatus);
                 var row = $('#row38line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data38line2.status == 2 || data38line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5307,7 +7143,7 @@ function fetchData38line3() {
                 var flangeStatus = (data38line3.FlangeNon == 1) ? 'Flange' : (data38line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus38line3').text(flangeStatus);
                 var row = $('#row38line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data38line3.status == 2 || data38line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5347,7 +7183,7 @@ function fetchData38() {
                 var flangeStatus = (data38.FlangeNon == 1) ? 'Flange' : (data38.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus38').text(flangeStatus);
                 var row = $('#row38');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data38.status == 2 || data38.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5379,7 +7215,55 @@ function handleFlangeDanger39() {
     if (flangeStatus39line2 === 'Flange' && flangeStatus39line3 === 'Flange' && flangeStatus39 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row39line2, #row39line3, #row39').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 39. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData39line1() {
+    $.ajax({
+        url: "{{ route('data.visual39line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data39line1) {
+            if (data39line1) {
+                $('#dccode39line1').text(data39line1.DCCODE);
+                $('#seqnumber39line1').text(data39line1.SeqNo);
+                $('#partNumber39line1').text(data39line1.NDCODEAWAL);
+                $('#line39line1').text(data39line1.Line);
+
+                var actQtyText = data39line1.act + '/' + data39line1.qty;
+                $('#actualqty39line1').text(actQtyText);
+                var status = (data39line1.status == 1) ? 'prod' : (data39line1.status == 2) ? 'com' : '';
+                $('#status39line1').text(status);
+
+                var flangeStatus = (data39line1.FlangeNon == 1) ? 'Flange' : (data39line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus39line1').text(flangeStatus);
+                var row = $('#row39line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data39line1.status == 2 || data39line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data39line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData39line2() {
@@ -5404,7 +7288,7 @@ function fetchData39line2() {
                 var flangeStatus = (data39line2.FlangeNon == 1) ? 'Flange' : (data39line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus39line2').text(flangeStatus);
                 var row = $('#row39line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data39line2.status == 2 || data39line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5444,7 +7328,7 @@ function fetchData39line3() {
                 var flangeStatus = (data39line3.FlangeNon == 1) ? 'Flange' : (data39line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus39line3').text(flangeStatus);
                 var row = $('#row39line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data39line3.status == 2 || data39line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5484,7 +7368,7 @@ function fetchData39() {
                 var flangeStatus = (data39.FlangeNon == 1) ? 'Flange' : (data39.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus39').text(flangeStatus);
                 var row = $('#row39');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data39.status == 2 || data39.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5516,7 +7400,55 @@ function handleFlangeDanger40() {
     if (flangeStatus40line2 === 'Flange' && flangeStatus40line3 === 'Flange' && flangeStatus40 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row40line2, #row40line3, #row40').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 40. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData40line1() {
+    $.ajax({
+        url: "{{ route('data.visual40line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data40line1) {
+            if (data40line1) {
+                $('#dccode40line1').text(data40line1.DCCODE);
+                $('#seqnumber40line1').text(data40line1.SeqNo);
+                $('#partNumber40line1').text(data40line1.NDCODEAWAL);
+                $('#line40line1').text(data40line1.Line);
+
+                var actQtyText = data40line1.act + '/' + data40line1.qty;
+                $('#actualqty40line1').text(actQtyText);
+                var status = (data40line1.status == 1) ? 'prod' : (data40line1.status == 2) ? 'com' : '';
+                $('#status40line1').text(status);
+
+                var flangeStatus = (data40line1.FlangeNon == 1) ? 'Flange' : (data40line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus40line1').text(flangeStatus);
+                var row = $('#row40line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data40line1.status == 2 || data40line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data40line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData40line2() {
@@ -5541,7 +7473,7 @@ function fetchData40line2() {
                 var flangeStatus = (data40line2.FlangeNon == 1) ? 'Flange' : (data40line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus40line2').text(flangeStatus);
                 var row = $('#row40line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data40line2.status == 2 || data40line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5581,7 +7513,7 @@ function fetchData40line3() {
                 var flangeStatus = (data40line3.FlangeNon == 1) ? 'Flange' : (data40line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus40line3').text(flangeStatus);
                 var row = $('#row40line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data40line3.status == 2 || data40line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5621,7 +7553,7 @@ function fetchData40() {
                 var flangeStatus = (data40.FlangeNon == 1) ? 'Flange' : (data40.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus40').text(flangeStatus);
                 var row = $('#row40');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data40.status == 2 || data40.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5653,7 +7585,55 @@ function handleFlangeDanger41() {
     if (flangeStatus41line2 === 'Flange' && flangeStatus41line3 === 'Flange' && flangeStatus41 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row41line2, #row41line3, #row41').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 41. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData41line1() {
+    $.ajax({
+        url: "{{ route('data.visual41line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data41line1) {
+            if (data41line1) {
+                $('#dccode41line1').text(data41line1.DCCODE);
+                $('#seqnumber41line1').text(data41line1.SeqNo);
+                $('#partNumber41line1').text(data41line1.NDCODEAWAL);
+                $('#line41line1').text(data41line1.Line);
+
+                var actQtyText = data41line1.act + '/' + data41line1.qty;
+                $('#actualqty41line1').text(actQtyText);
+                var status = (data41line1.status == 1) ? 'prod' : (data41line1.status == 2) ? 'com' : '';
+                $('#status41line1').text(status);
+
+                var flangeStatus = (data41line1.FlangeNon == 1) ? 'Flange' : (data41line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus41line1').text(flangeStatus);
+                var row = $('#row41line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data41line1.status == 2 || data41line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data41line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData41line2() {
@@ -5678,7 +7658,7 @@ function fetchData41line2() {
                 var flangeStatus = (data41line2.FlangeNon == 1) ? 'Flange' : (data41line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus41line2').text(flangeStatus);
                 var row = $('#row41line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data41line2.status == 2 || data41line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5718,7 +7698,7 @@ function fetchData41line3() {
                 var flangeStatus = (data41line3.FlangeNon == 1) ? 'Flange' : (data41line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus41line3').text(flangeStatus);
                 var row = $('#row41line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data41line3.status == 2 || data41line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5758,7 +7738,7 @@ function fetchData41() {
                 var flangeStatus = (data41.FlangeNon == 1) ? 'Flange' : (data41.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus41').text(flangeStatus);
                 var row = $('#row41');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data41.status == 2 || data41.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5790,7 +7770,55 @@ function handleFlangeDanger42() {
     if (flangeStatus42line2 === 'Flange' && flangeStatus42line3 === 'Flange' && flangeStatus42 === 'Flange') {
         // Tambahkan kelas 'table-danger' hanya untuk baris yang memiliki flange
         $('#row42line2, #row42line3, #row42').addClass(flangeDangerClasses);
+                
+       // Tampilkan modal dengan pesan tabrakan flange
+        $('#flangeCollisionMessage').text('Tabrakan flange terdeteksi pada baris data 42. Waspadalah-Waspadalah!!!!.');
+        $('#flangeCollisionModal').modal('show');
+
+
+        setTimeout(function() {
+            $('#flangeCollisionModal').modal('hide');
+        }, 10000);
     }
+}
+
+function fetchData42line1() {
+    $.ajax({
+        url: "{{ route('data.visual42line1') }}",
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data42line1) {
+            if (data42line1) {
+                $('#dccode42line1').text(data42line1.DCCODE);
+                $('#seqnumber42line1').text(data42line1.SeqNo);
+                $('#partNumber42line1').text(data42line1.NDCODEAWAL);
+                $('#line42line1').text(data42line1.Line);
+
+                var actQtyText = data42line1.act + '/' + data42line1.qty;
+                $('#actualqty42line1').text(actQtyText);
+                var status = (data42line1.status == 1) ? 'prod' : (data42line1.status == 2) ? 'com' : '';
+                $('#status42line1').text(status);
+
+                var flangeStatus = (data42line1.FlangeNon == 1) ? 'Flange' : (data42line1.FlangeNon == 0) ? 'Non-Flange' : '';
+                $('#flangeStatus42line1').text(flangeStatus);
+                var row = $('#row42line1');
+                row.removeClass("table-warning table-primary table-success table-danger");
+                if (data42line1.status == 2 || data42line1.status == 0) {
+                    if (flangeStatus === "Flange") {
+                        row.addClass("table-warning");
+                    } else if (flangeStatus === "Non-Flange") {
+                        row.addClass("table-primary");
+                    }
+                }
+                if (data42line1.status == 1) {
+                    row.removeClass("table-warning table-primary table-danger");
+                    row.addClass("table-success");
+                }
+            }
+        }
+    });
 }
 
 function fetchData42line2() {
@@ -5815,7 +7843,7 @@ function fetchData42line2() {
                 var flangeStatus = (data42line2.FlangeNon == 1) ? 'Flange' : (data42line2.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus42line2').text(flangeStatus);
                 var row = $('#row42line2');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data42line2.status == 2 || data42line2.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5855,7 +7883,7 @@ function fetchData42line3() {
                 var flangeStatus = (data42line3.FlangeNon == 1) ? 'Flange' : (data42line3.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus42line3').text(flangeStatus);
                 var row = $('#row42line3');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data42line3.status == 2 || data42line3.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5895,7 +7923,7 @@ function fetchData42() {
                 var flangeStatus = (data42.FlangeNon == 1) ? 'Flange' : (data42.FlangeNon == 0) ? 'Non-Flange' : '';
                 $('#flangeStatus42').text(flangeStatus);
                 var row = $('#row42');
-                row.removeClass("table-warning table-primary table-success");
+                row.removeClass("table-warning table-primary table-success table-danger");
                 if (data42.status == 2 || data42.status == 0) {
                     if (flangeStatus === "Flange") {
                         row.addClass("table-warning");
@@ -5945,6 +7973,30 @@ function fetchData42() {
     handleFlangeDanger41();
     handleFlangeDanger42();
     // waktuline2();
+    fetchData19line1();
+    fetchData20line1();
+    fetchData21line1();
+    fetchData22line1();
+    fetchData23line1();
+    fetchData24line1();
+    fetchData25line1();
+    fetchData26line1();
+    fetchData27line1();
+    fetchData28line1();
+    fetchData29line1();
+    fetchData30line1();
+    fetchData31line1();
+    fetchData32line1();
+    fetchData33line1();
+    fetchData34line1();
+    fetchData35line1();
+    fetchData36line1();
+    fetchData37line1();
+    fetchData38line1();
+    fetchData39line1();
+    fetchData40line1();
+    fetchData41line1();
+    fetchData42line1();
     fetchData19line2();
     fetchData20line2();
     fetchData21line2();
@@ -6022,6 +8074,30 @@ function fetchData42() {
 
     // setInterval(waktuline2, 1000);
     // setInterval(fetchDataCallback, 3000);
+    setInterval(fetchData19line1, 3000);
+    setInterval(fetchData20line1, 3000);
+    setInterval(fetchData21line1, 3000);
+    setInterval(fetchData22line1, 3000);
+    setInterval(fetchData23line1, 3000);
+    setInterval(fetchData24line1, 3000);
+    setInterval(fetchData25line1, 3000);
+    setInterval(fetchData26line1, 3000);
+    setInterval(fetchData27line1, 3000);
+    setInterval(fetchData28line1, 3000);
+    setInterval(fetchData29line1, 3000);
+    setInterval(fetchData30line1, 3000);
+    setInterval(fetchData31line1, 3000);
+    setInterval(fetchData32line1, 3000);
+    setInterval(fetchData33line1, 3000);
+    setInterval(fetchData34line1, 3000);
+    setInterval(fetchData35line1, 3000);
+    setInterval(fetchData36line1, 3000);
+    setInterval(fetchData37line1, 3000);
+    setInterval(fetchData38line1, 3000);
+    setInterval(fetchData39line1, 3000);
+    setInterval(fetchData40line1, 3000);
+    setInterval(fetchData41line1, 3000);
+    setInterval(fetchData42line1, 3000);
     setInterval(fetchData19line2, 3000);
     setInterval(fetchData20line2, 3000);
     setInterval(fetchData21line2, 3000);

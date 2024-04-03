@@ -34,6 +34,7 @@ use App\Http\Controllers\VisualisasiController;
 
 Route::get('/visual', [VisualisasiController::class, 'getData'])->name('data.visual');
 
+//ini buat line 4
 Route::get('/visual19', [VisualisasiController::class, 'getData19'])->name('data.visual19');
 Route::get('/visual20', [VisualisasiController::class, 'getData20'])->name('data.visual20');
 Route::get('/visual21', [VisualisasiController::class, 'getData21'])->name('data.visual21');
@@ -85,7 +86,33 @@ Route::get('/visual40line3', [VisualisasiController::class, 'getData40line3'])->
 Route::get('/visual41line3', [VisualisasiController::class, 'getData41line3'])->name('data.visual41line3');
 Route::get('/visual42line3', [VisualisasiController::class, 'getData42line3'])->name('data.visual42line3');
 
-//ini buat line
+//ini buat line 1
+Route::get('/visual19line1', [VisualisasiController::class, 'getData19line1'])->name('data.visual19line1');
+Route::get('/visual20line1', [VisualisasiController::class, 'getData20line1'])->name('data.visual20line1');
+Route::get('/visual21line1', [VisualisasiController::class, 'getData21line1'])->name('data.visual21line1');
+Route::get('/visual22line1', [VisualisasiController::class, 'getData22line1'])->name('data.visual22line1');
+Route::get('/visual23line1', [VisualisasiController::class, 'getData23line1'])->name('data.visual23line1');
+Route::get('/visual24line1', [VisualisasiController::class, 'getData24line1'])->name('data.visual24line1');
+Route::get('/visual25line1', [VisualisasiController::class, 'getData25line1'])->name('data.visual25line1');
+Route::get('/visual26line1', [VisualisasiController::class, 'getData26line1'])->name('data.visual26line1');
+Route::get('/visual27line1', [VisualisasiController::class, 'getData27line1'])->name('data.visual27line1');
+Route::get('/visual28line1', [VisualisasiController::class, 'getData28line1'])->name('data.visual28line1');
+Route::get('/visual29line1', [VisualisasiController::class, 'getData29line1'])->name('data.visual29line1');
+Route::get('/visual30line1', [VisualisasiController::class, 'getData30line1'])->name('data.visual30line1');
+Route::get('/visual31line1', [VisualisasiController::class, 'getData31line1'])->name('data.visual31line1');
+Route::get('/visual32line1', [VisualisasiController::class, 'getData32line1'])->name('data.visual32line1');
+Route::get('/visual33line1', [VisualisasiController::class, 'getData33line1'])->name('data.visual33line1');
+Route::get('/visual34line1', [VisualisasiController::class, 'getData34line1'])->name('data.visual34line1');
+Route::get('/visual35line1', [VisualisasiController::class, 'getData35line1'])->name('data.visual35line1');
+Route::get('/visual36line1', [VisualisasiController::class, 'getData36line1'])->name('data.visual36line1');
+Route::get('/visual37line1', [VisualisasiController::class, 'getData37line1'])->name('data.visual37line1');
+Route::get('/visual38line1', [VisualisasiController::class, 'getData38line1'])->name('data.visual38line1');
+Route::get('/visual39line1', [VisualisasiController::class, 'getData39line1'])->name('data.visual39line1');
+Route::get('/visual40line1', [VisualisasiController::class, 'getData40line1'])->name('data.visual40line1');
+Route::get('/visual41line1', [VisualisasiController::class, 'getData41line1'])->name('data.visual41line1');
+Route::get('/visual42line1', [VisualisasiController::class, 'getData42line1'])->name('data.visual42line1');
+
+//ini buat line 2
 Route::get('/visual19line2', [VisualisasiController::class, 'getData19line2'])->name('data.visual19line2');
 Route::get('/visual20line2', [VisualisasiController::class, 'getData20line2'])->name('data.visual20line2');
 Route::get('/visual21line2', [VisualisasiController::class, 'getData21line2'])->name('data.visual21line2');
@@ -115,7 +142,8 @@ Route::get('/visualisasi', [VisualisasiController::class, 'index'])->name('belaj
 
 Route::get('/cek', [VisualisasiController::class, 'cek'])->name('data.cek');
 
-Route::resource('/line2', \App\Http\Controllers\Line2Controller::class );
+Route::resource('line1', \App\Http\Controllers\Line1Controller::class );
+Route::resource('line2', \App\Http\Controllers\Line2Controller::class );
 Route::resource('line3', \App\Http\Controllers\Line3Controller::class );
 Route::resource('line4', \App\Http\Controllers\Line4Controller::class );
 

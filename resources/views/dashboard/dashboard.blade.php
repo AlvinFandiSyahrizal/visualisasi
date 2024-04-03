@@ -12,7 +12,7 @@
         }
 
         header {
-            background-color: #195a9d;
+            background-color: #837a7a;
             color: #fff;
             height: 50px;
             display: flex;
@@ -41,7 +41,7 @@
             position: fixed;
             top: 50px;
             left: 0;
-            background-color: rgba(37, 144, 237, 0.9);
+            background-color: #454242;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 20px;
@@ -49,7 +49,7 @@
         }
 
         .menu-button {
-            background-color: #195a9d;
+            background-color: #454242;
             color: #fff;
             padding: 10px;
             border: none;
@@ -171,17 +171,33 @@
         }
 
         /* Style untuk lampu indikator */
-        .dark-mode-indicator {
+        .flange-indicator {
             width: 20px;
             height: 20px;
             border-radius: 50%;
             background-color: #ffd700; /* Warna kuning */
-            margin-left: 10px;
-            
+            margin-right: 10px;
         }
 
-        .dark-mode-on .dark-mode-indicator {
-            background-color: #4caf50; /* Warna hijau */
+        .non-flange-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #1786f5; /* Warna biru */
+            margin-right: 10px;
+        }
+
+        /* Positioning for indicators */
+        .indicators-container {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        /* Style untuk teks flange dan non-flange */
+        .indicator-text {
+            color: #ffffff; /* Warna teks hitam */
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -199,6 +215,17 @@
         <button class="menu-button" onclick="navigateTo('/visualisasi/public/visualisasi')">Visualizations</button>
         <!-- Tambahkan tombol untuk mengaktifkan/demokrat dark mode -->
         <div class="toggle-container">
+            <!-- Indikator warna untuk flange -->
+            <div class="indicators-container">
+                <div class="flange-indicator"></div>
+                <div class="indicator-text">Flange</div>
+            </div>
+            <!-- Indikator warna untuk non-flange -->
+            <div class="indicators-container">
+                <div class="non-flange-indicator"></div>
+                <div class="indicator-text">Non-Flange</div>
+            </div>
+            <!-- Toggle switch -->
             <label class="toggle-switch">
                 <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
                 <span class="toggle-slider"></span>
@@ -244,8 +271,8 @@
 
         updateDateTime();
         setInterval(updateDateTime, 1000); // Update time every second
-        fetchData();
-        setInterval(fetchData, 3000);
+        // fetchData();
+        // setInterval(fetchData, 3000);
     </script>
 
 </body>
